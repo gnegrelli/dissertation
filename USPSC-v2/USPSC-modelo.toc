@@ -1,0 +1,208 @@
+\changetocdepth {4}
+\babel@toc {brazil}{}
+\babel@toc {brazil}{}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {1}\MakeTextUppercase {Introdu\IeC {\c c}\IeC {\~a}o}}{29}{chapter.1}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase {Desenvolvimento}}{31}{chapter.2}
+\contentsline {section}{\numberline {2.1}Pacote USPSC: Classe USPSC e modelos de trabalhos de acad\IeC {\^e}micos}{31}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Alternativas de formata\IeC {\c c}\IeC {\~a}o}{34}{subsection.2.1.1}
+\contentsline {subsubsection}{\numberline {2.1.1.1}Op\IeC {\c c}\IeC {\~o}es de fonte}{34}{subsubsection.2.1.1.1}
+\contentsline {subsubsection}{\numberline {2.1.1.2}Impress\IeC {\~a}o anverso e verso ou somente anverso}{35}{subsubsection.2.1.1.2}
+\contentsline {subsubsection}{\numberline {2.1.1.3}Op\IeC {\c c}\IeC {\~a}o de p. ou f. na refer\IeC {\^e}ncia da Errata, do Resumo e do Abstract}{35}{subsubsection.2.1.1.3}
+\contentsline {subsubsection}{\numberline {2.1.1.4}Tipos de cabe\IeC {\c c}alhos de p\IeC {\'a}ginas}{35}{subsubsection.2.1.1.4}
+\contentsline {subsubsection}{\numberline {2.1.1.5}Op\IeC {\c c}\IeC {\~o}es de idiomas do texto}{36}{subsubsection.2.1.1.5}
+\contentsline {subsubsection}{\numberline {2.1.1.6}Utiliza\IeC {\c c}\IeC {\~a}o de pacotes para a indica\IeC {\c c}\IeC {\~a}o de n\IeC {\'u}mero de autores nas refer\IeC {\^e}ncias e para cita\IeC {\c c}\IeC {\~o}es alfab\IeC {\'e}ticas ou num\IeC {\'e}ricas}{36}{subsubsection.2.1.1.6}
+\contentsline {subsubsection}{\numberline {2.1.1.7}Possibilidades de pre\IeC {\^a}mbulos}{38}{subsubsection.2.1.1.7}
+\contentsline {subsubsection}{\numberline {2.1.1.8}Vers\IeC {\~a}o original ou final/corrigida}{38}{subsubsection.2.1.1.8}
+\contentsline {subsubsection}{\numberline {2.1.1.9}Ficha catalogr\IeC {\'a}fica}{39}{subsubsection.2.1.1.9}
+\contentsline {section}{\numberline {2.2}Resultados de comandos}{40}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Codifica\IeC {\c c}\IeC {\~a}o dos arquivos: UTF8}{40}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Diferentes idiomas e hifeniza\IeC {\c c}\IeC {\~o}es}{40}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.3}Enumera\IeC {\c c}\IeC {\~o}es}{43}{subsection.2.2.3}
+\contentsline {subsection}{\numberline {2.2.4}Espa\IeC {\c c}amento entre par\IeC {\'a}grafos e linhas}{44}{subsection.2.2.4}
+\contentsline {subsection}{\numberline {2.2.5}Tabelas}{45}{subsection.2.2.5}
+\contentsline {subsection}{\numberline {2.2.6}Figuras}{46}{subsection.2.2.6}
+\contentsline {subsubsection}{\numberline {2.2.6.1}Figuras em minipages}{48}{subsubsection.2.2.6.1}
+\contentsline {subsection}{\numberline {2.2.7}Express\IeC {\~o}es matem\IeC {\'a}ticas}{48}{subsection.2.2.7}
+\contentsline {subsection}{\numberline {2.2.8}Estruturas, rea\IeC {\c c}\IeC {\~o}es e mecanismos de rea\IeC {\c c}\IeC {\~o}es qu\IeC {\'\i }micas}{49}{subsection.2.2.8}
+\contentsline {subsection}{\numberline {2.2.9}Inclus\IeC {\~a}o de outros arquivos}{50}{subsection.2.2.9}
+\contentsline {subsection}{\numberline {2.2.10}\IeC {\'I}ndice(s)}{50}{subsection.2.2.10}
+\contentsline {subsection}{\numberline {2.2.11}Compilar o documento \LaTeX }{52}{subsection.2.2.11}
+\contentsline {subsection}{\numberline {2.2.12}Remiss\IeC {\~o}es internas}{52}{subsection.2.2.12}
+\contentsline {section}{\numberline {2.3}Divis\IeC {\~o}es do documento}{52}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Divis\IeC {\~o}es do documento: subse\IeC {\c c}\IeC {\~a}o}{53}{subsection.2.3.1}
+\contentsline {subsubsection}{\numberline {2.3.1.1}Divis\IeC {\~o}es do documento: subsubse\IeC {\c c}\IeC {\~a}o}{53}{subsubsection.2.3.1.1}
+\contentsline {subsubsection}{\numberline {2.3.1.2}Divis\IeC {\~o}es do documento: subsubse\IeC {\c c}\IeC {\~a}o}{53}{subsubsection.2.3.1.2}
+\contentsline {subsection}{\numberline {2.3.2}Divis\IeC {\~o}es do documento: subse\IeC {\c c}\IeC {\~a}o}{53}{subsection.2.3.2}
+\contentsline {subsubsection}{\numberline {2.3.2.1}Divis\IeC {\~o}es do documento: subsubse\IeC {\c c}\IeC {\~a}o}{53}{subsubsection.2.3.2.1}
+\contentsline {paragraph}{\numberline {2.3.2.1.1}Esta \IeC {\'e} uma subse\IeC {\c c}\IeC {\~a}o de quinto n\IeC {\'\i }vel}{53}{paragraph.2.3.2.1.1}
+\contentsline {paragraph}{\numberline {2.3.2.1.2}Esta \IeC {\'e} outra subse\IeC {\c c}\IeC {\~a}o de quinto n\IeC {\'\i }vel}{53}{paragraph.2.3.2.1.2}
+\contentsline {paragraph}{\numberline {2.3.2.1.3}Este \IeC {\'e} um par\IeC {\'a}grafo numerado}{53}{paragraph.2.3.2.1.3}
+\contentsline {paragraph}{\numberline {2.3.2.1.4}Esta \IeC {\'e} outro par\IeC {\'a}grafo numerado}{53}{paragraph.2.3.2.1.4}
+\contentsline {subsection}{\numberline {2.3.3}Este \IeC {\'e} um exemplo de nome de subse\IeC {\c c}\IeC {\~a}o longa que se aplica a se\IeC {\c c}\IeC {\~o}es e demais divis\IeC {\~o}es do documento. Ele deve estar alinhado \IeC {\`a} esquerda e a segunda e demais linhas devem iniciar logo abaixo da primeira palavra da primeira linha}{54}{subsection.2.3.3}
+\contentsline {section}{\numberline {2.4}Manual da classe \textsf {abnT\kern -.1667em\lower .5ex\hbox {E}\kern -.125emX\spacefactor \@m {}2}}{54}{section.2.4}
+\contentsline {section}{\numberline {2.5}Precisa de ajuda sobre \textsf {abnT\kern -.1667em\lower .5ex\hbox {E}\kern -.125emX\spacefactor \@m {}2}?}{54}{section.2.5}
+\contentsline {section}{\numberline {2.6}Voc\IeC {\^e} pode ajudar?}{54}{section.2.6}
+\contentsline {section}{\numberline {2.7}Quer customizar os modelos do abnT\kern -.1667em\lower .5ex\hbox {E}\kern -.125emX\spacefactor \@m {}2\ para sua institui\IeC {\c c}\IeC {\~a}o ou universidade?}{54}{section.2.7}
+\contentsline {section}{\numberline {2.8}Precisa de ajuda sobre a Classe USPSC e Modelos?}{54}{section.2.8}
+\contentsline {section}{\numberline {2.9}Customize a Classe USPSC e Modelos para sua institui\IeC {\c c}\IeC {\~a}o}{55}{section.2.9}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase {Cita\IeC {\c c}\IeC {\~o}es}}{57}{chapter.3}
+\contentsline {section}{\numberline {3.1}Cita\IeC {\c c}\IeC {\~a}o direta}{58}{section.3.1}
+\babel@toc {english}{}
+\babel@toc {brazil}{}
+\babel@toc {english}{}
+\babel@toc {brazil}{}
+\contentsline {section}{\numberline {3.2}Cita\IeC {\c c}\IeC {\~a}o indireta}{60}{section.3.2}
+\contentsline {section}{\numberline {3.3}Cita\IeC {\c c}\IeC {\~a}o de cita\IeC {\c c}\IeC {\~a}o}{61}{section.3.3}
+\contentsline {section}{\numberline {3.4}Cita\IeC {\c c}\IeC {\~a}o de fontes informais}{62}{section.3.4}
+\contentsline {section}{\numberline {3.5}Cita\IeC {\c c}\IeC {\~a}o de website}{64}{section.3.5}
+\contentsline {section}{\numberline {3.6}Destaque e supress\IeC {\~o}es no texto}{64}{section.3.6}
+\contentsline {section}{\numberline {3.7}Notas de rodap\IeC {\'e}}{65}{section.3.7}
+\contentsline {section}{\numberline {3.8}Exemplos de cita\IeC {\c c}\IeC {\~o}es}{66}{section.3.8}
+\contentsline {section}{\numberline {3.9}Comandos em \LaTeX \ para cita\IeC {\c c}\IeC {\~o}es}{70}{section.3.9}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {Modelos de refer\IeC {\^e}ncias}}{79}{chapter.4}
+\contentsline {section}{\numberline {4.1}Monografias}{79}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Monografia no todo}{80}{subsection.4.1.1}
+\contentsline {subsubsection}{\numberline {4.1.1.1}Um autor}{80}{subsubsection.4.1.1.1}
+\contentsline {subsubsection}{\numberline {4.1.1.2}Dois autores}{81}{subsubsection.4.1.1.2}
+\contentsline {subsubsection}{\numberline {4.1.1.3}Tr\IeC {\^e}s autores}{81}{subsubsection.4.1.1.3}
+\contentsline {subsubsection}{\numberline {4.1.1.4}Quatro autores}{82}{subsubsection.4.1.1.4}
+\contentsline {subsubsection}{\numberline {4.1.1.5}Autoria Desconhecida}{84}{subsubsection.4.1.1.5}
+\contentsline {subsubsection}{\numberline {4.1.1.6}Tradutor, prefaciador, ilustrador, compilador, revisor}{85}{subsubsection.4.1.1.6}
+\contentsline {subsubsection}{\numberline {4.1.1.7}S\IeC {\'e}rie}{86}{subsubsection.4.1.1.7}
+\contentsline {subsubsection}{\numberline {4.1.1.8}Editor, organizador, coordenador etc.}{87}{subsubsection.4.1.1.8}
+\contentsline {subsubsection}{\numberline {4.1.1.9}Autor e editor}{88}{subsubsection.4.1.1.9}
+\contentsline {subsubsection}{\numberline {4.1.1.10}Pseud\IeC {\^o}nimo}{89}{subsubsection.4.1.1.10}
+\contentsline {subsubsection}{\numberline {4.1.1.11}Autor entidade (entidades coletivas, governamentais, p\IeC {\'u}blicas, particulares etc.) }{89}{subsubsection.4.1.1.11}
+\contentsline {subsubsection}{\numberline {4.1.1.12}Autor(es) com mais de uma obra referenciada}{93}{subsubsection.4.1.1.12}
+\contentsline {subsubsection}{\numberline {4.1.1.13}Mais de um volume}{94}{subsubsection.4.1.1.13}
+\contentsline {subsubsection}{\numberline {4.1.1.14}Cat\IeC {\'a}logo}{95}{subsubsection.4.1.1.14}
+\contentsline {subsubsection}{\numberline {4.1.1.15}Relat\IeC {\'o}rio e parecer t\IeC {\'e}cnico}{96}{subsubsection.4.1.1.15}
+\contentsline {subsubsection}{\numberline {4.1.1.16}Dicion\IeC {\'a}rio}{97}{subsubsection.4.1.1.16}
+\contentsline {subsubsection}{\numberline {4.1.1.17}Trabalhos acad\IeC {\^e}micos}{98}{subsubsection.4.1.1.17}
+\contentsline {subsection}{\numberline {4.1.2}Parte de monografia}{100}{subsection.4.1.2}
+\contentsline {subsubsection}{\numberline {4.1.2.1}Autor distinto da obra no todo}{101}{subsubsection.4.1.2.1}
+\contentsline {subsubsection}{\numberline {4.1.2.2}Mesmo autor da obra no todo}{102}{subsubsection.4.1.2.2}
+\contentsline {subsection}{\numberline {4.1.3}Monografia em suporte eletr\IeC {\^o}nico}{103}{subsection.4.1.3}
+\contentsline {subsubsection}{\numberline {4.1.3.1}Parte de monografia em suporte eletr\IeC {\^o}nico}{105}{subsubsection.4.1.3.1}
+\contentsline {subsection}{\numberline {4.1.4}Evento}{106}{subsection.4.1.4}
+\contentsline {subsubsection}{\numberline {4.1.4.1}Completo}{106}{subsubsection.4.1.4.1}
+\contentsline {subsubsection}{\numberline {4.1.4.2}Trabalho apresentado em evento}{107}{subsubsection.4.1.4.2}
+\contentsline {subsubsection}{\numberline {4.1.4.3}Atas de confer\IeC {\^e}ncias}{108}{subsubsection.4.1.4.3}
+\contentsline {subsubsection}{\numberline {4.1.4.4}Trabalho de evento publicado em peri\IeC {\'o}dico}{108}{subsubsection.4.1.4.4}
+\contentsline {subsubsection}{\numberline {4.1.4.5}Evento em suporte eletr\IeC {\^o}nico}{109}{subsubsection.4.1.4.5}
+\contentsline {subsubsection}{\numberline {4.1.4.6}Trabalho de evento em suporte eletr\IeC {\^o}nico }{110}{subsubsection.4.1.4.6}
+\contentsline {section}{\numberline {4.2}Publica\IeC {\c c}\IeC {\~o}es Peri\IeC {\'o}dicas}{110}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Cole\IeC {\c c}\IeC {\~a}o como um todo}{111}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Artigo de revista}{111}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.3}Editorial}{112}{subsection.4.2.3}
+\contentsline {subsection}{\numberline {4.2.4}Entidade coletiva}{113}{subsection.4.2.4}
+\contentsline {subsection}{\numberline {4.2.5}Artigos em suplementos ou em n\IeC {\'u}meros especiais}{114}{subsection.4.2.5}
+\contentsline {subsection}{\numberline {4.2.6}Artigo publicado em partes}{115}{subsection.4.2.6}
+\contentsline {subsection}{\numberline {4.2.7}Artigo com errata publicada}{116}{subsection.4.2.7}
+\contentsline {subsection}{\numberline {4.2.8}Com indica\IeC {\c c}\IeC {\~a}o do m\IeC {\^e}s}{116}{subsection.4.2.8}
+\contentsline {subsection}{\numberline {4.2.9}Artigo no prelo}{118}{subsection.4.2.9}
+\contentsline {subsection}{\numberline {4.2.10}Publica\IeC {\c c}\IeC {\~o}es peri\IeC {\'o}dicas em suporte eletr\IeC {\^o}nico}{119}{subsection.4.2.10}
+\contentsline {subsection}{\numberline {4.2.11}Artigo e/ou mat\IeC {\'e}ria de jornal}{120}{subsection.4.2.11}
+\contentsline {subsection}{\numberline {4.2.12}Artigo publicado com corre\IeC {\c c}\IeC {\~a}o}{121}{subsection.4.2.12}
+\contentsline {section}{\numberline {4.3}Patentes}{123}{section.4.3}
+\contentsline {section}{\numberline {4.4}Normas}{126}{section.4.4}
+\contentsline {section}{\numberline {4.5}Documentos Jur\IeC {\'\i }dicos}{127}{section.4.5}
+\contentsline {subsection}{\numberline {4.5.1}Legisla\IeC {\c c}\IeC {\~a}o}{127}{subsection.4.5.1}
+\contentsline {subsection}{\numberline {4.5.2}Jurisprud\IeC {\^e}ncia}{129}{subsection.4.5.2}
+\contentsline {subsection}{\numberline {4.5.3}Doutrina}{130}{subsection.4.5.3}
+\contentsline {subsection}{\numberline {4.5.4}Em suporte eletr\IeC {\^o}nico}{131}{subsection.4.5.4}
+\contentsline {section}{\numberline {4.6}Materiais especiais}{132}{section.4.6}
+\contentsline {subsection}{\numberline {4.6.1}Documentos Cartogr\IeC {\'a}ficos}{134}{subsection.4.6.1}
+\contentsline {subsubsection}{\numberline {4.6.1.1}No todo}{134}{subsubsection.4.6.1.1}
+\contentsline {subsubsection}{\numberline {4.6.1.2}Em suporte eletr\IeC {\^o}nico}{135}{subsubsection.4.6.1.2}
+\contentsline {subsection}{\numberline {4.6.2}Documentos sonoros}{136}{subsection.4.6.2}
+\contentsline {subsubsection}{\numberline {4.6.2.1}No todo}{136}{subsubsection.4.6.2.1}
+\contentsline {subsubsection}{\numberline {4.6.2.2}Em parte}{137}{subsubsection.4.6.2.2}
+\contentsline {subsection}{\numberline {4.6.3}Partituras}{137}{subsection.4.6.3}
+\contentsline {subsubsection}{\numberline {4.6.3.1}Impressa}{137}{subsubsection.4.6.3.1}
+\contentsline {subsubsection}{\numberline {4.6.3.2}Em suporte eletr\IeC {\^o}nico}{138}{subsubsection.4.6.3.2}
+\contentsline {subsection}{\numberline {4.6.4}Bula de medicamento}{139}{subsection.4.6.4}
+\contentsline {section}{\numberline {4.7}Documentos dispon\IeC {\'\i }veis somente em suporte eletr\IeC {\^o}nico}{140}{section.4.7}
+\contentsline {subsection}{\numberline {4.7.1}Acesso a banco, base de dados e lista de discuss\IeC {\~a}o}{140}{subsection.4.7.1}
+\contentsline {subsection}{\numberline {4.7.2}Website}{142}{subsection.4.7.2}
+\contentsline {subsection}{\numberline {4.7.3}Artigo ahead of print}{143}{subsection.4.7.3}
+\contentsline {subsection}{\numberline {4.7.4}Open access}{144}{subsection.4.7.4}
+\contentsline {subsection}{\numberline {4.7.5}Digital Object Identifier (DOI)}{145}{subsection.4.7.5}
+\contentsline {subsection}{\numberline {4.7.6}CD-ROM e disquete}{146}{subsection.4.7.6}
+\contentsline {subsection}{\numberline {4.7.7}Mensagens eletr\IeC {\^o}nicas}{146}{subsection.4.7.7}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {Conclus\IeC {\~a}o}}{149}{chapter.5}
+\renewcommand *{\cftappendixname }{AP\^ENDICE \space }
+\setlength {\cftpartindent }{\cftlastnumwidth } \setlength {\cftpartnumwidth }{2em}
+\cftinsert {A}
+\contentsline {part}{\uppercase {Ap\^endices}}{151}{section*.15}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\cftinsert {A}
+\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase {Apendice(s)}}{153}{appendix.A}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\cftinsert {A}
+\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase {Siglas dos Programas de P\IeC {\'o}s-Gradua\IeC {\c c}\IeC {\~a}o da EESC}}{155}{appendix.B}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\cftinsert {A}
+\contentsline {appendix}{\chapternumberline {C}\MakeTextUppercase {Siglas dos Programas de P\IeC {\'o}s-Gradua\IeC {\c c}\IeC {\~a}o do IAU}}{159}{appendix.C}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\cftinsert {A}
+\contentsline {appendix}{\chapternumberline {D}\MakeTextUppercase {Siglas dos Programas de P\IeC {\'o}s-Gradua\IeC {\c c}\IeC {\~a}o do ICMC}}{161}{appendix.D}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\cftinsert {A}
+\contentsline {appendix}{\chapternumberline {E}\MakeTextUppercase {Siglas dos Programas de P\IeC {\'o}s-Gradua\IeC {\c c}\IeC {\~a}o do IFSC}}{163}{appendix.E}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\cftinsert {A}
+\contentsline {appendix}{\chapternumberline {F}\MakeTextUppercase {Siglas dos Programas de P\IeC {\'o}s-Gradua\IeC {\c c}\IeC {\~a}o do IQSC}}{165}{appendix.F}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\cftinsert {A}
+\contentsline {appendix}{\chapternumberline {G}\MakeTextUppercase {Siglas dos Cursos de Gradua\IeC {\c c}\IeC {\~a}o da EESC}}{167}{appendix.G}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\cftinsert {A}
+\contentsline {appendix}{\chapternumberline {H}\MakeTextUppercase {Exemplo de tabela centralizada verticalmente e horizontalmente}}{169}{appendix.H}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\cftinsert {A}
+\contentsline {appendix}{\chapternumberline {I}\MakeTextUppercase {Exemplo de tabela com grade}}{171}{appendix.I}
+\vspace {\cftbeforechapterskip }
+\cftinsert {AAA}
+\renewcommand *{\cftappendixname }{ANEXO \space }
+\setlength {\cftpartindent }{\cftlastnumwidth } \setlength {\cftpartnumwidth }{2em}
+\cftinsert {A}
+\contentsline {part}{\uppercase {Anexos}}{173}{section*.16}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\cftinsert {A}
+\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase {Exemplo de anexo}}{175}{appendix.anexochapback.1}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\cftinsert {A}
+\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase {Acentua\IeC {\c c}\IeC {\~a}o (modo texto - \LaTeX )}}{177}{appendix.anexochapback.2}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\cftinsert {A}
+\contentsline {appendix}{\chapternumberline {C}\MakeTextUppercase {S\IeC {\'\i }mbolos \IeC {\'u}teis em \LaTeX }}{179}{appendix.anexochapback.3}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\cftinsert {A}
+\contentsline {appendix}{\chapternumberline {D}\MakeTextUppercase {Letras gregas em \LaTeX }}{181}{appendix.anexochapback.4}
