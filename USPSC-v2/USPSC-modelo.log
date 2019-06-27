@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.5.31)  27 JUN 2019 14:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.5.31)  27 JUN 2019 14:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3075,7 +3075,7 @@ Overfull \hbox (1.5877pt too wide) detected at line 158
  []
 
 
-Overfull \hbox (19.41287pt too wide) in paragraph at lines 158--158
+Overfull \hbox (20.51205pt too wide) in paragraph at lines 158--158
  [][] [][][]\T1/lmss/bx/n/12 SIGLAS DOS PRO-GRA-MAS DE PÓS-GRADUAÇÃO 
  []
 
@@ -3085,7 +3085,7 @@ Overfull \hbox (1.5877pt too wide) detected at line 162
  []
 
 
-Overfull \hbox (19.41287pt too wide) in paragraph at lines 162--162
+Overfull \hbox (20.51205pt too wide) in paragraph at lines 162--162
  [][] [][][]\T1/lmss/bx/n/12 SIGLAS DOS PRO-GRA-MAS DE PÓS-GRADUAÇÃO 
  []
 
@@ -3095,7 +3095,7 @@ Overfull \hbox (1.5877pt too wide) detected at line 166
  []
 
 
-Overfull \hbox (19.41287pt too wide) in paragraph at lines 166--166
+Overfull \hbox (20.51205pt too wide) in paragraph at lines 166--166
  [][] [][][]\T1/lmss/bx/n/12 SIGLAS DOS PRO-GRA-MAS DE PÓS-GRADUAÇÃO 
  []
 
@@ -3105,7 +3105,7 @@ Overfull \hbox (1.5877pt too wide) detected at line 170
  []
 
 
-Overfull \hbox (19.41287pt too wide) in paragraph at lines 170--170
+Overfull \hbox (20.51205pt too wide) in paragraph at lines 170--170
  [][] [][][]\T1/lmss/bx/n/12 SIGLAS DOS PRO-GRA-MAS DE PÓS-GRADUAÇÃO 
  []
 
@@ -3115,7 +3115,7 @@ Overfull \hbox (1.5877pt too wide) detected at line 174
  []
 
 
-Overfull \hbox (19.41287pt too wide) in paragraph at lines 174--174
+Overfull \hbox (20.51205pt too wide) in paragraph at lines 174--174
  [][] [][][]\T1/lmss/bx/n/12 SIGLAS DOS PRO-GRA-MAS DE PÓS-GRADUAÇÃO 
  []
 
@@ -5972,13 +5972,16 @@ Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 509.
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 509.
  ) 
 Here is how much of TeX's memory you used:
- 42142 strings out of 492982
- 802238 string characters out of 6134896
- 1076603 words of memory out of 5000000
- 44303 multiletter control sequences out of 15000+600000
+ 42139 strings out of 492982
+ 802195 string characters out of 6134896
+ 1076607 words of memory out of 5000000
+ 44300 multiletter control sequences out of 15000+600000
  662441 words of font info for 190 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  73i,18n,99p,10402b,1869s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -5999,7 +6002,7 @@ lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf
 /type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pf
 b></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/typ
 e1/public/lm/lmtt12.pfb>
-Output written on USPSC-modelo.pdf (187 pages, 1159030 bytes).
+Output written on USPSC-modelo.pdf (187 pages, 1159040 bytes).
 PDF statistics:
  2102 PDF objects out of 2487 (max. 8388607)
  1836 compressed objects within 19 object streams

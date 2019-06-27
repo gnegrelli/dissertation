@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.5.31)  27 JUN 2019 14:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.5.31)  27 JUN 2019 14:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3082,7 +3082,7 @@ Overfull \hbox (1.5877pt too wide) detected at line 157
  []
 
 
-Overfull \hbox (19.41287pt too wide) in paragraph at lines 157--157
+Overfull \hbox (20.51205pt too wide) in paragraph at lines 157--157
  [][] [][][]\T1/lmss/bx/n/12 SIGLAS DOS PRO-GRA-MAS DE PÓS-GRADUAÇÃO 
  []
 
@@ -3092,7 +3092,7 @@ Overfull \hbox (1.5877pt too wide) detected at line 161
  []
 
 
-Overfull \hbox (19.41287pt too wide) in paragraph at lines 161--161
+Overfull \hbox (20.51205pt too wide) in paragraph at lines 161--161
  [][] [][][]\T1/lmss/bx/n/12 SIGLAS DOS PRO-GRA-MAS DE PÓS-GRADUAÇÃO 
  []
 
@@ -3102,7 +3102,7 @@ Overfull \hbox (1.5877pt too wide) detected at line 165
  []
 
 
-Overfull \hbox (19.41287pt too wide) in paragraph at lines 165--165
+Overfull \hbox (20.51205pt too wide) in paragraph at lines 165--165
  [][] [][][]\T1/lmss/bx/n/12 SIGLAS DOS PRO-GRA-MAS DE PÓS-GRADUAÇÃO 
  []
 
@@ -3112,7 +3112,7 @@ Overfull \hbox (1.5877pt too wide) detected at line 169
  []
 
 
-Overfull \hbox (19.41287pt too wide) in paragraph at lines 169--169
+Overfull \hbox (20.51205pt too wide) in paragraph at lines 169--169
  [][] [][][]\T1/lmss/bx/n/12 SIGLAS DOS PRO-GRA-MAS DE PÓS-GRADUAÇÃO 
  []
 
@@ -3122,7 +3122,7 @@ Overfull \hbox (1.5877pt too wide) detected at line 173
  []
 
 
-Overfull \hbox (19.41287pt too wide) in paragraph at lines 173--173
+Overfull \hbox (20.51205pt too wide) in paragraph at lines 173--173
  [][] [][][]\T1/lmss/bx/n/12 SIGLAS DOS PRO-GRA-MAS DE PÓS-GRADUAÇÃO 
  []
 
@@ -3317,6 +3317,11 @@ LaTeX Warning: Citation `nbr6024' on page 45 undefined on input line 480.
 LaTeX Warning: Citation `sibi2009' on page 47 undefined on input line 566.
 
 
+Underfull \hbox (badness 1320) in paragraph at lines 597--597
+[][][]\T1/lmr/m/n/12 (+20) Frequência an-ual por cat-e-go-ria de
+ []
+
+
 LaTeX Warning: Citation `sibi2009' on page 47 undefined on input line 618.
 
 
@@ -3493,8 +3498,8 @@ LaTeX Warning: Citation `nbr14724' on page 56 undefined on input line 1071.
 
 
 Overfull \hbox (6.91608pt too wide) in paragraph at lines 1082--1085
-[]\T1/lmr/m/n/12 (-20) Inscreva-se no grupo de usuá-rios L[]T[]X: [][]$<[]http 
-: / / groups . google . com / group / latex-[]br>[]$[][],
+[]\T1/lmr/m/n/12 (-20) Inscreva-se no grupo de usuários L[]T[]X: [][]$<[]http :
+ / / groups . google . com / group / latex-[]br>[]$[][],
  []
 
 [56] [57]) [58]
@@ -3838,6 +3843,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 374--376
 
 Underfull \hbox (badness 10000) in paragraph at lines 379--382
 
+ []
+
+
+Overfull \hbox (14.7855pt too wide) in paragraph at lines 383--385
+[]\T1/lmr/bx/n/12 Notas ex-plica-ti-vas \T1/lmr/m/n/12 (-20) constituem-se em c
+o-men-tários, com-ple-men-tações ou traduções
  []
 
 
@@ -5551,13 +5562,43 @@ LaTeX Warning: Citation `sibi2009' on page 155 undefined on input line 12.
 ] [156
 
 ]
+Underfull \hbox (badness 1178) in paragraph at lines 29--29
+[]|\T1/lmr/m/n/10.95 (+20) Programa de Pós-Graduação em
+ []
+
+
 Underfull \hbox (badness 4660) in paragraph at lines 29--29
-[]|\T1/lmr/m/n/10.95 (+20) Ciências da En-ge-nha-ria
+[]|\T1/lmr/m/n/10.95 (+20) Ciências da En-gen-haria
+ []
+
+
+Underfull \hbox (badness 1178) in paragraph at lines 30--30
+[]|\T1/lmr/m/n/10.95 (+20) Programa de Pós-Graduação em
  []
 
 
 Underfull \hbox (badness 4660) in paragraph at lines 30--30
-[]|\T1/lmr/m/n/10.95 (+20) Ciências da En-ge-nha-ria
+[]|\T1/lmr/m/n/10.95 (+20) Ciências da En-gen-haria
+ []
+
+
+Underfull \hbox (badness 1178) in paragraph at lines 31--31
+[]|\T1/lmr/m/n/10.95 (+20) Programa de Pós-Graduação em
+ []
+
+
+Underfull \hbox (badness 1178) in paragraph at lines 32--32
+[]|\T1/lmr/m/n/10.95 (+20) Programa de Pós-Graduação em
+ []
+
+
+Underfull \hbox (badness 3158) in paragraph at lines 39--39
+[]|\T1/lmr/m/n/10.95 (+20) Infraestrutura de Trans-
+ []
+
+
+Underfull \hbox (badness 3158) in paragraph at lines 40--40
+[]|\T1/lmr/m/n/10.95 (+20) Infraestrutura de Trans-
  []
 
 [157pdfTeX warning (ext4): destination with the same identifier (name{quadro.B.
@@ -5566,7 +5607,37 @@ Underfull \hbox (badness 4660) in paragraph at lines 30--30
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.51 \clearpage
-               ] [158]
+               ]
+Underfull \hbox (badness 10000) in paragraph at lines 64--64
+[]|\T1/lmr/m/n/10.95 (+20) Sistemas Elétri-cos de
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 65--65
+[]|\T1/lmr/m/n/10.95 (+20) Sistemas Elétri-cos de
+ []
+
+
+Underfull \hbox (badness 1178) in paragraph at lines 82--82
+[]|\T1/lmr/m/n/10.95 (+20) Programa de Pós-Graduação em
+ []
+
+
+Underfull \hbox (badness 1178) in paragraph at lines 83--83
+[]|\T1/lmr/m/n/10.95 (+20) Programa de Pós-Graduação em
+ []
+
+[158]
+Underfull \hbox (badness 1895) in paragraph at lines 99--99
+[]|\T1/lmr/m/n/10.95 (+20) Programa de Pós-Graduação In-
+ []
+
+
+Underfull \hbox (badness 1895) in paragraph at lines 100--100
+[]|\T1/lmr/m/n/10.95 (+20) Programa de Pós-Graduação In-
+ []
+
+
 Underfull \hbox (badness 1178) in paragraph at lines 101--101
 []|\T1/lmr/m/n/10.95 (+20) Programa de Pós-Graduação em
  []
@@ -5587,8 +5658,13 @@ Underfull \hbox (badness 5563) in paragraph at lines 121--121
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 121--121
-[]|\T1/lmr/m/n/10.95 (+20) Arquitetura, Ur-ba-
+Underfull \hbox (badness 2384) in paragraph at lines 121--121
+\T1/lmr/m/n/10.95 (+20) Graduação em Ar-
+ []
+
+
+Underfull \hbox (badness 1852) in paragraph at lines 121--121
+\T1/lmr/m/n/10.95 (+20) quite-tura e Ur-ban-
  []
 
 
@@ -5597,8 +5673,13 @@ Underfull \hbox (badness 5563) in paragraph at lines 122--122
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 122--122
-[]|\T1/lmr/m/n/10.95 (+20) Arquitetura, Ur-ba-
+Underfull \hbox (badness 2384) in paragraph at lines 122--122
+\T1/lmr/m/n/10.95 (+20) Graduação em Ar-
+ []
+
+
+Underfull \hbox (badness 1852) in paragraph at lines 122--122
+\T1/lmr/m/n/10.95 (+20) quite-tura e Ur-ban-
  []
 
 
@@ -5607,8 +5688,28 @@ Underfull \hbox (badness 5563) in paragraph at lines 123--123
  []
 
 
+Underfull \hbox (badness 2384) in paragraph at lines 123--123
+\T1/lmr/m/n/10.95 (+20) Graduação em Ar-
+ []
+
+
+Underfull \hbox (badness 1852) in paragraph at lines 123--123
+\T1/lmr/m/n/10.95 (+20) quite-tura e Ur-ban-
+ []
+
+
 Underfull \hbox (badness 5563) in paragraph at lines 124--124
 []|\T1/lmr/m/n/10.95 (+20) Programa de Pós-
+ []
+
+
+Underfull \hbox (badness 2384) in paragraph at lines 124--124
+\T1/lmr/m/n/10.95 (+20) Graduação em Ar-
+ []
+
+
+Underfull \hbox (badness 1852) in paragraph at lines 124--124
+\T1/lmr/m/n/10.95 (+20) quite-tura e Ur-ban-
  []
 
 
@@ -5630,13 +5731,73 @@ Overfull \hbox (6.3374pt too wide) in paragraph at lines 143--143
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 145--145
+[]|\T1/lmr/m/n/10.95 (+20) Ciências de
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 145--145
+\T1/lmr/m/n/10.95 (+20) Com-putação e
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 145--145
+\T1/lmr/m/n/10.95 (+20) Matemática Com-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 145--145
+[]|\T1/lmr/m/n/10.95 (+20) Ciências de
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 145--145
+\T1/lmr/m/n/10.95 (+20) Com-putação e
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 145--145
+\T1/lmr/m/n/10.95 (+20) Matemática Com-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 146--146
+[]|\T1/lmr/m/n/10.95 (+20) Ciências de
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 146--146
+\T1/lmr/m/n/10.95 (+20) Com-putação e
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 146--146
+\T1/lmr/m/n/10.95 (+20) Matemática Com-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 146--146
+[]|\T1/lmr/m/n/10.95 (+20) Ciências de
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 146--146
+\T1/lmr/m/n/10.95 (+20) Com-putação e
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 146--146
+\T1/lmr/m/n/10.95 (+20) Matemática Com-
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 147--147
 []|\T1/lmr/m/n/10.95 (+20) Computer Sci-ence
  []
 
 
 Underfull \hbox (badness 1728) in paragraph at lines 147--147
-\T1/lmr/m/n/10.95 (+20) and Com-pu-ta-ti-o-nal
+\T1/lmr/m/n/10.95 (+20) and Com-pu-ta-tional
  []
 
 
@@ -5646,7 +5807,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 147--147
 
 
 Underfull \hbox (badness 1728) in paragraph at lines 147--147
-\T1/lmr/m/n/10.95 (+20) and Com-pu-ta-ti-o-nal
+\T1/lmr/m/n/10.95 (+20) and Com-pu-ta-tional
  []
 
 
@@ -5681,7 +5842,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 151--151
 
 
 Underfull \hbox (badness 1728) in paragraph at lines 151--151
-\T1/lmr/m/n/10.95 (+20) and Com-pu-ta-ti-o-nal
+\T1/lmr/m/n/10.95 (+20) and Com-pu-ta-tional
  []
 
 
@@ -5690,8 +5851,18 @@ Overfull \hbox (4.00725pt too wide) in paragraph at lines 152--152
  []
 
 
-Underfull \hbox (badness 3219) in paragraph at lines 156--156
-[]|\T1/lmr/m/n/10.95 (+20) Programa de Mes-
+Underfull \hbox (badness 10000) in paragraph at lines 156--156
+[]|\T1/lmr/m/n/10.95 (+20) Programa de
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 156--156
+\T1/lmr/m/n/10.95 (+20) Mestrado Profis-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 156--156
+\T1/lmr/m/n/10.95 (+20) sional em
  []
 
 
@@ -5716,8 +5887,18 @@ Underfull \hbox (badness 5563) in paragraph at lines 171--171
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 171--171
+\T1/lmr/m/n/10.95 (+20) Graduação em
+ []
+
+
 Underfull \hbox (badness 5563) in paragraph at lines 172--172
 []|\T1/lmr/m/n/10.95 (+20) Programa de Pós-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 172--172
+\T1/lmr/m/n/10.95 (+20) Graduação em
  []
 
 
@@ -5743,8 +5924,8 @@ Underfull \hbox (badness 5563) in paragraph at lines 194--194
  []
 
 
-Underfull \hbox (badness 4819) in paragraph at lines 194--194
-[]|\T1/lmr/m/n/10.95 (+20) Física Com-pu-ta-ci-o-
+Underfull \hbox (badness 10000) in paragraph at lines 194--194
+[]|\T1/lmr/m/n/10.95 (+20) Física Com-puta-
  []
 
 
@@ -5763,8 +5944,8 @@ Underfull \hbox (badness 5563) in paragraph at lines 197--197
  []
 
 
-Underfull \hbox (badness 4819) in paragraph at lines 197--197
-[]|\T1/lmr/m/n/10.95 (+20) Física Com-pu-ta-ci-o-
+Underfull \hbox (badness 10000) in paragraph at lines 197--197
+[]|\T1/lmr/m/n/10.95 (+20) Física Com-puta-
  []
 
 
@@ -5979,11 +6160,11 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 532.
  ) 
 Here is how much of TeX's memory you used:
- 42097 strings out of 492982
- 801364 string characters out of 6134896
- 1090297 words of memory out of 5000000
- 44284 multiletter control sequences out of 15000+600000
- 655212 words of font info for 184 fonts, out of 8000000 for 9000
+ 42068 strings out of 492982
+ 800944 string characters out of 6134896
+ 1090246 words of memory out of 5000000
+ 44263 multiletter control sequences out of 15000+600000
+ 654880 words of font info for 180 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  73i,18n,99p,10406b,1869s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/share/texmf/fonts/enc/d
@@ -6003,7 +6184,7 @@ lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf
 /type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pf
 b></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/typ
 e1/public/lm/lmtt12.pfb>
-Output written on USPSC-modelo-seg.pdf (185 pages, 1221312 bytes).
+Output written on USPSC-modelo-seg.pdf (185 pages, 1221304 bytes).
 PDF statistics:
  2095 PDF objects out of 2487 (max. 8388607)
  1825 compressed objects within 19 object streams
