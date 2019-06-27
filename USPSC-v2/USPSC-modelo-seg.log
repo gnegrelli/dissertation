@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.5.31)  1 JUN 2019 11:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.5.31)  27 JUN 2019 14:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -477,8 +477,8 @@ Package: babel 2018/02/14 3.18 The Babel package
 (/usr/share/texlive/texmf-dist/tex/generic/babel/switch.def
 File: switch.def 2018/02/14 3.18 Babel switching mechanism
 )
-(/usr/share/texlive/texmf-dist/tex/generic/babel-english/english.ldf
-Language: english 2017/06/06 v3.3r English support from the babel system
+(/usr/share/texlive/texmf-dist/tex/generic/babel-portuges/portuges.ldf
+Language: portuges 2008/03/18 v1.2q Portuguese support from the babel system
 
 (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
 File: babel.def 2018/02/14 3.18 Babel common definitions
@@ -488,9 +488,8 @@ File: babel.def 2018/02/14 3.18 Babel common definitions
 (/usr/share/texlive/texmf-dist/tex/generic/babel/txtbabel.def)
 \bbl@dirlevel=\count151
 )
-\l@canadian = a dialect from \language\l@american 
-\l@australian = a dialect from \language\l@british 
-\l@newzealand = a dialect from \language\l@british 
+\l@brazil = a dialect from \language\l@portuges 
+Package babel Info: Making " an active character on input line 145.
 )
 (/usr/share/texlive/texmf-dist/tex/generic/babel-french/french.ldf
 Language: french 2018/02/04 v3.4b French support from the babel system
@@ -520,16 +519,24 @@ Package babel Info: Making ? an active character on input line 414.
 Language: spanish.ldf 2016/03/03 v5.0p Spanish support from the babel system
 \es@quottoks=\toks24
 \es@quotdepth=\count160
-Package babel Info: Making " an active character on input line 561.
 Package babel Info: Making . an active character on input line 662.
 Package babel Info: Making < an active character on input line 707.
 Package babel Info: Making > an active character on input line 707.
 )
-(/usr/share/texlive/texmf-dist/tex/generic/babel-portuges/portuges.ldf
-Language: portuges 2008/03/18 v1.2q Portuguese support from the babel system
-\l@brazil = a dialect from \language\l@portuges 
-))
-(/usr/share/texlive/texmf-dist/tex/latex/carlisle/scalefnt.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/babel-english/english.ldf
+Language: english 2017/06/06 v3.3r English support from the babel system
+\l@canadian = a dialect from \language\l@american 
+\l@australian = a dialect from \language\l@british 
+\l@newzealand = a dialect from \language\l@british 
+)
+
+Package babel Warning: Last declared language option is `brazil',
+(babel)                but the last processed one was `english'.
+(babel)                The main language cannot be set as both a global
+(babel)                and a package option. Use `main=brazil' as
+(babel)                option. Reported on input line 460.
+
+) (/usr/share/texlive/texmf-dist/tex/latex/carlisle/scalefnt.sty)
 (/usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2011/09/28 v3.5.2 Customized lists
 \labelindent=\skip191
@@ -2672,10 +2679,10 @@ Package: chemformula 2017/03/23 v4.15e typeset chemical compounds and reactions
 . Defining command \setchemformula with sig. 'm' on line 3339.
 .................................................
 )
-(./USPSC-modelo-seg.aux (./USPSC-Cap1-Introducao.aux)
-(./USPSC-Cap2-Desenvolvimento.aux) (./USPSC-Cap3-Citacoes.aux)
-(./USPSC-Cap4-Referencias.aux) (./USPSC-Cap5-Conclusao.aux)
-(./USPSC-Apendices.aux) (./USPSC-Anexos.aux))
+(./USPSC-modelo-seg.aux (./USPSC-Abstract.aux) (./USPSC-Resumo.aux)
+(./USPSC-Cap1-Introducao.aux) (./USPSC-Cap2-Desenvolvimento.aux)
+(./USPSC-Cap3-Citacoes.aux) (./USPSC-Cap4-Referencias.aux)
+(./USPSC-Cap5-Conclusao.aux) (./USPSC-Apendices.aux) (./USPSC-Anexos.aux))
 \openout1 = `USPSC-modelo-seg.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 232.
@@ -2759,6 +2766,13 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 ABD: EveryShipout initializing macros
+(/usr/share/texlive/texmf-dist/tex/latex/translations/translations-basic-dictio
+nary-english.trsl
+File: translations-basic-dictionary-english.trsl (english translation file `tra
+nslations-basic-dictionary')
+)
+Package translations Info: loading dictionary `translations-basic-dictionary' f
+or `english'. on input line 232.
 .................................................
 . chemgreek info: "mapping-activated"
 . 
@@ -2980,18 +2994,29 @@ Package pdftex.def Info: PaginaEmBranco.pdf , page1 used on input line 341.
 [9] [10
 
 ]
+\openout2 = `USPSC-Abstract.aux'.
 
-LaTeX Warning: Citation `nbr6028' on page 11 undefined on input line 408.
+ (./USPSC-Abstract.tex [11
 
-[11] [12
+] [12
 
-] [13] [14
+])
+\openout2 = `USPSC-Resumo.aux'.
 
-] (./USPSC-modelo-seg.lof) [15] [16
+ (./USPSC-Resumo.tex [13
+
+
+] [14
+
+])
+(./USPSC-modelo-seg.lof) [15
+
+] [16
 
 ] (./USPSC-modelo-seg.lot) [17] [18
 
-] (./USPSC-modelo-seg.loq) [19] [20
+]
+(./USPSC-modelo-seg.loq) [19] [20
 
 ] [21
 
@@ -3001,8 +3026,8 @@ LaTeX Warning: Citation `nbr6028' on page 11 undefined on input line 408.
 
 ] [24
 
-]
-(./USPSC-modelo-seg.toc [25]
+] (./USPSC-modelo-seg.toc
+[25]
 Underfull \vbox (badness 6961) has occurred while \output is active []
 
  [26]
@@ -5847,7 +5872,7 @@ I.4}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.551 \include{USPSC-Apendices}
+l.517 \include{USPSC-Apendices}
                                ]
 \openout2 = `USPSC-Anexos.aux'.
 
@@ -5922,7 +5947,7 @@ anexochapback.4.8}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.556 \include{USPSC-Anexos}
+l.522 \include{USPSC-Anexos}
                              <./USPSC-LetrasGregas.png>]
 No file USPSC-modelo-seg.ind.
 
@@ -5939,25 +5964,25 @@ AED: lastpage setting LastPage
 \tf@toc=\write10
 \openout10 = `USPSC-modelo-seg.toc'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 566.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 566.
-(./USPSC-modelo-seg.aux (./USPSC-Cap1-Introducao.aux)
-(./USPSC-Cap2-Desenvolvimento.aux) (./USPSC-Cap3-Citacoes.aux)
-(./USPSC-Cap4-Referencias.aux) (./USPSC-Cap5-Conclusao.aux)
-(./USPSC-Apendices.aux) (./USPSC-Anexos.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 566.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 566.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 532.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 532.
+(./USPSC-modelo-seg.aux (./USPSC-Abstract.aux) (./USPSC-Resumo.aux)
+(./USPSC-Cap1-Introducao.aux) (./USPSC-Cap2-Desenvolvimento.aux)
+(./USPSC-Cap3-Citacoes.aux) (./USPSC-Cap4-Referencias.aux)
+(./USPSC-Cap5-Conclusao.aux) (./USPSC-Apendices.aux) (./USPSC-Anexos.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 532.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 532.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 566.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 532.
  ) 
 Here is how much of TeX's memory you used:
- 41760 strings out of 492982
- 786750 string characters out of 6134896
- 1081414 words of memory out of 5000000
- 43962 multiletter control sequences out of 15000+600000
+ 42097 strings out of 492982
+ 801364 string characters out of 6134896
+ 1090297 words of memory out of 5000000
+ 44284 multiletter control sequences out of 15000+600000
  655212 words of font info for 184 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  73i,18n,99p,10406b,1869s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -5978,7 +6003,7 @@ lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf
 /type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pf
 b></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/typ
 e1/public/lm/lmtt12.pfb>
-Output written on USPSC-modelo-seg.pdf (185 pages, 1220069 bytes).
+Output written on USPSC-modelo-seg.pdf (185 pages, 1221312 bytes).
 PDF statistics:
  2095 PDF objects out of 2487 (max. 8388607)
  1825 compressed objects within 19 object streams

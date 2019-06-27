@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.5.31)  27 JUN 2019 13:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.5.31)  27 JUN 2019 14:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -477,8 +477,8 @@ Package: babel 2018/02/14 3.18 The Babel package
 (/usr/share/texlive/texmf-dist/tex/generic/babel/switch.def
 File: switch.def 2018/02/14 3.18 Babel switching mechanism
 )
-(/usr/share/texlive/texmf-dist/tex/generic/babel-english/english.ldf
-Language: english 2017/06/06 v3.3r English support from the babel system
+(/usr/share/texlive/texmf-dist/tex/generic/babel-portuges/portuges.ldf
+Language: portuges 2008/03/18 v1.2q Portuguese support from the babel system
 
 (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
 File: babel.def 2018/02/14 3.18 Babel common definitions
@@ -488,9 +488,8 @@ File: babel.def 2018/02/14 3.18 Babel common definitions
 (/usr/share/texlive/texmf-dist/tex/generic/babel/txtbabel.def)
 \bbl@dirlevel=\count151
 )
-\l@canadian = a dialect from \language\l@american 
-\l@australian = a dialect from \language\l@british 
-\l@newzealand = a dialect from \language\l@british 
+\l@brazil = a dialect from \language\l@portuges 
+Package babel Info: Making " an active character on input line 145.
 )
 (/usr/share/texlive/texmf-dist/tex/generic/babel-french/french.ldf
 Language: french 2018/02/04 v3.4b French support from the babel system
@@ -520,16 +519,24 @@ Package babel Info: Making ? an active character on input line 414.
 Language: spanish.ldf 2016/03/03 v5.0p Spanish support from the babel system
 \es@quottoks=\toks24
 \es@quotdepth=\count160
-Package babel Info: Making " an active character on input line 561.
 Package babel Info: Making . an active character on input line 662.
 Package babel Info: Making < an active character on input line 707.
 Package babel Info: Making > an active character on input line 707.
 )
-(/usr/share/texlive/texmf-dist/tex/generic/babel-portuges/portuges.ldf
-Language: portuges 2008/03/18 v1.2q Portuguese support from the babel system
-\l@brazil = a dialect from \language\l@portuges 
-))
-(/usr/share/texlive/texmf-dist/tex/latex/carlisle/scalefnt.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/babel-english/english.ldf
+Language: english 2017/06/06 v3.3r English support from the babel system
+\l@canadian = a dialect from \language\l@american 
+\l@australian = a dialect from \language\l@british 
+\l@newzealand = a dialect from \language\l@british 
+)
+
+Package babel Warning: Last declared language option is `brazil',
+(babel)                but the last processed one was `english'.
+(babel)                The main language cannot be set as both a global
+(babel)                and a package option. Use `main=brazil' as
+(babel)                option. Reported on input line 460.
+
+) (/usr/share/texlive/texmf-dist/tex/latex/carlisle/scalefnt.sty)
 (/usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2011/09/28 v3.5.2 Customized lists
 \labelindent=\skip191
@@ -2760,6 +2767,13 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 ABD: EveryShipout initializing macros
+(/usr/share/texlive/texmf-dist/tex/latex/translations/translations-basic-dictio
+nary-english.trsl
+File: translations-basic-dictionary-english.trsl (english translation file `tra
+nslations-basic-dictionary')
+)
+Package translations Info: loading dictionary `translations-basic-dictionary' f
+or `english'. on input line 232.
 .................................................
 . chemgreek info: "mapping-activated"
 . 
@@ -5961,11 +5975,11 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 509.
  ) 
 Here is how much of TeX's memory you used:
- 41827 strings out of 492982
- 788036 string characters out of 6134896
- 1070204 words of memory out of 5000000
- 43987 multiletter control sequences out of 15000+600000
- 662570 words of font info for 191 fonts, out of 8000000 for 9000
+ 42142 strings out of 492982
+ 802238 string characters out of 6134896
+ 1076603 words of memory out of 5000000
+ 44303 multiletter control sequences out of 15000+600000
+ 662441 words of font info for 190 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  73i,18n,99p,10402b,1869s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/share/texmf/fonts/enc/d
@@ -5985,7 +5999,7 @@ lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf
 /type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pf
 b></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/typ
 e1/public/lm/lmtt12.pfb>
-Output written on USPSC-modelo.pdf (187 pages, 1158882 bytes).
+Output written on USPSC-modelo.pdf (187 pages, 1159030 bytes).
 PDF statistics:
  2102 PDF objects out of 2487 (max. 8388607)
  1836 compressed objects within 19 object streams
