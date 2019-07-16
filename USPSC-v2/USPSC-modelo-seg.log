@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.5.31)  16 JUL 2019 14:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.5.31)  16 JUL 2019 18:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3175,6 +3175,13 @@ Overfull \hbox (1.5877pt too wide) detected at line 210
 \openout2 = `USPSC-Cap1-Introducao.aux'.
 
  (./USPSC-Cap1-Introducao.tex
+
+LaTeX Warning: Citation `Brazil2002' on page 31 undefined on input line 12.
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 18.
+
 Package epstopdf Info: Source file: <Images/EUrank.eps>
 (epstopdf)                    date: 2019-07-15 19:52:53
 (epstopdf)                    size: 34916 bytes
@@ -3195,6 +3202,33 @@ File: Images/EUrank-eps-converted-to.pdf Graphic file (type pdf)
 Package pdftex.def Info: Images/EUrank-eps-converted-to.pdf  used on input line
  21.
 (pdftex.def)             Requested size: 215.30383pt x 212.2926pt.
+
+Package hyperref Warning: Suppressing empty link on input line 27.
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 29.
+
+Package epstopdf Info: Source file: <Images/BRshare.eps>
+(epstopdf)                    date: 2019-07-16 15:34:50
+(epstopdf)                    size: 375884 bytes
+(epstopdf)             Output file: <Images/BRshare-eps-converted-to.pdf>
+(epstopdf)                    date: 2019-07-16 15:40:57
+(epstopdf)                    size: 140667 bytes
+(epstopdf)             Command: <repstopdf --outfile=Images/BRshare-eps-convert
+ed-to.pdf Images/BRshare.eps>
+(epstopdf)             \includegraphics on input line 32.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex (file ./Images/BRshare-eps-converted-to.pdf): PDF incl
+usion: found PDF version <1.7>, but at most version <1.5> allowed
+<Images/BRshare-eps-converted-to.pdf, id=571, 301.125pt x 201.75375pt>
+File: Images/BRshare-eps-converted-to.pdf Graphic file (type pdf)
+<use Images/BRshare-eps-converted-to.pdf>
+Package pdftex.def Info: Images/BRshare-eps-converted-to.pdf  used on input lin
+e 32.
+(pdftex.def)             Requested size: 150.56212pt x 100.87662pt.
 ) [31
 
 
@@ -3204,16 +3238,23 @@ Package pdftex.def Info: Images/EUrank-eps-converted-to.pdf  used on input line
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.472 \include{USPSC-Cap1-Introducao}
-                                      <./Images/EUrank-eps-converted-to.pdf>]
+                                     pdfTeX warning (ext4): destination with th
+e same identifier (name{figure.1.2}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.472 \include{USPSC-Cap1-Introducao}
+                                      <./Images/EUrank-eps-converted-to.pdf> <.
+/Images/BRshare-eps-converted-to.pdf>]
 \openout2 = `USPSC-Cap2-Desenvolvimento.aux'.
 
-
-(./USPSC-Cap2-Desenvolvimento.tex [33
+ (./USPSC-Cap2-Desenvolvimento.tex
+[33
 
 
 
 ]
-<USPSC-EstruturaTrabAcad.jpg, id=612, 625.58719pt x 514.92375pt>
+<USPSC-EstruturaTrabAcad.jpg, id=622, 625.58719pt x 514.92375pt>
 File: USPSC-EstruturaTrabAcad.jpg Graphic file (type jpg)
 <use USPSC-EstruturaTrabAcad.jpg>
 Package pdftex.def Info: USPSC-EstruturaTrabAcad.jpg  used on input line 32.
@@ -3224,7 +3265,7 @@ Overfull \hbox (4.49367pt too wide) in paragraph at lines 43--44
 C-TCC-pre-textual-
  []
 
-[34pdfTeX warning (ext4): destination with the same identifier (name{figure.2.2
+[34pdfTeX warning (ext4): destination with the same identifier (name{figure.2.3
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -3306,13 +3347,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 665--676
                                                   \fi \fi 
 l.676 
       pdfTeX warning (ext4): destination with the same identifier (name{figure.
-2.3}) has been already used, duplicate ignored
+2.4}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.676 
       ]
-<USPSC-modelo-img-grafico.pdf, id=778, 847.165pt x 314.17375pt>
+<USPSC-modelo-img-grafico.pdf, id=788, 847.165pt x 314.17375pt>
 File: USPSC-modelo-img-grafico.pdf Graphic file (type pdf)
 <use USPSC-modelo-img-grafico.pdf>
 Package pdftex.def Info: USPSC-modelo-img-grafico.pdf  used on input line 679.
@@ -3332,7 +3373,7 @@ Underfull \hbox (badness 2753) in paragraph at lines 699--699
 []|\T1/lmr/m/n/12 (+20) N�vel do ob-
  []
 
-[49pdfTeX warning (ext4): destination with the same identifier (name{figure.2.4
+[49pdfTeX warning (ext4): destination with the same identifier (name{figure.2.5
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -3347,7 +3388,7 @@ has been already used, duplicate ignored
 l.723 	Q
         ualquer que seja o tipo de ilustração, sua identificação aparece...
  <./USPSC-modelo-img-grafico.pdf>]
-<USPSC-modelo-img-marca.pdf, id=818, 227.51701pt x 72.2695pt>
+<USPSC-modelo-img-marca.pdf, id=828, 227.51701pt x 72.2695pt>
 File: USPSC-modelo-img-marca.pdf Graphic file (type pdf)
 <use USPSC-modelo-img-marca.pdf>
 Package pdftex.def Info: USPSC-modelo-img-marca.pdf  used on input line 745.
@@ -3361,14 +3402,14 @@ File: USPSC-modelo-img-grafico.pdf Graphic file (type pdf)
 <use USPSC-modelo-img-grafico.pdf>
 Package pdftex.def Info: USPSC-modelo-img-grafico.pdf  used on input line 752.
 (pdftex.def)             Requested size: 169.43pt x 62.83363pt.
-[50pdfTeX warning (ext4): destination with the same identifier (name{figure.2.5
+[50pdfTeX warning (ext4): destination with the same identifier (name{figure.2.6
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.789 
       pdfTeX warning (ext4): destination with the same identifier (name{figure.
-2.6}) has been already used, duplicate ignored
+2.7}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
@@ -5460,13 +5501,13 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 ] [190
 
 ]
-<USPSC-AcentuacaoLaTeX.png, id=2037, 225.84375pt x 353.06906pt>
+<USPSC-AcentuacaoLaTeX.png, id=2048, 225.84375pt x 353.06906pt>
 File: USPSC-AcentuacaoLaTeX.png Graphic file (type png)
 <use USPSC-AcentuacaoLaTeX.png>
 Package pdftex.def Info: USPSC-AcentuacaoLaTeX.png  used on input line 21.
 (pdftex.def)             Requested size: 225.84319pt x 353.06819pt.
  [191pdfTeX warning (ext4): destination with the same identifier (name{figure.a
-nexochapback.2.7}) has been already used, duplicate ignored
+nexochapback.2.8}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
@@ -5475,13 +5516,13 @@ l.26 \chapter
 [192
 
 ]
-<USPSC-SimbolosUteis.png, id=2052, 212.29312pt x 266.49562pt>
+<USPSC-SimbolosUteis.png, id=2063, 212.29312pt x 266.49562pt>
 File: USPSC-SimbolosUteis.png Graphic file (type png)
 <use USPSC-SimbolosUteis.png>
 Package pdftex.def Info: USPSC-SimbolosUteis.png  used on input line 30.
 (pdftex.def)             Requested size: 212.2926pt x 266.49496pt.
  [193pdfTeX warning (ext4): destination with the same identifier (name{figure.a
-nexochapback.3.8}) has been already used, duplicate ignored
+nexochapback.3.9}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
@@ -5489,14 +5530,14 @@ l.36 \chapter
              {Letras gregas em \LaTeX} <./USPSC-SimbolosUteis.png>] [194
 
 ]
-<USPSC-LetrasGregas.png, id=2063, 326.72063pt x 449.42906pt>
+<USPSC-LetrasGregas.png, id=2074, 326.72063pt x 449.42906pt>
 File: USPSC-LetrasGregas.png Graphic file (type png)
 <use USPSC-LetrasGregas.png>
 Package pdftex.def Info: USPSC-LetrasGregas.png  used on input line 40.
 (pdftex.def)             Requested size: 326.71982pt x 449.42795pt.
 )
 [195pdfTeX warning (ext4): destination with the same identifier (name{figure.an
-exochapback.4.9}) has been already used, duplicate ignored
+exochapback.4.10}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
@@ -5527,15 +5568,18 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 532.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 532.
 
 
+LaTeX Warning: There were undefined references.
+
+
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 532.
  ) 
 Here is how much of TeX's memory you used:
- 42648 strings out of 492982
- 810897 string characters out of 6134896
- 1115490 words of memory out of 5000000
- 44678 multiletter control sequences out of 15000+600000
+ 42663 strings out of 492982
+ 811236 string characters out of 6134896
+ 1115813 words of memory out of 5000000
+ 44690 multiletter control sequences out of 15000+600000
  655137 words of font info for 183 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  73i,18n,99p,10406b,1869s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -5598,10 +5642,10 @@ pfb></usr/share/texmf/fonts/type1/public/lm/lmss8.pfb></usr/share/texmf/fonts/t
 ype1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb>
 </usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1
 /public/lm/lmtt12.pfb>
-Output written on USPSC-modelo-seg.pdf (197 pages, 1293285 bytes).
+Output written on USPSC-modelo-seg.pdf (197 pages, 1433089 bytes).
 PDF statistics:
- 2749 PDF objects out of 2984 (max. 8388607)
- 2448 compressed objects within 25 object streams
- 623 named destinations out of 1000 (max. 500000)
- 41284 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 2761 PDF objects out of 2984 (max. 8388607)
+ 2453 compressed objects within 25 object streams
+ 625 named destinations out of 1000 (max. 500000)
+ 41289 words of extra memory for PDF output out of 42996 (max. 10000000)
 

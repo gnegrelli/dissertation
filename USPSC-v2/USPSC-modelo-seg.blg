@@ -20,13 +20,13 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
-Reallocated field_info (elt_size=4) to 14315 items from 5000.
+Reallocated field_info (elt_size=4) to 14384 items from 5000.
 Database file #1: abntex2-options.bib
 Database file #2: USPSC-modelo-references.bib
 Warning--entry type for "Castro1990" isn't style-file defined
---line 311 of file USPSC-modelo-references.bib
+--line 318 of file USPSC-modelo-references.bib
 Warning--entry type for "Vicente2010" isn't style-file defined
---line 1274 of file USPSC-modelo-references.bib
+--line 1281 of file USPSC-modelo-references.bib
 Warning--I didn't find a database entry for "abnt-etal-cite"
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
@@ -35,6 +35,7 @@ Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 Warning--campo year vazio ou faltando em Barbosa2002
 Warning--campo year vazio ou faltando em bionline
 Warning--campo year vazio ou faltando em Bruckman2002
+Warning--campo year vazio ou faltando em EPE2018
 Warning--campo year vazio ou faltando em Miyaura
 Warning--campo year vazio ou faltando em science2006
 Warning--campo year vazio ou faltando em Vicente2010
@@ -43,45 +44,45 @@ Warning--campo year vazio ou faltando em Vicente2010
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://www.abntex.net.br/                               |
 +---------------------------------------------------------+
-You've used 134 entries,
+You've used 135 entries,
             6714 wiz_defined-function locations,
-            2116 strings with 31016 characters,
-and the built_in function-call counts, 132349 in all, are:
-= -- 14556
-> -- 1963
+            2120 strings with 31138 characters,
+and the built_in function-call counts, 132831 in all, are:
+= -- 14588
+> -- 1978
 < -- 2351
-+ -- 3176
-- -- 603
-* -- 8098
-:= -- 15778
-add.period$ -- 558
-call.type$ -- 136
-change.case$ -- 1060
-chr.to.int$ -- 227
-cite$ -- 129
-duplicate$ -- 11785
-empty$ -- 8289
-format.name$ -- 2863
-if$ -- 29658
++ -- 3181
+- -- 608
+* -- 8125
+:= -- 15856
+add.period$ -- 561
+call.type$ -- 137
+change.case$ -- 1066
+chr.to.int$ -- 228
+cite$ -- 131
+duplicate$ -- 11811
+empty$ -- 8331
+format.name$ -- 2886
+if$ -- 29772
 int.to.chr$ -- 13
 int.to.str$ -- 1
-missing$ -- 2348
-newline$ -- 582
-num.names$ -- 387
-pop$ -- 2825
+missing$ -- 2361
+newline$ -- 587
+num.names$ -- 392
+pop$ -- 2839
 preamble$ -- 1
-purify$ -- 452
+purify$ -- 455
 quote$ -- 0
-skip$ -- 12164
+skip$ -- 12195
 stack$ -- 1
-substring$ -- 5134
-swap$ -- 4354
+substring$ -- 5139
+swap$ -- 4361
 text.length$ -- 97
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 149
-warning$ -- 6
-while$ -- 592
+warning$ -- 7
+while$ -- 597
 width$ -- 0
-write$ -- 2013
-(There were 9 warnings)
+write$ -- 2026
+(There were 10 warnings)
