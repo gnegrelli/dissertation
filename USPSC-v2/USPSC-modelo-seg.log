@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.5.31)  16 JUL 2019 18:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.5.31)  17 JUL 2019 18:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3032,7 +3032,7 @@ Package pdftex.def Info: PaginaEmBranco.pdf , page1 used on input line 342.
 ] (./USPSC-modelo-seg.toc
 [25] [26]
 Overfull \hbox (1.5877pt too wide) detected at line 106
- \T1/lmss/bx/n/12 115
+ \T1/lmss/bx/n/12 114
  []
 
 
@@ -3078,12 +3078,12 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <7> on input line 153.
 
 Overfull \hbox (1.5877pt too wide) detected at line 157
- \T1/lmss/bx/n/12 167
+ \T1/lmss/bx/n/12 159
  []
 
 
 Overfull \hbox (1.5877pt too wide) detected at line 161
- \T1/lmss/bx/n/12 169
+ \T1/lmss/bx/n/12 161
  []
 
 
@@ -3093,7 +3093,7 @@ Overfull \hbox (20.51205pt too wide) in paragraph at lines 161--161
 
 
 Overfull \hbox (1.5877pt too wide) detected at line 165
- \T1/lmss/bx/n/12 173
+ \T1/lmss/bx/n/12 165
  []
 
 
@@ -3103,7 +3103,7 @@ Overfull \hbox (20.51205pt too wide) in paragraph at lines 165--165
 
 
 Overfull \hbox (1.5877pt too wide) detected at line 169
- \T1/lmss/bx/n/12 175
+ \T1/lmss/bx/n/12 167
  []
 
 
@@ -3113,7 +3113,7 @@ Overfull \hbox (20.51205pt too wide) in paragraph at lines 169--169
 
 
 Overfull \hbox (1.5877pt too wide) detected at line 173
- \T1/lmss/bx/n/12 177
+ \T1/lmss/bx/n/12 169
  []
 
 
@@ -3123,7 +3123,7 @@ Overfull \hbox (20.51205pt too wide) in paragraph at lines 173--173
 
 
 Overfull \hbox (1.5877pt too wide) detected at line 177
- \T1/lmss/bx/n/12 179
+ \T1/lmss/bx/n/12 171
  []
 
 
@@ -3136,37 +3136,37 @@ Underfull \vbox (badness 5036) has occurred while \output is active []
 
  [28]
 Overfull \hbox (1.5877pt too wide) detected at line 181
- \T1/lmss/bx/n/12 181
+ \T1/lmss/bx/n/12 173
  []
 
 
 Overfull \hbox (1.5877pt too wide) detected at line 185
- \T1/lmss/bx/n/12 183
+ \T1/lmss/bx/n/12 175
  []
 
 
 Overfull \hbox (1.5877pt too wide) detected at line 189
- \T1/lmss/bx/n/12 185
+ \T1/lmss/bx/n/12 177
  []
 
 
 Overfull \hbox (1.5877pt too wide) detected at line 198
- \T1/lmss/bx/n/12 189
+ \T1/lmss/bx/n/12 181
  []
 
 
 Overfull \hbox (1.5877pt too wide) detected at line 202
- \T1/lmss/bx/n/12 191
+ \T1/lmss/bx/n/12 183
  []
 
 
 Overfull \hbox (1.5877pt too wide) detected at line 206
- \T1/lmss/bx/n/12 193
+ \T1/lmss/bx/n/12 185
  []
 
 
 Overfull \hbox (1.5877pt too wide) detected at line 210
- \T1/lmss/bx/n/12 195
+ \T1/lmss/bx/n/12 187
  []
 
 ) [29] [30
@@ -3175,9 +3175,6 @@ Overfull \hbox (1.5877pt too wide) detected at line 210
 \openout2 = `USPSC-Cap1-Introducao.aux'.
 
  (./USPSC-Cap1-Introducao.tex
-
-LaTeX Warning: Citation `Brazil2002' on page 31 undefined on input line 12.
-
 
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 18.
@@ -3196,76 +3193,131 @@ Package epstopdf Info: Output file is already uptodate.
 
 pdfTeX warning: pdflatex (file ./Images/EUrank-eps-converted-to.pdf): PDF inclu
 sion: found PDF version <1.7>, but at most version <1.5> allowed
-<Images/EUrank-eps-converted-to.pdf, id=568, 430.60875pt x 424.58624pt>
+<Images/EUrank-eps-converted-to.pdf, id=572, 430.60875pt x 424.58624pt>
 File: Images/EUrank-eps-converted-to.pdf Graphic file (type pdf)
 <use Images/EUrank-eps-converted-to.pdf>
 Package pdftex.def Info: Images/EUrank-eps-converted-to.pdf  used on input line
  21.
 (pdftex.def)             Requested size: 215.30383pt x 212.2926pt.
 
-Package hyperref Warning: Suppressing empty link on input line 27.
+LaTeX Warning: Citation `ABEEolica2018' on page 31 undefined on input line 27.
 
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 29.
-
-Package epstopdf Info: Source file: <Images/BRshare.eps>
-(epstopdf)                    date: 2019-07-16 15:34:50
-(epstopdf)                    size: 375884 bytes
-(epstopdf)             Output file: <Images/BRshare-eps-converted-to.pdf>
-(epstopdf)                    date: 2019-07-16 15:40:57
-(epstopdf)                    size: 140667 bytes
-(epstopdf)             Command: <repstopdf --outfile=Images/BRshare-eps-convert
-ed-to.pdf Images/BRshare.eps>
+Package epstopdf Info: Source file: <Images/BRshare19.eps>
+(epstopdf)                    date: 2019-07-17 17:31:43
+(epstopdf)                    size: 146419 bytes
+(epstopdf)             Output file: <Images/BRshare19-eps-converted-to.pdf>
+(epstopdf)                    date: 2019-07-17 17:32:10
+(epstopdf)                    size: 151014 bytes
+(epstopdf)             Command: <repstopdf --outfile=Images/BRshare19-eps-conve
+rted-to.pdf Images/BRshare19.eps>
 (epstopdf)             \includegraphics on input line 32.
 Package epstopdf Info: Output file is already uptodate.
 
 
-pdfTeX warning: pdflatex (file ./Images/BRshare-eps-converted-to.pdf): PDF incl
-usion: found PDF version <1.7>, but at most version <1.5> allowed
-<Images/BRshare-eps-converted-to.pdf, id=571, 301.125pt x 201.75375pt>
-File: Images/BRshare-eps-converted-to.pdf Graphic file (type pdf)
-<use Images/BRshare-eps-converted-to.pdf>
-Package pdftex.def Info: Images/BRshare-eps-converted-to.pdf  used on input lin
-e 32.
-(pdftex.def)             Requested size: 150.56212pt x 100.87662pt.
-) [31
+pdfTeX warning: pdflatex (file ./Images/BRshare19-eps-converted-to.pdf): PDF in
+clusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Images/BRshare19-eps-converted-to.pdf, id=576, 280.04625pt x 233.87375pt>
+File: Images/BRshare19-eps-converted-to.pdf Graphic file (type pdf)
+<use Images/BRshare19-eps-converted-to.pdf>
+Package pdftex.def Info: Images/BRshare19-eps-converted-to.pdf  used on input l
+ine 32.
+(pdftex.def)             Requested size: 210.03415pt x 175.40486pt.
+
+LaTeX Warning: Citation `ANEEL2005' on page 31 undefined on input line 38.
+
+[31
 
 
-] [32pdfTeX warning (ext4): destination with the same identifier (name{figure.1
-.1}) has been already used, duplicate ignored
+]
+Package epstopdf Info: Source file: <Images/WindWater.eps>
+(epstopdf)                    date: 2019-07-17 18:22:15
+(epstopdf)                    size: 24758 bytes
+(epstopdf)             Output file: <Images/WindWater-eps-converted-to.pdf>
+(epstopdf)                    date: 2019-07-17 18:22:26
+(epstopdf)                    size: 11136 bytes
+(epstopdf)             Command: <repstopdf --outfile=Images/WindWater-eps-conve
+rted-to.pdf Images/WindWater.eps>
+(epstopdf)             \includegraphics on input line 43.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex (file ./Images/WindWater-eps-converted-to.pdf): PDF in
+clusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Images/WindWater-eps-converted-to.pdf, id=590, 464.73625pt x 370.38374pt>
+File: Images/WindWater-eps-converted-to.pdf Graphic file (type pdf)
+<use Images/WindWater-eps-converted-to.pdf>
+Package pdftex.def Info: Images/WindWater-eps-converted-to.pdf  used on input l
+ine 43.
+(pdftex.def)             Requested size: 232.36755pt x 185.1914pt.
+
+Underfull \vbox (badness 7308) has occurred while \output is active []
+
+ [32pdfTeX warning (ext4): destination with the same identifier (name{figure.1.
+1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.47 \end{figure}
+                 pdfTeX warning (ext4): destination with the same identifier (n
+ame{figure.1.2}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.47 \end{figure}
+                  <./Images/EUrank-eps-converted-to.pdf> <./Images/BRshare19-ep
+s-converted-to.pdf>]) [33pdfTeX warning (ext4): destination with the same ident
+ifier (name{figure.1.3}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.472 \include{USPSC-Cap1-Introducao}
-                                     pdfTeX warning (ext4): destination with th
-e same identifier (name{figure.1.2}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.472 \include{USPSC-Cap1-Introducao}
-                                      <./Images/EUrank-eps-converted-to.pdf> <.
-/Images/BRshare-eps-converted-to.pdf>]
+                                      <./Images/WindWater-eps-converted-to.pdf>
+]
 \openout2 = `USPSC-Cap2-Desenvolvimento.aux'.
 
- (./USPSC-Cap2-Desenvolvimento.tex
-[33
+ (./USPSC-Cap2-Desenvolvimento.tex [34
 
 
 
 ]
-<USPSC-EstruturaTrabAcad.jpg, id=622, 625.58719pt x 514.92375pt>
+
+LaTeX Warning: Citation `nbr14724' on page 35 undefined on input line 20.
+
+
+LaTeX Warning: Citation `sibi2016' on page 35 undefined on input line 20.
+
+
+LaTeX Warning: Citation `abnetxclasse' on page 35 undefined on input line 23.
+
+
+LaTeX Warning: Citation `abnetxcite' on page 35 undefined on input line 23.
+
+
+LaTeX Warning: Citation `abnetxcitealf' on page 35 undefined on input line 23.
+
+
+LaTeX Warning: Citation `memoir2010' on page 35 undefined on input line 23.
+
+[35]
+<USPSC-EstruturaTrabAcad.jpg, id=625, 625.58719pt x 514.92375pt>
 File: USPSC-EstruturaTrabAcad.jpg Graphic file (type jpg)
 <use USPSC-EstruturaTrabAcad.jpg>
 Package pdftex.def Info: USPSC-EstruturaTrabAcad.jpg  used on input line 32.
 (pdftex.def)             Requested size: 312.79283pt x 257.46124pt.
+
+
+LaTeX Warning: Citation `nbr14724' on page 36 undefined on input line 34.
+
+
+LaTeX Warning: Citation `nbr14724' on page 36 undefined on input line 34.
+
 
 Overfull \hbox (4.49367pt too wide) in paragraph at lines 43--44
 []\T1/lmr/m/n/12 (-20) Arquivos pré-textuais: USPSC-pre-textual-UUUU.tex e USPS
 C-TCC-pre-textual-
  []
 
-[34pdfTeX warning (ext4): destination with the same identifier (name{figure.2.3
+[36pdfTeX warning (ext4): destination with the same identifier (name{figure.2.4
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -3281,27 +3333,35 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [35] [36] [37] [38]
+ [37] [38] [39] [40]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [39]
-[40]
+ [41]
+[42]
 Overfull \hbox (1.95023pt too wide) in paragraph at lines 263--263
 []  \T1/lmtt/m/n/12 %\notafolharosto{Vers\~ao corrigida \\(Vers\~ao original di
 spon\'ivel na[] 
  []
 
-[41] [42]
+[43]
+
+LaTeX Warning: Citation `equipeabntex2' on page 44 undefined on input line 309.
+
+
+[44]
 Overfull \hbox (1.64148pt too wide) in paragraph at lines 356--356
 []\T1/lmtt/m/n/12 %- páginas ímpares: cabeçalho com seções ou subseções e o núm
 ero da página[] 
  []
 
-[43]
+[45]
 Overfull \hbox (1.64148pt too wide) in paragraph at lines 398--398
 []\T1/lmtt/m/n/12 %- páginas ímpares: cabeçalho com seções ou subseções e o núm
 ero da página[] 
  []
+
+
+LaTeX Warning: Citation `babel2011' on page 46 undefined on input line 404.
 
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <10.95> on input line 407.
@@ -3311,7 +3371,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 421--421
 blog . lemonde . fr / 2013 / 02 / 17 /
  []
 
-[44]
+[46]
 Underfull \hbox (badness 10000) in paragraph at lines 435--435
 [] [] [][]\T1/lmr/m/n/10.95 (+20) Extraído de: [][]$<[]http : / / internacional
  . elpais . com / internacional / 2013 / 02 / 17 / actualidad /
@@ -3319,13 +3379,35 @@ Underfull \hbox (badness 10000) in paragraph at lines 435--435
 
 LaTeX Info: Redefining \. on input line 439.
 LaTeX Info: Redefining \% on input line 439.
-[45] [46]
+
+LaTeX Warning: Citation `abnetxclasse' on page 47 undefined on input line 449.
+
+
+LaTeX Warning: Citation `nbr6024' on page 47 undefined on input line 457.
+
+
+LaTeX Warning: Citation `nbr6024' on page 47 undefined on input line 480.
+
+[47] [48]
+
+LaTeX Warning: Citation `sibi2009' on page 49 undefined on input line 566.
+
+
 Underfull \hbox (badness 1320) in paragraph at lines 597--597
 [][][]\T1/lmr/m/n/12 (+20) Frequência an-ual por cat-e-go-ria de
  []
 
-[47pdfTeX warning (ext4): destination with the same identifier (name{table.2.1}
-) has been already used, duplicate ignored
+
+LaTeX Warning: Citation `sibi2009' on page 49 undefined on input line 618.
+
+
+LaTeX Warning: Citation `sibi2009' on page 49 undefined on input line 618.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [49pdfTeX warning (ext4): destination with the same identifier (name{table.2.1
+}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
@@ -3336,28 +3418,40 @@ Underfull \hbox (badness 10000) in paragraph at lines 626--628
  []
 
 
+LaTeX Warning: Citation `equipeabntex2' on page 50 undefined on input line 662.
+
+
+
+LaTeX Warning: Citation `equipeabntex2' on page 50 undefined on input line 662.
+
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 665--676
 
  []
 
-[48pdfTeX warning (ext4): destination with the same identifier (name{table.2.2}
+[50pdfTeX warning (ext4): destination with the same identifier (name{table.2.2}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.676 
       pdfTeX warning (ext4): destination with the same identifier (name{figure.
-2.4}) has been already used, duplicate ignored
+2.5}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.676 
       ]
-<USPSC-modelo-img-grafico.pdf, id=788, 847.165pt x 314.17375pt>
+<USPSC-modelo-img-grafico.pdf, id=760, 847.165pt x 314.17375pt>
 File: USPSC-modelo-img-grafico.pdf Graphic file (type pdf)
 <use USPSC-modelo-img-grafico.pdf>
 Package pdftex.def Info: USPSC-modelo-img-grafico.pdf  used on input line 679.
 (pdftex.def)             Requested size: 423.58145pt x 157.08649pt.
+
+
+LaTeX Warning: Citation `araujo2012' on page 51 undefined on input line 681.
+
 
 Underfull \hbox (badness 10000) in paragraph at lines 694--694
 []|\T1/lmr/bx/n/12 Sistemas
@@ -3373,7 +3467,10 @@ Underfull \hbox (badness 2753) in paragraph at lines 699--699
 []|\T1/lmr/m/n/12 (+20) Nível do ob-
  []
 
-[49pdfTeX warning (ext4): destination with the same identifier (name{figure.2.5
+
+LaTeX Warning: Citation `van1986' on page 51 undefined on input line 707.
+
+[51pdfTeX warning (ext4): destination with the same identifier (name{figure.2.6
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -3388,7 +3485,10 @@ has been already used, duplicate ignored
 l.723 	Q
         ualquer que seja o tipo de ilustraÃ§Ã£o, sua identificaÃ§Ã£o aparece...
  <./USPSC-modelo-img-grafico.pdf>]
-<USPSC-modelo-img-marca.pdf, id=828, 227.51701pt x 72.2695pt>
+
+LaTeX Warning: Citation `nbr14724' on page 52 undefined on input line 732.
+
+<USPSC-modelo-img-marca.pdf, id=793, 227.51701pt x 72.2695pt>
 File: USPSC-modelo-img-marca.pdf Graphic file (type pdf)
 <use USPSC-modelo-img-marca.pdf>
 Package pdftex.def Info: USPSC-modelo-img-marca.pdf  used on input line 745.
@@ -3398,18 +3498,32 @@ Overfull \hbox (22.76619pt too wide) in paragraph at lines 745--746
  [][] 
  []
 
+
+LaTeX Warning: Citation `equipeabntex2' on page 52 undefined on input line 746.
+
+
+
+LaTeX Warning: Citation `equipeabntex2' on page 52 undefined on input line 746.
+
+
 File: USPSC-modelo-img-grafico.pdf Graphic file (type pdf)
 <use USPSC-modelo-img-grafico.pdf>
 Package pdftex.def Info: USPSC-modelo-img-grafico.pdf  used on input line 752.
 (pdftex.def)             Requested size: 169.43pt x 62.83363pt.
-[50pdfTeX warning (ext4): destination with the same identifier (name{figure.2.6
+
+LaTeX Warning: Citation `araujo2012' on page 52 undefined on input line 753.
+
+
+LaTeX Warning: Citation `araujo2012' on page 52 undefined on input line 753.
+
+[52pdfTeX warning (ext4): destination with the same identifier (name{figure.2.7
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.789 
       pdfTeX warning (ext4): destination with the same identifier (name{figure.
-2.7}) has been already used, duplicate ignored
+2.8}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
@@ -3425,13 +3539,17 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmss' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [51]
+ [53]
+
+LaTeX Warning: Citation `sibi2009' on page 54 undefined on input line 882.
+
+
 Overfull \hbox (1.64148pt too wide) in paragraph at lines 894--894
 []\T1/lmtt/m/n/12 % Para utilizar a fonte Times New Roman, inclua uma % no iníc
 io do comando[] 
  []
 
-[52] [53]
+[54] [55]
 Overfull \hbox (1.95023pt too wide) in paragraph at lines 969--969
 []   \T1/lmtt/m/n/12 makeindex ARQUIVO_PRINCIPAL.nlo -s nomencl.ist -o ARQUIVO_
 PRINCIPAL.nls[] 
@@ -3443,28 +3561,56 @@ Overfull \hbox (1.95023pt too wide) in paragraph at lines 991--991
 ndo indicamos[] 
  []
 
-[54] [55]
+
+LaTeX Warning: Citation `nbr6024' on page 56 undefined on input line 1002.
+
+[56] [57]
+
+LaTeX Warning: Citation `abnetxclasse' on page 58 undefined on input line 1067.
+
+
+
+LaTeX Warning: Citation `nbr14724' on page 58 undefined on input line 1071.
+
+
 Overfull \hbox (6.91608pt too wide) in paragraph at lines 1082--1085
 []\T1/lmr/m/n/12 (-20) Inscreva-se no grupo de usuários L[]T[]X: [][]$<[]http :
  / / groups . google . com / group / latex-[]br>[]$[][],
  []
 
-[56] [57]) [58]
+[58] [59]) [60]
 \openout2 = `USPSC-Cap3-Citacoes.aux'.
 
  (./USPSC-Cap3-Citacoes.tex
+
+LaTeX Warning: Citation `nbr10520' on page 61 undefined on input line 11.
+
+
+LaTeX Warning: Citation `sibi2009' on page 61 undefined on input line 17.
+
+
+LaTeX Warning: Citation `abnetxcite' on page 61 undefined on input line 26.
+
+
+LaTeX Warning: Citation `abnetxcitealf' on page 61 undefined on input line 26.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 32--33
 
  []
 
 
-Underfull \vbox (badness 1342) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [59
+ [61
 
 
 
 ]
+
+LaTeX Warning: Citation `KOK2013' on page 62 undefined on input line 49.
+
+
 Overfull \hbox (7.16368pt too wide) in paragraph at lines 52--52
  []\T1/lmtt/m/n/12 "Texto texto texto texto texto texto texto texto texto texto
  texto[] 
@@ -3477,10 +3623,16 @@ uss1997}.[]
  []
 
 
+LaTeX Warning: Citation `Krauss1997' on page 62 undefined on input line 56.
+
+
 Overfull \hbox (13.31067pt too wide) in paragraph at lines 60--60
  []\T1/lmtt/m/n/12 Segundo \citeonline [p.~618]{Moss1999}: "[\ldots] texto text
 o texto[] 
  []
+
+
+LaTeX Warning: Citation `Moss1999' on page 62 undefined on input line 64.
 
 
 Overfull \hbox (17.04369pt too wide) in paragraph at lines 68--68
@@ -3488,7 +3640,10 @@ Overfull \hbox (17.04369pt too wide) in paragraph at lines 68--68
 o texto}[] 
  []
 
-[60]
+
+LaTeX Warning: Citation `ROMANO1996' on page 62 undefined on input line 72.
+
+[62]
 Underfull \hbox (badness 10000) in paragraph at lines 97--98
  
  []
@@ -3529,6 +3684,9 @@ texto[]
  []
 
 
+LaTeX Warning: Citation `Farias2001' on page 63 undefined on input line 118.
+
+
 Overfull \hbox (0.67993pt too wide) in paragraph at lines 125--125
  []\T1/lmtt/m/n/12 Texto texto texto texto texto texto texto texto texto texto 
 texto[] 
@@ -3546,21 +3704,31 @@ Overfull \hbox (0.98868pt too wide) in paragraph at lines 127--127
 texto[] 
  []
 
-[61]
+
 Overfull \hbox (2.84117pt too wide) in paragraph at lines 128--128
  []\T1/lmtt/m/n/12 texto texto texto texto texto texto texto texto texto texto 
 texto.[] 
  []
 
 
+LaTeX Warning: Citation `Gubitoso1989' on page 63 undefined on input line 132.
+
+[63]
 Underfull \hbox (badness 10000) in paragraph at lines 134--135
  
  []
 
 
+LaTeX Warning: Citation `Hood1999' on page 64 undefined on input line 147.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 158--160
 
  []
+
+
+LaTeX Warning: Citation `Naves25abr.1999' on page 64 undefined on input line 16
+5.
 
 
 Overfull \hbox (9.01617pt too wide) in paragraph at lines 168--168
@@ -3569,15 +3737,46 @@ Overfull \hbox (9.01617pt too wide) in paragraph at lines 168--168
  []
 
 
+LaTeX Warning: Citation `Sukikara2007' on page 64 undefined on input line 171.
+
+
+LaTeX Warning: Citation `Catani1989' on page 64 undefined on input line 177.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 176--178
 
  []
 
-[62]
+[64]
+
+LaTeX Warning: Citation `Castro1990' on page 65 undefined on input line 198.
+
+
+LaTeX Warning: Citation `Castro1990' on page 65 undefined on input line 198.
+
+
+LaTeX Warning: Citation `Alves2002' on page 65 undefined on input line 198.
+
+
+LaTeX Warning: Citation `Alves2002' on page 65 undefined on input line 198.
+
+
 Overfull \hbox (9.00217pt too wide) in paragraph at lines 202--202
  []\T1/lmtt/m/n/12 \apudonline {Gomes1992}{Azevedo2015} texto texto texto texto
  texto.[] 
  []
+
+
+LaTeX Warning: Citation `Gomes1992' on page 65 undefined on input line 206.
+
+
+LaTeX Warning: Citation `Gomes1992' on page 65 undefined on input line 206.
+
+
+LaTeX Warning: Citation `Azevedo2015' on page 65 undefined on input line 206.
+
+
+LaTeX Warning: Citation `Azevedo2015' on page 65 undefined on input line 206.
 
 
 Overfull \hbox (2.84117pt too wide) in paragraph at lines 219--219
@@ -3590,27 +3789,39 @@ Underfull \hbox (badness 10000) in paragraph at lines 221--222
 
  []
 
-[63]
+
+LaTeX Warning: Citation `Alves2002' on page 65 undefined on input line 223.
+
+[65]
 Overfull \hbox (7.16368pt too wide) in paragraph at lines 228--228
  []\T1/lmtt/m/n/12 texto texto texto texto texto texto texto texto texto texto 
 texto"[] 
  []
 
 
+LaTeX Warning: Citation `Azevedo2015' on page 66 undefined on input line 236.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 258--261
 
  []
 
-[64]
+[66]
 Underfull \hbox (badness 10000) in paragraph at lines 267--269
 
  []
+
+
+LaTeX Warning: Citation `Bruckman2002' on page 67 undefined on input line 285.
 
 
 Overfull \hbox (9.00917pt too wide) in paragraph at lines 289--289
  []\T1/lmtt/m/n/12 texto texto. (informação pessoal)\footnote{\citetext{science
 2006}}.[] 
  []
+
+
+LaTeX Warning: Citation `science2006' on page 67 undefined on input line 292.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 291--293
@@ -3623,7 +3834,17 @@ Overfull \hbox (5.92868pt too wide) in paragraph at lines 304--304
 2}}.\\[] 
  []
 
-[65]
+
+LaTeX Warning: Citation `Barbosa2002' on page 67 undefined on input line 307.
+
+[67]
+
+LaTeX Warning: Citation `galeria1998' on page 68 undefined on input line 317.
+
+
+LaTeX Warning: Citation `usp2006' on page 68 undefined on input line 319.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 332--333
 
  []
@@ -3633,6 +3854,9 @@ Overfull \hbox (25.68169pt too wide) in paragraph at lines 340--340
  []\T1/lmtt/m/n/12 Texto texto \underline{texto} texto texto. \cite[~p.129, gri
 fo nosso][] 
  []
+
+
+LaTeX Warning: Citation `Piccini1999' on page 68 undefined on input line 344.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 343--346
@@ -3645,10 +3869,17 @@ Overfull \hbox (38.0387pt too wide) in paragraph at lines 348--348
 o do autor][] 
  []
 
-[66]
+
+LaTeX Warning: Citation `Dias1994' on page 68 undefined on input line 352.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 351--354
 
  []
+
+[68]
+
+LaTeX Warning: Citation `Tollivet1994' on page 69 undefined on input line 360.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 359--362
@@ -3662,6 +3893,10 @@ Overfull \hbox (7.16368pt too wide) in paragraph at lines 364--364
  []
 
 
+LaTeX Warning: Citation `Naves25abr.1999' on page 69 undefined on input line 36
+8.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 367--370
 
  []
@@ -3671,6 +3906,10 @@ Overfull \hbox (9.01617pt too wide) in paragraph at lines 372--372
  []\T1/lmtt/m/n/12 "Texto texto texto". \cite[~p.102, tradução nossa]{Malinowsk
 i2000}.[] 
  []
+
+
+LaTeX Warning: Citation `Malinowski2000' on page 69 undefined on input line 375
+.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 374--376
@@ -3688,7 +3927,7 @@ Overfull \hbox (14.7855pt too wide) in paragraph at lines 383--385
 o-men-tários, com-ple-men-tações ou traduções
  []
 
-[67]
+
 Underfull \hbox (badness 10000) in paragraph at lines 385--386
 
  []
@@ -3698,10 +3937,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 390--391
 
  []
 
-
+[69]
 Underfull \hbox (badness 10000) in paragraph at lines 403--404
 
  []
+
+
+LaTeX Warning: Citation `Abreu2015' on page 70 undefined on input line 405.
+
+
+LaTeX Warning: Citation `Abreu2015' on page 70 undefined on input line 409.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 409--410
@@ -3714,14 +3959,26 @@ Underfull \hbox (badness 10000) in paragraph at lines 413--414
  []
 
 
+LaTeX Warning: Citation `simone1977' on page 70 undefined on input line 415.
+
+
+LaTeX Warning: Citation `simone1977' on page 70 undefined on input line 419.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 419--420
 
  []
 
-[68]
+
 Underfull \hbox (badness 10000) in paragraph at lines 424--425
 
  []
+
+
+LaTeX Warning: Citation `Giannini2000' on page 70 undefined on input line 426.
+
+
+LaTeX Warning: Citation `Giannini2000' on page 70 undefined on input line 430.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 430--431
@@ -3729,9 +3986,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 430--431
  []
 
 
+Underfull \vbox (badness 3482) has occurred while \output is active []
+
+ [70]
 Underfull \hbox (badness 10000) in paragraph at lines 434--435
 
  []
+
+
+LaTeX Warning: Citation `Meyaard2003' on page 71 undefined on input line 436.
+
+
+LaTeX Warning: Citation `Meyaard2003' on page 71 undefined on input line 440.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 440--441
@@ -3759,12 +4025,31 @@ Underfull \hbox (badness 10000) in paragraph at lines 464--465
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+LaTeX Warning: Citation `Hennekens1987b' on page 71 undefined on input line 466
+.
 
- [69]
+
+LaTeX Warning: Citation `Hennekens1987a' on page 71 undefined on input line 466
+.
+
+
+LaTeX Warning: Citation `Hennekens1987b' on page 71 undefined on input line 470
+.
+
+
+LaTeX Warning: Citation `Hennekens1987a' on page 71 undefined on input line 470
+.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 474--475
 
  []
+
+
+LaTeX Warning: Citation `fgv1984' on page 71 undefined on input line 476.
+
+
+LaTeX Warning: Citation `fgv1984' on page 71 undefined on input line 480.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 480--481
@@ -3772,9 +4057,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 480--481
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [71]
 Underfull \hbox (badness 10000) in paragraph at lines 484--485
 
  []
+
+
+LaTeX Warning: Citation `CETESB1994' on page 72 undefined on input line 486.
+
+
+LaTeX Warning: Citation `CETESB1994' on page 72 undefined on input line 490.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 490--491
@@ -3791,7 +4085,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 494--499
 
  []
 
-[70]
+
+LaTeX Warning: Citation `cetesb94' on page 72 undefined on input line 519.
+
+[72]
+
+LaTeX Warning: Citation `cetesb94' on page 73 undefined on input line 523.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 527--532
 
  []
@@ -3801,7 +4102,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 553--554
 
  []
 
-[71]
+
+LaTeX Warning: Citation `iniciacao1996' on page 73 undefined on input line 555.
+
+
+
+LaTeX Warning: Citation `iniciacao1996' on page 73 undefined on input line 559.
+
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 559--560
 
  []
@@ -3812,65 +4121,366 @@ Underfull \hbox (badness 10000) in paragraph at lines 563--564
  []
 
 
+LaTeX Warning: Citation `Farias2001' on page 73 undefined on input line 565.
+
+
+LaTeX Warning: Citation `ROMANO1996' on page 73 undefined on input line 565.
+
+
+LaTeX Warning: Citation `SEKEFF2002' on page 73 undefined on input line 565.
+
+
+LaTeX Warning: Citation `Farias2001' on page 73 undefined on input line 569.
+
+
+LaTeX Warning: Citation `ROMANO1996' on page 73 undefined on input line 569.
+
+
+LaTeX Warning: Citation `SEKEFF2002' on page 73 undefined on input line 569.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 569--570
 
  []
 
-[72]
+[73]
+
+LaTeX Warning: Citation `ASPLUND2006' on page 74 undefined on input line 590.
+
+
+LaTeX Warning: Citation `Paula2001' on page 74 undefined on input line 595.
+
+
+LaTeX Warning: Citation `Demakopoulou2000' on page 74 undefined on input line 6
+00.
+
+
+LaTeX Warning: Citation `PhillipiJunior2000' on page 74 undefined on input line
+ 605.
+
+
+LaTeX Warning: Citation `resprin1997' on page 74 undefined on input line 610.
+
+
+LaTeX Warning: Citation `saopaulo1963' on page 74 undefined on input line 615.
+
+
+LaTeX Warning: Citation `resolucao1991' on page 74 undefined on input line 620.
+
+
+
+LaTeX Warning: Citation `codigo1985' on page 74 undefined on input line 625.
+
+
+LaTeX Warning: Citation `constituicao1988' on page 74 undefined on input line 6
+30.
+
+[74]
+
+LaTeX Warning: Citation `buscopan2013' on page 75 undefined on input line 635.
+
+
+LaTeX Warning: Citation `Pasquarelli1987' on page 75 undefined on input line 64
+0.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 640--641
 
  []
 
-[73]
+
+LaTeX Warning: Citation `Novak1967' on page 75 undefined on input line 654.
+
+
+LaTeX Warning: Citation `Dood2002' on page 75 undefined on input line 659.
+
+
+LaTeX Warning: Citation `biblioteca1985' on page 75 undefined on input line 664
+.
+
+
+LaTeX Warning: Citation `usp2001' on page 75 undefined on input line 669.
+
+
+LaTeX Warning: Citation `educacao2005' on page 75 undefined on input line 674.
+
+
+LaTeX Warning: Citation `brasil1981' on page 75 undefined on input line 679.
+
+
+LaTeX Warning: Citation `brasil1986' on page 75 undefined on input line 684.
+
+[75]
+
+LaTeX Warning: Citation `Gomes1980' on page 76 undefined on input line 689.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 689--690
 
  []
 
-[74]
+
+LaTeX Warning: Citation `law1967' on page 76 undefined on input line 703.
+
+
+LaTeX Warning: Citation `Agencia2003' on page 76 undefined on input line 708.
+
+
+LaTeX Warning: Citation `Dorlands2000' on page 76 undefined on input line 713.
+
+
+LaTeX Warning: Citation `abetter2004' on page 76 undefined on input line 718.
+
+
+LaTeX Warning: Citation `council2001' on page 76 undefined on input line 723.
+
+
+LaTeX Warning: Citation `Thome1999' on page 76 undefined on input line 728.
+
+
+LaTeX Warning: Citation `Nature1869' on page 76 undefined on input line 733.
+
+
+LaTeX Warning: Citation `Brennan2006' on page 76 undefined on input line 738.
+
+[76]
+
+LaTeX Warning: Citation `microsoft1995' on page 77 undefined on input line 743.
+
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 743--744
 
  []
 
-[75]
+
+LaTeX Warning: Citation `Vicente2010' on page 77 undefined on input line 757.
+
+
+LaTeX Warning: Citation `Miyaura' on page 77 undefined on input line 762.
+
+
+LaTeX Warning: Citation `Piccini1996' on page 77 undefined on input line 767.
+
+
+LaTeX Warning: Citation `Wendel1992' on page 77 undefined on input line 772.
+
+
+LaTeX Warning: Citation `Elewa2006' on page 77 undefined on input line 777.
+
+
+LaTeX Warning: Citation `Hofling1993' on page 77 undefined on input line 782.
+
+[77]
+
+LaTeX Warning: Citation `Fonseca2000' on page 78 undefined on input line 801.
+
+
+LaTeX Warning: Citation `bibliotecanacional2000' on page 78 undefined on input 
+line 806.
+
+
+LaTeX Warning: Citation `Demakopoulou2000' on page 78 undefined on input line 8
+11.
+
+
+LaTeX Warning: Citation `GlasscockIII1987' on page 78 undefined on input line 8
+16.
+
+
+LaTeX Warning: Citation `delvecchio1995' on page 78 undefined on input line 821
+.
+
+
+LaTeX Warning: Citation `brasil1990' on page 78 undefined on input line 826.
+
+
+LaTeX Warning: Citation `Herbrick1989' on page 78 undefined on input line 831.
+
+
+LaTeX Warning: Citation `Mostafavi2014' on page 78 undefined on input line 836.
+
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 836--837
 
  []
 
-[76]
+[78]
+
+LaTeX Warning: Citation `Lacasse2005' on page 79 undefined on input line 851.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 851--852
 
  []
 
-[77] [78]
+
+LaTeX Warning: Citation `Lacasse2005' on page 79 undefined on input line 862.
+
+
+LaTeX Warning: Citation `Palagachev2006' on page 79 undefined on input line 874
+.
+
+
+LaTeX Warning: Citation `Zelen2000' on page 79 undefined on input line 884.
+
+
+LaTeX Warning: Citation `Boyd1993' on page 79 undefined on input line 894.
+
+[79]
+
+LaTeX Warning: Citation `Cochrane1998' on page 80 undefined on input line 904.
+
+
+LaTeX Warning: Citation `Oliveira2006' on page 80 undefined on input line 914.
+
+
+LaTeX Warning: Citation `Harrison2001' on page 80 undefined on input line 924.
+
+
+LaTeX Warning: Citation `usp2006' on page 80 undefined on input line 934.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 950--951
 
  []
 
-[79] [80]) [81]
+[80]
+
+LaTeX Warning: Citation `Abend2002' on page 81 undefined on input line 957.
+
+
+LaTeX Warning: Citation `tratados1999' on page 81 undefined on input line 962.
+
+
+LaTeX Warning: Citation `central1998' on page 81 undefined on input line 967.
+
+
+LaTeX Warning: Citation `Denver1974' on page 81 undefined on input line 987.
+
+
+LaTeX Warning: Citation `Almeida1995' on page 81 undefined on input line 992.
+
+
+LaTeX Warning: Citation `bionline' on page 81 undefined on input line 997.
+
+
+LaTeX Warning: Citation `Villa-Lobos1916' on page 81 undefined on input line 10
+02.
+
+
+LaTeX Warning: Citation `Villa-Lobos1916' on page 81 undefined on input line 10
+02.
+
+
+LaTeX Warning: Citation `Ramos1999' on page 81 undefined on input line 1007.
+
+
+LaTeX Warning: Citation `Ramos1999' on page 81 undefined on input line 1007.
+
+[81]
+
+LaTeX Warning: Citation `atlas2001' on page 82 undefined on input line 1012.
+
+
+LaTeX Warning: Citation `atlas2001' on page 82 undefined on input line 1012.
+
+
+LaTeX Warning: Citation `Wu1999' on page 82 undefined on input line 1017.
+
+
+LaTeX Warning: Citation `Wu1999' on page 82 undefined on input line 1017.
+
+
+LaTeX Warning: Citation `Costa2002' on page 82 undefined on input line 1022.
+
+
+LaTeX Warning: Citation `Costa2002' on page 82 undefined on input line 1022.
+
+
+LaTeX Warning: Citation `Geografico1986' on page 82 undefined on input line 102
+7.
+
+
+LaTeX Warning: Citation `Geografico1986' on page 82 undefined on input line 102
+7.
+
+
+LaTeX Warning: Citation `BRAYNER1994' on page 82 undefined on input line 1032.
+
+
+LaTeX Warning: Citation `BRAYNER1994' on page 82 undefined on input line 1032.
+
+
+LaTeX Warning: Citation `Sabroza1998' on page 82 undefined on input line 1037.
+
+
+LaTeX Warning: Citation `Sabroza1998' on page 82 undefined on input line 1037.
+
+
+LaTeX Warning: Citation `Oliva1900' on page 82 undefined on input line 1042.
+
+
+LaTeX Warning: Citation `Oliva1900' on page 82 undefined on input line 1042.
+
+
+LaTeX Warning: Citation `Montgomery1992' on page 82 undefined on input line 104
+7.
+
+
+LaTeX Warning: Citation `Montgomery1992' on page 82 undefined on input line 104
+7.
+
+
+LaTeX Warning: Citation `Dudek2006' on page 82 undefined on input line 1052.
+
+
+LaTeX Warning: Citation `Dudek2006' on page 82 undefined on input line 1052.
+
+
+LaTeX Warning: Citation `brasil1990b' on page 82 undefined on input line 1057.
+
+
+LaTeX Warning: Citation `brasil1990b' on page 82 undefined on input line 1057.
+
+) [82]
 \openout2 = `USPSC-Cap4-Referencias.aux'.
 
- (./USPSC-Cap4-Referencias.tex [82
+ (./USPSC-Cap4-Referencias.tex
+
+LaTeX Warning: Citation `sibi2009' on page 83 undefined on input line 11.
 
 
+LaTeX Warning: Citation `nbr6023' on page 83 undefined on input line 17.
 
-]
+
+LaTeX Warning: Citation `abnetxcite' on page 83 undefined on input line 21.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 19--22
 
  []
 
-[83pdfTeX warning (ext4): destination with the same identifier (name{quadro.4.2
-}) has been already used, duplicate ignored
 
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.49 O
-       prenome pode estar abreviado ou por extenso, porÃ©m deve estar padron...
-]
+LaTeX Warning: Citation `abnetxcite' on page 83 undefined on input line 37.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 49--50
 
  []
 
+[83
 
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{quadro.4.2}) 
+has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.50 
+     ]
 Underfull \hbox (badness 10000) in paragraph at lines 53--57
 
  []
@@ -3910,18 +4520,25 @@ Underfull \hbox (badness 10000) in paragraph at lines 187--191
 
  []
 
-[86] [87pdfTeX warning (ext4): destination with the same identifier (name{quadr
-o.4.3}) has been already used, duplicate ignored
+[86]
 
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.248 \verb
-           +\usepackage[alf,abnt-etal-cite=0]{abntex2cite}+]
+LaTeX Warning: Citation `abnetxcite' on page 87 undefined on input line 240.
+
+
+LaTeX Warning: Citation `abnetxcite' on page 87 undefined on input line 244.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 250--251
 
  []
 
+[87pdfTeX warning (ext4): destination with the same identifier (name{quadro.4.3
+}) has been already used, duplicate ignored
 
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.252 \begin{tabular}
+                     {|l|c|} \hline]
 Underfull \hbox (badness 10000) in paragraph at lines 252--257
 
  []
@@ -3936,12 +4553,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 278--281
 
  []
 
-[88]
+
 Underfull \hbox (badness 10000) in paragraph at lines 296--299
 
  []
 
-
+[88]
 Underfull \hbox (badness 10000) in paragraph at lines 317--321
 
  []
@@ -3966,15 +4583,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 386--390
 
  []
 
-
-Underfull \vbox (badness 6016) has occurred while \output is active []
-
- [90]
+[90]
 Underfull \hbox (badness 10000) in paragraph at lines 411--415
 
  []
 
-[91]
+
 Overfull \hbox (2.00987pt too wide) in paragraph at lines 435--438
 [][] 
  []
@@ -3984,7 +4598,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 435--438
 
  []
 
-
+[91]
 Underfull \hbox (badness 10000) in paragraph at lines 456--459
 
  []
@@ -4005,17 +4619,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 503--506
  []
 
 
-Underfull \vbox (badness 1436) has occurred while \output is active []
-
- [93]
 Underfull \hbox (badness 10000) in paragraph at lines 529--530
 
  []
 
-
+[93]
 Underfull \hbox (badness 10000) in paragraph at lines 531--535
 
  []
+
+
+LaTeX Warning: Citation `Agencia2003' on page 94 undefined on input line 553.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 555--556
@@ -4028,9 +4642,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 557--560
  []
 
 [94]
+
+LaTeX Warning: Citation `usp200' on page 95 undefined on input line 580.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 580--581
 
  []
+
+
+LaTeX Warning: Citation `nbr10520' on page 95 undefined on input line 582.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 584--585
@@ -4042,7 +4663,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 586--589
 
  []
 
-[95]
+
+LaTeX Warning: Citation `brasil1990' on page 95 undefined on input line 607.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 607--608
 
  []
@@ -4051,6 +4675,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 607--608
 Underfull \hbox (badness 10000) in paragraph at lines 609--612
 
  []
+
+[95]
+
+LaTeX Warning: Citation `saopaulo1937' on page 96 undefined on input line 632.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 632--633
@@ -4088,65 +4716,65 @@ Underfull \hbox (badness 10000) in paragraph at lines 692--692
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+LaTeX Warning: Citation `abnetxcite' on page 97 undefined on input line 696.
 
- [97]
+
 Underfull \hbox (badness 10000) in paragraph at lines 704--705
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 706--711
-
- []
-
-[98pdfTeX warning (ext4): destination with the same identifier (name{quadro.4.4
+[97pdfTeX warning (ext4): destination with the same identifier (name{quadro.4.4
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.732 Address                  = {SÃ£o Paulo},
-                                              ]
+l.705 
+      ]
+Underfull \hbox (badness 10000) in paragraph at lines 706--711
+
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 746--749
 
  []
 
-
+[98]
 Underfull \hbox (badness 10000) in paragraph at lines 766--769
 
  []
 
-[99]
+
 Underfull \hbox (badness 10000) in paragraph at lines 789--792
 
  []
 
-
+[99]
 Underfull \hbox (badness 10000) in paragraph at lines 811--817
 
  []
 
-[100]
+
 Underfull \hbox (badness 10000) in paragraph at lines 839--842
 
  []
 
-
+[100]
 Underfull \hbox (badness 10000) in paragraph at lines 861--864
 
  []
 
-[101]
+
 Underfull \hbox (badness 10000) in paragraph at lines 883--886
 
  []
 
-
+[101]
 Underfull \hbox (badness 10000) in paragraph at lines 904--907
 
  []
 
-[102]
+
 Underfull \hbox (badness 10000) in paragraph at lines 925--926
 
  []
@@ -4171,7 +4799,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 934--941
 
  []
 
-
+[102]
 Underfull \hbox (badness 10000) in paragraph at lines 942--943
 
  []
@@ -4202,7 +4830,7 @@ Overfull \hbox (7.81648pt too wide) in paragraph at lines 999--999
 lodo de esgoto[] 
  []
 
-[104]
+
 Overfull \hbox (6.85457pt too wide) in paragraph at lines 1017--1020
 [][] 
  []
@@ -4222,17 +4850,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 1023--1026
 
  []
 
-
+[104]
 Underfull \hbox (badness 10000) in paragraph at lines 1046--1049
 
  []
 
-[105]
+
 Underfull \hbox (badness 10000) in paragraph at lines 1070--1071
 
  []
 
-
+[105]
 Underfull \hbox (badness 10000) in paragraph at lines 1072--1076
 
  []
@@ -4242,10 +4870,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1097--1102
 
  []
 
-
-Underfull \vbox (badness 5787) has occurred while \output is active []
-
- [106]
+[106]
 Underfull \hbox (badness 10000) in paragraph at lines 1122--1126
 
  []
@@ -4260,12 +4885,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 1129--1132
 
  []
 
-[107]
+
 Underfull \hbox (badness 10000) in paragraph at lines 1151--1155
 
  []
 
-
+[107]
 Overfull \hbox (10.469pt too wide) in paragraph at lines 1176--1179
 [][] 
  []
@@ -4281,7 +4906,7 @@ Overfull \hbox (8.12523pt too wide) in paragraph at lines 1184--1184
 ioeconômico do[] 
  []
 
-[108]
+
 Overfull \hbox (6.85457pt too wide) in paragraph at lines 1199--1203
 [][] 
  []
@@ -4292,6 +4917,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 1199--1203
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [108]
 Underfull \hbox (badness 10000) in paragraph at lines 1204--1205
 
  []
@@ -4301,12 +4929,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 1206--1210
 
  []
 
-[109]
+
 Underfull \hbox (badness 10000) in paragraph at lines 1233--1236
 
  []
 
-
+[109]
 Underfull \hbox (badness 10000) in paragraph at lines 1259--1261
 
  []
@@ -4336,11 +4964,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 1343--1347
 
  []
 
-[112]
+
 Underfull \hbox (badness 10000) in paragraph at lines 1371--1375
 
  []
 
+[112]
 
 LaTeX Warning: Characters dropped after `\end{verbatim}' on input line 1393.
 
@@ -4369,7 +4998,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1431--1438
 
  []
 
-[114]
+
 Underfull \hbox (badness 10000) in paragraph at lines 1465--1467
 
  []
@@ -4379,7 +5008,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1470--1471
 
  []
 
-
+[114]
 Underfull \hbox (badness 10000) in paragraph at lines 1472--1476
 
  []
@@ -4389,12 +5018,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 1495--1499
 
  []
 
-[115]
+
 Underfull \hbox (badness 10000) in paragraph at lines 1517--1524
 
  []
 
 
+Underfull \vbox (badness 1112) has occurred while \output is active []
+
+ [115]
 Overfull \hbox (1.64148pt too wide) in paragraph at lines 1529--1529
 []\T1/lmtt/m/n/12 Title                    = {Flow void of cerebrospinal fluid 
 in idiopathic[] 
@@ -4546,10 +5178,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 2067--2072
 
  []
 
-
-Underfull \vbox (badness 6725) has occurred while \output is active []
-
- [127]
+[127]
 Underfull \hbox (badness 10000) in paragraph at lines 2088--2093
 
  []
@@ -4569,12 +5198,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 2116--2117
 
  []
 
-[128]
+
 Underfull \hbox (badness 10000) in paragraph at lines 2118--2123
 
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [128]
 Overfull \hbox (1.62747pt too wide) in paragraph at lines 2133--2133
 []\T1/lmtt/m/n/12 Url                      = {<http://164.195.100.11/netacgi/np
 hParser?Sect1[] 
@@ -4662,7 +5294,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 2344--2355
  []
 
 
-Underfull \vbox (badness 4156) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [133]
 Underfull \hbox (badness 10000) in paragraph at lines 2388--2389
@@ -4852,6 +5484,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 2831--2835
  []
 
 [143]
+
+LaTeX Warning: Citation `Weitzc2016' on page 144 undefined on input line 2865.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 2860--2866
 
  []
@@ -4897,7 +5533,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 2976--2978
  []
 
 
-Underfull \vbox (badness 1430) has occurred while \output is active []
+Underfull \vbox (badness 5787) has occurred while \output is active []
 
  [146]
 Underfull \hbox (badness 10000) in paragraph at lines 2979--2980
@@ -4925,6 +5561,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 3042--3046
  []
 
 [148]
+
+LaTeX Warning: Citation `Doic2016' on page 149 undefined on input line 3078.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 3082--3084
 
  []
@@ -4961,8 +5601,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 3140--3144
 
 
 
-]) [153] (./USPSC-modelo-seg.bbl
-[154
+]
+
+LaTeX Warning: Citation `nbr14724' on page 153 undefined on input line 13.
+
+
+LaTeX Warning: Citation `sibi2016' on page 153 undefined on input line 13.
+
+
+LaTeX Warning: Citation `eesc2016' on page 153 undefined on input line 13.
+
+) [153] (./USPSC-modelo-seg.bbl [154
 
 
 ]
@@ -4971,11 +5620,10 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 3.
 
 bibitemlist
-[155] [156] [157] [158] [159] [160] [161] [162]) [163]
+) [155]
 \openout2 = `USPSC-Apendices.aux'.
 
- (./USPSC-Apendices.tex
-[164
+ (./USPSC-Apendices.tex [156
 
 
 ]
@@ -4983,11 +5631,18 @@ bibitemlist
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 9.
 
-[165
+[157
 
-] [166] [167
+] [158]
 
-] [168
+LaTeX Warning: Citation `nbr14724' on page 159 undefined on input line 10.
+
+
+LaTeX Warning: Citation `sibi2009' on page 159 undefined on input line 12.
+
+[159
+
+] [160
 
 ]
 Underfull \hbox (badness 1178) in paragraph at lines 29--29
@@ -5029,7 +5684,7 @@ Underfull \hbox (badness 3158) in paragraph at lines 40--40
 []|\T1/lmr/m/n/10.95 (+20) Infraestrutura de Trans-
  []
 
-[169pdfTeX warning (ext4): destination with the same identifier (name{quadro.B.
+[161pdfTeX warning (ext4): destination with the same identifier (name{quadro.B.
 5}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -5055,7 +5710,7 @@ Underfull \hbox (badness 1178) in paragraph at lines 83--83
 []|\T1/lmr/m/n/10.95 (+20) Programa de Pós-Graduação em
  []
 
-[170]
+[162]
 Underfull \hbox (badness 1895) in paragraph at lines 99--99
 []|\T1/lmr/m/n/10.95 (+20) Programa de Pós-Graduação In-
  []
@@ -5070,10 +5725,10 @@ Underfull \hbox (badness 1178) in paragraph at lines 101--101
 []|\T1/lmr/m/n/10.95 (+20) Programa de Pós-Graduação em
  []
 
-[171
+[163
 
 
-] [172
+] [164
 
 ]
 Overfull \hbox (6.3374pt too wide) in paragraph at lines 119--119
@@ -5145,13 +5800,13 @@ Overfull \hbox (12.8517pt too wide) in paragraph at lines 117--128
 [][] 
  []
 
-[173pdfTeX warning (ext4): destination with the same identifier (name{quadro.C.
+[165pdfTeX warning (ext4): destination with the same identifier (name{quadro.C.
 6}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.134 \chapter
-              {Siglas dos Programas de PÃ³s-GraduaÃ§Ã£o do ICMC}] [174
+              {Siglas dos Programas de PÃ³s-GraduaÃ§Ã£o do ICMC}] [166
 
 ]
 Overfull \hbox (6.3374pt too wide) in paragraph at lines 143--143
@@ -5298,7 +5953,7 @@ Overfull \hbox (12.8517pt too wide) in paragraph at lines 140--158
 [][] 
  []
 
-[175pdfTeX warning (ext4): destination with the same identifier (name{quadro.D.
+[167pdfTeX warning (ext4): destination with the same identifier (name{quadro.D.
 7}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -5334,7 +5989,7 @@ Overfull \hbox (12.8517pt too wide) in paragraph at lines 164--176
 [][] 
  []
 
-[176
+[168
 
 ]
 Overfull \hbox (6.3374pt too wide) in paragraph at lines 190--190
@@ -5396,7 +6051,7 @@ Overfull \hbox (12.8517pt too wide) in paragraph at lines 188--204
 [][] 
  []
 
-[177
+[169
 
 pdfTeX warning (ext4): destination with the same identifier (name{quadro.E.8}) 
 has been already used, duplicate ignored
@@ -5404,7 +6059,7 @@ has been already used, duplicate ignored
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.210 \chapter
-              {Siglas dos Programas de PÃ³s-GraduaÃ§Ã£o do IQSC}] [178
+              {Siglas dos Programas de PÃ³s-GraduaÃ§Ã£o do IQSC}] [170
 
 ]
 Overfull \hbox (6.3374pt too wide) in paragraph at lines 218--218
@@ -5446,37 +6101,37 @@ Overfull \hbox (12.8517pt too wide) in paragraph at lines 216--229
 [][] 
  []
 
-[179pdfTeX warning (ext4): destination with the same identifier (name{quadro.F.
+[171pdfTeX warning (ext4): destination with the same identifier (name{quadro.F.
 9}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.236 \chapter
-              {Siglas dos Cursos de GraduaÃ§Ã£o da EESC}] [180
+              {Siglas dos Cursos de GraduaÃ§Ã£o da EESC}] [172
 
 ]
 Overfull \hbox (2.27809pt too wide) in paragraph at lines 242--258
 [][] 
  []
 
-[181pdfTeX warning (ext4): destination with the same identifier (name{quadro.G.
+[173pdfTeX warning (ext4): destination with the same identifier (name{quadro.G.
 10}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.264 \chapter
               {Exemplo de tabela centralizada verticalmente e horizontalmente}]
-[182
+[174
 
-] [183pdfTeX warning (ext4): destination with the same identifier (name{table.H
+] [175pdfTeX warning (ext4): destination with the same identifier (name{table.H
 .3}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.286 \chapter
-              {Exemplo de tabela com grade}] [184
+              {Exemplo de tabela com grade}] [176
 
-]) [185pdfTeX warning (ext4): destination with the same identifier (name{table.
+]) [177pdfTeX warning (ext4): destination with the same identifier (name{table.
 I.4}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -5485,7 +6140,7 @@ l.517 \include{USPSC-Apendices}
                                ]
 \openout2 = `USPSC-Anexos.aux'.
 
- (./USPSC-Anexos.tex [186
+ (./USPSC-Anexos.tex [178
 
 
 
@@ -5494,50 +6149,65 @@ l.517 \include{USPSC-Apendices}
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 9.
 
-[187
+[179
 
-] [188] [189
+] [180]
 
-] [190
+LaTeX Warning: Citation `nbr14724' on page 181 undefined on input line 13.
+
+[181
+
+] [182
 
 ]
-<USPSC-AcentuacaoLaTeX.png, id=2048, 225.84375pt x 353.06906pt>
+<USPSC-AcentuacaoLaTeX.png, id=1497, 225.84375pt x 353.06906pt>
 File: USPSC-AcentuacaoLaTeX.png Graphic file (type png)
 <use USPSC-AcentuacaoLaTeX.png>
 Package pdftex.def Info: USPSC-AcentuacaoLaTeX.png  used on input line 21.
 (pdftex.def)             Requested size: 225.84319pt x 353.06819pt.
- [191pdfTeX warning (ext4): destination with the same identifier (name{figure.a
-nexochapback.2.8}) has been already used, duplicate ignored
+
+
+LaTeX Warning: Citation `comandos' on page 183 undefined on input line 22.
+
+[183pdfTeX warning (ext4): destination with the same identifier (name{figure.an
+exochapback.2.9}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.26 \chapter
              {SÃ­mbolos Ãºteis em \LaTeX} <./USPSC-AcentuacaoLaTeX.png>]
-[192
+[184
 
 ]
-<USPSC-SimbolosUteis.png, id=2063, 212.29312pt x 266.49562pt>
+<USPSC-SimbolosUteis.png, id=1508, 212.29312pt x 266.49562pt>
 File: USPSC-SimbolosUteis.png Graphic file (type png)
 <use USPSC-SimbolosUteis.png>
 Package pdftex.def Info: USPSC-SimbolosUteis.png  used on input line 30.
 (pdftex.def)             Requested size: 212.2926pt x 266.49496pt.
- [193pdfTeX warning (ext4): destination with the same identifier (name{figure.a
-nexochapback.3.9}) has been already used, duplicate ignored
+
+
+LaTeX Warning: Citation `comandos' on page 185 undefined on input line 31.
+
+[185pdfTeX warning (ext4): destination with the same identifier (name{figure.an
+exochapback.3.10}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.36 \chapter
-             {Letras gregas em \LaTeX} <./USPSC-SimbolosUteis.png>] [194
+             {Letras gregas em \LaTeX} <./USPSC-SimbolosUteis.png>] [186
 
 ]
-<USPSC-LetrasGregas.png, id=2074, 326.72063pt x 449.42906pt>
+<USPSC-LetrasGregas.png, id=1518, 326.72063pt x 449.42906pt>
 File: USPSC-LetrasGregas.png Graphic file (type png)
 <use USPSC-LetrasGregas.png>
 Package pdftex.def Info: USPSC-LetrasGregas.png  used on input line 40.
 (pdftex.def)             Requested size: 326.71982pt x 449.42795pt.
-)
-[195pdfTeX warning (ext4): destination with the same identifier (name{figure.an
-exochapback.4.10}) has been already used, duplicate ignored
+
+
+LaTeX Warning: Citation `comandos' on page 187 undefined on input line 41.
+
+) [187pdfTeX warning (ext4): destination with the same identifier (name{figure.
+anexochapback.4.11}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
@@ -5576,76 +6246,34 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 532.
  ) 
 Here is how much of TeX's memory you used:
- 42663 strings out of 492982
- 811236 string characters out of 6134896
- 1115813 words of memory out of 5000000
- 44690 multiletter control sequences out of 15000+600000
- 655137 words of font info for 183 fonts, out of 8000000 for 9000
+ 42162 strings out of 492982
+ 802773 string characters out of 6134896
+ 1091738 words of memory out of 5000000
+ 44329 multiletter control sequences out of 15000+600000
+ 654971 words of font info for 181 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  73i,18n,99p,10406b,1869s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{cite.usp200} has been referenced but does not exi
-st, replaced by a fixed one
-
-pdfTeX warning (dest): name{cite.usp2006++TEXT} has been referenced but does no
-t exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{cite.Harrison2001++TEXT} has been referenced but do
-es not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{cite.Oliveira2006++TEXT} has been referenced but do
-es not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{cite.Cochrane1998++TEXT} has been referenced but do
-es not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{cite.Boyd1993++TEXT} has been referenced but does n
-ot exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{cite.Zelen2000++TEXT} has been referenced but does 
-not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{cite.Palagachev2006++TEXT} has been referenced but 
-does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{cite.Lacasse2005++TEXT} has been referenced but doe
-s not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{cite.cetesb94} has been referenced but does not exi
-st, replaced by a fixed one
-
-pdfTeX warning (dest): name{cite.Barbosa2002++TEXT} has been referenced but doe
-s not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{cite.science2006++TEXT} has been referenced but doe
-s not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{cite.Bruckman2002++TEXT} has been referenced but do
-es not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{cite.Gomes1992} has been referenced but does not ex
-ist, replaced by a fixed one
-
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/share/texmf/fonts/enc/dvi
-ps/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texm
-f/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-math
-sy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}</usr/share/texlive/t
-exmf-dist/fonts/type1/public/amsfonts/latxfont/line10.pfb></usr/share/texmf/fon
-ts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pf
-b></usr/share/texmf/fonts/type1/public/lm/lmbx8.pfb></usr/share/texmf/fonts/typ
-e1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></us
-r/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/pub
-lic/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/
-texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lm
-ri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/f
-onts/type1/public/lm/lmss10.pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.
-pfb></usr/share/texmf/fonts/type1/public/lm/lmss8.pfb></usr/share/texmf/fonts/t
-ype1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb>
-</usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1
-/public/lm/lmtt12.pfb>
-Output written on USPSC-modelo-seg.pdf (197 pages, 1433089 bytes).
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/share/texmf/fonts/enc/d
+vips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/te
+xmf/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ma
+thsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}</usr/share/texlive
+/texmf-dist/fonts/type1/public/amsfonts/latxfont/line10.pfb></usr/share/texmf/f
+onts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.
+pfb></usr/share/texmf/fonts/type1/public/lm/lmbx8.pfb></usr/share/texmf/fonts/t
+ype1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></
+usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/p
+ublic/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/shar
+e/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/
+lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf
+/fonts/type1/public/lm/lmss10.pfb></usr/share/texmf/fonts/type1/public/lm/lmss1
+2.pfb></usr/share/texmf/fonts/type1/public/lm/lmss8.pfb></usr/share/texmf/fonts
+/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pf
+b></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/typ
+e1/public/lm/lmtt12.pfb>
+Output written on USPSC-modelo-seg.pdf (189 pages, 1397241 bytes).
 PDF statistics:
- 2761 PDF objects out of 2984 (max. 8388607)
- 2453 compressed objects within 25 object streams
- 625 named destinations out of 1000 (max. 500000)
- 41289 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 2176 PDF objects out of 2487 (max. 8388607)
+ 1894 compressed objects within 19 object streams
+ 488 named destinations out of 1000 (max. 500000)
+ 41294 words of extra memory for PDF output out of 42996 (max. 10000000)
 
