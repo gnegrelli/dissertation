@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.5.31)  17 JUL 2019 18:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.5.31)  17 JUL 2019 19:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3299,7 +3299,7 @@ LaTeX Warning: Citation `abnetxcitealf' on page 35 undefined on input line 23.
 LaTeX Warning: Citation `memoir2010' on page 35 undefined on input line 23.
 
 [35]
-<USPSC-EstruturaTrabAcad.jpg, id=625, 625.58719pt x 514.92375pt>
+<USPSC-EstruturaTrabAcad.jpg, id=626, 625.58719pt x 514.92375pt>
 File: USPSC-EstruturaTrabAcad.jpg Graphic file (type jpg)
 <use USPSC-EstruturaTrabAcad.jpg>
 Package pdftex.def Info: USPSC-EstruturaTrabAcad.jpg  used on input line 32.
@@ -3443,7 +3443,7 @@ l.676
                                                   \fi \fi 
 l.676 
       ]
-<USPSC-modelo-img-grafico.pdf, id=760, 847.165pt x 314.17375pt>
+<USPSC-modelo-img-grafico.pdf, id=762, 847.165pt x 314.17375pt>
 File: USPSC-modelo-img-grafico.pdf Graphic file (type pdf)
 <use USPSC-modelo-img-grafico.pdf>
 Package pdftex.def Info: USPSC-modelo-img-grafico.pdf  used on input line 679.
@@ -3488,7 +3488,7 @@ l.723 	Q
 
 LaTeX Warning: Citation `nbr14724' on page 52 undefined on input line 732.
 
-<USPSC-modelo-img-marca.pdf, id=793, 227.51701pt x 72.2695pt>
+<USPSC-modelo-img-marca.pdf, id=794, 227.51701pt x 72.2695pt>
 File: USPSC-modelo-img-marca.pdf Graphic file (type pdf)
 <use USPSC-modelo-img-marca.pdf>
 Package pdftex.def Info: USPSC-modelo-img-marca.pdf  used on input line 745.
@@ -6160,7 +6160,7 @@ LaTeX Warning: Citation `nbr14724' on page 181 undefined on input line 13.
 ] [182
 
 ]
-<USPSC-AcentuacaoLaTeX.png, id=1497, 225.84375pt x 353.06906pt>
+<USPSC-AcentuacaoLaTeX.png, id=1498, 225.84375pt x 353.06906pt>
 File: USPSC-AcentuacaoLaTeX.png Graphic file (type png)
 <use USPSC-AcentuacaoLaTeX.png>
 Package pdftex.def Info: USPSC-AcentuacaoLaTeX.png  used on input line 21.
@@ -6179,7 +6179,7 @@ l.26 \chapter
 [184
 
 ]
-<USPSC-SimbolosUteis.png, id=1508, 212.29312pt x 266.49562pt>
+<USPSC-SimbolosUteis.png, id=1509, 212.29312pt x 266.49562pt>
 File: USPSC-SimbolosUteis.png Graphic file (type png)
 <use USPSC-SimbolosUteis.png>
 Package pdftex.def Info: USPSC-SimbolosUteis.png  used on input line 30.
@@ -6197,7 +6197,7 @@ l.36 \chapter
              {Letras gregas em \LaTeX} <./USPSC-SimbolosUteis.png>] [186
 
 ]
-<USPSC-LetrasGregas.png, id=1518, 326.72063pt x 449.42906pt>
+<USPSC-LetrasGregas.png, id=1520, 326.72063pt x 449.42906pt>
 File: USPSC-LetrasGregas.png Graphic file (type png)
 <use USPSC-LetrasGregas.png>
 Package pdftex.def Info: USPSC-LetrasGregas.png  used on input line 40.
@@ -6246,10 +6246,10 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 532.
  ) 
 Here is how much of TeX's memory you used:
- 42162 strings out of 492982
- 802773 string characters out of 6134896
- 1091738 words of memory out of 5000000
- 44329 multiletter control sequences out of 15000+600000
+ 42164 strings out of 492982
+ 802791 string characters out of 6134896
+ 1091748 words of memory out of 5000000
+ 44330 multiletter control sequences out of 15000+600000
  654971 words of font info for 181 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  73i,18n,99p,10406b,1869s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -6270,10 +6270,10 @@ lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf
 /type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pf
 b></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/typ
 e1/public/lm/lmtt12.pfb>
-Output written on USPSC-modelo-seg.pdf (189 pages, 1397241 bytes).
+Output written on USPSC-modelo-seg.pdf (189 pages, 1397383 bytes).
 PDF statistics:
- 2176 PDF objects out of 2487 (max. 8388607)
- 1894 compressed objects within 19 object streams
- 488 named destinations out of 1000 (max. 500000)
- 41294 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 2180 PDF objects out of 2487 (max. 8388607)
+ 1898 compressed objects within 19 object streams
+ 489 named destinations out of 1000 (max. 500000)
+ 41302 words of extra memory for PDF output out of 42996 (max. 10000000)
 
