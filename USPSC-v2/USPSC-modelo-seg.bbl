@@ -5,11 +5,22 @@
 \providecommand{\abntbstabout}[1]{}
 \abntbstabout{v-1.9.6 }
 
+\bibitem[ABEEolica 2018]{ABEEolica2018}
+\abntrefinfo{ABEEolica}{ABEEOLICA}{2018}
+{ABEEOLICA. \textbf{{Annual Wind Energy Report}}.
+Sao Paulo, 2018.}
+
 \bibitem[Amarante et al. 2001]{Atlas2001}
 \abntrefinfo{Amarante et al.}{AMARANTE et al.}{2001}
 {AMARANTE, O. A.~C. do et al. \textbf{{Atlas do Potencial E{\'{o}}lico
   Brasileiro}}.
 Brasilia, 2001.}
+
+\bibitem[ANEEL 2005]{ANEEL2005}
+\abntrefinfo{ANEEL}{ANEEL}{2005}
+{ANEEL. \textbf{{Atlas de Energia El{\'{e}}trica do Brasil}}.
+Brasilia, 2005. Dispon{\'\i}vel em:
+  \url{http://www.aneel.gov.br/livros/-/asset{\\_}publisher/eZ674TKh9oF0/content/atlas-de-energia-eletrica-do-brasil/656}.}
 
 \bibitem[{Commission European} 2010]{Europe2020}
 \abntrefinfo{{Commission European}}{{Commission European}}{2010}
