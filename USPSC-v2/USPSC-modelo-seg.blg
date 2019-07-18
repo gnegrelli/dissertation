@@ -30,7 +30,7 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
-Reallocated field_info (elt_size=4) to 14522 items from 5000.
+Reallocated field_info (elt_size=4) to 14867 items from 5000.
 Database file #1: abntex2-options.bib
 Database file #2: USPSC-modelo-references.bib
 Warning--I didn't find a database entry for "abnt-etal-cite"
@@ -162,45 +162,45 @@ Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://www.abntex.net.br/                               |
 +---------------------------------------------------------+
-You've used 18 entries,
+You've used 23 entries,
             6714 wiz_defined-function locations,
-            1459 strings with 13112 characters,
-and the built_in function-call counts, 15600 in all, are:
-= -- 1911
-> -- 132
-< -- 433
-+ -- 534
-- -- 43
-* -- 844
-:= -- 1887
-add.period$ -- 29
-call.type$ -- 20
-change.case$ -- 83
-chr.to.int$ -- 12
-cite$ -- 7
-duplicate$ -- 1534
-empty$ -- 840
-format.name$ -- 199
-if$ -- 3206
+            1497 strings with 14291 characters,
+and the built_in function-call counts, 19776 in all, are:
+= -- 2208
+> -- 303
+< -- 440
++ -- 599
+- -- 94
+* -- 1166
+:= -- 2465
+add.period$ -- 47
+call.type$ -- 25
+change.case$ -- 143
+chr.to.int$ -- 20
+cite$ -- 12
+duplicate$ -- 1750
+empty$ -- 1117
+format.name$ -- 452
+if$ -- 4172
 int.to.chr$ -- 10
 int.to.str$ -- 1
-missing$ -- 216
-newline$ -- 44
-num.names$ -- 35
-pop$ -- 168
+missing$ -- 304
+newline$ -- 72
+num.names$ -- 60
+pop$ -- 277
 preamble$ -- 1
-purify$ -- 56
+purify$ -- 78
 quote$ -- 0
-skip$ -- 2037
+skip$ -- 2244
 stack$ -- 1
-substring$ -- 651
-swap$ -- 500
-text.length$ -- 4
+substring$ -- 825
+swap$ -- 597
+text.length$ -- 10
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 48
+while$ -- 90
 width$ -- 0
-write$ -- 114
+write$ -- 193
 (There were 2 error messages)

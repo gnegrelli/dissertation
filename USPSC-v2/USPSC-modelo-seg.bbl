@@ -22,12 +22,30 @@ Brasilia, 2001.}
 Brasilia, 2005. Dispon{\'\i}vel em:
   \url{http://www.aneel.gov.br/livros/-/asset{\\_}publisher/eZ674TKh9oF0/content/atlas-de-energia-eletrica-do-brasil/656}.}
 
+\bibitem[Asmine et al. 2011]{Asmine2011}
+\abntrefinfo{Asmine et al.}{ASMINE et al.}{2011}
+{ASMINE, M. et al. {Model Validation for Wind Turbine Generator Models}.
+\textbf{Power Systems, IEEE Transactions on}, v.~26, n.~3, p. 1769--1782, 2011.
+ISSN 0885-8950.}
+
 \bibitem[{Commission European} 2010]{Europe2020}
 \abntrefinfo{{Commission European}}{{Commission European}}{2010}
 {{Commission European}. \textbf{{A strategy for smart, sustainable and
   inclusive growth}}.
 Brussels, 2010. 1--37~p. Dispon{\'\i}vel em:
   \url{https://www.eea.europa.eu/policy-documents/com-2010-2020-europe-2020}.}
+
+\bibitem[Council 2008]{council2008wecc}
+\abntrefinfo{Council}{COUNCIL}{2008}
+{COUNCIL, W. E.~C. Wecc wind power plant power flow modeling guide.
+\textbf{WECC Wind Generator Modeling Group, Tech. Rep}, 2008.}
+
+\bibitem[Ellis et al. 2011]{Ellis2011}
+\abntrefinfo{Ellis et al.}{ELLIS et al.}{2011}
+{ELLIS, A. et al. {Generic models for simulation of wind power plants in bulk
+  system planning studies}.
+\textbf{IEEE Power and Energy Society General Meeting}, p.~1--8, 2011.
+ISSN 19449925.}
 
 \bibitem[EPE 2018]{EPE2018}
 \abntrefinfo{EPE}{EPE}{2018}
@@ -37,6 +55,12 @@ Rio de Janeiro, 2018. 249~p. Dispon{\'\i}vel em:
   \url{http://www.epe.gov.br/sites-pt/publicacoes-dados-abertos/publicacoes/PublicacoesArquivos/publicacao-160/topico-168/
   Anuario2018vf.pdf}.}
 
+\bibitem[Erlich et al. 2012]{Erlich2012}
+\abntrefinfo{Erlich et al.}{ERLICH et al.}{2012}
+{ERLICH, I. et al. {Determination of Dynamic Wind Farm Equivalents using
+  Heuristic Optimization}.
+\textbf{Power and Energy Society General Meeting, IEEE}, p.~1--8, 2012.}
+
 \bibitem[{Federative Republic of Brazil} 2002]{Brazil2002}
 \abntrefinfo{{Federative Republic of Brazil}}{{Federative Republic of
   Brazil}}{2002}
@@ -45,6 +69,13 @@ Rio de Janeiro, 2018. 249~p. Dispon{\'\i}vel em:
 Dispon{\'\i}vel em:
   \url{http://www.planalto.gov.br/ccivil{\\_}03/leis/2002/L10438.htm
   http://www.planalto.gov.br/ccivil{\\_}03/LEIS/2002/L104}.}
+
+\bibitem[Muljadi e Ellis 2008]{Muljadi2008}
+\abntrefinfo{Muljadi e Ellis}{MULJADI; ELLIS}{2008}
+{MULJADI, E.; ELLIS, A. {Validation of wind power plant models}.
+\textbf{IEEE Power and Energy Society 2008 General Meeting: Conversion and
+  Delivery of Electrical Energy in the 21st Century, PES}, p.~1--7, 2008.
+ISSN 1932-5517.}
 
 \bibitem[{Wind Europe} 2019]{WindEurope2019}
 \abntrefinfo{{Wind Europe}}{{Wind Europe}}{2019}
