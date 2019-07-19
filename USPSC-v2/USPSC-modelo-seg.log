@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.5.31)  19 JUL 2019 18:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.5.31)  19 JUL 2019 18:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3309,9 +3309,6 @@ ne 78.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-
-LaTeX Warning: Citation `Muljadi2010' on page 34 undefined on input line 83.
-
 [34pdfTeX warning (ext4): destination with the same identifier (name{figure.1.4
 }) has been already used, duplicate ignored
 
@@ -3333,12 +3330,32 @@ Package epstopdf Info: Output file is already uptodate.
 
 pdfTeX warning: pdflatex (file ./Images/Tw_curve-eps-converted-to.pdf): PDF inc
 lusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Images/Tw_curve-eps-converted-to.pdf, id=682, 462.72874pt x 346.29375pt>
+<Images/Tw_curve-eps-converted-to.pdf, id=684, 462.72874pt x 346.29375pt>
 File: Images/Tw_curve-eps-converted-to.pdf Graphic file (type pdf)
 <use Images/Tw_curve-eps-converted-to.pdf>
 Package pdftex.def Info: Images/Tw_curve-eps-converted-to.pdf  used on input li
 ne 88.
 (pdftex.def)             Requested size: 323.90791pt x 242.40396pt.
+
+LaTeX Warning: Citation `Yaramasu2015' on page 35 undefined on input line 95.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [35pdfTeX warning (ext4): destination with the same identifier (name{figure.1.
+5}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.96 
+     pdfTeX warning (ext4): destination with the same identifier (name{figure.1
+.6}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.96 
+      <./Images/Type2WTG-eps-converted-to.pdf> <./Images/Tw_curve-eps-converted
+-to.pdf>]
 Package epstopdf Info: Source file: <Images/Type3WTG.eps>
 (epstopdf)                    date: 2019-07-19 13:53:47
 (epstopdf)                    size: 24018 bytes
@@ -3347,21 +3364,18 @@ Package epstopdf Info: Source file: <Images/Type3WTG.eps>
 (epstopdf)                    size: 11179 bytes
 (epstopdf)             Command: <repstopdf --outfile=Images/Type3WTG-eps-conver
 ted-to.pdf Images/Type3WTG.eps>
-(epstopdf)             \includegraphics on input line 98.
+(epstopdf)             \includegraphics on input line 100.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./Images/Type3WTG-eps-converted-to.pdf): PDF inc
 lusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Images/Type3WTG-eps-converted-to.pdf, id=683, 333.245pt x 122.4575pt>
+<Images/Type3WTG-eps-converted-to.pdf, id=747, 333.245pt x 122.4575pt>
 File: Images/Type3WTG-eps-converted-to.pdf Graphic file (type pdf)
 <use Images/Type3WTG-eps-converted-to.pdf>
 Package pdftex.def Info: Images/Type3WTG-eps-converted-to.pdf  used on input li
-ne 98.
+ne 100.
 (pdftex.def)             Requested size: 333.24417pt x 122.45718pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
 Package epstopdf Info: Source file: <Images/Type4WTG.eps>
 (epstopdf)                    date: 2019-07-19 14:12:13
 (epstopdf)                    size: 22011 bytes
@@ -3370,37 +3384,20 @@ Package epstopdf Info: Source file: <Images/Type4WTG.eps>
 (epstopdf)                    size: 10631 bytes
 (epstopdf)             Command: <repstopdf --outfile=Images/Type4WTG-eps-conver
 ted-to.pdf Images/Type4WTG.eps>
-(epstopdf)             \includegraphics on input line 108.
+(epstopdf)             \includegraphics on input line 110.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./Images/Type4WTG-eps-converted-to.pdf): PDF inc
 lusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Images/Type4WTG-eps-converted-to.pdf, id=684, 326.21875pt x 98.3675pt>
+<Images/Type4WTG-eps-converted-to.pdf, id=748, 326.21875pt x 98.3675pt>
 File: Images/Type4WTG-eps-converted-to.pdf Graphic file (type pdf)
 <use Images/Type4WTG-eps-converted-to.pdf>
 Package pdftex.def Info: Images/Type4WTG-eps-converted-to.pdf  used on input li
-ne 108.
+ne 110.
 (pdftex.def)             Requested size: 326.21794pt x 98.36723pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-) [35pdfTeX warning (ext4): destination with the same identifier (name{figure.1
-.5}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.472 \include{USPSC-Cap1-Introducao}
-                                     pdfTeX warning (ext4): destination with th
-e same identifier (name{figure.1.6}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.472 \include{USPSC-Cap1-Introducao}
-                                      <./Images/Type2WTG-eps-converted-to.pdf> 
-<./Images/Tw_curve-eps-converted-to.pdf>] [36pdfTeX warning (ext4): destination
- with the same identifier (name{figure.1.7}) has been already used, duplicate i
-gnored
+) [36pdfTeX warning (ext4): destination with the same identifier (name{figure.1
+.7}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
@@ -3439,7 +3436,7 @@ LaTeX Warning: Citation `memoir2010' on page 37 undefined on input line 23.
 
 
 ]
-<USPSC-EstruturaTrabAcad.jpg, id=764, 625.58719pt x 514.92375pt>
+<USPSC-EstruturaTrabAcad.jpg, id=770, 625.58719pt x 514.92375pt>
 File: USPSC-EstruturaTrabAcad.jpg Graphic file (type jpg)
 <use USPSC-EstruturaTrabAcad.jpg>
 Package pdftex.def Info: USPSC-EstruturaTrabAcad.jpg  used on input line 32.
@@ -3583,7 +3580,7 @@ l.676
                                                   \fi \fi 
 l.676 
       ]
-<USPSC-modelo-img-grafico.pdf, id=899, 847.165pt x 314.17375pt>
+<USPSC-modelo-img-grafico.pdf, id=905, 847.165pt x 314.17375pt>
 File: USPSC-modelo-img-grafico.pdf Graphic file (type pdf)
 <use USPSC-modelo-img-grafico.pdf>
 Package pdftex.def Info: USPSC-modelo-img-grafico.pdf  used on input line 679.
@@ -3628,7 +3625,7 @@ l.723 	Q
 
 LaTeX Warning: Citation `nbr14724' on page 54 undefined on input line 732.
 
-<USPSC-modelo-img-marca.pdf, id=933, 227.51701pt x 72.2695pt>
+<USPSC-modelo-img-marca.pdf, id=939, 227.51701pt x 72.2695pt>
 File: USPSC-modelo-img-marca.pdf Graphic file (type pdf)
 <use USPSC-modelo-img-marca.pdf>
 Package pdftex.def Info: USPSC-modelo-img-marca.pdf  used on input line 745.
@@ -6300,7 +6297,7 @@ LaTeX Warning: Citation `nbr14724' on page 183 undefined on input line 13.
 ] [184
 
 ]
-<USPSC-AcentuacaoLaTeX.png, id=1640, 225.84375pt x 353.06906pt>
+<USPSC-AcentuacaoLaTeX.png, id=1645, 225.84375pt x 353.06906pt>
 File: USPSC-AcentuacaoLaTeX.png Graphic file (type png)
 <use USPSC-AcentuacaoLaTeX.png>
 Package pdftex.def Info: USPSC-AcentuacaoLaTeX.png  used on input line 21.
@@ -6319,7 +6316,7 @@ l.26 \chapter
 [186
 
 ]
-<USPSC-SimbolosUteis.png, id=1652, 212.29312pt x 266.49562pt>
+<USPSC-SimbolosUteis.png, id=1657, 212.29312pt x 266.49562pt>
 File: USPSC-SimbolosUteis.png Graphic file (type png)
 <use USPSC-SimbolosUteis.png>
 Package pdftex.def Info: USPSC-SimbolosUteis.png  used on input line 30.
@@ -6337,7 +6334,7 @@ l.36 \chapter
              {Letras gregas em \LaTeX} <./USPSC-SimbolosUteis.png>] [188
 
 ]
-<USPSC-LetrasGregas.png, id=1661, 326.72063pt x 449.42906pt>
+<USPSC-LetrasGregas.png, id=1666, 326.72063pt x 449.42906pt>
 File: USPSC-LetrasGregas.png Graphic file (type png)
 <use USPSC-LetrasGregas.png>
 Package pdftex.def Info: USPSC-LetrasGregas.png  used on input line 40.
@@ -6386,10 +6383,10 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 532.
  ) 
 Here is how much of TeX's memory you used:
- 42255 strings out of 492982
- 804812 string characters out of 6134896
- 1093682 words of memory out of 5000000
- 44395 multiletter control sequences out of 15000+600000
+ 42257 strings out of 492982
+ 804852 string characters out of 6134896
+ 1094861 words of memory out of 5000000
+ 44397 multiletter control sequences out of 15000+600000
  655058 words of font info for 182 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  73i,18n,99p,10406b,1869s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -6410,10 +6407,10 @@ lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf
 /type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pf
 b></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/typ
 e1/public/lm/lmtt12.pfb>
-Output written on USPSC-modelo-seg.pdf (191 pages, 1464898 bytes).
+Output written on USPSC-modelo-seg.pdf (191 pages, 1466389 bytes).
 PDF statistics:
- 2338 PDF objects out of 2487 (max. 8388607)
- 1999 compressed objects within 20 object streams
+ 2344 PDF objects out of 2487 (max. 8388607)
+ 2004 compressed objects within 21 object streams
  508 named destinations out of 1000 (max. 500000)
  41359 words of extra memory for PDF output out of 42996 (max. 10000000)
 
