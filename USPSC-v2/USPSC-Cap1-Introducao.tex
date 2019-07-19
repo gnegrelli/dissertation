@@ -58,10 +58,10 @@ These studies have also shown that commercial wind turbine generators could be s
 
 \subsection{Type-1 Wind Turbine Generator}
 
-The first type of wind turbine generator is composed of a Squirrel-Cage Induction Generator (SCIG) connected to a wind turbine through a controlled gearbox\, as displayed in Figure \ref{fig: WTG1}. Due to its torque-speed characteristics, generators of this type operate at constant rotor speed, requiring robust controllers on gearbox and blade. Besides, as usual to any induction generator, the SCIG absorbs reactive power during operation. Thus, capacitors are often employed for power faction correction purposes. Moreover, type-1 generators limit aerodynamic power by varying the pitch angle of their blades, imposing great mechanical stress on blades, shafts and gears, what requires a robust design is required and prevents these gen . 
+The first type of wind turbine generator is composed of a Squirrel Cage Induction Generator (SCIG) connected to a wind turbine through a controlled gearbox\, as displayed in Figure \ref{fig: WTG1}. Due to its torque-speed characteristics, generators of this type operate at constant rotor speed, requiring robust controllers on gearbox and blade. Besides, as usual to any induction generator, the SCIG absorbs reactive power during operation. Thus, capacitors are often employed for power faction correction purposes. Moreover, type-1 generators limit aerodynamic power by varying the pitch angle of their blades, imposing great mechanical stress on blades, shafts and gears, demanding a robust mechanical design and preventing these generators to operate above certain wind speed \cite{Ellis2011}. 
 
-\begin{figure}
-	\caption{qw}
+\begin{figure}[h]
+	\caption{Representation of Type-1 Wind Turbine Generator}
 	\begin{center}
 		\includegraphics[scale=1]{Images/Type1WTG.eps}
 	\end{center}
@@ -70,18 +70,32 @@ The first type of wind turbine generator is composed of a Squirrel-Cage Inductio
 
 \subsection{Type-2 Wind Turbine Generator}
 
-\begin{figure}
-	\caption{qw}
+Similarly to Type-1 Wind Turbine Generator, Type-2 generators are composed of an asynchronous machine connected to a wind turbine via gearbox, but, instead of SCIG, Wound Rotor Induction Generator (WRIG) are used to convert kinetic energy into electricity. The WRIG has access to its rotor windings, allowing to vary the rotor resistance. As a direct consequence, this machine can operate in different wind speeds by adjusting its torque-speed curve as needed \cite{Ellis2011}. Therefore, Type-2 Wind Turbine Generators have a WRIG with a variable resistance connected to its rotor terminals, as shown in Figure \ref{fig: WTG2}.
+
+\begin{figure}[h]
+	\caption{Representation of Type-2 Wind Turbine Generator}
 	\begin{center}
 		\includegraphics[scale=1]{Images/Type2WTG.eps}
 	\end{center}
 	\label{fig: WTG2}
 \end{figure}
 
+This type of generator has then three speed control systems, with rotor resistance control responding to rapid changes in speed, gearbox control for medium variations and pitch control for slow changes. These control system work together to maintain power output constant and reduce mechanical stress on components. The effects on the torque-speed curve caused by different rotor resistances are shown in Figure \ref{fig: Tw}. For a fixed power, increasing rotor resistance increases the speed needed on the shaft, allowing the wind turbine to operate above rated wind speed. However, the speed range is only $\pm 10\%$. Also, this machine still needs a reactive compensation circuit on its terminals \cite{Muljadi2010}.
+
+\begin{figure}[h]
+	\caption{Torque-speed curve}
+	\begin{center}
+		\includegraphics[scale=.7]{Images/Tw_curve.eps}
+	\end{center}
+	\label{fig: Tw}
+\end{figure}
+
 \subsection{Type-3 Wind Turbine Generator}
 
-\begin{figure}
-	\caption{qw}
+A Type-3 Wind Turbine Generator, often called Doubly Fed Induction Generator (DFIG), is also composed of a wound rotor machine connected to a wind turbine. But, instead of varying rotor resistance, in DFIG's the rotor is supplied with AC voltage via a frequency converter. 
+
+\begin{figure}[h]
+	\caption{Representation of Type-3 Wind Turbine Generator}
 	\begin{center}
 		\includegraphics[scale=1]{Images/Type3WTG.eps}
 	\end{center}
@@ -90,8 +104,8 @@ The first type of wind turbine generator is composed of a Squirrel-Cage Inductio
 
 \subsection{Type-4 Wind Turbine Generator}
 
-\begin{figure}
-	\caption{qw}
+\begin{figure}[h]
+	\caption{Representation of Type-4 Wind Turbine Generator}
 	\begin{center}
 		\includegraphics[scale=1]{Images/Type4WTG.eps}
 	\end{center}
