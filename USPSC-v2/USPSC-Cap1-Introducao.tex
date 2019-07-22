@@ -4,6 +4,7 @@
 % Introdução (exemplo de capítulo sem numeração, mas presente no Sumário)
 % ----------------------------------------------------------
 \chapter[Introduction]{Introduction}
+\label{ch: Intro}
 
 During the last decade, the world has seen an increase in participation of renewable sources in power generation, leaded mainly by wind and solar energy. These green technologies provide an alternative to sources based on fossil fuel, lowering pollution levels and reducing greenhouse gas emissions. On the other hand, the power output from these sources rely on weather conditions and can't be fully controlled.
 
@@ -58,7 +59,7 @@ These studies have also shown that commercial wind turbine generators could be s
 
 \subsection{Type-1 Wind Turbine Generator}
 
-The first type of wind turbine generator is composed of a Squirrel Cage Induction Generator (SCIG) connected to a wind turbine through a controlled gearbox\, as displayed in Figure \ref{fig: WTG1}. Due to its torque-speed characteristics, generators of this type operate at constant rotor speed, requiring robust controllers on gearbox and blade. Besides, as usual to any induction generator, the SCIG absorbs reactive power during operation. Thus, capacitors are often employed for power faction correction purposes. Moreover, type-1 generators limit aerodynamic power by varying the pitch angle of their blades, imposing great mechanical stress on blades, shafts and gears, demanding a robust mechanical design and preventing these generators to operate above certain wind speed \cite{Ellis2011}. 
+The first type of wind turbine generator is composed of a Squirrel Cage Induction Generator (SCIG) connected to a wind turbine through a controlled gearbox, as displayed in Figure \ref{fig: WTG1}. Due to its torque-speed characteristics, generators of this type operate at constant rotor speed, requiring robust controllers on gearbox and blade. Besides, as usual to any induction generator, the SCIG absorbs reactive power during operation. Thus, capacitors are often employed for power faction correction purposes. Moreover, type-1 generators limit aerodynamic power by varying the pitch angle of their blades, imposing great mechanical stress on blades, shafts and gears, demanding a robust mechanical design and preventing these generators to operate above certain wind speed \cite{Ellis2011}. 
 
 \begin{figure}[h]
 	\caption{Representation of Type-1 Wind Turbine Generator}
@@ -114,4 +115,15 @@ The last type of wind turbine generator, also called Full-Converter Generator, i
 	\label{fig: WTG4}
 \end{figure}
 
+Figure \ref{fig: WindShare} shows the evolution of share in installed capacity onshore for each generator type. The data shows how SCIG and WRIG lost space in the segment and how DFIG and Full-Converter Generators' participation rose, dominating the global market \cite{Magagna2017}.
 
+\begin{figure}[h]
+	\caption{Share of installed capacity for each wind turbine generator type}
+	\begin{center}
+		\includegraphics[scale=.2]{Images/WTGTypes.jpg}
+	\end{center}
+	\legend{Source: JRC}
+	\label{fig: WindShare}
+\end{figure}
+
+In the light of the data presented above, this work aims to develop a software able to estimate the parameters of a mathematical model capable of predict the behaviour of Type-3 Wind Turbine Generators. The DFIG mathematical model will be subject to the following chapter. Afterwards, the estimation process and methods will be presented on chapter \ref{ch: Est}. At last, partial results and future prospects will be presented on chapter \ref{ch: Res}.

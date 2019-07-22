@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.5.31)  22 JUL 2019 12:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.5.31)  22 JUL 2019 18:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3177,7 +3177,7 @@ Overfull \hbox (1.5877pt too wide) detected at line 215
  (./USPSC-Cap1-Introducao.tex
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 18.
+               Default added (so using `tbp') on input line 19.
 
 Package epstopdf Info: Source file: <Images/EUrank.eps>
 (epstopdf)                    date: 2019-07-15 19:52:53
@@ -3187,17 +3187,17 @@ Package epstopdf Info: Source file: <Images/EUrank.eps>
 (epstopdf)                    size: 15114 bytes
 (epstopdf)             Command: <repstopdf --outfile=Images/EUrank-eps-converte
 d-to.pdf Images/EUrank.eps>
-(epstopdf)             \includegraphics on input line 21.
+(epstopdf)             \includegraphics on input line 22.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./Images/EUrank-eps-converted-to.pdf): PDF inclu
 sion: found PDF version <1.7>, but at most version <1.5> allowed
-<Images/EUrank-eps-converted-to.pdf, id=592, 430.60875pt x 424.58624pt>
+<Images/EUrank-eps-converted-to.pdf, id=594, 430.60875pt x 424.58624pt>
 File: Images/EUrank-eps-converted-to.pdf Graphic file (type pdf)
 <use Images/EUrank-eps-converted-to.pdf>
 Package pdftex.def Info: Images/EUrank-eps-converted-to.pdf  used on input line
- 21.
+ 22.
 (pdftex.def)             Requested size: 215.30383pt x 212.2926pt.
 Package epstopdf Info: Source file: <Images/BRshare19.eps>
 (epstopdf)                    date: 2019-07-17 17:31:43
@@ -3207,17 +3207,17 @@ Package epstopdf Info: Source file: <Images/BRshare19.eps>
 (epstopdf)                    size: 151014 bytes
 (epstopdf)             Command: <repstopdf --outfile=Images/BRshare19-eps-conve
 rted-to.pdf Images/BRshare19.eps>
-(epstopdf)             \includegraphics on input line 32.
+(epstopdf)             \includegraphics on input line 33.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./Images/BRshare19-eps-converted-to.pdf): PDF in
 clusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Images/BRshare19-eps-converted-to.pdf, id=598, 280.04625pt x 233.87375pt>
+<Images/BRshare19-eps-converted-to.pdf, id=600, 280.04625pt x 233.87375pt>
 File: Images/BRshare19-eps-converted-to.pdf Graphic file (type pdf)
 <use Images/BRshare19-eps-converted-to.pdf>
 Package pdftex.def Info: Images/BRshare19-eps-converted-to.pdf  used on input l
-ine 32.
+ine 33.
 (pdftex.def)             Requested size: 210.03415pt x 175.40486pt.
 [31
 
@@ -3230,13 +3230,13 @@ Underfull \vbox (badness 7308) has occurred while \output is active []
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.39 
+l.40 
      pdfTeX warning (ext4): destination with the same identifier (name{figure.1
 .2}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.39 
+l.40 
       <./Images/EUrank-eps-converted-to.pdf> <./Images/BRshare19-eps-converted-
 to.pdf>]
 Package epstopdf Info: Source file: <Images/WindWater.eps>
@@ -3247,24 +3247,24 @@ Package epstopdf Info: Source file: <Images/WindWater.eps>
 (epstopdf)                    size: 11136 bytes
 (epstopdf)             Command: <repstopdf --outfile=Images/WindWater-eps-conve
 rted-to.pdf Images/WindWater.eps>
-(epstopdf)             \includegraphics on input line 43.
+(epstopdf)             \includegraphics on input line 44.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./Images/WindWater-eps-converted-to.pdf): PDF in
 clusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Images/WindWater-eps-converted-to.pdf, id=629, 464.73625pt x 370.38374pt>
+<Images/WindWater-eps-converted-to.pdf, id=631, 464.73625pt x 370.38374pt>
 File: Images/WindWater-eps-converted-to.pdf Graphic file (type pdf)
 <use Images/WindWater-eps-converted-to.pdf>
 Package pdftex.def Info: Images/WindWater-eps-converted-to.pdf  used on input l
-ine 43.
+ine 44.
 (pdftex.def)             Requested size: 232.36755pt x 185.1914pt.
 [33pdfTeX warning (ext4): destination with the same identifier (name{figure.1.3
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.56 
+l.57 
       <./Images/WindWater-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <Images/Type1WTG.eps>
 (epstopdf)                    date: 2019-07-18 17:02:30
@@ -3274,17 +3274,17 @@ Package epstopdf Info: Source file: <Images/Type1WTG.eps>
 (epstopdf)                    size: 10720 bytes
 (epstopdf)             Command: <repstopdf --outfile=Images/Type1WTG-eps-conver
 ted-to.pdf Images/Type1WTG.eps>
-(epstopdf)             \includegraphics on input line 66.
+(epstopdf)             \includegraphics on input line 67.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./Images/Type1WTG-eps-converted-to.pdf): PDF inc
 lusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Images/Type1WTG-eps-converted-to.pdf, id=664, 249.93375pt x 116.435pt>
+<Images/Type1WTG-eps-converted-to.pdf, id=666, 249.93375pt x 116.435pt>
 File: Images/Type1WTG-eps-converted-to.pdf Graphic file (type pdf)
 <use Images/Type1WTG-eps-converted-to.pdf>
 Package pdftex.def Info: Images/Type1WTG-eps-converted-to.pdf  used on input li
-ne 66.
+ne 67.
 (pdftex.def)             Requested size: 249.93314pt x 116.43471pt.
 Package epstopdf Info: Source file: <Images/Type2WTG.eps>
 (epstopdf)                    date: 2019-07-18 18:49:23
@@ -3294,17 +3294,17 @@ Package epstopdf Info: Source file: <Images/Type2WTG.eps>
 (epstopdf)                    size: 11836 bytes
 (epstopdf)             Command: <repstopdf --outfile=Images/Type2WTG-eps-conver
 ted-to.pdf Images/Type2WTG.eps>
-(epstopdf)             \includegraphics on input line 78.
+(epstopdf)             \includegraphics on input line 79.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./Images/Type2WTG-eps-converted-to.pdf): PDF inc
 lusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Images/Type2WTG-eps-converted-to.pdf, id=668, 249.93375pt x 127.47626pt>
+<Images/Type2WTG-eps-converted-to.pdf, id=670, 249.93375pt x 127.47626pt>
 File: Images/Type2WTG-eps-converted-to.pdf Graphic file (type pdf)
 <use Images/Type2WTG-eps-converted-to.pdf>
 Package pdftex.def Info: Images/Type2WTG-eps-converted-to.pdf  used on input li
-ne 78.
+ne 79.
 (pdftex.def)             Requested size: 249.93314pt x 127.47594pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -3314,7 +3314,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.84 
+l.85 
       <./Images/Type1WTG-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <Images/Tw_curve.eps>
 (epstopdf)                    date: 2019-07-19 17:17:37
@@ -3324,21 +3324,18 @@ Package epstopdf Info: Source file: <Images/Tw_curve.eps>
 (epstopdf)                    size: 28013 bytes
 (epstopdf)             Command: <repstopdf --outfile=Images/Tw_curve-eps-conver
 ted-to.pdf Images/Tw_curve.eps>
-(epstopdf)             \includegraphics on input line 88.
+(epstopdf)             \includegraphics on input line 89.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./Images/Tw_curve-eps-converted-to.pdf): PDF inc
 lusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Images/Tw_curve-eps-converted-to.pdf, id=684, 462.72874pt x 346.29375pt>
+<Images/Tw_curve-eps-converted-to.pdf, id=686, 462.72874pt x 346.29375pt>
 File: Images/Tw_curve-eps-converted-to.pdf Graphic file (type pdf)
 <use Images/Tw_curve-eps-converted-to.pdf>
 Package pdftex.def Info: Images/Tw_curve-eps-converted-to.pdf  used on input li
-ne 88.
+ne 89.
 (pdftex.def)             Requested size: 323.90791pt x 242.40396pt.
-
-LaTeX Warning: Citation `Yaramasu2015' on page 35 undefined on input line 95.
-
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -3347,13 +3344,13 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.96 
+l.97 
      pdfTeX warning (ext4): destination with the same identifier (name{figure.1
 .6}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.96 
+l.97 
       <./Images/Type2WTG-eps-converted-to.pdf> <./Images/Tw_curve-eps-converted
 -to.pdf>]
 Package epstopdf Info: Source file: <Images/Type3WTG.eps>
@@ -3364,21 +3361,18 @@ Package epstopdf Info: Source file: <Images/Type3WTG.eps>
 (epstopdf)                    size: 11179 bytes
 (epstopdf)             Command: <repstopdf --outfile=Images/Type3WTG-eps-conver
 ted-to.pdf Images/Type3WTG.eps>
-(epstopdf)             \includegraphics on input line 100.
+(epstopdf)             \includegraphics on input line 101.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./Images/Type3WTG-eps-converted-to.pdf): PDF inc
 lusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Images/Type3WTG-eps-converted-to.pdf, id=747, 333.245pt x 122.4575pt>
+<Images/Type3WTG-eps-converted-to.pdf, id=751, 333.245pt x 122.4575pt>
 File: Images/Type3WTG-eps-converted-to.pdf Graphic file (type pdf)
 <use Images/Type3WTG-eps-converted-to.pdf>
 Package pdftex.def Info: Images/Type3WTG-eps-converted-to.pdf  used on input li
-ne 100.
+ne 101.
 (pdftex.def)             Requested size: 333.24417pt x 122.45718pt.
-
-LaTeX Warning: Citation `Yaramasu2015' on page 36 undefined on input line 107.
-
 Package epstopdf Info: Source file: <Images/Type4WTG.eps>
 (epstopdf)                    date: 2019-07-19 14:12:13
 (epstopdf)                    size: 22011 bytes
@@ -3387,87 +3381,103 @@ Package epstopdf Info: Source file: <Images/Type4WTG.eps>
 (epstopdf)                    size: 10631 bytes
 (epstopdf)             Command: <repstopdf --outfile=Images/Type4WTG-eps-conver
 ted-to.pdf Images/Type4WTG.eps>
-(epstopdf)             \includegraphics on input line 112.
+(epstopdf)             \includegraphics on input line 113.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./Images/Type4WTG-eps-converted-to.pdf): PDF inc
 lusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Images/Type4WTG-eps-converted-to.pdf, id=749, 326.21875pt x 98.3675pt>
+<Images/Type4WTG-eps-converted-to.pdf, id=755, 326.21875pt x 98.3675pt>
 File: Images/Type4WTG-eps-converted-to.pdf Graphic file (type pdf)
 <use Images/Type4WTG-eps-converted-to.pdf>
 Package pdftex.def Info: Images/Type4WTG-eps-converted-to.pdf  used on input li
-ne 112.
+ne 113.
 (pdftex.def)             Requested size: 326.21794pt x 98.36723pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) [36pdfTeX warning (ext4): destination with the same identifier (name{figure.1
-.7}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.472 \include{USPSC-Cap1-Introducao}
-                                      <./Images/Type3WTG-eps-converted-to.pdf>]
-[37pdfTeX warning (ext4): destination with the same identifier (name{figure.1.8
+[36pdfTeX warning (ext4): destination with the same identifier (name{figure.1.7
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
+l.119 
+       <./Images/Type3WTG-eps-converted-to.pdf>]
+<Images/WTGTypes.jpg, id=771, 1486.80469pt x 809.27344pt>
+File: Images/WTGTypes.jpg Graphic file (type jpg)
+<use Images/WTGTypes.jpg>
+Package pdftex.def Info: Images/WTGTypes.jpg  used on input line 123.
+(pdftex.def)             Requested size: 297.35567pt x 161.85182pt.
+
+
+LaTeX Warning: Reference `ch: Est' on page 37 undefined on input line 129.
+
+) [37pdfTeX warning (ext4): destination with the same identifier (name{figure.1
+.8}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
 l.472 \include{USPSC-Cap1-Introducao}
-                                      <./Images/Type4WTG-eps-converted-to.pdf>]
+                                     pdfTeX warning (ext4): destination with th
+e same identifier (name{figure.1.9}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.472 \include{USPSC-Cap1-Introducao}
+                                      <./Images/Type4WTG-eps-converted-to.pdf> 
+<./Images/WTGTypes.jpg>]
 \openout2 = `USPSC-Cap2-Desenvolvimento.aux'.
 
-(./USPSC-Cap2-Desenvolvimento.tex [38
+ (./USPSC-Cap2-Desenvolvimento.tex [38
 
 
 
 ]
 
-LaTeX Warning: Citation `nbr14724' on page 39 undefined on input line 20.
+LaTeX Warning: Citation `nbr14724' on page 39 undefined on input line 23.
 
 
-LaTeX Warning: Citation `sibi2016' on page 39 undefined on input line 20.
+LaTeX Warning: Citation `sibi2016' on page 39 undefined on input line 23.
 
 
-LaTeX Warning: Citation `abnetxclasse' on page 39 undefined on input line 23.
+LaTeX Warning: Citation `abnetxclasse' on page 39 undefined on input line 26.
 
 
-LaTeX Warning: Citation `abnetxcite' on page 39 undefined on input line 23.
+LaTeX Warning: Citation `abnetxcite' on page 39 undefined on input line 26.
 
 
-LaTeX Warning: Citation `abnetxcitealf' on page 39 undefined on input line 23.
+LaTeX Warning: Citation `abnetxcitealf' on page 39 undefined on input line 26.
 
 
-LaTeX Warning: Citation `memoir2010' on page 39 undefined on input line 23.
+LaTeX Warning: Citation `memoir2010' on page 39 undefined on input line 26.
 
 [39]
-<USPSC-EstruturaTrabAcad.jpg, id=779, 625.58719pt x 514.92375pt>
+<USPSC-EstruturaTrabAcad.jpg, id=794, 625.58719pt x 514.92375pt>
 File: USPSC-EstruturaTrabAcad.jpg Graphic file (type jpg)
 <use USPSC-EstruturaTrabAcad.jpg>
-Package pdftex.def Info: USPSC-EstruturaTrabAcad.jpg  used on input line 32.
+Package pdftex.def Info: USPSC-EstruturaTrabAcad.jpg  used on input line 35.
 (pdftex.def)             Requested size: 312.79283pt x 257.46124pt.
 
 
-LaTeX Warning: Citation `nbr14724' on page 40 undefined on input line 34.
+LaTeX Warning: Citation `nbr14724' on page 40 undefined on input line 37.
 
 
-LaTeX Warning: Citation `nbr14724' on page 40 undefined on input line 34.
+LaTeX Warning: Citation `nbr14724' on page 40 undefined on input line 37.
 
 
-Overfull \hbox (4.49367pt too wide) in paragraph at lines 43--44
+Overfull \hbox (4.49367pt too wide) in paragraph at lines 46--47
 []\T1/lmr/m/n/12 (-20) Arquivos pré-textuais: USPSC-pre-textual-UUUU.tex e USPS
 C-TCC-pre-textual-
  []
 
-[40pdfTeX warning (ext4): destination with the same identifier (name{figure.2.9
-}) has been already used, duplicate ignored
+[40pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1
+0}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.55 	\item U
+l.58 	\item U
              SPSC-Cap5-Conclusao.tex; <./USPSC-EstruturaTrabAcad.jpg>]
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 68.
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 71.
 
 (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -3481,70 +3491,70 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [45]
 [46]
-Overfull \hbox (1.95023pt too wide) in paragraph at lines 263--263
+Overfull \hbox (1.95023pt too wide) in paragraph at lines 266--266
 []  \T1/lmtt/m/n/12 %\notafolharosto{Vers\~ao corrigida \\(Vers\~ao original di
 spon\'ivel na[] 
  []
 
 [47]
 
-LaTeX Warning: Citation `equipeabntex2' on page 48 undefined on input line 309.
+LaTeX Warning: Citation `equipeabntex2' on page 48 undefined on input line 312.
 
 
 [48]
-Overfull \hbox (1.64148pt too wide) in paragraph at lines 356--356
+Overfull \hbox (1.64148pt too wide) in paragraph at lines 359--359
 []\T1/lmtt/m/n/12 %- páginas ímpares: cabeçalho com seções ou subseções e o núm
 ero da página[] 
  []
 
 [49]
-Overfull \hbox (1.64148pt too wide) in paragraph at lines 398--398
+Overfull \hbox (1.64148pt too wide) in paragraph at lines 401--401
 []\T1/lmtt/m/n/12 %- páginas ímpares: cabeçalho com seções ou subseções e o núm
 ero da página[] 
  []
 
 
-LaTeX Warning: Citation `babel2011' on page 50 undefined on input line 404.
+LaTeX Warning: Citation `babel2011' on page 50 undefined on input line 407.
 
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 407.
+(Font)              <10.95> on input line 410.
 
-Underfull \hbox (badness 10000) in paragraph at lines 421--421
+Underfull \hbox (badness 10000) in paragraph at lines 424--424
 [] [] [][]\T1/lmr/m/n/10.95 (+20) Extraído de: [][]$<[]http : / / bigbrowser . 
 blog . lemonde . fr / 2013 / 02 / 17 /
  []
 
 [50]
-Underfull \hbox (badness 10000) in paragraph at lines 435--435
+Underfull \hbox (badness 10000) in paragraph at lines 438--438
 [] [] [][]\T1/lmr/m/n/10.95 (+20) Extraído de: [][]$<[]http : / / internacional
  . elpais . com / internacional / 2013 / 02 / 17 / actualidad /
  []
 
-LaTeX Info: Redefining \. on input line 439.
-LaTeX Info: Redefining \% on input line 439.
+LaTeX Info: Redefining \. on input line 442.
+LaTeX Info: Redefining \% on input line 442.
 
-LaTeX Warning: Citation `abnetxclasse' on page 51 undefined on input line 449.
-
-
-LaTeX Warning: Citation `nbr6024' on page 51 undefined on input line 457.
+LaTeX Warning: Citation `abnetxclasse' on page 51 undefined on input line 452.
 
 
-LaTeX Warning: Citation `nbr6024' on page 51 undefined on input line 480.
+LaTeX Warning: Citation `nbr6024' on page 51 undefined on input line 460.
+
+
+LaTeX Warning: Citation `nbr6024' on page 51 undefined on input line 483.
 
 [51] [52]
 
-LaTeX Warning: Citation `sibi2009' on page 53 undefined on input line 566.
+LaTeX Warning: Citation `sibi2009' on page 53 undefined on input line 569.
 
 
-Underfull \hbox (badness 1320) in paragraph at lines 597--597
+Underfull \hbox (badness 1320) in paragraph at lines 600--600
 [][][]\T1/lmr/m/n/12 (+20) Frequência an-ual por cat-e-go-ria de
  []
 
 
-LaTeX Warning: Citation `sibi2009' on page 53 undefined on input line 618.
+LaTeX Warning: Citation `sibi2009' on page 53 undefined on input line 621.
 
 
-LaTeX Warning: Citation `sibi2009' on page 53 undefined on input line 618.
+LaTeX Warning: Citation `sibi2009' on page 53 undefined on input line 621.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -3554,22 +3564,22 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.620 
+l.623 
       ]
-Underfull \hbox (badness 10000) in paragraph at lines 626--628
+Underfull \hbox (badness 10000) in paragraph at lines 629--631
 
  []
 
 
-LaTeX Warning: Citation `equipeabntex2' on page 54 undefined on input line 662.
+LaTeX Warning: Citation `equipeabntex2' on page 54 undefined on input line 665.
 
 
 
-LaTeX Warning: Citation `equipeabntex2' on page 54 undefined on input line 662.
+LaTeX Warning: Citation `equipeabntex2' on page 54 undefined on input line 665.
 
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 665--676
+Underfull \hbox (badness 10000) in paragraph at lines 668--679
 
  []
 
@@ -3578,101 +3588,101 @@ Underfull \hbox (badness 10000) in paragraph at lines 665--676
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.676 
+l.679 
       pdfTeX warning (ext4): destination with the same identifier (name{figure.
-2.10}) has been already used, duplicate ignored
+2.11}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.676 
+l.679 
       ]
-<USPSC-modelo-img-grafico.pdf, id=915, 847.165pt x 314.17375pt>
+<USPSC-modelo-img-grafico.pdf, id=930, 847.165pt x 314.17375pt>
 File: USPSC-modelo-img-grafico.pdf Graphic file (type pdf)
 <use USPSC-modelo-img-grafico.pdf>
-Package pdftex.def Info: USPSC-modelo-img-grafico.pdf  used on input line 679.
+Package pdftex.def Info: USPSC-modelo-img-grafico.pdf  used on input line 682.
 (pdftex.def)             Requested size: 423.58145pt x 157.08649pt.
 
 
-LaTeX Warning: Citation `araujo2012' on page 55 undefined on input line 681.
+LaTeX Warning: Citation `araujo2012' on page 55 undefined on input line 684.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 694--694
+Underfull \hbox (badness 10000) in paragraph at lines 697--697
 []|\T1/lmr/bx/n/12 Sistemas
  []
 
 
-Overfull \hbox (6.57309pt too wide) in paragraph at lines 696--696
+Overfull \hbox (6.57309pt too wide) in paragraph at lines 699--699
 []|\T1/lmr/m/n/12 (-20) Epistemologia| 
  []
 
 
-Underfull \hbox (badness 2753) in paragraph at lines 699--699
+Underfull \hbox (badness 2753) in paragraph at lines 702--702
 []|\T1/lmr/m/n/12 (+20) Nível do ob-
  []
 
 
-LaTeX Warning: Citation `van1986' on page 55 undefined on input line 707.
+LaTeX Warning: Citation `van1986' on page 55 undefined on input line 710.
 
 [55pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1
-1}) has been already used, duplicate ignored
+2}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.723 	Q
+l.726 	Q
         ualquer que seja o tipo de ilustraÃ§Ã£o, sua identificaÃ§Ã£o aparece...
 pdfTeX warning (ext4): destination with the same identifier (name{quadro.2.1}) 
 has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.723 	Q
+l.726 	Q
         ualquer que seja o tipo de ilustraÃ§Ã£o, sua identificaÃ§Ã£o aparece...
  <./USPSC-modelo-img-grafico.pdf>]
 
-LaTeX Warning: Citation `nbr14724' on page 56 undefined on input line 732.
+LaTeX Warning: Citation `nbr14724' on page 56 undefined on input line 735.
 
-<USPSC-modelo-img-marca.pdf, id=948, 227.51701pt x 72.2695pt>
+<USPSC-modelo-img-marca.pdf, id=963, 227.51701pt x 72.2695pt>
 File: USPSC-modelo-img-marca.pdf Graphic file (type pdf)
 <use USPSC-modelo-img-marca.pdf>
-Package pdftex.def Info: USPSC-modelo-img-marca.pdf  used on input line 745.
+Package pdftex.def Info: USPSC-modelo-img-marca.pdf  used on input line 748.
 (pdftex.def)             Requested size: 204.76341pt x 65.04192pt.
 
-Overfull \hbox (22.76619pt too wide) in paragraph at lines 745--746
+Overfull \hbox (22.76619pt too wide) in paragraph at lines 748--749
  [][] 
  []
 
 
-LaTeX Warning: Citation `equipeabntex2' on page 56 undefined on input line 746.
+LaTeX Warning: Citation `equipeabntex2' on page 56 undefined on input line 749.
 
 
 
-LaTeX Warning: Citation `equipeabntex2' on page 56 undefined on input line 746.
+LaTeX Warning: Citation `equipeabntex2' on page 56 undefined on input line 749.
 
 
 File: USPSC-modelo-img-grafico.pdf Graphic file (type pdf)
 <use USPSC-modelo-img-grafico.pdf>
-Package pdftex.def Info: USPSC-modelo-img-grafico.pdf  used on input line 752.
+Package pdftex.def Info: USPSC-modelo-img-grafico.pdf  used on input line 755.
 (pdftex.def)             Requested size: 169.43pt x 62.83363pt.
 
-LaTeX Warning: Citation `araujo2012' on page 56 undefined on input line 753.
+LaTeX Warning: Citation `araujo2012' on page 56 undefined on input line 756.
 
 
-LaTeX Warning: Citation `araujo2012' on page 56 undefined on input line 753.
+LaTeX Warning: Citation `araujo2012' on page 56 undefined on input line 756.
 
 [56pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1
-2}) has been already used, duplicate ignored
+3}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.789 
+l.792 
       pdfTeX warning (ext4): destination with the same identifier (name{figure.
-2.13}) has been already used, duplicate ignored
+2.14}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.789 
+l.792 
        <./USPSC-modelo-img-marca.pdf>]
-LaTeX Font Info:    Try loading font information for OT1+lmss on input line 792
+LaTeX Font Info:    Try loading font information for OT1+lmss on input line 795
 .
 
 (/usr/share/texmf/tex/latex/lm/ot1lmss.fd
@@ -3684,39 +3694,63 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             See the microtype manual for details.
  [57]
 
-LaTeX Warning: Citation `sibi2009' on page 58 undefined on input line 882.
+LaTeX Warning: Citation `sibi2009' on page 58 undefined on input line 885.
 
 
-Overfull \hbox (1.64148pt too wide) in paragraph at lines 894--894
+Overfull \hbox (1.64148pt too wide) in paragraph at lines 897--897
 []\T1/lmtt/m/n/12 % Para utilizar a fonte Times New Roman, inclua uma % no iníc
 io do comando[] 
  []
 
 [58] [59]
-Overfull \hbox (1.95023pt too wide) in paragraph at lines 969--969
+Overfull \hbox (1.95023pt too wide) in paragraph at lines 972--972
 []   \T1/lmtt/m/n/12 makeindex ARQUIVO_PRINCIPAL.nlo -s nomencl.ist -o ARQUIVO_
 PRINCIPAL.nls[] 
  []
 
 
-Overfull \hbox (1.95023pt too wide) in paragraph at lines 991--991
+LaTeX Warning: Reference `cap_exemplos' on page 60 undefined on input line 982.
+
+
+
+LaTeX Warning: Reference `cap_exemplos' on page 60 undefined on input line 982.
+
+
+
+LaTeX Warning: Reference `cap_exemplos' on page 60 undefined on input line 983.
+
+
+
+LaTeX Warning: Hyper reference `cap_exemplos' on page 60 undefined on input lin
+e 984.
+
+
+LaTeX Warning: Reference `cap_exemplos' on page 60 undefined on input line 984.
+
+
+
+LaTeX Warning: Reference `cap_exemplos' on page 60 undefined on input line 986.
+
+
+
+Overfull \hbox (1.95023pt too wide) in paragraph at lines 994--994
 []\T1/lmtt/m/n/12 um exemplo de remissão interna, que também pode ser feita qua
 ndo indicamos[] 
  []
 
 
-LaTeX Warning: Citation `nbr6024' on page 60 undefined on input line 1002.
+LaTeX Warning: Citation `nbr6024' on page 60 undefined on input line 1005.
 
 [60] [61]
 
-LaTeX Warning: Citation `abnetxclasse' on page 62 undefined on input line 1067.
+LaTeX Warning: Citation `abnetxclasse' on page 62 undefined on input line 1070.
 
 
 
-LaTeX Warning: Citation `nbr14724' on page 62 undefined on input line 1071.
+LaTeX Warning: Citation `nbr14724' on page 62 undefined on input line 1074.
 
 
-Overfull \hbox (6.91608pt too wide) in paragraph at lines 1082--1085
+Overfull \hbox (6.91608pt too wide) in paragraph at lines 1085--1088
 []\T1/lmr/m/n/12 (-20) Inscreva-se no grupo de usuários L[]T[]X: [][]$<[]http :
  / / groups . google . com / group / latex-[]br>[]$[][],
  []
@@ -3726,19 +3760,19 @@ Overfull \hbox (6.91608pt too wide) in paragraph at lines 1082--1085
 
  (./USPSC-Cap3-Citacoes.tex
 
-LaTeX Warning: Citation `nbr10520' on page 65 undefined on input line 11.
+LaTeX Warning: Citation `nbr10520' on page 65 undefined on input line 12.
 
 
-LaTeX Warning: Citation `sibi2009' on page 65 undefined on input line 17.
+LaTeX Warning: Citation `sibi2009' on page 65 undefined on input line 18.
 
 
-LaTeX Warning: Citation `abnetxcite' on page 65 undefined on input line 26.
+LaTeX Warning: Citation `abnetxcite' on page 65 undefined on input line 27.
 
 
-LaTeX Warning: Citation `abnetxcitealf' on page 65 undefined on input line 26.
+LaTeX Warning: Citation `abnetxcitealf' on page 65 undefined on input line 27.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 32--33
+Underfull \hbox (badness 10000) in paragraph at lines 33--34
 
  []
 
@@ -3751,67 +3785,61 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 ]
 
-LaTeX Warning: Citation `KOK2013' on page 66 undefined on input line 49.
+LaTeX Warning: Citation `KOK2013' on page 66 undefined on input line 50.
 
 
-Overfull \hbox (7.16368pt too wide) in paragraph at lines 52--52
+Overfull \hbox (7.16368pt too wide) in paragraph at lines 53--53
  []\T1/lmtt/m/n/12 "Texto texto texto texto texto texto texto texto texto texto
  texto[] 
  []
 
 
-Overfull \hbox (21.34517pt too wide) in paragraph at lines 53--53
+Overfull \hbox (21.34517pt too wide) in paragraph at lines 54--54
  []\T1/lmtt/m/n/12 texto texto texto texto texto texto texto." \cite[p.~67]{Kra
 uss1997}.[] 
  []
 
 
-LaTeX Warning: Citation `Krauss1997' on page 66 undefined on input line 56.
+LaTeX Warning: Citation `Krauss1997' on page 66 undefined on input line 57.
 
 
-Overfull \hbox (13.31067pt too wide) in paragraph at lines 60--60
+Overfull \hbox (13.31067pt too wide) in paragraph at lines 61--61
  []\T1/lmtt/m/n/12 Segundo \citeonline [p.~618]{Moss1999}: "[\ldots] texto text
 o texto[] 
  []
 
 
-LaTeX Warning: Citation `Moss1999' on page 66 undefined on input line 64.
+LaTeX Warning: Citation `Moss1999' on page 66 undefined on input line 65.
 
 
-Overfull \hbox (17.04369pt too wide) in paragraph at lines 68--68
+Overfull \hbox (17.04369pt too wide) in paragraph at lines 69--69
  []\T1/lmtt/m/n/12 "Texto texto texto texto texto texto texto texto\textbf{text
 o texto}[] 
  []
 
 
-LaTeX Warning: Citation `ROMANO1996' on page 66 undefined on input line 72.
+LaTeX Warning: Citation `ROMANO1996' on page 66 undefined on input line 73.
 
 [66]
-Underfull \hbox (badness 10000) in paragraph at lines 97--98
+Underfull \hbox (badness 10000) in paragraph at lines 98--99
  
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 100--101
+Underfull \hbox (badness 10000) in paragraph at lines 101--102
 
  []
 
 
-Overfull \hbox (2.84117pt too wide) in paragraph at lines 106--106
+Overfull \hbox (2.84117pt too wide) in paragraph at lines 107--107
  []\T1/lmtt/m/n/12 Texto texto texto texto texto texto texto texto texto texto 
 texto.[] 
  []
 
 
-Overfull \hbox (0.67993pt too wide) in paragraph at lines 108--108
+Overfull \hbox (0.67993pt too wide) in paragraph at lines 109--109
  []\T1/lmtt/m/n/12 Texto texto texto texto texto texto [\ldots] textos textos t
 extos[] 
- []
-
-
-Overfull \hbox (0.98868pt too wide) in paragraph at lines 109--109
- []\T1/lmtt/m/n/12 texto texto texto texto texto texto texto texto texto texto 
-texto[] 
  []
 
 
@@ -3827,17 +3855,17 @@ texto[]
  []
 
 
-LaTeX Warning: Citation `Farias2001' on page 67 undefined on input line 118.
-
-
-Overfull \hbox (0.67993pt too wide) in paragraph at lines 125--125
- []\T1/lmtt/m/n/12 Texto texto texto texto texto texto texto texto texto texto 
+Overfull \hbox (0.98868pt too wide) in paragraph at lines 112--112
+ []\T1/lmtt/m/n/12 texto texto texto texto texto texto texto texto texto texto 
 texto[] 
  []
 
 
-Overfull \hbox (0.98868pt too wide) in paragraph at lines 126--126
- []\T1/lmtt/m/n/12 texto texto texto texto texto texto texto texto texto texto 
+LaTeX Warning: Citation `Farias2001' on page 67 undefined on input line 119.
+
+
+Overfull \hbox (0.67993pt too wide) in paragraph at lines 126--126
+ []\T1/lmtt/m/n/12 Texto texto texto texto texto texto texto texto texto texto 
 texto[] 
  []
 
@@ -3848,283 +3876,289 @@ texto[]
  []
 
 
-Overfull \hbox (2.84117pt too wide) in paragraph at lines 128--128
+Overfull \hbox (0.98868pt too wide) in paragraph at lines 128--128
+ []\T1/lmtt/m/n/12 texto texto texto texto texto texto texto texto texto texto 
+texto[] 
+ []
+
+
+Overfull \hbox (2.84117pt too wide) in paragraph at lines 129--129
  []\T1/lmtt/m/n/12 texto texto texto texto texto texto texto texto texto texto 
 texto.[] 
  []
 
 
-LaTeX Warning: Citation `Gubitoso1989' on page 67 undefined on input line 132.
+LaTeX Warning: Citation `Gubitoso1989' on page 67 undefined on input line 133.
 
 [67]
-Underfull \hbox (badness 10000) in paragraph at lines 134--135
+Underfull \hbox (badness 10000) in paragraph at lines 135--136
  
  []
 
 
-LaTeX Warning: Citation `Hood1999' on page 68 undefined on input line 147.
+LaTeX Warning: Citation `Hood1999' on page 68 undefined on input line 148.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 158--160
+Underfull \hbox (badness 10000) in paragraph at lines 159--161
 
  []
 
 
 LaTeX Warning: Citation `Naves25abr.1999' on page 68 undefined on input line 16
-5.
+6.
 
 
-Overfull \hbox (9.01617pt too wide) in paragraph at lines 168--168
+Overfull \hbox (9.01617pt too wide) in paragraph at lines 169--169
  []\T1/lmtt/m/n/12 Para \citeonline{Sukikara2007} texto texto texto texto texto
  texto.[] 
  []
 
 
-LaTeX Warning: Citation `Sukikara2007' on page 68 undefined on input line 171.
+LaTeX Warning: Citation `Sukikara2007' on page 68 undefined on input line 172.
 
 
-LaTeX Warning: Citation `Catani1989' on page 68 undefined on input line 177.
+LaTeX Warning: Citation `Catani1989' on page 68 undefined on input line 178.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 176--178
+Underfull \hbox (badness 10000) in paragraph at lines 177--179
 
  []
 
 [68]
 
-LaTeX Warning: Citation `Castro1990' on page 69 undefined on input line 198.
+LaTeX Warning: Citation `Castro1990' on page 69 undefined on input line 199.
 
 
-LaTeX Warning: Citation `Castro1990' on page 69 undefined on input line 198.
+LaTeX Warning: Citation `Castro1990' on page 69 undefined on input line 199.
 
 
-LaTeX Warning: Citation `Alves2002' on page 69 undefined on input line 198.
+LaTeX Warning: Citation `Alves2002' on page 69 undefined on input line 199.
 
 
-LaTeX Warning: Citation `Alves2002' on page 69 undefined on input line 198.
+LaTeX Warning: Citation `Alves2002' on page 69 undefined on input line 199.
 
 
-Overfull \hbox (9.00217pt too wide) in paragraph at lines 202--202
+Overfull \hbox (9.00217pt too wide) in paragraph at lines 203--203
  []\T1/lmtt/m/n/12 \apudonline {Gomes1992}{Azevedo2015} texto texto texto texto
  texto.[] 
  []
 
 
-LaTeX Warning: Citation `Gomes1992' on page 69 undefined on input line 206.
+LaTeX Warning: Citation `Gomes1992' on page 69 undefined on input line 207.
 
 
-LaTeX Warning: Citation `Gomes1992' on page 69 undefined on input line 206.
+LaTeX Warning: Citation `Gomes1992' on page 69 undefined on input line 207.
 
 
-LaTeX Warning: Citation `Azevedo2015' on page 69 undefined on input line 206.
+LaTeX Warning: Citation `Azevedo2015' on page 69 undefined on input line 207.
 
 
-LaTeX Warning: Citation `Azevedo2015' on page 69 undefined on input line 206.
+LaTeX Warning: Citation `Azevedo2015' on page 69 undefined on input line 207.
 
 
-Overfull \hbox (2.84117pt too wide) in paragraph at lines 219--219
+Overfull \hbox (2.84117pt too wide) in paragraph at lines 220--220
  []\T1/lmtt/m/n/12 texto texto texto texto texto texto texto texto texto texto 
 texto.[] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 221--222
+Underfull \hbox (badness 10000) in paragraph at lines 222--223
 
  []
 
 
-LaTeX Warning: Citation `Alves2002' on page 69 undefined on input line 223.
+LaTeX Warning: Citation `Alves2002' on page 69 undefined on input line 224.
 
 [69]
-Overfull \hbox (7.16368pt too wide) in paragraph at lines 228--228
+Overfull \hbox (7.16368pt too wide) in paragraph at lines 229--229
  []\T1/lmtt/m/n/12 texto texto texto texto texto texto texto texto texto texto 
 texto"[] 
  []
 
 
-LaTeX Warning: Citation `Azevedo2015' on page 70 undefined on input line 236.
+LaTeX Warning: Citation `Azevedo2015' on page 70 undefined on input line 237.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 258--261
+Underfull \hbox (badness 10000) in paragraph at lines 259--262
 
  []
 
 [70]
-Underfull \hbox (badness 10000) in paragraph at lines 267--269
+Underfull \hbox (badness 10000) in paragraph at lines 268--270
 
  []
 
 
-LaTeX Warning: Citation `Bruckman2002' on page 71 undefined on input line 285.
+LaTeX Warning: Citation `Bruckman2002' on page 71 undefined on input line 286.
 
 
-Overfull \hbox (9.00917pt too wide) in paragraph at lines 289--289
+Overfull \hbox (9.00917pt too wide) in paragraph at lines 290--290
  []\T1/lmtt/m/n/12 texto texto. (informação pessoal)\footnote{\citetext{science
 2006}}.[] 
  []
 
 
-LaTeX Warning: Citation `science2006' on page 71 undefined on input line 292.
+LaTeX Warning: Citation `science2006' on page 71 undefined on input line 293.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 291--293
+Underfull \hbox (badness 10000) in paragraph at lines 292--294
 
  []
 
 
-Overfull \hbox (5.92868pt too wide) in paragraph at lines 304--304
+Overfull \hbox (5.92868pt too wide) in paragraph at lines 305--305
  []\T1/lmtt/m/n/12 texto. (em fase de elaboração)\footnote{\citetext{Barbosa200
 2}}.\\[] 
  []
 
 
-LaTeX Warning: Citation `Barbosa2002' on page 71 undefined on input line 307.
+LaTeX Warning: Citation `Barbosa2002' on page 71 undefined on input line 308.
 
 [71]
 
-LaTeX Warning: Citation `galeria1998' on page 72 undefined on input line 317.
+LaTeX Warning: Citation `galeria1998' on page 72 undefined on input line 318.
 
 
-LaTeX Warning: Citation `usp2006' on page 72 undefined on input line 319.
+LaTeX Warning: Citation `usp2006' on page 72 undefined on input line 320.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 332--333
+Underfull \hbox (badness 10000) in paragraph at lines 333--334
 
  []
 
 
-Overfull \hbox (25.68169pt too wide) in paragraph at lines 340--340
+Overfull \hbox (25.68169pt too wide) in paragraph at lines 341--341
  []\T1/lmtt/m/n/12 Texto texto \underline{texto} texto texto. \cite[~p.129, gri
 fo nosso][] 
  []
 
 
-LaTeX Warning: Citation `Piccini1999' on page 72 undefined on input line 344.
+LaTeX Warning: Citation `Piccini1999' on page 72 undefined on input line 345.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 343--346
+Underfull \hbox (badness 10000) in paragraph at lines 344--347
 
  []
 
 
-Overfull \hbox (38.0387pt too wide) in paragraph at lines 348--348
+Overfull \hbox (38.0387pt too wide) in paragraph at lines 349--349
  []\T1/lmtt/m/n/12 Texto texto \underline{texto} texto texto. \cite[~p.57, grif
 o do autor][] 
  []
 
 
-LaTeX Warning: Citation `Dias1994' on page 72 undefined on input line 352.
+LaTeX Warning: Citation `Dias1994' on page 72 undefined on input line 353.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 351--354
+Underfull \hbox (badness 10000) in paragraph at lines 352--355
 
  []
 
 [72]
 
-LaTeX Warning: Citation `Tollivet1994' on page 73 undefined on input line 360.
+LaTeX Warning: Citation `Tollivet1994' on page 73 undefined on input line 361.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 359--362
+Underfull \hbox (badness 10000) in paragraph at lines 360--363
 
  []
 
 
-Overfull \hbox (7.16368pt too wide) in paragraph at lines 364--364
+Overfull \hbox (7.16368pt too wide) in paragraph at lines 365--365
  []\T1/lmtt/m/n/12 "Texto texto texto [comentário comentário] texto texto texto
  texto[] 
  []
 
 
 LaTeX Warning: Citation `Naves25abr.1999' on page 73 undefined on input line 36
-8.
+9.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 367--370
+Underfull \hbox (badness 10000) in paragraph at lines 368--371
 
  []
 
 
-Overfull \hbox (9.01617pt too wide) in paragraph at lines 372--372
+Overfull \hbox (9.01617pt too wide) in paragraph at lines 373--373
  []\T1/lmtt/m/n/12 "Texto texto texto". \cite[~p.102, tradução nossa]{Malinowsk
 i2000}.[] 
  []
 
 
-LaTeX Warning: Citation `Malinowski2000' on page 73 undefined on input line 375
+LaTeX Warning: Citation `Malinowski2000' on page 73 undefined on input line 376
 .
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 374--376
+Underfull \hbox (badness 10000) in paragraph at lines 375--377
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 379--382
+Underfull \hbox (badness 10000) in paragraph at lines 380--383
 
  []
 
 
-Overfull \hbox (14.7855pt too wide) in paragraph at lines 383--385
+Overfull \hbox (14.7855pt too wide) in paragraph at lines 384--386
 []\T1/lmr/bx/n/12 Notas ex-plica-ti-vas \T1/lmr/m/n/12 (-20) constituem-se em c
 o-men-tários, com-ple-men-tações ou traduções
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 385--386
+Underfull \hbox (badness 10000) in paragraph at lines 386--387
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 390--391
+Underfull \hbox (badness 10000) in paragraph at lines 391--392
 
  []
 
 [73]
-Underfull \hbox (badness 10000) in paragraph at lines 403--404
+Underfull \hbox (badness 10000) in paragraph at lines 404--405
 
  []
 
 
-LaTeX Warning: Citation `Abreu2015' on page 74 undefined on input line 405.
+LaTeX Warning: Citation `Abreu2015' on page 74 undefined on input line 406.
 
 
-LaTeX Warning: Citation `Abreu2015' on page 74 undefined on input line 409.
+LaTeX Warning: Citation `Abreu2015' on page 74 undefined on input line 410.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 409--410
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 413--414
+Underfull \hbox (badness 10000) in paragraph at lines 410--411
 
  []
 
 
-LaTeX Warning: Citation `simone1977' on page 74 undefined on input line 415.
-
-
-LaTeX Warning: Citation `simone1977' on page 74 undefined on input line 419.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 419--420
+Underfull \hbox (badness 10000) in paragraph at lines 414--415
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 424--425
+LaTeX Warning: Citation `simone1977' on page 74 undefined on input line 416.
+
+
+LaTeX Warning: Citation `simone1977' on page 74 undefined on input line 420.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 420--421
 
  []
 
 
-LaTeX Warning: Citation `Giannini2000' on page 74 undefined on input line 426.
+Underfull \hbox (badness 10000) in paragraph at lines 425--426
+
+ []
 
 
-LaTeX Warning: Citation `Giannini2000' on page 74 undefined on input line 430.
+LaTeX Warning: Citation `Giannini2000' on page 74 undefined on input line 427.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 430--431
+LaTeX Warning: Citation `Giannini2000' on page 74 undefined on input line 431.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 431--432
 
  []
 
@@ -4132,70 +4166,70 @@ Underfull \hbox (badness 10000) in paragraph at lines 430--431
 Underfull \vbox (badness 3482) has occurred while \output is active []
 
  [74]
-Underfull \hbox (badness 10000) in paragraph at lines 434--435
+Underfull \hbox (badness 10000) in paragraph at lines 435--436
 
  []
 
 
-LaTeX Warning: Citation `Meyaard2003' on page 75 undefined on input line 436.
+LaTeX Warning: Citation `Meyaard2003' on page 75 undefined on input line 437.
 
 
-LaTeX Warning: Citation `Meyaard2003' on page 75 undefined on input line 440.
+LaTeX Warning: Citation `Meyaard2003' on page 75 undefined on input line 441.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 440--441
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 449--450
+Underfull \hbox (badness 10000) in paragraph at lines 441--442
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 455--456
+Underfull \hbox (badness 10000) in paragraph at lines 450--451
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 459--460
+Underfull \hbox (badness 10000) in paragraph at lines 456--457
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 464--465
+Underfull \hbox (badness 10000) in paragraph at lines 460--461
 
  []
 
 
-LaTeX Warning: Citation `Hennekens1987b' on page 75 undefined on input line 466
+Underfull \hbox (badness 10000) in paragraph at lines 465--466
+
+ []
+
+
+LaTeX Warning: Citation `Hennekens1987b' on page 75 undefined on input line 467
 .
 
 
-LaTeX Warning: Citation `Hennekens1987a' on page 75 undefined on input line 466
+LaTeX Warning: Citation `Hennekens1987a' on page 75 undefined on input line 467
 .
 
 
-LaTeX Warning: Citation `Hennekens1987b' on page 75 undefined on input line 470
+LaTeX Warning: Citation `Hennekens1987b' on page 75 undefined on input line 471
 .
 
 
-LaTeX Warning: Citation `Hennekens1987a' on page 75 undefined on input line 470
+LaTeX Warning: Citation `Hennekens1987a' on page 75 undefined on input line 471
 .
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 474--475
+Underfull \hbox (badness 10000) in paragraph at lines 475--476
 
  []
 
 
-LaTeX Warning: Citation `fgv1984' on page 75 undefined on input line 476.
+LaTeX Warning: Citation `fgv1984' on page 75 undefined on input line 477.
 
 
-LaTeX Warning: Citation `fgv1984' on page 75 undefined on input line 480.
+LaTeX Warning: Citation `fgv1984' on page 75 undefined on input line 481.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 480--481
+Underfull \hbox (badness 10000) in paragraph at lines 481--482
 
  []
 
@@ -4203,413 +4237,413 @@ Underfull \hbox (badness 10000) in paragraph at lines 480--481
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [75]
-Underfull \hbox (badness 10000) in paragraph at lines 484--485
+Underfull \hbox (badness 10000) in paragraph at lines 485--486
 
  []
 
 
-LaTeX Warning: Citation `CETESB1994' on page 76 undefined on input line 486.
+LaTeX Warning: Citation `CETESB1994' on page 76 undefined on input line 487.
 
 
-LaTeX Warning: Citation `CETESB1994' on page 76 undefined on input line 490.
+LaTeX Warning: Citation `CETESB1994' on page 76 undefined on input line 491.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 490--491
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 492--493
+Underfull \hbox (badness 10000) in paragraph at lines 491--492
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 494--499
+Underfull \hbox (badness 10000) in paragraph at lines 493--494
 
  []
 
 
-LaTeX Warning: Citation `cetesb94' on page 76 undefined on input line 519.
+Underfull \hbox (badness 10000) in paragraph at lines 495--500
+
+ []
+
+
+LaTeX Warning: Citation `cetesb94' on page 76 undefined on input line 520.
 
 [76]
 
-LaTeX Warning: Citation `cetesb94' on page 77 undefined on input line 523.
+LaTeX Warning: Citation `cetesb94' on page 77 undefined on input line 524.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 527--532
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 553--554
+Underfull \hbox (badness 10000) in paragraph at lines 528--533
 
  []
 
 
-LaTeX Warning: Citation `iniciacao1996' on page 77 undefined on input line 555.
-
-
-
-LaTeX Warning: Citation `iniciacao1996' on page 77 undefined on input line 559.
-
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 559--560
+Underfull \hbox (badness 10000) in paragraph at lines 554--555
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 563--564
+LaTeX Warning: Citation `iniciacao1996' on page 77 undefined on input line 556.
+
+
+
+LaTeX Warning: Citation `iniciacao1996' on page 77 undefined on input line 560.
+
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 560--561
 
  []
 
 
-LaTeX Warning: Citation `Farias2001' on page 77 undefined on input line 565.
+Underfull \hbox (badness 10000) in paragraph at lines 564--565
+
+ []
 
 
-LaTeX Warning: Citation `ROMANO1996' on page 77 undefined on input line 565.
+LaTeX Warning: Citation `Farias2001' on page 77 undefined on input line 566.
 
 
-LaTeX Warning: Citation `SEKEFF2002' on page 77 undefined on input line 565.
+LaTeX Warning: Citation `ROMANO1996' on page 77 undefined on input line 566.
 
 
-LaTeX Warning: Citation `Farias2001' on page 77 undefined on input line 569.
+LaTeX Warning: Citation `SEKEFF2002' on page 77 undefined on input line 566.
 
 
-LaTeX Warning: Citation `ROMANO1996' on page 77 undefined on input line 569.
+LaTeX Warning: Citation `Farias2001' on page 77 undefined on input line 570.
 
 
-LaTeX Warning: Citation `SEKEFF2002' on page 77 undefined on input line 569.
+LaTeX Warning: Citation `ROMANO1996' on page 77 undefined on input line 570.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 569--570
+LaTeX Warning: Citation `SEKEFF2002' on page 77 undefined on input line 570.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 570--571
 
  []
 
 [77]
 
-LaTeX Warning: Citation `ASPLUND2006' on page 78 undefined on input line 590.
+LaTeX Warning: Citation `ASPLUND2006' on page 78 undefined on input line 591.
 
 
-LaTeX Warning: Citation `Paula2001' on page 78 undefined on input line 595.
+LaTeX Warning: Citation `Paula2001' on page 78 undefined on input line 596.
 
 
 LaTeX Warning: Citation `Demakopoulou2000' on page 78 undefined on input line 6
-00.
+01.
 
 
 LaTeX Warning: Citation `PhillipiJunior2000' on page 78 undefined on input line
- 605.
+ 606.
 
 
-LaTeX Warning: Citation `resprin1997' on page 78 undefined on input line 610.
+LaTeX Warning: Citation `resprin1997' on page 78 undefined on input line 611.
 
 
-LaTeX Warning: Citation `saopaulo1963' on page 78 undefined on input line 615.
+LaTeX Warning: Citation `saopaulo1963' on page 78 undefined on input line 616.
 
 
-LaTeX Warning: Citation `resolucao1991' on page 78 undefined on input line 620.
+LaTeX Warning: Citation `resolucao1991' on page 78 undefined on input line 621.
 
 
 
-LaTeX Warning: Citation `codigo1985' on page 78 undefined on input line 625.
+LaTeX Warning: Citation `codigo1985' on page 78 undefined on input line 626.
 
 
 LaTeX Warning: Citation `constituicao1988' on page 78 undefined on input line 6
-30.
+31.
 
 [78]
 
-LaTeX Warning: Citation `buscopan2013' on page 79 undefined on input line 635.
+LaTeX Warning: Citation `buscopan2013' on page 79 undefined on input line 636.
 
 
 LaTeX Warning: Citation `Pasquarelli1987' on page 79 undefined on input line 64
-0.
+1.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 640--641
+Underfull \hbox (badness 10000) in paragraph at lines 641--642
 
  []
 
 
-LaTeX Warning: Citation `Novak1967' on page 79 undefined on input line 654.
+LaTeX Warning: Citation `Novak1967' on page 79 undefined on input line 655.
 
 
-LaTeX Warning: Citation `Dood2002' on page 79 undefined on input line 659.
+LaTeX Warning: Citation `Dood2002' on page 79 undefined on input line 660.
 
 
-LaTeX Warning: Citation `biblioteca1985' on page 79 undefined on input line 664
+LaTeX Warning: Citation `biblioteca1985' on page 79 undefined on input line 665
 .
 
 
-LaTeX Warning: Citation `usp2001' on page 79 undefined on input line 669.
+LaTeX Warning: Citation `usp2001' on page 79 undefined on input line 670.
 
 
-LaTeX Warning: Citation `educacao2005' on page 79 undefined on input line 674.
+LaTeX Warning: Citation `educacao2005' on page 79 undefined on input line 675.
 
 
-LaTeX Warning: Citation `brasil1981' on page 79 undefined on input line 679.
+LaTeX Warning: Citation `brasil1981' on page 79 undefined on input line 680.
 
 
-LaTeX Warning: Citation `brasil1986' on page 79 undefined on input line 684.
+LaTeX Warning: Citation `brasil1986' on page 79 undefined on input line 685.
 
 [79]
 
-LaTeX Warning: Citation `Gomes1980' on page 80 undefined on input line 689.
+LaTeX Warning: Citation `Gomes1980' on page 80 undefined on input line 690.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 689--690
+Underfull \hbox (badness 10000) in paragraph at lines 690--691
 
  []
 
 
-LaTeX Warning: Citation `law1967' on page 80 undefined on input line 703.
+LaTeX Warning: Citation `law1967' on page 80 undefined on input line 704.
 
 
-LaTeX Warning: Citation `Agencia2003' on page 80 undefined on input line 708.
+LaTeX Warning: Citation `Agencia2003' on page 80 undefined on input line 709.
 
 
-LaTeX Warning: Citation `Dorlands2000' on page 80 undefined on input line 713.
+LaTeX Warning: Citation `Dorlands2000' on page 80 undefined on input line 714.
 
 
-LaTeX Warning: Citation `abetter2004' on page 80 undefined on input line 718.
+LaTeX Warning: Citation `abetter2004' on page 80 undefined on input line 719.
 
 
-LaTeX Warning: Citation `council2001' on page 80 undefined on input line 723.
+LaTeX Warning: Citation `council2001' on page 80 undefined on input line 724.
 
 
-LaTeX Warning: Citation `Thome1999' on page 80 undefined on input line 728.
+LaTeX Warning: Citation `Thome1999' on page 80 undefined on input line 729.
 
 
-LaTeX Warning: Citation `Nature1869' on page 80 undefined on input line 733.
+LaTeX Warning: Citation `Nature1869' on page 80 undefined on input line 734.
 
 
-LaTeX Warning: Citation `Brennan2006' on page 80 undefined on input line 738.
+LaTeX Warning: Citation `Brennan2006' on page 80 undefined on input line 739.
 
 [80]
 
-LaTeX Warning: Citation `microsoft1995' on page 81 undefined on input line 743.
+LaTeX Warning: Citation `microsoft1995' on page 81 undefined on input line 744.
 
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 743--744
+Underfull \hbox (badness 10000) in paragraph at lines 744--745
 
  []
 
 
-LaTeX Warning: Citation `Vicente2010' on page 81 undefined on input line 757.
+LaTeX Warning: Citation `Vicente2010' on page 81 undefined on input line 758.
 
 
-LaTeX Warning: Citation `Miyaura' on page 81 undefined on input line 762.
+LaTeX Warning: Citation `Miyaura' on page 81 undefined on input line 763.
 
 
-LaTeX Warning: Citation `Piccini1996' on page 81 undefined on input line 767.
+LaTeX Warning: Citation `Piccini1996' on page 81 undefined on input line 768.
 
 
-LaTeX Warning: Citation `Wendel1992' on page 81 undefined on input line 772.
+LaTeX Warning: Citation `Wendel1992' on page 81 undefined on input line 773.
 
 
-LaTeX Warning: Citation `Elewa2006' on page 81 undefined on input line 777.
+LaTeX Warning: Citation `Elewa2006' on page 81 undefined on input line 778.
 
 
-LaTeX Warning: Citation `Hofling1993' on page 81 undefined on input line 782.
+LaTeX Warning: Citation `Hofling1993' on page 81 undefined on input line 783.
 
 [81]
 
-LaTeX Warning: Citation `Fonseca2000' on page 82 undefined on input line 801.
+LaTeX Warning: Citation `Fonseca2000' on page 82 undefined on input line 802.
 
 
 LaTeX Warning: Citation `bibliotecanacional2000' on page 82 undefined on input 
-line 806.
+line 807.
 
 
 LaTeX Warning: Citation `Demakopoulou2000' on page 82 undefined on input line 8
-11.
+12.
 
 
 LaTeX Warning: Citation `GlasscockIII1987' on page 82 undefined on input line 8
-16.
+17.
 
 
-LaTeX Warning: Citation `delvecchio1995' on page 82 undefined on input line 821
+LaTeX Warning: Citation `delvecchio1995' on page 82 undefined on input line 822
 .
 
 
-LaTeX Warning: Citation `brasil1990' on page 82 undefined on input line 826.
+LaTeX Warning: Citation `brasil1990' on page 82 undefined on input line 827.
 
 
-LaTeX Warning: Citation `Herbrick1989' on page 82 undefined on input line 831.
+LaTeX Warning: Citation `Herbrick1989' on page 82 undefined on input line 832.
 
 
-LaTeX Warning: Citation `Mostafavi2014' on page 82 undefined on input line 836.
+LaTeX Warning: Citation `Mostafavi2014' on page 82 undefined on input line 837.
 
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 836--837
+Underfull \hbox (badness 10000) in paragraph at lines 837--838
 
  []
 
 [82]
 
-LaTeX Warning: Citation `Lacasse2005' on page 83 undefined on input line 851.
+LaTeX Warning: Citation `Lacasse2005' on page 83 undefined on input line 852.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 851--852
+Underfull \hbox (badness 10000) in paragraph at lines 852--853
 
  []
 
 
-LaTeX Warning: Citation `Lacasse2005' on page 83 undefined on input line 862.
+LaTeX Warning: Citation `Lacasse2005' on page 83 undefined on input line 863.
 
 
-LaTeX Warning: Citation `Palagachev2006' on page 83 undefined on input line 874
+LaTeX Warning: Citation `Palagachev2006' on page 83 undefined on input line 875
 .
 
 
-LaTeX Warning: Citation `Zelen2000' on page 83 undefined on input line 884.
+LaTeX Warning: Citation `Zelen2000' on page 83 undefined on input line 885.
 
 
-LaTeX Warning: Citation `Boyd1993' on page 83 undefined on input line 894.
+LaTeX Warning: Citation `Boyd1993' on page 83 undefined on input line 895.
 
 [83]
 
-LaTeX Warning: Citation `Cochrane1998' on page 84 undefined on input line 904.
+LaTeX Warning: Citation `Cochrane1998' on page 84 undefined on input line 905.
 
 
-LaTeX Warning: Citation `Oliveira2006' on page 84 undefined on input line 914.
+LaTeX Warning: Citation `Oliveira2006' on page 84 undefined on input line 915.
 
 
-LaTeX Warning: Citation `Harrison2001' on page 84 undefined on input line 924.
+LaTeX Warning: Citation `Harrison2001' on page 84 undefined on input line 925.
 
 
-LaTeX Warning: Citation `usp2006' on page 84 undefined on input line 934.
+LaTeX Warning: Citation `usp2006' on page 84 undefined on input line 935.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 950--951
+Underfull \hbox (badness 10000) in paragraph at lines 951--952
 
  []
 
 [84]
 
-LaTeX Warning: Citation `Abend2002' on page 85 undefined on input line 957.
+LaTeX Warning: Citation `Abend2002' on page 85 undefined on input line 958.
 
 
-LaTeX Warning: Citation `tratados1999' on page 85 undefined on input line 962.
+LaTeX Warning: Citation `tratados1999' on page 85 undefined on input line 963.
 
 
-LaTeX Warning: Citation `central1998' on page 85 undefined on input line 967.
+LaTeX Warning: Citation `central1998' on page 85 undefined on input line 968.
 
 
-LaTeX Warning: Citation `Denver1974' on page 85 undefined on input line 987.
+LaTeX Warning: Citation `Denver1974' on page 85 undefined on input line 988.
 
 
-LaTeX Warning: Citation `Almeida1995' on page 85 undefined on input line 992.
+LaTeX Warning: Citation `Almeida1995' on page 85 undefined on input line 993.
 
 
-LaTeX Warning: Citation `bionline' on page 85 undefined on input line 997.
-
-
-LaTeX Warning: Citation `Villa-Lobos1916' on page 85 undefined on input line 10
-02.
+LaTeX Warning: Citation `bionline' on page 85 undefined on input line 998.
 
 
 LaTeX Warning: Citation `Villa-Lobos1916' on page 85 undefined on input line 10
-02.
+03.
 
 
-LaTeX Warning: Citation `Ramos1999' on page 85 undefined on input line 1007.
+LaTeX Warning: Citation `Villa-Lobos1916' on page 85 undefined on input line 10
+03.
 
 
-LaTeX Warning: Citation `Ramos1999' on page 85 undefined on input line 1007.
+LaTeX Warning: Citation `Ramos1999' on page 85 undefined on input line 1008.
+
+
+LaTeX Warning: Citation `Ramos1999' on page 85 undefined on input line 1008.
 
 [85]
 
-LaTeX Warning: Citation `atlas2001' on page 86 undefined on input line 1012.
+LaTeX Warning: Citation `atlas2001' on page 86 undefined on input line 1013.
 
 
-LaTeX Warning: Citation `atlas2001' on page 86 undefined on input line 1012.
+LaTeX Warning: Citation `atlas2001' on page 86 undefined on input line 1013.
 
 
-LaTeX Warning: Citation `Wu1999' on page 86 undefined on input line 1017.
+LaTeX Warning: Citation `Wu1999' on page 86 undefined on input line 1018.
 
 
-LaTeX Warning: Citation `Wu1999' on page 86 undefined on input line 1017.
+LaTeX Warning: Citation `Wu1999' on page 86 undefined on input line 1018.
 
 
-LaTeX Warning: Citation `Costa2002' on page 86 undefined on input line 1022.
+LaTeX Warning: Citation `Costa2002' on page 86 undefined on input line 1023.
 
 
-LaTeX Warning: Citation `Costa2002' on page 86 undefined on input line 1022.
-
-
-LaTeX Warning: Citation `Geografico1986' on page 86 undefined on input line 102
-7.
+LaTeX Warning: Citation `Costa2002' on page 86 undefined on input line 1023.
 
 
 LaTeX Warning: Citation `Geografico1986' on page 86 undefined on input line 102
-7.
+8.
 
 
-LaTeX Warning: Citation `BRAYNER1994' on page 86 undefined on input line 1032.
+LaTeX Warning: Citation `Geografico1986' on page 86 undefined on input line 102
+8.
 
 
-LaTeX Warning: Citation `BRAYNER1994' on page 86 undefined on input line 1032.
+LaTeX Warning: Citation `BRAYNER1994' on page 86 undefined on input line 1033.
 
 
-LaTeX Warning: Citation `Sabroza1998' on page 86 undefined on input line 1037.
+LaTeX Warning: Citation `BRAYNER1994' on page 86 undefined on input line 1033.
 
 
-LaTeX Warning: Citation `Sabroza1998' on page 86 undefined on input line 1037.
+LaTeX Warning: Citation `Sabroza1998' on page 86 undefined on input line 1038.
 
 
-LaTeX Warning: Citation `Oliva1900' on page 86 undefined on input line 1042.
+LaTeX Warning: Citation `Sabroza1998' on page 86 undefined on input line 1038.
 
 
-LaTeX Warning: Citation `Oliva1900' on page 86 undefined on input line 1042.
+LaTeX Warning: Citation `Oliva1900' on page 86 undefined on input line 1043.
+
+
+LaTeX Warning: Citation `Oliva1900' on page 86 undefined on input line 1043.
 
 
 LaTeX Warning: Citation `Montgomery1992' on page 86 undefined on input line 104
-7.
+8.
 
 
 LaTeX Warning: Citation `Montgomery1992' on page 86 undefined on input line 104
-7.
+8.
 
 
-LaTeX Warning: Citation `Dudek2006' on page 86 undefined on input line 1052.
+LaTeX Warning: Citation `Dudek2006' on page 86 undefined on input line 1053.
 
 
-LaTeX Warning: Citation `Dudek2006' on page 86 undefined on input line 1052.
+LaTeX Warning: Citation `Dudek2006' on page 86 undefined on input line 1053.
 
 
-LaTeX Warning: Citation `brasil1990b' on page 86 undefined on input line 1057.
+LaTeX Warning: Citation `brasil1990b' on page 86 undefined on input line 1058.
 
 
-LaTeX Warning: Citation `brasil1990b' on page 86 undefined on input line 1057.
+LaTeX Warning: Citation `brasil1990b' on page 86 undefined on input line 1058.
 
 ) [86]
 \openout2 = `USPSC-Cap4-Referencias.aux'.
 
  (./USPSC-Cap4-Referencias.tex
 
-LaTeX Warning: Citation `sibi2009' on page 87 undefined on input line 11.
+LaTeX Warning: Citation `sibi2009' on page 87 undefined on input line 12.
 
 
-LaTeX Warning: Citation `nbr6023' on page 87 undefined on input line 17.
+LaTeX Warning: Citation `nbr6023' on page 87 undefined on input line 18.
 
 
-LaTeX Warning: Citation `abnetxcite' on page 87 undefined on input line 21.
+LaTeX Warning: Citation `abnetxcite' on page 87 undefined on input line 22.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 19--22
+Underfull \hbox (badness 10000) in paragraph at lines 20--23
 
  []
 
 
-LaTeX Warning: Citation `abnetxcite' on page 87 undefined on input line 37.
+LaTeX Warning: Citation `abnetxcite' on page 87 undefined on input line 38.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 49--50
+Underfull \hbox (badness 10000) in paragraph at lines 50--51
 
  []
 
@@ -4622,56 +4656,56 @@ has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.50 
+l.51 
      ]
-Underfull \hbox (badness 10000) in paragraph at lines 53--57
+Underfull \hbox (badness 10000) in paragraph at lines 54--58
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 60--64
+Underfull \hbox (badness 10000) in paragraph at lines 61--65
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 80--83
+Underfull \hbox (badness 10000) in paragraph at lines 81--84
 
  []
 
 [88]
-Underfull \hbox (badness 10000) in paragraph at lines 103--106
+Underfull \hbox (badness 10000) in paragraph at lines 104--107
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 122--126
+Underfull \hbox (badness 10000) in paragraph at lines 123--127
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 143--148
+Underfull \hbox (badness 10000) in paragraph at lines 144--149
 
  []
 
 [89]
-Underfull \hbox (badness 10000) in paragraph at lines 164--167
+Underfull \hbox (badness 10000) in paragraph at lines 165--168
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 187--191
+Underfull \hbox (badness 10000) in paragraph at lines 188--192
 
  []
 
 [90]
 
-LaTeX Warning: Citation `abnetxcite' on page 91 undefined on input line 240.
+LaTeX Warning: Citation `abnetxcite' on page 91 undefined on input line 241.
 
 
-LaTeX Warning: Citation `abnetxcite' on page 91 undefined on input line 244.
+LaTeX Warning: Citation `abnetxcite' on page 91 undefined on input line 245.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 250--251
+Underfull \hbox (badness 10000) in paragraph at lines 251--252
 
  []
 
@@ -4680,190 +4714,194 @@ Underfull \hbox (badness 10000) in paragraph at lines 250--251
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.252 \begin{tabular}
+l.253 \begin{tabular}
                      {|l|c|} \hline]
-Underfull \hbox (badness 10000) in paragraph at lines 252--257
+Underfull \hbox (badness 10000) in paragraph at lines 253--258
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 258--259
+Underfull \hbox (badness 10000) in paragraph at lines 259--260
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 278--281
+Underfull \hbox (badness 10000) in paragraph at lines 279--282
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 296--299
+Underfull \hbox (badness 10000) in paragraph at lines 297--300
 
  []
 
 [92]
-Underfull \hbox (badness 10000) in paragraph at lines 317--321
+Underfull \hbox (badness 10000) in paragraph at lines 318--322
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 337--342
+Underfull \hbox (badness 10000) in paragraph at lines 338--343
 
  []
 
 [93]
-Overfull \hbox (2.89197pt too wide) in paragraph at lines 361--364
+Overfull \hbox (2.89197pt too wide) in paragraph at lines 362--365
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 361--364
+Underfull \hbox (badness 10000) in paragraph at lines 362--365
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 386--390
+Underfull \hbox (badness 10000) in paragraph at lines 387--391
 
  []
 
 [94]
-Underfull \hbox (badness 10000) in paragraph at lines 411--415
+Underfull \hbox (badness 10000) in paragraph at lines 412--416
 
  []
 
 
-Overfull \hbox (2.00987pt too wide) in paragraph at lines 435--438
+Overfull \hbox (2.00987pt too wide) in paragraph at lines 436--439
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 435--438
+Underfull \hbox (badness 10000) in paragraph at lines 436--439
 
  []
 
 [95]
-Underfull \hbox (badness 10000) in paragraph at lines 456--459
+Underfull \hbox (badness 10000) in paragraph at lines 457--460
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 480--483
+Underfull \hbox (badness 10000) in paragraph at lines 481--484
 
  []
 
 [96]
-Underfull \hbox (badness 10000) in paragraph at lines 501--502
+Underfull \hbox (badness 10000) in paragraph at lines 502--503
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 503--506
+Underfull \hbox (badness 10000) in paragraph at lines 504--507
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 529--530
+LaTeX Warning: Reference `Cita\IeC {\c c}\IeC {\~o}es' on page 97 undefined on 
+input line 530.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 530--531
 
  []
 
 [97]
-Underfull \hbox (badness 10000) in paragraph at lines 531--535
+Underfull \hbox (badness 10000) in paragraph at lines 532--536
 
  []
 
 
-LaTeX Warning: Citation `Agencia2003' on page 98 undefined on input line 553.
+LaTeX Warning: Citation `Agencia2003' on page 98 undefined on input line 554.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 555--556
+Underfull \hbox (badness 10000) in paragraph at lines 556--557
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 557--560
+Underfull \hbox (badness 10000) in paragraph at lines 558--561
 
  []
 
 [98]
 
-LaTeX Warning: Citation `usp200' on page 99 undefined on input line 580.
+LaTeX Warning: Citation `usp200' on page 99 undefined on input line 581.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 580--581
-
- []
-
-
-LaTeX Warning: Citation `nbr10520' on page 99 undefined on input line 582.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 584--585
+Underfull \hbox (badness 10000) in paragraph at lines 581--582
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 586--589
+LaTeX Warning: Citation `nbr10520' on page 99 undefined on input line 583.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 585--586
 
  []
 
 
-LaTeX Warning: Citation `brasil1990' on page 99 undefined on input line 607.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 607--608
+Underfull \hbox (badness 10000) in paragraph at lines 587--590
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 609--612
+LaTeX Warning: Citation `brasil1990' on page 99 undefined on input line 608.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 608--609
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 610--613
 
  []
 
 [99]
 
-LaTeX Warning: Citation `saopaulo1937' on page 100 undefined on input line 632.
+LaTeX Warning: Citation `saopaulo1937' on page 100 undefined on input line 633.
 
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 632--633
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 634--635
+Underfull \hbox (badness 10000) in paragraph at lines 633--634
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 636--639
+Underfull \hbox (badness 10000) in paragraph at lines 635--636
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 637--640
 
  []
 
 [100]
-Underfull \hbox (badness 10000) in paragraph at lines 655--658
+Underfull \hbox (badness 10000) in paragraph at lines 656--659
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 687--687
+Underfull \hbox (badness 10000) in paragraph at lines 688--688
 []|\T1/lmr/m/it/12 (+20) abnt-repeated-author-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 690--690
+Underfull \hbox (badness 10000) in paragraph at lines 691--691
 []|\T1/lmr/m/it/12 (+20) abnt-repeated-author-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 692--692
+Underfull \hbox (badness 10000) in paragraph at lines 693--693
 []|\T1/lmr/m/it/12 (+20) abnt-repeated-author-
  []
 
 
-LaTeX Warning: Citation `abnetxcite' on page 101 undefined on input line 696.
+LaTeX Warning: Citation `abnetxcite' on page 101 undefined on input line 697.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 704--705
+Underfull \hbox (badness 10000) in paragraph at lines 705--706
 
  []
 
@@ -4872,191 +4910,191 @@ Underfull \hbox (badness 10000) in paragraph at lines 704--705
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.705 
+l.706 
       ]
-Underfull \hbox (badness 10000) in paragraph at lines 706--711
+Underfull \hbox (badness 10000) in paragraph at lines 707--712
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 746--749
+Underfull \hbox (badness 10000) in paragraph at lines 747--750
 
  []
 
 [102]
-Underfull \hbox (badness 10000) in paragraph at lines 766--769
+Underfull \hbox (badness 10000) in paragraph at lines 767--770
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 789--792
+Underfull \hbox (badness 10000) in paragraph at lines 790--793
 
  []
 
 [103]
-Underfull \hbox (badness 10000) in paragraph at lines 811--817
+Underfull \hbox (badness 10000) in paragraph at lines 812--818
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 839--842
+Underfull \hbox (badness 10000) in paragraph at lines 840--843
 
  []
 
 [104]
-Underfull \hbox (badness 10000) in paragraph at lines 861--864
+Underfull \hbox (badness 10000) in paragraph at lines 862--865
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 883--886
+Underfull \hbox (badness 10000) in paragraph at lines 884--887
 
  []
 
 [105]
-Underfull \hbox (badness 10000) in paragraph at lines 904--907
+Underfull \hbox (badness 10000) in paragraph at lines 905--908
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 925--926
+Underfull \hbox (badness 10000) in paragraph at lines 926--927
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 927--931
+Underfull \hbox (badness 10000) in paragraph at lines 928--932
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 932--933
+Underfull \hbox (badness 10000) in paragraph at lines 933--934
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 934--941
+Underfull \hbox (badness 10000) in paragraph at lines 935--942
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 934--941
+Underfull \hbox (badness 10000) in paragraph at lines 935--942
 
  []
 
 [106]
-Underfull \hbox (badness 10000) in paragraph at lines 942--943
+Underfull \hbox (badness 10000) in paragraph at lines 943--944
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 944--949
+Underfull \hbox (badness 10000) in paragraph at lines 945--950
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 968--971
+Underfull \hbox (badness 10000) in paragraph at lines 969--972
 
  []
 
 [107]
-Overfull \hbox (7.12527pt too wide) in paragraph at lines 991--994
+Overfull \hbox (7.12527pt too wide) in paragraph at lines 992--995
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 991--994
+Underfull \hbox (badness 10000) in paragraph at lines 992--995
 
  []
 
 
-Overfull \hbox (7.81648pt too wide) in paragraph at lines 999--999
+Overfull \hbox (7.81648pt too wide) in paragraph at lines 1000--1000
 []\T1/lmtt/m/n/12 Title                    = {Efeito da aplicação de calcário, 
 lodo de esgoto[] 
  []
 
 
-Overfull \hbox (6.85457pt too wide) in paragraph at lines 1017--1020
+Overfull \hbox (6.85457pt too wide) in paragraph at lines 1018--1021
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1017--1020
+Underfull \hbox (badness 10000) in paragraph at lines 1018--1021
 
  []
 
 
-Overfull \hbox (4.44061pt too wide) in paragraph at lines 1023--1026
+Overfull \hbox (4.44061pt too wide) in paragraph at lines 1024--1027
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1023--1026
+Underfull \hbox (badness 10000) in paragraph at lines 1024--1027
 
  []
 
 [108]
-Underfull \hbox (badness 10000) in paragraph at lines 1046--1049
+Underfull \hbox (badness 10000) in paragraph at lines 1047--1050
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1070--1071
+Underfull \hbox (badness 10000) in paragraph at lines 1071--1072
 
  []
 
 [109]
-Underfull \hbox (badness 10000) in paragraph at lines 1072--1076
+Underfull \hbox (badness 10000) in paragraph at lines 1073--1077
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1097--1102
+Underfull \hbox (badness 10000) in paragraph at lines 1098--1103
 
  []
 
 [110]
-Underfull \hbox (badness 10000) in paragraph at lines 1122--1126
+Underfull \hbox (badness 10000) in paragraph at lines 1123--1127
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1127--1128
+Underfull \hbox (badness 10000) in paragraph at lines 1128--1129
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1129--1132
+Underfull \hbox (badness 10000) in paragraph at lines 1130--1133
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1151--1155
+Underfull \hbox (badness 10000) in paragraph at lines 1152--1156
 
  []
 
 [111]
-Overfull \hbox (10.469pt too wide) in paragraph at lines 1176--1179
+Overfull \hbox (10.469pt too wide) in paragraph at lines 1177--1180
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1176--1179
+Underfull \hbox (badness 10000) in paragraph at lines 1177--1180
 
  []
 
 
-Overfull \hbox (8.12523pt too wide) in paragraph at lines 1184--1184
+Overfull \hbox (8.12523pt too wide) in paragraph at lines 1185--1185
 []   \T1/lmtt/m/n/12 Title                    = {Zoneamento agroecológico e soc
 ioeconômico do[] 
  []
 
 
-Overfull \hbox (6.85457pt too wide) in paragraph at lines 1199--1203
+Overfull \hbox (6.85457pt too wide) in paragraph at lines 1200--1204
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1199--1203
+Underfull \hbox (badness 10000) in paragraph at lines 1200--1204
 
  []
 
@@ -5064,106 +5102,106 @@ Underfull \hbox (badness 10000) in paragraph at lines 1199--1203
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [112]
-Underfull \hbox (badness 10000) in paragraph at lines 1204--1205
+Underfull \hbox (badness 10000) in paragraph at lines 1205--1206
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1206--1210
+Underfull \hbox (badness 10000) in paragraph at lines 1207--1211
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1233--1236
+Underfull \hbox (badness 10000) in paragraph at lines 1234--1237
 
  []
 
 [113]
-Underfull \hbox (badness 10000) in paragraph at lines 1259--1261
+Underfull \hbox (badness 10000) in paragraph at lines 1260--1262
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1262--1266
+Underfull \hbox (badness 10000) in paragraph at lines 1263--1267
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1269--1272
+Underfull \hbox (badness 10000) in paragraph at lines 1270--1273
 
  []
 
 [114]
-Underfull \hbox (badness 10000) in paragraph at lines 1292--1295
+Underfull \hbox (badness 10000) in paragraph at lines 1293--1296
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1317--1320
+Underfull \hbox (badness 10000) in paragraph at lines 1318--1321
 
  []
 
 [115]
-Underfull \hbox (badness 10000) in paragraph at lines 1343--1347
+Underfull \hbox (badness 10000) in paragraph at lines 1344--1348
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1371--1375
+Underfull \hbox (badness 10000) in paragraph at lines 1372--1376
 
  []
 
 [116]
 
-LaTeX Warning: Characters dropped after `\end{verbatim}' on input line 1393.
+LaTeX Warning: Characters dropped after `\end{verbatim}' on input line 1394.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1396--1402
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1403--1404
+Underfull \hbox (badness 10000) in paragraph at lines 1397--1403
 
  []
 
 
-Overfull \hbox (0.84508pt too wide) in paragraph at lines 1405--1410
+Underfull \hbox (badness 10000) in paragraph at lines 1404--1405
+
+ []
+
+
+Overfull \hbox (0.84508pt too wide) in paragraph at lines 1406--1411
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1405--1410
+Underfull \hbox (badness 10000) in paragraph at lines 1406--1411
 
  []
 
 [117]
-Underfull \hbox (badness 10000) in paragraph at lines 1431--1438
+Underfull \hbox (badness 10000) in paragraph at lines 1432--1439
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1465--1467
+Underfull \hbox (badness 10000) in paragraph at lines 1466--1468
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1470--1471
+Underfull \hbox (badness 10000) in paragraph at lines 1471--1472
 
  []
 
 [118]
-Underfull \hbox (badness 10000) in paragraph at lines 1472--1476
+Underfull \hbox (badness 10000) in paragraph at lines 1473--1477
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1495--1499
+Underfull \hbox (badness 10000) in paragraph at lines 1496--1500
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1517--1524
+Underfull \hbox (badness 10000) in paragraph at lines 1518--1525
 
  []
 
@@ -5171,179 +5209,179 @@ Underfull \hbox (badness 10000) in paragraph at lines 1517--1524
 Underfull \vbox (badness 1112) has occurred while \output is active []
 
  [119]
-Overfull \hbox (1.64148pt too wide) in paragraph at lines 1529--1529
+Overfull \hbox (1.64148pt too wide) in paragraph at lines 1530--1530
 []\T1/lmtt/m/n/12 Title                    = {Flow void of cerebrospinal fluid 
 in idiopathic[] 
  []
 
 
-Overfull \hbox (3.49397pt too wide) in paragraph at lines 1531--1531
+Overfull \hbox (3.49397pt too wide) in paragraph at lines 1532--1532
 []\T1/lmtt/m/n/12 Author                   = {Krauss, J. K. and Souza, L. S. an
 d Silva, A. M.[] 
  []
 
 
-Overfull \hbox (0.94582pt too wide) in paragraph at lines 1549--1552
+Overfull \hbox (0.94582pt too wide) in paragraph at lines 1550--1553
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1549--1552
+Underfull \hbox (badness 10000) in paragraph at lines 1550--1553
 
  []
 
 [120]
-Underfull \hbox (badness 10000) in paragraph at lines 1576--1579
+Underfull \hbox (badness 10000) in paragraph at lines 1577--1580
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1598--1602
+Underfull \hbox (badness 10000) in paragraph at lines 1599--1603
 
  []
 
 [121]
-Underfull \hbox (badness 10000) in paragraph at lines 1624--1628
+Underfull \hbox (badness 10000) in paragraph at lines 1625--1629
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1646--1649
+Underfull \hbox (badness 10000) in paragraph at lines 1647--1650
 
  []
 
 [122]
-Underfull \hbox (badness 10000) in paragraph at lines 1668--1672
+Underfull \hbox (badness 10000) in paragraph at lines 1669--1673
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1693--1697
+Underfull \hbox (badness 10000) in paragraph at lines 1694--1698
 
  []
 
 [123]
-Underfull \hbox (badness 10000) in paragraph at lines 1716--1723
+Underfull \hbox (badness 10000) in paragraph at lines 1717--1724
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1746--1750
+Underfull \hbox (badness 10000) in paragraph at lines 1747--1751
 
  []
 
 [124]
-Underfull \hbox (badness 10000) in paragraph at lines 1771--1776
+Underfull \hbox (badness 10000) in paragraph at lines 1772--1777
 
  []
 
 [125]
-Underfull \hbox (badness 10000) in paragraph at lines 1805--1810
+Underfull \hbox (badness 10000) in paragraph at lines 1806--1811
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1829--1834
+Underfull \hbox (badness 10000) in paragraph at lines 1830--1835
 
  []
 
 [126]
-Underfull \hbox (badness 10000) in paragraph at lines 1854--1857
+Underfull \hbox (badness 10000) in paragraph at lines 1855--1858
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1858--1859
+Underfull \hbox (badness 10000) in paragraph at lines 1859--1860
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1860--1869
+Underfull \hbox (badness 10000) in paragraph at lines 1861--1870
 
  []
 
 [127]
-Underfull \hbox (badness 10000) in paragraph at lines 1894--1899
+Underfull \hbox (badness 10000) in paragraph at lines 1895--1900
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1921--1924
+Underfull \hbox (badness 10000) in paragraph at lines 1922--1925
 
  []
 
 [128]
-Underfull \hbox (badness 10000) in paragraph at lines 1941--1942
+Underfull \hbox (badness 10000) in paragraph at lines 1942--1943
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1943--1948
+Underfull \hbox (badness 10000) in paragraph at lines 1944--1949
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1969--1970
+Underfull \hbox (badness 10000) in paragraph at lines 1970--1971
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1971--1977
+Underfull \hbox (badness 10000) in paragraph at lines 1972--1978
 
  []
 
 [129]
-Underfull \hbox (badness 10000) in paragraph at lines 2001--2002
+Underfull \hbox (badness 10000) in paragraph at lines 2002--2003
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2003--2009
+Underfull \hbox (badness 10000) in paragraph at lines 2004--2010
 
  []
 
 [130]
-Underfull \hbox (badness 10000) in paragraph at lines 2037--2041
+Underfull \hbox (badness 10000) in paragraph at lines 2038--2042
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2042--2043
+Underfull \hbox (badness 10000) in paragraph at lines 2043--2044
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2044--2049
+Underfull \hbox (badness 10000) in paragraph at lines 2045--2050
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2067--2072
+Underfull \hbox (badness 10000) in paragraph at lines 2068--2073
 
  []
 
 [131]
-Underfull \hbox (badness 10000) in paragraph at lines 2088--2093
+Underfull \hbox (badness 10000) in paragraph at lines 2089--2094
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2109--2110
+Underfull \hbox (badness 10000) in paragraph at lines 2110--2111
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2111--2115
+Underfull \hbox (badness 10000) in paragraph at lines 2112--2116
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2116--2117
+Underfull \hbox (badness 10000) in paragraph at lines 2117--2118
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2118--2123
+Underfull \hbox (badness 10000) in paragraph at lines 2119--2124
 
  []
 
@@ -5351,67 +5389,67 @@ Underfull \hbox (badness 10000) in paragraph at lines 2118--2123
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [132]
-Overfull \hbox (1.62747pt too wide) in paragraph at lines 2133--2133
+Overfull \hbox (1.62747pt too wide) in paragraph at lines 2134--2134
 []\T1/lmtt/m/n/12 Url                      = {<http://164.195.100.11/netacgi/np
 hParser?Sect1[] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2143--2148
+Underfull \hbox (badness 10000) in paragraph at lines 2144--2149
 
  []
 
 [133]
-Underfull \hbox (badness 10000) in paragraph at lines 2170--2171
+Underfull \hbox (badness 10000) in paragraph at lines 2171--2172
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2172--2176
+Underfull \hbox (badness 10000) in paragraph at lines 2173--2177
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2197--2201
+Underfull \hbox (badness 10000) in paragraph at lines 2198--2202
 
  []
 
 [134]
-Underfull \hbox (badness 10000) in paragraph at lines 2220--2228
+Underfull \hbox (badness 10000) in paragraph at lines 2221--2229
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2238--2239
+Underfull \hbox (badness 10000) in paragraph at lines 2239--2240
 
  []
 
 
-Overfull \hbox (1.74754pt too wide) in paragraph at lines 2240--2244
+Overfull \hbox (1.74754pt too wide) in paragraph at lines 2241--2245
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2240--2244
+Underfull \hbox (badness 10000) in paragraph at lines 2241--2245
 
  []
 
 [135]
-Underfull \hbox (badness 10000) in paragraph at lines 2264--2268
+Underfull \hbox (badness 10000) in paragraph at lines 2265--2269
 
  []
 
-LaTeX Font Info:    Try loading font information for TS1+lmr on input line 2288
+LaTeX Font Info:    Try loading font information for TS1+lmr on input line 2289
 .
 (/usr/share/texmf/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-Underfull \hbox (badness 10000) in paragraph at lines 2286--2292
+Underfull \hbox (badness 10000) in paragraph at lines 2287--2293
 
  []
 
 LaTeX Font Info:    Try loading font information for TS1+lmtt on input line 229
-8.
+9.
 (/usr/share/texmf/tex/latex/lm/ts1lmtt.fd
 File: ts1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
@@ -5423,17 +5461,17 @@ Package microtype Info: Character `texttrademark ' is missing
 (microtype)             in font `TS1/lmtt/m/n/12'.
 (microtype)             Ignoring protrusion settings for this character.
  [136]
-Underfull \hbox (badness 10000) in paragraph at lines 2310--2317
+Underfull \hbox (badness 10000) in paragraph at lines 2311--2318
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2342--2343
+Underfull \hbox (badness 10000) in paragraph at lines 2343--2344
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2344--2355
+Underfull \hbox (badness 10000) in paragraph at lines 2345--2356
 
  []
 
@@ -5441,78 +5479,78 @@ Underfull \hbox (badness 10000) in paragraph at lines 2344--2355
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [137]
-Underfull \hbox (badness 10000) in paragraph at lines 2388--2389
+Underfull \hbox (badness 10000) in paragraph at lines 2389--2390
 
  []
 
 [138]
-Underfull \hbox (badness 10000) in paragraph at lines 2390--2395
+Underfull \hbox (badness 10000) in paragraph at lines 2391--2396
 
  []
 
 
-Overfull \hbox (2.85059pt too wide) in paragraph at lines 2419--2426
+Overfull \hbox (2.85059pt too wide) in paragraph at lines 2420--2427
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2419--2426
+Underfull \hbox (badness 10000) in paragraph at lines 2420--2427
 
  []
 
 
-Overfull \hbox (1.61346pt too wide) in paragraph at lines 2431--2431
+Overfull \hbox (1.61346pt too wide) in paragraph at lines 2432--2432
 []\T1/lmtt/m/n/12 Title                    = {Lei n\TS1/lmtt/m/n/12 º \T1/lmtt/
 m/n/12 9.887, de 7 de dezembro de 1999. Altera[] 
  []
 
 [139]
-Underfull \hbox (badness 10000) in paragraph at lines 2449--2452
+Underfull \hbox (badness 10000) in paragraph at lines 2450--2453
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2453--2464
+Underfull \hbox (badness 10000) in paragraph at lines 2454--2465
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2465--2466
+Underfull \hbox (badness 10000) in paragraph at lines 2466--2467
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2467--2473
+Underfull \hbox (badness 10000) in paragraph at lines 2468--2474
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2490--2500
+Underfull \hbox (badness 10000) in paragraph at lines 2491--2501
 
  []
 
 [140]
-Underfull \hbox (badness 10000) in paragraph at lines 2524--2529
+Underfull \hbox (badness 10000) in paragraph at lines 2525--2530
 
  []
 
 [141]
-Underfull \hbox (badness 10000) in paragraph at lines 2558--2563
+Underfull \hbox (badness 10000) in paragraph at lines 2559--2564
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2564--2565
+Underfull \hbox (badness 10000) in paragraph at lines 2565--2566
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2566--2571
+Underfull \hbox (badness 10000) in paragraph at lines 2567--2572
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2587--2594
+Underfull \hbox (badness 10000) in paragraph at lines 2588--2595
 
  []
 
@@ -5520,87 +5558,87 @@ Underfull \hbox (badness 10000) in paragraph at lines 2587--2594
 Underfull \vbox (badness 2050) has occurred while \output is active []
 
  [142]
-Underfull \hbox (badness 10000) in paragraph at lines 2614--2620
+Underfull \hbox (badness 10000) in paragraph at lines 2615--2621
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2621--2622
+Underfull \hbox (badness 10000) in paragraph at lines 2622--2623
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2623--2629
+Underfull \hbox (badness 10000) in paragraph at lines 2624--2630
 
  []
 
 [143]
-Underfull \hbox (badness 10000) in paragraph at lines 2648--2649
+Underfull \hbox (badness 10000) in paragraph at lines 2649--2650
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2651--2656
+Underfull \hbox (badness 10000) in paragraph at lines 2652--2657
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2657--2658
+Underfull \hbox (badness 10000) in paragraph at lines 2658--2659
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2659--2664
+Underfull \hbox (badness 10000) in paragraph at lines 2660--2665
 
  []
 
 
-Overfull \hbox (16.26369pt too wide) in paragraph at lines 2681--2686
+Overfull \hbox (16.26369pt too wide) in paragraph at lines 2682--2687
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2681--2686
+Underfull \hbox (badness 10000) in paragraph at lines 2682--2687
 
  []
 
 [144]
-Underfull \hbox (badness 10000) in paragraph at lines 2705--2709
+Underfull \hbox (badness 10000) in paragraph at lines 2706--2710
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2733--2739
+Underfull \hbox (badness 10000) in paragraph at lines 2734--2740
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2740--2741
+Underfull \hbox (badness 10000) in paragraph at lines 2741--2742
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2742--2746
+Underfull \hbox (badness 10000) in paragraph at lines 2743--2747
 
  []
 
 [145]
-Underfull \hbox (badness 10000) in paragraph at lines 2765--2772
+Underfull \hbox (badness 10000) in paragraph at lines 2766--2773
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2773--2774
+Underfull \hbox (badness 10000) in paragraph at lines 2774--2775
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2775--2781
+Underfull \hbox (badness 10000) in paragraph at lines 2776--2782
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2801--2805
+Underfull \hbox (badness 10000) in paragraph at lines 2802--2806
 
  []
 
@@ -5608,71 +5646,71 @@ Underfull \hbox (badness 10000) in paragraph at lines 2801--2805
 Underfull \vbox (badness 2698) has occurred while \output is active []
 
  [146]
-Underfull \hbox (badness 10000) in paragraph at lines 2806--2807
+Underfull \hbox (badness 10000) in paragraph at lines 2807--2808
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2808--2812
+Underfull \hbox (badness 10000) in paragraph at lines 2809--2813
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2829--2830
+Underfull \hbox (badness 10000) in paragraph at lines 2830--2831
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2831--2835
+Underfull \hbox (badness 10000) in paragraph at lines 2832--2836
 
  []
 
 [147]
 
-LaTeX Warning: Citation `Weitzc2016' on page 148 undefined on input line 2865.
+LaTeX Warning: Citation `Weitzc2016' on page 148 undefined on input line 2866.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2860--2866
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2867--2871
+Underfull \hbox (badness 10000) in paragraph at lines 2861--2867
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2874--2875
+Underfull \hbox (badness 10000) in paragraph at lines 2868--2872
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2876--2880
+Underfull \hbox (badness 10000) in paragraph at lines 2875--2876
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2877--2881
 
  []
 
 [148]
-Underfull \hbox (badness 10000) in paragraph at lines 2901--2905
+Underfull \hbox (badness 10000) in paragraph at lines 2902--2906
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2921--2925
+Underfull \hbox (badness 10000) in paragraph at lines 2922--2926
 
  []
 
 [149]
-Underfull \hbox (badness 10000) in paragraph at lines 2947--2948
+Underfull \hbox (badness 10000) in paragraph at lines 2948--2949
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2949--2953
+Underfull \hbox (badness 10000) in paragraph at lines 2950--2954
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2976--2978
+Underfull \hbox (badness 10000) in paragraph at lines 2977--2979
 
  []
 
@@ -5680,61 +5718,61 @@ Underfull \hbox (badness 10000) in paragraph at lines 2976--2978
 Underfull \vbox (badness 5787) has occurred while \output is active []
 
  [150]
-Underfull \hbox (badness 10000) in paragraph at lines 2979--2980
+Underfull \hbox (badness 10000) in paragraph at lines 2980--2981
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2981--2988
+Underfull \hbox (badness 10000) in paragraph at lines 2982--2989
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3012--3018
+Underfull \hbox (badness 10000) in paragraph at lines 3013--3019
 
  []
 
 [151]
-Underfull \hbox (badness 10000) in paragraph at lines 3040--3041
+Underfull \hbox (badness 10000) in paragraph at lines 3041--3042
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3042--3046
+Underfull \hbox (badness 10000) in paragraph at lines 3043--3047
 
  []
 
 [152]
 
-LaTeX Warning: Citation `Doic2016' on page 153 undefined on input line 3078.
+LaTeX Warning: Citation `Doic2016' on page 153 undefined on input line 3079.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3082--3084
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 3086--3090
+Underfull \hbox (badness 10000) in paragraph at lines 3083--3085
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3114--3115
+Underfull \hbox (badness 10000) in paragraph at lines 3087--3091
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3115--3116
 
  []
 
 [153]
-Underfull \hbox (badness 10000) in paragraph at lines 3116--3120
+Underfull \hbox (badness 10000) in paragraph at lines 3117--3121
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3138--3139
+Underfull \hbox (badness 10000) in paragraph at lines 3139--3140
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3140--3144
+Underfull \hbox (badness 10000) in paragraph at lines 3141--3145
 
  []
 
@@ -5764,18 +5802,23 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 3.
 
 bibitemlist
-) [159]
+
+Overfull \hbox (38.67795pt too wide) in paragraph at lines 75--81
+\T1/lmr/m/n/12 (-20) supply-[]chain-[]renewable-[]energy-[]technologies-[]europ
+e-[]analysis-[]wind-[]geothermal-[]and-[]ocean-[]energy>[]$[][].  
+ []
+
+[159]) [160]
 \openout2 = `USPSC-Apendices.aux'.
 
- (./USPSC-Apendices.tex [160
-
-
-]
+ (./USPSC-Apendices.tex
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 9.
 
 [161
+
+
 
 ] [162]
 
@@ -6304,7 +6347,7 @@ LaTeX Warning: Citation `nbr14724' on page 185 undefined on input line 13.
 ] [186
 
 ]
-<USPSC-AcentuacaoLaTeX.png, id=1657, 225.84375pt x 353.06906pt>
+<USPSC-AcentuacaoLaTeX.png, id=1667, 225.84375pt x 353.06906pt>
 File: USPSC-AcentuacaoLaTeX.png Graphic file (type png)
 <use USPSC-AcentuacaoLaTeX.png>
 Package pdftex.def Info: USPSC-AcentuacaoLaTeX.png  used on input line 21.
@@ -6314,7 +6357,7 @@ Package pdftex.def Info: USPSC-AcentuacaoLaTeX.png  used on input line 21.
 LaTeX Warning: Citation `comandos' on page 187 undefined on input line 22.
 
 [187pdfTeX warning (ext4): destination with the same identifier (name{figure.an
-exochapback.2.14}) has been already used, duplicate ignored
+exochapback.2.15}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
@@ -6323,7 +6366,7 @@ l.26 \chapter
 [188
 
 ]
-<USPSC-SimbolosUteis.png, id=1668, 212.29312pt x 266.49562pt>
+<USPSC-SimbolosUteis.png, id=1679, 212.29312pt x 266.49562pt>
 File: USPSC-SimbolosUteis.png Graphic file (type png)
 <use USPSC-SimbolosUteis.png>
 Package pdftex.def Info: USPSC-SimbolosUteis.png  used on input line 30.
@@ -6333,7 +6376,7 @@ Package pdftex.def Info: USPSC-SimbolosUteis.png  used on input line 30.
 LaTeX Warning: Citation `comandos' on page 189 undefined on input line 31.
 
 [189pdfTeX warning (ext4): destination with the same identifier (name{figure.an
-exochapback.3.15}) has been already used, duplicate ignored
+exochapback.3.16}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
@@ -6341,7 +6384,7 @@ l.36 \chapter
              {Letras gregas em \LaTeX} <./USPSC-SimbolosUteis.png>] [190
 
 ]
-<USPSC-LetrasGregas.png, id=1677, 326.72063pt x 449.42906pt>
+<USPSC-LetrasGregas.png, id=1688, 326.72063pt x 449.42906pt>
 File: USPSC-LetrasGregas.png Graphic file (type png)
 <use USPSC-LetrasGregas.png>
 Package pdftex.def Info: USPSC-LetrasGregas.png  used on input line 40.
@@ -6351,7 +6394,7 @@ Package pdftex.def Info: USPSC-LetrasGregas.png  used on input line 40.
 LaTeX Warning: Citation `comandos' on page 191 undefined on input line 41.
 
 ) [191pdfTeX warning (ext4): destination with the same identifier (name{figure.
-anexochapback.4.16}) has been already used, duplicate ignored
+anexochapback.4.17}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
@@ -6390,10 +6433,10 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 532.
  ) 
 Here is how much of TeX's memory you used:
- 42261 strings out of 492982
- 804920 string characters out of 6134896
- 1093854 words of memory out of 5000000
- 44400 multiletter control sequences out of 15000+600000
+ 42278 strings out of 492982
+ 805198 string characters out of 6134896
+ 1094528 words of memory out of 5000000
+ 44414 multiletter control sequences out of 15000+600000
  654971 words of font info for 181 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  73i,18n,99p,10406b,1869s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -6414,10 +6457,10 @@ lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf
 /type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pf
 b></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/typ
 e1/public/lm/lmtt12.pfb>
-Output written on USPSC-modelo-seg.pdf (193 pages, 1468620 bytes).
+Output written on USPSC-modelo-seg.pdf (193 pages, 1815724 bytes).
 PDF statistics:
- 2357 PDF objects out of 2487 (max. 8388607)
- 2015 compressed objects within 21 object streams
- 511 named destinations out of 1000 (max. 500000)
- 41359 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 2367 PDF objects out of 2487 (max. 8388607)
+ 2024 compressed objects within 21 object streams
+ 513 named destinations out of 1000 (max. 500000)
+ 41364 words of extra memory for PDF output out of 42996 (max. 10000000)
 
