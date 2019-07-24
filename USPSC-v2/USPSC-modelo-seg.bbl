@@ -28,6 +28,15 @@ Brasilia, 2005. Dispon{\'\i}vel em:
 \textbf{Power Systems, IEEE Transactions on}, v.~26, n.~3, p. 1769--1782, 2011.
 ISSN 0885-8950.}
 
+\bibitem[Blum e Roli 2003]{Blum2003}
+\abntrefinfo{Blum e Roli}{BLUM; ROLI}{2003}
+{BLUM, C.; ROLI, A. {Metaheuristics in Combinatorial Optimization: Overview and
+  Conceptual Comparison}.
+\textbf{ACM Computing Surveys}, v.~35, n.~3, p. 268--308, sep 2003.
+ISSN 0360-0300.
+Dispon{\'\i}vel em:
+  \url{http://portal.acm.org/citation.cfm?doid=937503.937505}.}
+
 \bibitem[{Commission European} 2010]{Europe2020}
 \abntrefinfo{{Commission European}}{{Commission European}}{2010}
 {{Commission European}. \textbf{{A strategy for smart, sustainable and
@@ -94,6 +103,14 @@ ISSN 1932-5517.}
 ISBN 9781424483570. Dispon{\'\i}vel em:
   \url{http://ieeexplore.ieee.org/document/5589677/}.}
 
+\bibitem[Todorovski e Raji{\v{c}}i{\'{c}} 2006]{Todorovski2006}
+\abntrefinfo{Todorovski e Raji{\v{c}}i{\'{c}}}{TODOROVSKI;
+  RAJI{\v{C}}I{\'{C}}}{2006}
+{TODOROVSKI, M.; RAJI{\v{C}}I{\'{C}}, D. {An initialization procedure in
+  solving optimal power flow by genetic algorithm}.
+\textbf{IEEE Transactions on Power Systems}, v.~21, n.~2, p. 480--487, 2006.
+ISSN 08858950.}
+
 \bibitem[{Wind Europe} 2019]{WindEurope2019}
 \abntrefinfo{{Wind Europe}}{{Wind Europe}}{2019}
 {{Wind Europe}. {Wind energy in Europe in 2018: Trends and statistics}.
@@ -108,5 +125,12 @@ ISSN 0309524X.}
 \textbf{Proceedings of the IEEE}, v.~103, n.~5, p. 740--788, may 2015.
 ISSN 00189219.
 Dispon{\'\i}vel em: \url{http://ieeexplore.ieee.org/document/7109820/}.}
+
+\bibitem[Yoshida et al. 2000]{Yoshida2000}
+\abntrefinfo{Yoshida et al.}{YOSHIDA et al.}{2000}
+{YOSHIDA, H. et al. {A Particle swarm optimization for reactive power and
+  voltage control considering voltage security assessment}.
+\textbf{IEEE Transactions on Power Systems}, 2000.
+ISSN 08858950.}
 
 \end{thebibliography}

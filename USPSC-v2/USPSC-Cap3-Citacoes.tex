@@ -8,12 +8,25 @@ The first approach applies metaheuristics to obtain a sufficiently good solution
 
 The second approach applies analytical methods to find a global/local optimum solution. These methods use equations derived from the problem to locate an optimal solution. Thus, they are problem specific and must be adapted from one case to another. Analytical methods often converge in few iterations, reducing processing time, but are sensitive to initial conditions.
 
-In this work is proposed to combine both approaches, reducing the effects of their disadvantages and improving overall convergence. Mean-Variance Mapping Optimization (MVMO) was the metaheuristic chosen for this problem, alongside Trajectory Sensitivity Method (TS) as analytical method. The flowchart depicted in Figure \ref{fig: flowchart} illustrate how the proposed method works.
+In this work is proposed to combine both approaches, reducing the effects of their disadvantages and improving overall convergence. Mean-Variance Mapping Optimization (MVMO) was the metaheuristic chosen for this problem, alongside Trajectory Sensitivity Method (TS) as analytical method. Both methods will be discussed in the following sections.
 
-\begin{figure}[h]
+The flowchart depicted in Figure \ref{fig: flowchart} illustrates how the proposed method works. At first, a disturbance occurs, resulting in a dynamic response of the real system. The real system's outputs are compared to the model behaviour when the same disturbance is applied to it. The error $J(p)$ is evaluated and while it is greater than a given tolerance $t_{1}$, MVMO algorithm will search for a local solution. Afterwards, the error will eventually drop to a value lower than $t_{1}$, and TS will be used to refine the search to a optimal solution, with error level below $t_{2}$. The error will be evaluated through the Least-Squares Method, given by equation \ref{eq: J(p)}, where $y_{r}$ and $y$ stand for the real system and model outputs.
+
+\begin{equation}
+	J(p) = \frac{1}{2}\int\displaylimits_{0}^{T_{0}}(y_{r}(t) - y(t))^{T}(y_{r}(t) - y(t))dt
+	\label{eq: J(p)}
+\end{equation}
+
+\begin{figure}
 	\caption{Flowchart of estimation method}
 	\begin{center}
 		\includegraphics[scale=0.7]{Images/Flowchart.eps}
 	\end{center}
 	\label{fig: flowchart}
 \end{figure}
+
+\section{Mean-Variance Mapping Optimization}
+
+
+
+\section{Trajectory Sensitivity Method}
