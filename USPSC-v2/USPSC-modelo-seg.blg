@@ -6,20 +6,6 @@ A level-1 auxiliary file: USPSC-Resumo.aux
 A level-1 auxiliary file: USPSC-Cap1-Introducao.aux
 A level-1 auxiliary file: USPSC-Cap2-Desenvolvimento.aux
 A level-1 auxiliary file: USPSC-Cap3-Citacoes.aux
-Case mismatch error between cite keys atlas2001 and Atlas2001
----line 152 of file USPSC-Cap3-Citacoes.aux
- : \citation{atlas2001
- :                    }
-I'm skipping whatever remains of this command
-Case mismatch error between cite keys atlas2001 and Atlas2001
----line 153 of file USPSC-Cap3-Citacoes.aux
- : \citation{atlas2001
- :                    }
-I'm skipping whatever remains of this command
-A level-1 auxiliary file: USPSC-Cap4-Referencias.aux
-A level-1 auxiliary file: USPSC-Cap5-Conclusao.aux
-A level-1 auxiliary file: USPSC-Apendices.aux
-A level-1 auxiliary file: USPSC-Anexos.aux
 The style file: abntex2-alf.bst
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
@@ -30,129 +16,9 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
-Reallocated field_info (elt_size=4) to 15074 items from 5000.
 Database file #1: abntex2-options.bib
 Database file #2: USPSC-modelo-references.bib
 Warning--I didn't find a database entry for "abnt-etal-cite"
-Warning--I didn't find a database entry for "nbr14724"
-Warning--I didn't find a database entry for "sibi2016"
-Warning--I didn't find a database entry for "abnetxclasse"
-Warning--I didn't find a database entry for "abnetxcite"
-Warning--I didn't find a database entry for "abnetxcitealf"
-Warning--I didn't find a database entry for "memoir2010"
-Warning--I didn't find a database entry for "equipeabntex2"
-Warning--I didn't find a database entry for "babel2011"
-Warning--I didn't find a database entry for "nbr6024"
-Warning--I didn't find a database entry for "sibi2009"
-Warning--I didn't find a database entry for "araujo2012"
-Warning--I didn't find a database entry for "van1986"
-Warning--I didn't find a database entry for "nbr10520"
-Warning--I didn't find a database entry for "KOK2013"
-Warning--I didn't find a database entry for "Krauss1997"
-Warning--I didn't find a database entry for "Moss1999"
-Warning--I didn't find a database entry for "ROMANO1996"
-Warning--I didn't find a database entry for "Farias2001"
-Warning--I didn't find a database entry for "Gubitoso1989"
-Warning--I didn't find a database entry for "Hood1999"
-Warning--I didn't find a database entry for "Naves25abr.1999"
-Warning--I didn't find a database entry for "Sukikara2007"
-Warning--I didn't find a database entry for "Catani1989"
-Warning--I didn't find a database entry for "Castro1990"
-Warning--I didn't find a database entry for "Alves2002"
-Warning--I didn't find a database entry for "Gomes1992"
-Warning--I didn't find a database entry for "Azevedo2015"
-Warning--I didn't find a database entry for "Bruckman2002"
-Warning--I didn't find a database entry for "science2006"
-Warning--I didn't find a database entry for "Barbosa2002"
-Warning--I didn't find a database entry for "galeria1998"
-Warning--I didn't find a database entry for "usp2006"
-Warning--I didn't find a database entry for "Piccini1999"
-Warning--I didn't find a database entry for "Dias1994"
-Warning--I didn't find a database entry for "Tollivet1994"
-Warning--I didn't find a database entry for "Malinowski2000"
-Warning--I didn't find a database entry for "Abreu2015"
-Warning--I didn't find a database entry for "simone1977"
-Warning--I didn't find a database entry for "Giannini2000"
-Warning--I didn't find a database entry for "Meyaard2003"
-Warning--I didn't find a database entry for "Hennekens1987b"
-Warning--I didn't find a database entry for "Hennekens1987a"
-Warning--I didn't find a database entry for "fgv1984"
-Warning--I didn't find a database entry for "CETESB1994"
-Warning--I didn't find a database entry for "cetesb94"
-Warning--I didn't find a database entry for "iniciacao1996"
-Warning--I didn't find a database entry for "SEKEFF2002"
-Warning--I didn't find a database entry for "ASPLUND2006"
-Warning--I didn't find a database entry for "Paula2001"
-Warning--I didn't find a database entry for "Demakopoulou2000"
-Warning--I didn't find a database entry for "PhillipiJunior2000"
-Warning--I didn't find a database entry for "resprin1997"
-Warning--I didn't find a database entry for "saopaulo1963"
-Warning--I didn't find a database entry for "resolucao1991"
-Warning--I didn't find a database entry for "codigo1985"
-Warning--I didn't find a database entry for "constituicao1988"
-Warning--I didn't find a database entry for "buscopan2013"
-Warning--I didn't find a database entry for "Pasquarelli1987"
-Warning--I didn't find a database entry for "Novak1967"
-Warning--I didn't find a database entry for "Dood2002"
-Warning--I didn't find a database entry for "biblioteca1985"
-Warning--I didn't find a database entry for "usp2001"
-Warning--I didn't find a database entry for "educacao2005"
-Warning--I didn't find a database entry for "brasil1981"
-Warning--I didn't find a database entry for "brasil1986"
-Warning--I didn't find a database entry for "Gomes1980"
-Warning--I didn't find a database entry for "law1967"
-Warning--I didn't find a database entry for "Agencia2003"
-Warning--I didn't find a database entry for "Dorlands2000"
-Warning--I didn't find a database entry for "abetter2004"
-Warning--I didn't find a database entry for "council2001"
-Warning--I didn't find a database entry for "Thome1999"
-Warning--I didn't find a database entry for "Nature1869"
-Warning--I didn't find a database entry for "Brennan2006"
-Warning--I didn't find a database entry for "microsoft1995"
-Warning--I didn't find a database entry for "Vicente2010"
-Warning--I didn't find a database entry for "Miyaura"
-Warning--I didn't find a database entry for "Piccini1996"
-Warning--I didn't find a database entry for "Wendel1992"
-Warning--I didn't find a database entry for "Elewa2006"
-Warning--I didn't find a database entry for "Hofling1993"
-Warning--I didn't find a database entry for "Fonseca2000"
-Warning--I didn't find a database entry for "bibliotecanacional2000"
-Warning--I didn't find a database entry for "GlasscockIII1987"
-Warning--I didn't find a database entry for "delvecchio1995"
-Warning--I didn't find a database entry for "brasil1990"
-Warning--I didn't find a database entry for "Herbrick1989"
-Warning--I didn't find a database entry for "Mostafavi2014"
-Warning--I didn't find a database entry for "Lacasse2005"
-Warning--I didn't find a database entry for "Palagachev2006"
-Warning--I didn't find a database entry for "Zelen2000"
-Warning--I didn't find a database entry for "Boyd1993"
-Warning--I didn't find a database entry for "Cochrane1998"
-Warning--I didn't find a database entry for "Oliveira2006"
-Warning--I didn't find a database entry for "Harrison2001"
-Warning--I didn't find a database entry for "Abend2002"
-Warning--I didn't find a database entry for "tratados1999"
-Warning--I didn't find a database entry for "central1998"
-Warning--I didn't find a database entry for "Denver1974"
-Warning--I didn't find a database entry for "Almeida1995"
-Warning--I didn't find a database entry for "bionline"
-Warning--I didn't find a database entry for "Villa-Lobos1916"
-Warning--I didn't find a database entry for "Ramos1999"
-Warning--I didn't find a database entry for "Wu1999"
-Warning--I didn't find a database entry for "Costa2002"
-Warning--I didn't find a database entry for "Geografico1986"
-Warning--I didn't find a database entry for "BRAYNER1994"
-Warning--I didn't find a database entry for "Sabroza1998"
-Warning--I didn't find a database entry for "Oliva1900"
-Warning--I didn't find a database entry for "Montgomery1992"
-Warning--I didn't find a database entry for "Dudek2006"
-Warning--I didn't find a database entry for "brasil1990b"
-Warning--I didn't find a database entry for "nbr6023"
-Warning--I didn't find a database entry for "usp200"
-Warning--I didn't find a database entry for "saopaulo1937"
-Warning--I didn't find a database entry for "Weitzc2016"
-Warning--I didn't find a database entry for "Doic2016"
-Warning--I didn't find a database entry for "eesc2016"
-Warning--I didn't find a database entry for "comandos"
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
 Reallocated global_strs (elt_size=20001) to 20 items from 10.
@@ -164,7 +30,7 @@ Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 +---------------------------------------------------------+
 You've used 26 entries,
             6714 wiz_defined-function locations,
-            1524 strings with 15319 characters,
+            1329 strings with 13184 characters,
 and the built_in function-call counts, 27855 in all, are:
 = -- 3257
 > -- 427
@@ -203,4 +69,4 @@ warning$ -- 0
 while$ -- 116
 width$ -- 0
 write$ -- 247
-(There were 2 error messages)
+(There was 1 warning)
