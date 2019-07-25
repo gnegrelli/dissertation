@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.5.31)  25 JUL 2019 17:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.5.31)  25 JUL 2019 17:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3392,11 +3392,19 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
                                                   \fi \fi 
 l.36 G
       ene selection can be done in many ways and even vary throughout the es...
- <./Images/Flowchart-eps-converted-to.pdf>]) [41] (./USPSC-modelo-seg.bbl
-[42
+ <./Images/Flowchart-eps-converted-to.pdf>]
+
+LaTeX Warning: Reference `fig: mappingf' on page 41 undefined on input line 57.
 
 
-]
+
+LaTeX Warning: Reference `fig: mapeffects' on page 41 undefined on input line 5
+7.
+
+
+LaTeX Warning: Reference `fig: diffs' on page 41 undefined on input line 59.
+
+) [41] [42] (./USPSC-modelo-seg.bbl
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 3.
@@ -3408,7 +3416,10 @@ Overfull \hbox (38.67795pt too wide) in paragraph at lines 93--99
 e-[]analysis-[]wind-[]geothermal-[]and-[]ocean-[]energy>[]$[][].  
  []
 
-[43])
+[43
+
+
+])
 No file USPSC-modelo-seg.ind.
 
 AED: lastpage setting LastPage
@@ -3442,10 +3453,10 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 538.
  ) 
 Here is how much of TeX's memory you used:
- 41621 strings out of 492982
- 790528 string characters out of 6134896
+ 41624 strings out of 492982
+ 790572 string characters out of 6134896
  1038377 words of memory out of 5000000
- 44262 multiletter control sequences out of 15000+600000
+ 44265 multiletter control sequences out of 15000+600000
  591470 words of font info for 105 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  73i,18n,99p,10406b,1092s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -3462,10 +3473,10 @@ e/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/
 lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf
 /fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lms
 y10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb>
-Output written on USPSC-modelo-seg.pdf (46 pages, 1122751 bytes).
+Output written on USPSC-modelo-seg.pdf (46 pages, 1123791 bytes).
 PDF statistics:
- 771 PDF objects out of 1000 (max. 8388607)
- 598 compressed objects within 6 object streams
+ 772 PDF objects out of 1000 (max. 8388607)
+ 599 compressed objects within 6 object streams
  136 named destinations out of 1000 (max. 500000)
  18248 words of extra memory for PDF output out of 20736 (max. 10000000)
 
