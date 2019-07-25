@@ -27,11 +27,19 @@ The flowchart depicted in Figure \ref{fig: flowchart} illustrates how the propos
 
 \section{Mean-Variance Mapping Optimization}
 
-Presented in \cite{Erlich2010}, this population-based metaheuristic shares characteristics with other evolutionary algorithms, but differ from them on how to induce mutations on the offspring in order to diversify the population. By considering statistical data of population during mutation process, MVMO introduces a memory factor to it, enhancing search mechanism. Due this factor, MVMO performs better than similar metaheuristics when population size is relatively small \cite{Nakawiro2011}.
+Presented in \cite{Erlich2010}, this population-based metaheuristic shares characteristics with other evolutionary algorithms, but differ from them on how to induce mutations on the offspring in order to diversify the population. By considering statistical data of population during mutation process, MVMO introduces a memory factor to it, enhancing search mechanism. Due this factor, MVMO performs better than similar metaheuristics when population size is relatively small \cite{Nakawiro2011}. In this section, the terms `gene', `individuals' and `population' will be used instead of `parameter', `parameter vector' and `set of vectors' for the sake of analogy.
 
 Before the search process starts, a few settings must be done, such as population size, number of offspring, number of genes selected for mutation and selection method. Also, the search region is defined by setting the range within genes can vary. This constrains their values within a feasible region, preventing divergence. The search region is later normalized for all genes, aiding the process. Termination criteria is also set in this step. In this work, both number of generations and fitness will be used as stop criteria.
 
+With all set, a randomly-distributed population is generated, evaluated and sorted. Moreover, the mean and variance of every gene is calculated. These values will later be used on the mutation process. The individual with better fitness is selected as parent from whom new individuals will evolve. The offspring is then created following three steps common in evolutionary algorithms: gene selection, mutation and crossover.
 
+Gene selection can be done in many ways and even vary throughout the estimation process, with strategies' efficiency depending on the problem. However, three strategies are commonly used in this step. The first one is comprised of randomly selecting which genes will suffer mutation and which will be directly inherited from the parent. Gene selection can also be done by a moving window approach or even a combination of both strategies, with part of the genes selected at random and other through the window.
+
+
+
+inherit - herdar
+
+The process goes on until a stop criterion has been fulfilled.
 
 
 
