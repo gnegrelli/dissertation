@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.5.31)  25 JUL 2019 14:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.5.31)  25 JUL 2019 16:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3374,35 +3374,48 @@ Package pdftex.def Info: Images/Flowchart-eps-converted-to.pdf  used on input l
 ine 23.
 (pdftex.def)             Requested size: 222.73059pt x 274.72449pt.
 
-LaTeX Warning: Citation `Erlich2010' on page 39 undefined on input line 30.
+LaTeX Warning: Citation `Nakawiro2011' on page 39 undefined on input line 30.
 
-[39]) [40pdfTeX warning (ext4): destination with the same identifier (name{figu
-re.3.11}) has been already used, duplicate ignored
+
+Overfull \hbox (13.62871pt too wide) in paragraph at lines 30--31
+[]\T1/lmr/m/n/12 (-20) Presented in ([][]ER-LICH; VE-NAYAG-AMOOR-THY; WORAWAT[]
+[], [][]2010[][]), this population-
+ []
+
+[39]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [40pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
+11}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.490 \include{USPSC-Cap3-Citacoes}
-                                    <./Images/Flowchart-eps-converted-to.pdf>]
-(./USPSC-modelo-seg.bbl
+l.36 G
+      ene selection can be done in many ways and even vary throughout the es...
+ <./Images/Flowchart-eps-converted-to.pdf>]
+
+LaTeX Warning: Reference `eq: mappingf' on page 41 undefined on input line 38.
+
+) [41] (./USPSC-modelo-seg.bbl [42
+
+
+]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 3.
 
 bibitemlist
 
-Overfull \hbox (38.67795pt too wide) in paragraph at lines 84--90
+Overfull \hbox (38.67795pt too wide) in paragraph at lines 93--99
 \T1/lmr/m/n/12 (-20) supply-[]chain-[]renewable-[]energy-[]technologies-[]europ
 e-[]analysis-[]wind-[]geothermal-[]and-[]ocean-[]energy>[]$[][].  
  []
 
-[41
-
-
-])
+[43])
 No file USPSC-modelo-seg.ind.
 
 AED: lastpage setting LastPage
-[42]
+[44]
 \tf@lof=\write7
 \openout7 = `USPSC-modelo-seg.lof'.
 
@@ -3432,11 +3445,11 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 538.
  ) 
 Here is how much of TeX's memory you used:
- 41603 strings out of 492982
- 790285 string characters out of 6134896
- 1037955 words of memory out of 5000000
- 44254 multiletter control sequences out of 15000+600000
- 591288 words of font info for 103 fonts, out of 8000000 for 9000
+ 41617 strings out of 492982
+ 790475 string characters out of 6134896
+ 1038182 words of memory out of 5000000
+ 44260 multiletter control sequences out of 15000+600000
+ 591470 words of font info for 105 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  73i,18n,99p,10406b,1092s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dv
@@ -3452,10 +3465,10 @@ e/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/
 lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf
 /fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lms
 y10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb>
-Output written on USPSC-modelo-seg.pdf (44 pages, 1116606 bytes).
+Output written on USPSC-modelo-seg.pdf (46 pages, 1120554 bytes).
 PDF statistics:
- 753 PDF objects out of 1000 (max. 8388607)
- 582 compressed objects within 6 object streams
- 130 named destinations out of 1000 (max. 500000)
+ 766 PDF objects out of 1000 (max. 8388607)
+ 593 compressed objects within 6 object streams
+ 134 named destinations out of 1000 (max. 500000)
  18248 words of extra memory for PDF output out of 20736 (max. 10000000)
 

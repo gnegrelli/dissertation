@@ -35,7 +35,12 @@ With all set, a randomly-distributed population is generated, evaluated and sort
 
 Gene selection can be done in many ways and even vary throughout the estimation process, with strategies' efficiency depending on the problem. However, three strategies are commonly used in this step. The first one is comprised of randomly selecting which genes will suffer mutation and which will be directly inherited from the parent. Gene selection can also be done by a moving window approach or even a combination of both strategies, with part of the genes selected at random and other through the window.
 
+Mutation step takes place right after gene selection. At first, each selected gene receives a random value $x'_{i}$ between [0,1] that will be used as an input to a mapping function based on the mean and variance of each particular gene on the population. The mapping function is describe by equation \eqref{eq: mappingf}.
 
+\begin{equation}
+	x_{i} = h_{x} + (1-h_{1}+h_{0})x'_{i} - h_{0}
+	\label{eq: mappingf}
+\end{equation}
 
 inherit - herdar
 
