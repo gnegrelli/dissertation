@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.5.31)  24 JUL 2019 17:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.5.31)  25 JUL 2019 14:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3295,9 +3295,6 @@ Package pdftex.def Info: Images/WTGTypes.jpg  used on input line 123.
 (pdftex.def)             Requested size: 297.35567pt x 161.85182pt.
 
 
-LaTeX Warning: Reference `ch: Est' on page 33 undefined on input line 129.
-
-
 LaTeX Warning: Reference `ch: Res' on page 33 undefined on input line 129.
 
 ) [33pdfTeX warning (ext4): destination with the same identifier (name{figure.1
@@ -3335,7 +3332,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 pdfTeX warning: pdflatex (file ./Images/ErlichModel-eps-converted-to.pdf): PDF 
 inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Images/ErlichModel-eps-converted-to.pdf, id=447, 225.84375pt x 269.005pt>
+<Images/ErlichModel-eps-converted-to.pdf, id=448, 225.84375pt x 269.005pt>
 File: Images/ErlichModel-eps-converted-to.pdf Graphic file (type pdf)
 <use Images/ErlichModel-eps-converted-to.pdf>
 Package pdftex.def Info: Images/ErlichModel-eps-converted-to.pdf  used on input
@@ -3356,15 +3353,6 @@ l.31
 
 
 ]
-
-LaTeX Warning: Citation `Blum2003' on page 39 undefined on input line 7.
-
-
-LaTeX Warning: Citation `Todorovski2006' on page 39 undefined on input line 7.
-
-
-LaTeX Warning: Citation `Yoshida2000' on page 39 undefined on input line 7.
-
 Package epstopdf Info: Source file: <Images/Flowchart.eps>
 (epstopdf)                    date: 2019-07-24 14:41:20
 (epstopdf)                    size: 36362 bytes
@@ -3379,18 +3367,17 @@ Package epstopdf Info: Output file is already uptodate.
 
 pdfTeX warning: pdflatex (file ./Images/Flowchart-eps-converted-to.pdf): PDF in
 clusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Images/Flowchart-eps-converted-to.pdf, id=538, 318.18875pt x 392.46625pt>
+<Images/Flowchart-eps-converted-to.pdf, id=545, 318.18875pt x 392.46625pt>
 File: Images/Flowchart-eps-converted-to.pdf Graphic file (type pdf)
 <use Images/Flowchart-eps-converted-to.pdf>
 Package pdftex.def Info: Images/Flowchart-eps-converted-to.pdf  used on input l
 ine 23.
 (pdftex.def)             Requested size: 222.73059pt x 274.72449pt.
-)
-Underfull \vbox (badness 2050) has occurred while \output is active []
 
- [39]
-[40pdfTeX warning (ext4): destination with the same identifier (name{figure.3.1
-1}) has been already used, duplicate ignored
+LaTeX Warning: Citation `Erlich2010' on page 39 undefined on input line 30.
+
+[39]) [40pdfTeX warning (ext4): destination with the same identifier (name{figu
+re.3.11}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
@@ -3445,10 +3432,10 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 538.
  ) 
 Here is how much of TeX's memory you used:
- 41602 strings out of 492982
- 790256 string characters out of 6134896
- 1037393 words of memory out of 5000000
- 44253 multiletter control sequences out of 15000+600000
+ 41603 strings out of 492982
+ 790285 string characters out of 6134896
+ 1037955 words of memory out of 5000000
+ 44254 multiletter control sequences out of 15000+600000
  591288 words of font info for 103 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  73i,18n,99p,10406b,1092s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -3465,10 +3452,10 @@ e/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/
 lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf
 /fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lms
 y10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb>
-Output written on USPSC-modelo-seg.pdf (44 pages, 1115730 bytes).
+Output written on USPSC-modelo-seg.pdf (44 pages, 1116606 bytes).
 PDF statistics:
- 746 PDF objects out of 1000 (max. 8388607)
- 575 compressed objects within 6 object streams
+ 753 PDF objects out of 1000 (max. 8388607)
+ 582 compressed objects within 6 object streams
  130 named destinations out of 1000 (max. 500000)
  18248 words of extra memory for PDF output out of 20736 (max. 10000000)
 

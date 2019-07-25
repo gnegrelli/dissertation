@@ -28,45 +28,45 @@ Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://www.abntex.net.br/                               |
 +---------------------------------------------------------+
-You've used 29 entries,
+You've used 30 entries,
             6714 wiz_defined-function locations,
-            1353 strings with 13869 characters,
-and the built_in function-call counts, 31516 in all, are:
-= -- 3621
-> -- 534
-< -- 776
-+ -- 1010
-- -- 162
-* -- 1930
-:= -- 3876
-add.period$ -- 78
-call.type$ -- 31
-change.case$ -- 220
-chr.to.int$ -- 35
-cite$ -- 18
-duplicate$ -- 2992
-empty$ -- 1489
-format.name$ -- 790
-if$ -- 6483
+            1361 strings with 14145 characters,
+and the built_in function-call counts, 32482 in all, are:
+= -- 3689
+> -- 585
+< -- 778
++ -- 1029
+- -- 177
+* -- 2013
+:= -- 4002
+add.period$ -- 81
+call.type$ -- 32
+change.case$ -- 235
+chr.to.int$ -- 36
+cite$ -- 19
+duplicate$ -- 3038
+empty$ -- 1545
+format.name$ -- 860
+if$ -- 6705
 int.to.chr$ -- 10
 int.to.str$ -- 1
-missing$ -- 413
-newline$ -- 109
-num.names$ -- 90
-pop$ -- 409
+missing$ -- 432
+newline$ -- 114
+num.names$ -- 95
+pop$ -- 437
 preamble$ -- 1
-purify$ -- 106
+purify$ -- 111
 quote$ -- 0
-skip$ -- 3467
+skip$ -- 3510
 stack$ -- 1
-substring$ -- 1342
-swap$ -- 1058
-text.length$ -- 24
+substring$ -- 1375
+swap$ -- 1080
+text.length$ -- 26
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 1
 warning$ -- 0
-while$ -- 140
+while$ -- 149
 width$ -- 0
-write$ -- 299
+write$ -- 315
 (There was 1 warning)
