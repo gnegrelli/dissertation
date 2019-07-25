@@ -35,16 +35,34 @@ With all set, a randomly-distributed population is generated, evaluated and sort
 
 Gene selection can be done in many ways and even vary throughout the estimation process, with strategies' efficiency depending on the problem. However, three strategies are commonly used in this step. The first one is comprised of randomly selecting which genes will suffer mutation and which will be directly inherited from the parent. Gene selection can also be done by a moving window approach or even a combination of both strategies, with part of the genes selected at random and other through the window.
 
-Mutation step takes place right after gene selection. At first, each selected gene receives a random value $x'_{i}$ between [0,1] that will be used as an input to a mapping function based on the mean and variance of each particular gene on the population. The mapping function is describe by equation \eqref{eq: mappingf}.
+Mutation step takes place right after gene selection. At first, each selected gene receives a random value $x'_{i}$ between [0,1] that will be used as an input to a mapping function based on the mean and variance of each particular gene on the population. Variance $v_{i}$ will directly influence on the shape factor given by \eqref{eq: shapefac}, where $f_{s}$ is the scaling factor responsible for focusing on exploration or exploitation. In the event of zero variance, the last non-null value of $v_{i}$ is used.
 
 \begin{equation}
-	x_{i} = h_{x} + (1-h_{1}+h_{0})x'_{i} - h_{0}
+	s_{i} = -f_{s}ln(v_{i})
+	\label{eq: shapefac}
+\end{equation}
+
+Shape factor and mean value of gene are used as inputs to a transformation function $h$, detailed in \eqref{eq: hfunc}. The final value of the gene is obtained through the mapping function described by equation \eqref{eq: mappingf}, where $h_{x} = h(u_{i} = x'_{i})$, $h_{1} = h(u_{i} = 1)$ and $h_{0} = h(u_{i} = 0)$. It is important to notice that the mapping function will always provide a result in the interval [0,1], not violating the normalization made at beginning.
+
+\begin{equation}
+	h(\bar{x_{i}}, s_{i1}, s_{i2}, u_{i}) = \bar{x_{i}}(1 - e^{-u_{i}s_{i1}}) + (1 + \bar{x_{i}})e^{-(1 - u_{i})s_{i2}}
+	\label{eq: hfunc}
+\end{equation}
+
+\begin{equation}
+	x_{i} = h_{x} + (1 - h_{1} + h_{0})x'_{i} - h_{0}
 	\label{eq: mappingf}
 \end{equation}
 
+The resulting mapping function is depicted in Figure \ref{fig: mappingf}. The effects of different mean and shape factor values can be observed on Figure \ref{fig: mapeffects}.
+
+As shown in \eqref{eq: hfunc}, two shape factors are used to evaluate the function. Different values of shape factors emphasizes the search below or above mean value. Thus, by controlling the values $s_{i1}$ and $s_{i2}$, the method can prioritize exploitation or exploration on a given region. Figure \ref{fig: diffs} depicts how asymmetrical shape factors affect the mapping function.
+
+
+
 inherit - herdar
 
-The process goes on until a stop criterion has been fulfilled.
+The process goes on until at least one stop criterion has been fulfilled.
 
 
 
