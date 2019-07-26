@@ -60,4 +60,24 @@ As shown in \eqref{eq: hfunc}, two shape factors are used to evaluate the functi
 
 The final step during offspring generation is crossover. During this phase, the mutated genes are united with the remaining genes inherited from parent, forming the new individual. This new individual is evaluated and included to the population if it is better than, at least, the population's worst individual. This process goes on until at least one stop criterion has been fulfilled.
 
+MVMO's main advantages are its low computational cost, performing well with small populations, constrained search region, preventing divergence, and the fact that its is non-specific. On the other hand, this method, as other metaheuristics, takes a great amount of time to converge when its error approaches zero.
+
 \section{Trajectory Sensitivity Method}
+
+Considering a nonlinear system described by \eqref{eq: xdot}, in order to minimize the error between model and real system, one must discover a parameter vector $p^{*}$ such as:
+
+\begin{equation}
+	G(p^{*}) = \frac{\partial J(p^{*})}{\partial p} = 0
+\end{equation}
+
+Truncating the Taylor series for $G(p)$ on the first-order term results on \eqref{eq: Taylor}. The variable $\Gamma$ is described in \eqref{eq: Gamma}.
+
+\begin{equation}
+	G(p^{*}) = G(p) + \Gamma (p)(p^{*} - p)
+	\label{eq: Taylor}
+\end{equation}
+
+\begin{equation}
+	\Gamma (p) = \frac{\partial G}{\partial p} \approx \int\displaylimits_{0}^{T_{0}} \left(\frac{dy}{dp}\right)^{T} \left(\frac{dy}{dp}\right) dt
+	\label{eq: Gamma}
+\end{equation}
