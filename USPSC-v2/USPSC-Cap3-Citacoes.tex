@@ -89,10 +89,12 @@ By rearranging the terms on \eqref{eq: Taylor}, the following equation is obtain
 \end{equation}
 
 The partial derivatives (also called trajectory sensitivities) $\frac{\partial y}{\partial p}$, used directly in \eqref{eq: Gamma} and indirectly in \eqref{eq: J(p)}, can be approximated by the difference shown in \eqref{eq: diff}. The outputs $y^{1}$ and $y^{0}$ are obtained using parameter vectors $p^{1}$ and $p^{0}$, respectively, and $\Delta p = p^{1} - p^{0}$. Using \eqref{eq: diff} allows Trajectory Sensitivity method to be applied on both differentiable and non-differentiable systems \cite{Benchluch1993}.
-
+ 
 \begin{equation}
 	\frac{\partial y}{\partial p} = \frac{y^{1} - y^{0}}{\Delta p}
 	\label{eq: diff}
 \end{equation}
 
-The Trajectory Sensitivity Method has fast convergence characteristics and can applied directly to nonlinear problems, not requiring linearization. Also, by analyzing the sensitivities, the method provides information about parameters' identifiability. However, TS is very sensitive to initial value of parameter chosen as start point. Thus, if the initial vaues are too far from real, the method can either diverge or converge to  values. Besides, the information provided to the method must contain the effects of the parameters, otherwise they won't be observable \cite{Benchluch1993}.
+The Trajectory Sensitivity Method has fast convergence characteristics and can applied directly to nonlinear problems, not requiring linearization. Also, by analyzing the sensitivities, the method provides information about parameters' identifiability. However, TS is very sensitive to initial value of parameter chosen as start point. Thus, if the initial values are too far from real, the method can either diverge or converge to  values. Besides, the information provided to the method must contain the effects of the parameters, otherwise they won't be observable \cite{Benchluch1993}.
+
+By associating MVMO and TS, the hybrid estimation approach proposed in this work combines most good characteristics of both methods whilst mitigating their disadvantages. The resulting method has smaller convergence time when compared to MVMO alone and is less sensitive than TS to initial values of parameters.
