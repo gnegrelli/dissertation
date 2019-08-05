@@ -60,11 +60,11 @@ As shown in \eqref{eq: hfunc}, two shape factors are used to evaluate the functi
 
 The final step during offspring generation is crossover. During this phase, the mutated genes are united with the remaining genes inherited from parent, forming the new individual. This new individual is evaluated and included to the population if it is better than, at least, the population's worst individual. This process goes on until at least one stop criterion has been fulfilled.
 
-MVMO's main advantages are its low computational cost, performing well with small populations, constrained search region, preventing divergence, and the fact that its is non-specific. On the other hand, this method, as other metaheuristics, takes a great amount of time to converge when its error approaches zero.
+The main advantages of this method are low computational cost, good performance using small populations, constrained search region, preventing divergence, and the fact that it is non-specific. On the other hand, this method, as other metaheuristics, takes a great amount of time to converge when its error approaches zero.
 
 \section{Trajectory Sensitivity Method}
 
-Considering a nonlinear system described by \eqref{eq: xdot}, in order to minimize the error between model and real system, one must discover a parameter vector $p^{*}$ such as:
+Considering a nonlinear system described by \eqref{eq: xdot}, in order to minimize the error between model and real system, given by \eqref{eq: J(p)}, one must discover a parameter vector $p^{*}$ such as:
 
 \begin{equation}
 	G(p^{*}) = \frac{\partial J(p^{*})}{\partial p} = 0
@@ -81,3 +81,18 @@ Truncating the Taylor series for $G(p)$ on the first-order term results on \eqre
 	\Gamma (p) = \frac{\partial G}{\partial p} \approx \int\displaylimits_{0}^{T_{0}} \left(\frac{dy}{dp}\right)^{T} \left(\frac{dy}{dp}\right) dt
 	\label{eq: Gamma}
 \end{equation}
+
+By rearranging the terms on \eqref{eq: Taylor}, the following equation is obtained. It describes how the parameters are updated after the $n^{th}$ iteration.
+
+\begin{equation}
+	p^{n+1} = p^{n} + \Gamma^{-1}(p^{n})\cdot G(p^{n})
+\end{equation}
+
+The partial derivatives (also called trajectory sensitivities) $\frac{\partial y}{\partial p}$, used directly in \eqref{eq: Gamma} and indirectly in \eqref{eq: J(p)}, can be approximated by the difference shown in \eqref{eq: diff}. The outputs $y^{1}$ and $y^{0}$ are obtained using parameter vectors $p^{1}$ and $p^{0}$, respectively, and $\Delta p = p^{1} - p^{0}$. Using \eqref{eq: diff} allows Trajectory Sensitivity method to be applied on both differentiable and non-differentiable systems \cite{Benchluch1993}.
+
+\begin{equation}
+	\frac{\partial y}{\partial p} = \frac{y^{1} - y^{0}}{\Delta p}
+	\label{eq: diff}
+\end{equation}
+
+
