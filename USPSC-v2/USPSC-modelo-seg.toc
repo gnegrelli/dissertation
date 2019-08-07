@@ -4,28 +4,24 @@
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {1}\MakeTextUppercase {Introduction}}{27}{chapter.1}
-\contentsline {section}{\numberline {1.1}Wind Energy}{27}{section.1.1}
-\contentsline {section}{\numberline {1.2}Wind Turbine Model}{29}{section.1.2}
-\contentsline {subsection}{\numberline {1.2.1}Type-1 Wind Turbine Generator}{30}{subsection.1.2.1}
-\contentsline {subsection}{\numberline {1.2.2}Type-2 Wind Turbine Generator}{30}{subsection.1.2.2}
-\contentsline {subsection}{\numberline {1.2.3}Type-3 Wind Turbine Generator}{32}{subsection.1.2.3}
-\contentsline {subsection}{\numberline {1.2.4}Type-4 Wind Turbine Generator}{32}{subsection.1.2.4}
+\contentsline {chapter}{\chapternumberline {1}\MakeTextUppercase {Introduction}}{11}{chapter.1}
+\contentsline {section}{\numberline {1.1}Wind Energy}{11}{section.1.1}
+\contentsline {section}{\numberline {1.2}Wind Turbine Model}{13}{section.1.2}
+\contentsline {subsection}{\numberline {1.2.1}Type-1 Wind Turbine Generator}{14}{subsection.1.2.1}
+\contentsline {subsection}{\numberline {1.2.2}Type-2 Wind Turbine Generator}{14}{subsection.1.2.2}
+\contentsline {subsection}{\numberline {1.2.3}Type-3 Wind Turbine Generator}{16}{subsection.1.2.3}
+\contentsline {subsection}{\numberline {1.2.4}Type-4 Wind Turbine Generator}{16}{subsection.1.2.4}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase {Mathematical Model of Type-3 Wind Turbine Generators}}{35}{chapter.2}
-\contentsline {section}{\numberline {2.1}Mathematical Model \#1}{35}{section.2.1}
+\contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase {Mathematical Model of Type-3 Wind Turbine Generators}}{19}{chapter.2}
+\contentsline {section}{\numberline {2.1}Mathematical Model \#1}{19}{section.2.1}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase {Estimation Process}}{39}{chapter.3}
-\contentsline {section}{\numberline {3.1}Mean-Variance Mapping Optimization}{40}{section.3.1}
-\contentsline {section}{\numberline {3.2}Trajectory Sensitivity Method}{42}{section.3.2}
+\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase {Estimation Process}}{23}{chapter.3}
+\contentsline {section}{\numberline {3.1}Mean-Variance Mapping Optimization}{24}{section.3.1}
+\contentsline {section}{\numberline {3.2}Trajectory Sensitivity Method}{26}{section.3.2}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {Expected Results}}{45}{chapter.4}
+\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {Expected Results}}{29}{chapter.4}
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{\uppercase {Bibliography}}{47}{section*.14}
+\contentsline {chapter}{\uppercase {Bibliography}}{31}{section*.8}
 \vspace {\cftbeforechapterskip }
