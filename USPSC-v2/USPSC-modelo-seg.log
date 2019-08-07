@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.5.31)  5 AUG 2019 17:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.5.31)  6 AUG 2019 23:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3403,8 +3403,12 @@ LaTeX Warning: Reference `fig: diffs' on page 41 undefined on input line 59.
 
 
 
-]) [45]
-(./USPSC-modelo-seg.bbl [46
+]
+
+LaTeX Warning: Reference `fig: spring-mass' on page 45 undefined on input line 
+9.
+
+) [45] (./USPSC-modelo-seg.bbl [46
 
 
 ]
@@ -3453,11 +3457,11 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 538.
  ) 
 Here is how much of TeX's memory you used:
- 41665 strings out of 492982
- 791283 string characters out of 6134896
+ 41668 strings out of 492982
+ 791321 string characters out of 6134896
  1040277 words of memory out of 5000000
- 44281 multiletter control sequences out of 15000+600000
- 591735 words of font info for 108 fonts, out of 8000000 for 9000
+ 44282 multiletter control sequences out of 15000+600000
+ 591826 words of font info for 109 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  73i,18n,99p,10406b,1092s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dv
@@ -3473,7 +3477,7 @@ e/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/
 lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf
 /fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lms
 y10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb>
-Output written on USPSC-modelo-seg.pdf (50 pages, 1132304 bytes).
+Output written on USPSC-modelo-seg.pdf (50 pages, 1133353 bytes).
 PDF statistics:
  824 PDF objects out of 1000 (max. 8388607)
  646 compressed objects within 7 object streams
