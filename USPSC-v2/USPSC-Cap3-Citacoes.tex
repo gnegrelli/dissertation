@@ -56,7 +56,31 @@ Shape factor and mean value of gene are used as inputs to a transformation funct
 
 The resulting mapping function is depicted in Figure \ref{fig: mappingf}. The effects of different mean and shape factor values can be observed on Figure \ref{fig: mapeffects}.
 
+\begin{figure}[!h]
+	\caption{Example of MVMO mapping function}
+	\begin{center}
+		\includegraphics[scale=.5]{Images/MVMOTransformation.eps}
+	\end{center}
+	\label{fig: mappingf}
+\end{figure}
+
+\begin{figure}[]
+	\caption{Effect of different mean and shape factor values on the mapping function}
+	\begin{center}
+		\includegraphics[scale=.5]{Images/mean_var_effects.eps}
+	\end{center}
+	\label{fig: mapeffects}
+\end{figure}
+
 As shown in \eqref{eq: hfunc}, two shape factors are used to evaluate the function. Different values of shape factors emphasizes the search below or above mean value. Thus, by controlling the values $s_{i1}$ and $s_{i2}$, the method can prioritize exploitation or exploration on a given region. Figure \ref{fig: diffs} depicts how asymmetrical shape factors affect the mapping function.
+
+\begin{figure}[]
+	\caption{Comparison between symmetrical and asymmetrical shape factors}
+	\begin{center}
+		\includegraphics[scale=.5]{Images/symmetrical_transf.eps}
+	\end{center}
+	\label{fig: diffs}
+\end{figure}
 
 The final step during offspring generation is crossover. During this phase, the mutated genes are united with the remaining genes inherited from parent, forming the new individual. This new individual is evaluated and included to the population if it is better than, at least, the population's worst individual. This process goes on until at least one stop criterion has been fulfilled.
 
