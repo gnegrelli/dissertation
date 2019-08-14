@@ -18,7 +18,7 @@
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase {Estimation Process}}{23}{chapter.3}
 \contentsline {section}{\numberline {3.1}Mean-Variance Mapping Optimization}{24}{section.3.1}
-\contentsline {section}{\numberline {3.2}Trajectory Sensitivity Method}{26}{section.3.2}
+\contentsline {section}{\numberline {3.2}Trajectory Sensitivity Method}{27}{section.3.2}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {Expected Results}}{29}{chapter.4}
 \vspace {\cftbeforechapterskip }

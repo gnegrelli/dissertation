@@ -31,7 +31,15 @@ Presented in \cite{Erlich2010}, this population-based metaheuristic shares chara
 
 Before the search process starts, a few settings must be done, such as population size, number of offspring, number of genes selected for mutation and selection method. Also, the search region is defined by setting the range within genes can vary. This constrains their values within a feasible region, preventing divergence. The search region is later normalized for all genes, aiding the process. Termination criteria is also set in this step. In this work, both number of generations and fitness will be used as stop criteria.
 
-With all set, a randomly-distributed population is generated, evaluated and sorted. Moreover, the mean and variance of every gene is calculated. These values will later be used on the mutation process. The individual with better fitness is selected as parent from whom new individuals will evolve. The offspring is then created following three steps common in evolutionary algorithms: gene selection, mutation and crossover.
+With all set, a randomly-distributed population is generated, evaluated and sorted. Moreover, the mean and variance of every gene are calculated. These values will later be used on the mutation process. The individual with better fitness is selected as parent from whom new individuals will evolve. The offspring is then created following three steps common in evolutionary algorithms: gene selection, mutation and crossover. After creation, the offspring is introduced to the population and the worst individual is discarded, as depicted in Figure \ref{fig: MVMOprocess}.
+
+\begin{figure}[h]
+	\caption{Exemplification of MVMO process}
+	\begin{center}
+		\includegraphics[scale=.2]{Images/MVMO_process.eps}
+	\end{center}
+	\label{fig: MVMOprocess}
+\end{figure}
 
 Gene selection can be done in many ways and even vary throughout the estimation process, with strategies' efficiency depending on the problem. However, three strategies are commonly used in this step. The first one is comprised of randomly selecting which genes will suffer mutation and which will be directly inherited from the parent. Gene selection can also be done by a moving window approach or even a combination of both strategies, with part of the genes selected at random and other through the window.
 
@@ -64,7 +72,7 @@ The resulting mapping function is depicted in Figure \ref{fig: mappingf}. The ef
 	\label{fig: mappingf}
 \end{figure}
 
-\begin{figure}[]
+\begin{figure}[h]
 	\caption{Effect of different mean and shape factor values on the mapping function}
 	\begin{center}
 		\includegraphics[scale=.5]{Images/mean_var_effects.eps}
@@ -74,7 +82,7 @@ The resulting mapping function is depicted in Figure \ref{fig: mappingf}. The ef
 
 As shown in \eqref{eq: hfunc}, two shape factors are used to evaluate the function. Different values of shape factors emphasizes the search below or above mean value. Thus, by controlling the values $s_{i1}$ and $s_{i2}$, the method can prioritize exploitation or exploration on a given region. Figure \ref{fig: diffs} depicts how asymmetrical shape factors affect the mapping function.
 
-\begin{figure}[]
+\begin{figure}[h]
 	\caption{Comparison between symmetrical and asymmetrical shape factors}
 	\begin{center}
 		\includegraphics[scale=.5]{Images/symmetrical_transf.eps}
@@ -121,4 +129,4 @@ The partial derivatives (also called trajectory sensitivities) $\frac{\partial y
 
 The Trajectory Sensitivity Method has fast convergence characteristics and can applied directly to nonlinear problems, not requiring linearization. Also, by analyzing the sensitivities, the method provides information about parameters' identifiability. However, TS is very sensitive to initial value of parameter chosen as start point. Thus, if the initial values are too far from real, the method can either diverge or converge to  values. Besides, the information provided to the method must contain the effects of the parameters, otherwise they won't be observable \cite{Benchluch1993}.
 
-By associating MVMO and TS, the hybrid estimation approach proposed in this work combines most good characteristics of both methods whilst mitigating their disadvantages. The resulting method has smaller convergence time when compared to MVMO alone and is less sensitive than TS to initial values of parameters.
+By associating MVMO and TS, the hybrid estimation approach proposed in this work combines most benefits of both methods whilst mitigating their disadvantages. The resulting method has smaller convergence time when compared to MVMO alone and is less sensitive than TS to initial values of parameters, improving its performance.
