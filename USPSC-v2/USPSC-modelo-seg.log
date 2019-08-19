@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.5.31)  19 AUG 2019 15:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.5.31)  19 AUG 2019 18:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3196,6 +3196,126 @@ l.482 \include{USPSC-Cap1-Introducao}
 \openout2 = `USPSC-Cap2-Desenvolvimento.aux'.
 
  (./USPSC-Cap2-Desenvolvimento.tex
+Package epstopdf Info: Source file: <Images/Type1WTG.eps>
+(epstopdf)                    date: 2019-07-18 17:02:30
+(epstopdf)                    size: 22007 bytes
+(epstopdf)             Output file: <Images/Type1WTG-eps-converted-to.pdf>
+(epstopdf)                    date: 2019-07-19 13:36:36
+(epstopdf)                    size: 10720 bytes
+(epstopdf)             Command: <repstopdf --outfile=Images/Type1WTG-eps-conver
+ted-to.pdf Images/Type1WTG.eps>
+(epstopdf)             \includegraphics on input line 20.
+Package epstopdf Info: Output file is already uptodate.
+File: Images/Type1WTG-eps-converted-to.pdf Graphic file (type pdf)
+<use Images/Type1WTG-eps-converted-to.pdf>
+Package pdftex.def Info: Images/Type1WTG-eps-converted-to.pdf  used on input li
+ne 20.
+(pdftex.def)             Requested size: 249.93314pt x 116.43471pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[19
+
+
+
+]
+Package epstopdf Info: Source file: <Images/Type2WTG.eps>
+(epstopdf)                    date: 2019-07-18 18:49:23
+(epstopdf)                    size: 25125 bytes
+(epstopdf)             Output file: <Images/Type2WTG-eps-converted-to.pdf>
+(epstopdf)                    date: 2019-07-19 13:37:36
+(epstopdf)                    size: 11836 bytes
+(epstopdf)             Command: <repstopdf --outfile=Images/Type2WTG-eps-conver
+ted-to.pdf Images/Type2WTG.eps>
+(epstopdf)             \includegraphics on input line 32.
+Package epstopdf Info: Output file is already uptodate.
+File: Images/Type2WTG-eps-converted-to.pdf Graphic file (type pdf)
+<use Images/Type2WTG-eps-converted-to.pdf>
+Package pdftex.def Info: Images/Type2WTG-eps-converted-to.pdf  used on input li
+ne 32.
+(pdftex.def)             Requested size: 249.93314pt x 127.47594pt.
+Package epstopdf Info: Source file: <Images/Tw_curve.eps>
+(epstopdf)                    date: 2019-07-19 17:17:37
+(epstopdf)                    size: 56619 bytes
+(epstopdf)             Output file: <Images/Tw_curve-eps-converted-to.pdf>
+(epstopdf)                    date: 2019-07-19 17:18:49
+(epstopdf)                    size: 28013 bytes
+(epstopdf)             Command: <repstopdf --outfile=Images/Tw_curve-eps-conver
+ted-to.pdf Images/Tw_curve.eps>
+(epstopdf)             \includegraphics on input line 42.
+Package epstopdf Info: Output file is already uptodate.
+File: Images/Tw_curve-eps-converted-to.pdf Graphic file (type pdf)
+<use Images/Tw_curve-eps-converted-to.pdf>
+Package pdftex.def Info: Images/Tw_curve-eps-converted-to.pdf  used on input li
+ne 42.
+(pdftex.def)             Requested size: 323.90791pt x 242.40396pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[20pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1
+0}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.50 
+     pdfTeX warning (ext4): destination with the same identifier (name{figure.2
+.11}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.50 
+     ]
+Package epstopdf Info: Source file: <Images/Type3WTG.eps>
+(epstopdf)                    date: 2019-07-19 13:53:47
+(epstopdf)                    size: 24018 bytes
+(epstopdf)             Output file: <Images/Type3WTG-eps-converted-to.pdf>
+(epstopdf)                    date: 2019-07-19 15:41:15
+(epstopdf)                    size: 11179 bytes
+(epstopdf)             Command: <repstopdf --outfile=Images/Type3WTG-eps-conver
+ted-to.pdf Images/Type3WTG.eps>
+(epstopdf)             \includegraphics on input line 54.
+Package epstopdf Info: Output file is already uptodate.
+File: Images/Type3WTG-eps-converted-to.pdf Graphic file (type pdf)
+<use Images/Type3WTG-eps-converted-to.pdf>
+Package pdftex.def Info: Images/Type3WTG-eps-converted-to.pdf  used on input li
+ne 54.
+(pdftex.def)             Requested size: 333.24417pt x 122.45718pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[21pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1
+2}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.62 
+     ]
+Package epstopdf Info: Source file: <Images/Type4WTG.eps>
+(epstopdf)                    date: 2019-07-19 14:12:13
+(epstopdf)                    size: 22011 bytes
+(epstopdf)             Output file: <Images/Type4WTG-eps-converted-to.pdf>
+(epstopdf)                    date: 2019-07-19 15:41:15
+(epstopdf)                    size: 10631 bytes
+(epstopdf)             Command: <repstopdf --outfile=Images/Type4WTG-eps-conver
+ted-to.pdf Images/Type4WTG.eps>
+(epstopdf)             \includegraphics on input line 66.
+Package epstopdf Info: Output file is already uptodate.
+File: Images/Type4WTG-eps-converted-to.pdf Graphic file (type pdf)
+<use Images/Type4WTG-eps-converted-to.pdf>
+Package pdftex.def Info: Images/Type4WTG-eps-converted-to.pdf  used on input li
+ne 66.
+(pdftex.def)             Requested size: 326.21794pt x 98.36723pt.
+File: Images/WTGTypes.jpg Graphic file (type jpg)
+<use Images/WTGTypes.jpg>
+Package pdftex.def Info: Images/WTGTypes.jpg  used on input line 76.
+(pdftex.def)             Requested size: 297.35567pt x 161.85182pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 Package epstopdf Info: Source file: <Images/ErlichModel.eps>
 (epstopdf)                    date: 2019-07-23 14:08:18
 (epstopdf)                    size: 83341 bytes
@@ -3204,40 +3324,60 @@ Package epstopdf Info: Source file: <Images/ErlichModel.eps>
 (epstopdf)                    size: 36292 bytes
 (epstopdf)             Command: <repstopdf --outfile=Images/ErlichModel-eps-con
 verted-to.pdf Images/ErlichModel.eps>
-(epstopdf)             \includegraphics on input line 14.
+(epstopdf)             \includegraphics on input line 91.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./Images/ErlichModel-eps-converted-to.pdf): PDF 
 inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Images/ErlichModel-eps-converted-to.pdf, id=348, 225.84375pt x 269.005pt>
+<Images/ErlichModel-eps-converted-to.pdf, id=403, 225.84375pt x 269.005pt>
 File: Images/ErlichModel-eps-converted-to.pdf Graphic file (type pdf)
 <use Images/ErlichModel-eps-converted-to.pdf>
 Package pdftex.def Info: Images/ErlichModel-eps-converted-to.pdf  used on input
- line 14.
+ line 91.
 (pdftex.def)             Requested size: 225.84319pt x 269.00433pt.
-[19
-
-
-
-pdfTeX warning (ext4): destination with the same identifier (name{figure.2.10})
- has been already used, duplicate ignored
+[22pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1
+3}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.28 \end{equation}
-                    <./Images/ErlichModel-eps-converted-to.pdf>] [20]) [21]
+l.95 \end{figure}
+                 pdfTeX warning (ext4): destination with the same identifier (n
+ame{figure.2.14}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.95 \end{figure}
+                 ] [23pdfTeX warning (ext4): destination with the same identifi
+er (name{figure.2.15}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.105 \end{equation}
+                    pdfTeX warning (ext4): destination with the same identifier
+ (name{figure.2.16}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.105 \end{equation}
+                     <./Images/ErlichModel-eps-converted-to.pdf>]
+Overfull \hbox (536.34093pt too wide) detected at line 149
+\OML/lmm/m/it/12 Inthischapter; afewmathematicalmodelsconcerningType \OMS/lmsy/
+m/n/12 ^^@ \OT1/lmr/m/n/12 3\OML/lmm/m/it/12 WTGarepresentedandcharacterizedand
+; attheend; oneofthemwillbechosenasobjectofstudy: []
+ []
+
+[24]) [25]
 \openout2 = `USPSC-Cap3-Citacoes.aux'.
 
-
-(./USPSC-Cap3-Citacoes.tex [22
+ (./USPSC-Cap3-Citacoes.tex [26
 
 
 
 ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [23]
+ [27]
 Package epstopdf Info: Source file: <Images/Flowchart.eps>
 (epstopdf)                    date: 2019-07-24 14:41:20
 (epstopdf)                    size: 36362 bytes
@@ -3252,7 +3392,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 pdfTeX warning: pdflatex (file ./Images/Flowchart-eps-converted-to.pdf): PDF in
 clusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Images/Flowchart-eps-converted-to.pdf, id=453, 318.18875pt x 392.46625pt>
+<Images/Flowchart-eps-converted-to.pdf, id=527, 318.18875pt x 392.46625pt>
 File: Images/Flowchart-eps-converted-to.pdf Graphic file (type pdf)
 <use Images/Flowchart-eps-converted-to.pdf>
 Package pdftex.def Info: Images/Flowchart-eps-converted-to.pdf  used on input l
@@ -3264,8 +3404,8 @@ Overfull \hbox (13.62871pt too wide) in paragraph at lines 30--31
 [], [][]2010[][]), this population-
  []
 
-[24pdfTeX warning (ext4): destination with the same identifier (name{figure.3.1
-1}) has been already used, duplicate ignored
+[28pdfTeX warning (ext4): destination with the same identifier (name{figure.3.1
+7}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
@@ -3285,7 +3425,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 pdfTeX warning: pdflatex (file ./Images/MVMO_process-eps-converted-to.pdf): PDF
  inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Images/MVMO_process-eps-converted-to.pdf, id=473, 1048.91875pt x 1141.26375pt>
+<Images/MVMO_process-eps-converted-to.pdf, id=547, 1048.91875pt x 1141.26375pt>
 
 File: Images/MVMO_process-eps-converted-to.pdf Graphic file (type pdf)
 <use Images/MVMO_process-eps-converted-to.pdf>
@@ -3295,8 +3435,8 @@ t line 39.
 
 Underfull \vbox (badness 4291) has occurred while \output is active []
 
- [25pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
-12}) has been already used, duplicate ignored
+ [29pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
+18}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
@@ -3317,7 +3457,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 pdfTeX warning: pdflatex (file ./Images/MVMOTransformation-eps-converted-to.pdf
 ): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Images/MVMOTransformation-eps-converted-to.pdf, id=496, 461.725pt x 346.29375p
+<Images/MVMOTransformation-eps-converted-to.pdf, id=572, 461.725pt x 346.29375p
 t>
 File: Images/MVMOTransformation-eps-converted-to.pdf Graphic file (type pdf)
 <use Images/MVMOTransformation-eps-converted-to.pdf>
@@ -3339,7 +3479,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 pdfTeX warning: pdflatex (file ./Images/mean_var_effects-eps-converted-to.pdf):
  PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Images/mean_var_effects-eps-converted-to.pdf, id=497, 925.4575pt x 347.2975pt>
+<Images/mean_var_effects-eps-converted-to.pdf, id=573, 925.4575pt x 347.2975pt>
 
 File: Images/mean_var_effects-eps-converted-to.pdf Graphic file (type pdf)
 <use Images/mean_var_effects-eps-converted-to.pdf>
@@ -3369,7 +3509,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 pdfTeX warning: pdflatex (file ./Images/symmetrical_transf-eps-converted-to.pdf
 ): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Images/symmetrical_transf-eps-converted-to.pdf, id=500, 461.725pt x 346.29375p
+<Images/symmetrical_transf-eps-converted-to.pdf, id=576, 461.725pt x 346.29375p
 t>
 File: Images/symmetrical_transf-eps-converted-to.pdf Graphic file (type pdf)
 <use Images/symmetrical_transf-eps-converted-to.pdf>
@@ -3379,47 +3519,47 @@ n input line 88.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[26pdfTeX warning (ext4): destination with the same identifier (name{figure.3.1
-3}) has been already used, duplicate ignored
+[30pdfTeX warning (ext4): destination with the same identifier (name{figure.3.1
+9}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.96 
-      <./Images/MVMOTransformation-eps-converted-to.pdf>] [27pdfTeX warning (ex
-t4): destination with the same identifier (name{figure.3.14}) has been already 
+      <./Images/MVMOTransformation-eps-converted-to.pdf>] [31pdfTeX warning (ex
+t4): destination with the same identifier (name{figure.3.20}) has been already 
 used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.111 \end{equation}
                     pdfTeX warning (ext4): destination with the same identifier
- (name{figure.3.15}) has been already used, duplicate ignored
+ (name{figure.3.21}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.111 \end{equation}
                      <./Images/mean_var_effects-eps-converted-to.pdf> <./Images
-/symmetrical_transf-eps-converted-to.pdf>]) [28]
+/symmetrical_transf-eps-converted-to.pdf>]) [32]
 \openout2 = `USPSC-Cap4-Software.aux'.
 
  (./USPSC-Cap4-Software.tex)
-[29
+[33
 
 
 
 ]
 \openout2 = `USPSC-Cap4-Referencias.aux'.
 
- (./USPSC-Cap4-Referencias.tex [30
+ (./USPSC-Cap4-Referencias.tex [34
 
 
 
 ]
 
-LaTeX Warning: Reference `fig: spring-mass' on page 31 undefined on input line 
+LaTeX Warning: Reference `fig: spring-mass' on page 35 undefined on input line 
 9.
 
-) [31] (./USPSC-modelo-seg.bbl [32
+) [35] (./USPSC-modelo-seg.bbl [36
 
 
 ]
@@ -3428,7 +3568,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 3.
 
 bibitemlist
-[33]
+[37]
 Overfull \hbox (38.67795pt too wide) in paragraph at lines 111--117
 \T1/lmr/m/n/12 (-20) supply-[]chain-[]renewable-[]energy-[]technologies-[]europ
 e-[]analysis-[]wind-[]geothermal-[]and-[]ocean-[]energy>[]$[][].  
@@ -3438,7 +3578,7 @@ e-[]analysis-[]wind-[]geothermal-[]and-[]ocean-[]energy>[]$[][].
 No file USPSC-modelo-seg.ind.
 
 AED: lastpage setting LastPage
-[34]
+[38]
 \tf@lof=\write7
 \openout7 = `USPSC-modelo-seg.lof'.
 
@@ -3463,30 +3603,72 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 542.
  ) 
 Here is how much of TeX's memory you used:
- 41649 strings out of 492982
- 791582 string characters out of 6134896
- 1041174 words of memory out of 5000000
- 44282 multiletter control sequences out of 15000+600000
+ 41683 strings out of 492982
+ 791963 string characters out of 6134896
+ 1042174 words of memory out of 5000000
+ 44287 multiletter control sequences out of 15000+600000
  591864 words of font info for 109 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  73i,13n,99p,10406b,1092s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dv
-ips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/s
-hare/texmf/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/texmf/fonts/enc/dvips/l
-m/lm-ec.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texm
-f/fonts/type1/public/lm/lmbx8.pfb></usr/share/texmf/fonts/type1/public/lm/lmex1
-0.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/font
-s/type1/public/lm/lmmi6.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb><
-/usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/
-public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr6.pfb></usr/shar
-e/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/
-lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf
-/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lms
-y10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb>
-Output written on USPSC-modelo-seg.pdf (36 pages, 1444390 bytes).
+pdfTeX warning (dest): name{equation.2.1.6} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{equation.2.1.10} has been referenced but does not e
+xist, replaced by a fixed one
+
+pdfTeX warning (dest): name{equation.2.1.9} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{equation.2.1.8} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{equation.2.1.7} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{equation.2.1.4} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{equation.2.1.3} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{equation.2.1.2} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{equation.2.1.1} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.3.15} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.3.14} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.3.13} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.3.12} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.3.11} has been referenced but does not exist
+, replaced by a fixed one
+
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvip
+s/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/sha
+re/texmf/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/texmf/fonts/enc/dvips/lm/
+lm-ec.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/
+fonts/type1/public/lm/lmbx8.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.
+pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/
+type1/public/lm/lmmi6.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></u
+sr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/pu
+blic/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr6.pfb></usr/share/
+texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lm
+ri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/f
+onts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy1
+0.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb>
+Output written on USPSC-modelo-seg.pdf (40 pages, 1455597 bytes).
 PDF statistics:
- 740 PDF objects out of 1000 (max. 8388607)
- 580 compressed objects within 6 object streams
- 128 named destinations out of 1000 (max. 500000)
- 18176 words of extra memory for PDF output out of 20736 (max. 10000000)
+ 844 PDF objects out of 1000 (max. 8388607)
+ 679 compressed objects within 7 object streams
+ 157 named destinations out of 1000 (max. 500000)
+ 18216 words of extra memory for PDF output out of 20736 (max. 10000000)
 
