@@ -6,6 +6,8 @@ A level-1 auxiliary file: USPSC-Resumo.aux
 A level-1 auxiliary file: USPSC-Cap1-Introducao.aux
 A level-1 auxiliary file: USPSC-Cap2-Desenvolvimento.aux
 A level-1 auxiliary file: USPSC-Cap3-Citacoes.aux
+A level-1 auxiliary file: USPSC-Cap4-Software.aux
+A level-1 auxiliary file: USPSC-Cap4-Referencias.aux
 The style file: abntex2-alf.bst
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
@@ -28,45 +30,45 @@ Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://www.abntex.net.br/                               |
 +---------------------------------------------------------+
-You've used 32 entries,
+You've used 33 entries,
             6714 wiz_defined-function locations,
-            1380 strings with 14769 characters,
-and the built_in function-call counts, 36208 in all, are:
-= -- 4125
-> -- 669
-< -- 873
-+ -- 1149
-- -- 202
-* -- 2265
-:= -- 4446
-add.period$ -- 91
-call.type$ -- 34
-change.case$ -- 261
-chr.to.int$ -- 41
-cite$ -- 21
-duplicate$ -- 3405
-empty$ -- 1670
-format.name$ -- 977
-if$ -- 7454
+            1390 strings with 15129 characters,
+and the built_in function-call counts, 38177 in all, are:
+= -- 4353
+> -- 720
+< -- 919
++ -- 1213
+- -- 217
+* -- 2396
+:= -- 4675
+add.period$ -- 98
+call.type$ -- 35
+change.case$ -- 276
+chr.to.int$ -- 42
+cite$ -- 22
+duplicate$ -- 3593
+empty$ -- 1750
+format.name$ -- 1047
+if$ -- 7869
 int.to.chr$ -- 10
 int.to.str$ -- 1
-missing$ -- 469
-newline$ -- 128
-num.names$ -- 105
-pop$ -- 484
+missing$ -- 488
+newline$ -- 133
+num.names$ -- 110
+pop$ -- 512
 preamble$ -- 1
-purify$ -- 120
+purify$ -- 125
 quote$ -- 0
-skip$ -- 3867
+skip$ -- 4055
 stack$ -- 1
-substring$ -- 1559
-swap$ -- 1226
-text.length$ -- 33
+substring$ -- 1631
+swap$ -- 1302
+text.length$ -- 35
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 1
+type$ -- 2
 warning$ -- 0
-while$ -- 168
+while$ -- 176
 width$ -- 0
-write$ -- 352
+write$ -- 370
 (There was 1 warning)
