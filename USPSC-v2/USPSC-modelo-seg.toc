@@ -7,10 +7,10 @@
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {1}\MakeTextUppercase {Introduction}}{11}{chapter.1}
 \contentsline {section}{\numberline {1.1}Wind Energy}{11}{section.1.1}
-\contentsline {section}{\numberline {1.2}Wind Turbine Model}{13}{section.1.2}
+\contentsline {section}{\numberline {1.2}Wind Turbine Model}{12}{section.1.2}
 \contentsline {subsection}{\numberline {1.2.1}Type-1 Wind Turbine Generator}{14}{subsection.1.2.1}
 \contentsline {subsection}{\numberline {1.2.2}Type-2 Wind Turbine Generator}{14}{subsection.1.2.2}
-\contentsline {subsection}{\numberline {1.2.3}Type-3 Wind Turbine Generator}{16}{subsection.1.2.3}
+\contentsline {subsection}{\numberline {1.2.3}Type-3 Wind Turbine Generator}{15}{subsection.1.2.3}
 \contentsline {subsection}{\numberline {1.2.4}Type-4 Wind Turbine Generator}{16}{subsection.1.2.4}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase {Mathematical Model of Type-3 Wind Turbine Generators}}{19}{chapter.2}
