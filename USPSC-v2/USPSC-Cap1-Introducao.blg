@@ -3,9 +3,9 @@ Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: USPSC-Cap1-Introducao.aux
 I found no \bibdata command---while reading file USPSC-Cap1-Introducao.aux
 I found no \bibstyle command---while reading file USPSC-Cap1-Introducao.aux
-You've used 15 entries,
+You've used 8 entries,
             0 wiz_defined-function locations,
-            112 strings with 823 characters,
+            99 strings with 678 characters,
 and the built_in function-call counts, 0 in all, are:
 = -- 0
 > -- 0
