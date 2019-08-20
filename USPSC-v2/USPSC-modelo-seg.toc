@@ -7,6 +7,7 @@
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {1}\MakeTextUppercase {Introduction}}{11}{chapter.1}
 \contentsline {section}{\numberline {1.1}Wind Energy}{11}{section.1.1}
+\contentsline {section}{\numberline {1.2}Research Goals}{14}{section.1.2}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase {Modelling of Wind Turbine Generators}}{15}{chapter.2}
 \contentsline {section}{\numberline {2.1}Generic Models of Wind Turbine Generators}{15}{section.2.1}
