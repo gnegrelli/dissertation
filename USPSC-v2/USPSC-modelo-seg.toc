@@ -24,6 +24,8 @@
 \contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {Software Concept}}{29}{chapter.4}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {Expected Results}}{31}{chapter.5}
+\contentsline {section}{\numberline {5.1}Partial Results}{31}{section.5.1}
+\contentsline {section}{\numberline {5.2}Work Progress}{31}{section.5.2}
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \contentsline {chapter}{\uppercase {Bibliography}}{33}{section*.8}
