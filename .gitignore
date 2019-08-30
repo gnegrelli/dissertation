@@ -19,7 +19,7 @@
 
 *.docx
 *.png
-*.jpg
+USPSC-v2/*.jpg
 *.xlsx
 
 ## Intermediate documents:
