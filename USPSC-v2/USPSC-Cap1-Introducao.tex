@@ -51,14 +51,20 @@ Therefore, it is expected that wind energy will increase its participation in el
 
 The main difficulties are due to the nature of the energy source and the generator's characteristics. The wind regime is not constant and evenly distributed across the country, depending on the region's geography and vegetation. This results in a energy source that is not entirely reliable and concentrated on a certain area. Wind turbine generators usually have their rotor decoupled from the grid via frequency converter, leading to their low inertia. Thus, the system may experience stability problems during transients due to the high penetration of these machines \cite{Xiong2019}.
 
-In order to maintain the electrical power system reliable, studies simulating various conditions must be performed beforehand, so the operators can be prepared for every occasion. These studies require mathematical models capable of adequately simulate the behaviour of every component on the grid. Particularly for wind power plants, an equivalent model is needed, since these facilities are usually largely spread and contain generators from different sizes and manufacturers.
+In order to maintain the electrical power system reliable, studies simulating various conditions must be performed beforehand, so the operators can be prepared for every occasion. These studies require mathematical models capable of adequately simulate the behaviour of every component on the grid.
 
 \section{Difficulties in Representing Wind Power Plants}
+
+With a growing share of energy covered by wind, system operators must consider how wind turbines affect the system stability during faults and maneuvers. To do so, mathematical models capable of describing the behaviour of these machines are crucial. 
+
+Obtaining these models, on the other hand, is not an easy task, considering the great amount of wind turbines available, with different manufacturers, technologies, sizes and characteristics. Thus, a model that describes well a particular generator won't necessarily work for others. Also, due to industrial secrecy, manufacturers provide little or no information about how their wind turbine generators behave. 
+
+Particularly for wind power plants, an equivalent model is needed, since these facilities are usually widely spread and contain generators from different sizes and manufacturers. Besides, the distance to the substation is not the same for every generator in a wind power plants, as depicted in Figure \ref{fig: WPP}. Hence, having one model for every wind turbine within a power plant would result in a mathematical problem with high complexity and computational cost \cite{Erlich2012}.
 
 \begin{figure}[h]
 	\caption{Example of Wind Power Plant}
 	\begin{center}
-		\includegraphics[scale=1]{Images/WPP.eps}
+		\includegraphics[scale=1.25]{Images/WPP.eps}
 	\end{center}
 	\label{fig: WPP}
 	\legend{Source: Adapted from \cite{Muljadi2008}}
