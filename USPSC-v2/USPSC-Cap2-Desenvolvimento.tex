@@ -46,7 +46,7 @@ This type of generator has then three speed control systems, with rotor resistan
 
 \subsection{Type-3 Wind Turbine Generator}
 
-A Type-3 Wind Turbine Generator, often called Doubly Fed Induction Generator (DFIG), is also composed of a wound rotor machine connected to a wind turbine. But, instead of varying rotor resistance, a DFIG has its rotor supplied with AC voltage by a back-to-back frequency converter, as displayed in Figure \ref{fig: WTG3}. By varying the voltage frequency on the rotor circuit, the generator is able to supply power to the grid in a wider range of wind speed, reaching up to $\pm 30\%$ of rated slip. In addition, the converter can control both real and reactive power independently, ending the necessity of capacitors \cite{Muljadi2010}. Since approximately 30\% of rated power flows through the rotor windings, power electronics components have lower specifications and don't have great impact on overall costs. On the other hand, these generators need regular maintenance due to slip rings, brushes and gearbox, preventing its use in offshore applications \cite{Yaramasu2015}.
+A Type-3 Wind Turbine Generator, often called Doubly Fed Induction Generator (DFIG), is also composed of a wound rotor machine connected to a wind turbine. But, instead of varying rotor resistance, a DFIG has its rotor supplied with AC voltage by a back-to-back frequency converter, as displayed in Figure \ref{fig: WTG3}. By varying the voltage frequency on the rotor circuit, the generator is able to supply power to the grid in a wider range of wind speed, reaching up to $\pm 30\%$ of rated slip. In addition, the converter can control both real and reactive power independently, ending the necessity of capacitors \cite{Muljadi2010}. Since approximately 30\% of rated power flows through the rotor windings, power electronics components have lower specifications and do not have great impact on overall costs. On the other hand, these generators need regular maintenance due to slip rings, brushes and gearbox, preventing its use in offshore applications \cite{Yaramasu2015}.
 
 \begin{figure}[h]
 	\caption{Representation of Type-3 Wind Turbine Generator}
@@ -79,7 +79,7 @@ Figure \ref{fig: WindShare} shows the evolution of share in installed capacity o
 	\label{fig: WindShare}
 \end{figure}
 
-\section{Model of Wind Turbine Generator Selected}
+\section{Model of Wind Turbine Generator Selected for Parameter Estimation}
 
 Many mathematical models were developed during the last years that are able to represent Wind Turbine Generators of all types. All those models have in common the fact that they are based on the generic models proposed by the studies made by WECC and IEEE and presented in the last chapter. The mathematical model selected for this work is presented in this section.
 
@@ -140,7 +140,7 @@ The following PI blocks stand for the DFIG controllers (blade, gearbox, rotor-si
 
 Until here the controller operates on terminal voltage oriented coordinates, so a coordinate transformation block is needed to adequate to synchronous grid coordinates. This block operates according to equations \eqref{eq: CoordShift}.
 
-\begin{equation}In this chapter, a few mathematical models concerning Type-3 WTG are presented and characterized and, at the end, one of them will be chosen as object of study.
+\begin{equation}
 	\begin{cases}
 		V_{PAS} = -V_{PA}cos(\theta_{v}) - V_{QA}sin(\theta_{v}) \\
 		V_{QAS} = V_{PA}sin(\theta_{v}) - V_{QA}cos(\theta_{v})
@@ -148,7 +148,7 @@ Until here the controller operates on terminal voltage oriented coordinates, so 
 	\label{eq: CoordShift}
 \end{equation}
 
-Last, two delay blocks supplying the voltage source (one for each component $d$ and $q$) simulate the delay effects of the electrical machine and the back-to-back converter. Their effects are described by \eqref{eq: DelayBlocks}.
+Finally, two delay blocks supplying the voltage source (one for each component $d$ and $q$) simulate the delay effects of the electrical machine and the back-to-back converter. Their effects are described by \eqref{eq: DelayBlocks}.
 
 \begin{equation}
 	\begin{cases}
@@ -158,7 +158,7 @@ Last, two delay blocks supplying the voltage source (one for each component $d$ 
 	\label{eq: DelayBlocks}
 \end{equation}
 
-The outputs of this model are real and reactive power produced (or consumed) by the WTG and their equations are shown below.
+The outputs of this model are real and reactive power produced by the WTG and their equations are shown below.
 
 \begin{equation}
 	\begin{cases}
