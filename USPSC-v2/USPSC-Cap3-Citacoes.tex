@@ -29,6 +29,8 @@ The flowchart depicted in Figure \ref{fig: flowchart} illustrates how the propos
 
 Presented in \cite{Erlich2010}, this population-based metaheuristic shares characteristics with other evolutionary algorithms, but differ from them on how to induce mutations on the offspring in order to diversify the population. By considering statistical data of population during mutation process, MVMO introduces a memory factor to it, enhancing search mechanism. Due this factor, MVMO performs better than similar metaheuristics when population size is relatively small \cite{Nakawiro2011}. The terms `gene', `individuals' and `population' refer to `parameter', `parameter vector' and `set of parameter vectors' in MVMO, for the sake of analogy.
 
+Two other relevant concepts largely used on metaheuristics are exploration and exploitation. The first one refers to a broad search carried through the region of interest. On the other hand, exploitation means the search on a small neighbourhood close to the best solutions.
+
 Before starting the parameter search process, a few settings must be done, such as population size, number of offspring, number of genes selected for mutation and selection method. Also, the search region is defined by setting the range within genes can vary. This constrains the parameters values within a feasible region, preventing divergence. The search region is later normalized for all genes, aiding the process. Termination criteria is also set in this step. In this work, both number of generations and error will be used as stop criteria.
 
 After that, a randomly-distributed population is generated, evaluated and sorted. Moreover, the mean and variance of every gene in each population are calculated. These values will later be used on the mutation process. The individual with lower error is selected as parent for a new generated individual. The offspring is then created following three steps common in evolutionary algorithms: gene selection, mutation and crossover. After creation, the offspring is introduced to the population and the worst individual is discarded, as depicted in Figure \ref{fig: MVMOprocess}.
@@ -80,7 +82,7 @@ The resulting mapping function is depicted in Figure \ref{fig: mappingf}. The ef
 	\label{fig: mapeffects}
 \end{figure}
 
-As shown in \eqref{eq: hfunc}, two shape factors are used to evaluate the function. Different values of shape factors emphasizes the search below or above mean value. Thus, by controlling the values $s_{i1}$ and $s_{i2}$, the method can prioritize exploitation (global search) or exploration (local search) on a given region. Figure \ref{fig: diffs} depicts how asymmetrical shape factors affect the mapping function.
+As shown in \eqref{eq: hfunc}, two shape factors are used to evaluate the function. Different values of shape factors emphasizes the search below or above mean value. Thus, by controlling the values $s_{i1}$ and $s_{i2}$, the method can prioritize exploration (global search) or exploitation (local search) on a given region. Figure \ref{fig: diffs} depicts how asymmetrical shape factors affect the mapping function.
 
 \begin{figure}[h]
 	\caption{Comparison between symmetrical and asymmetrical shape factors}
@@ -100,10 +102,16 @@ Considering a nonlinear system described by \eqref{eq: xdot}, in order to minimi
 
 \begin{equation}
 	G(p^{*}) = \frac{\partial J(p^{*})}{\partial p} = 0
+\end{equation}
+
+This derivative can be written as:
+
+\begin{equation}	
+	G(p) = -\int\displaylimits_{0}^{T_{0}} \left(\frac{dy}{dp}\right)^{T} (y_{r} - y) dt
 	\label{eq: G(p)}
 \end{equation}
 
-Truncating the Taylor series for $G(p)$ on the first-order term results on \eqref{eq: Taylor}. The variable $\Gamma$ is described in \eqref{eq: Gamma}.
+Truncating the Taylor series for $G(p)$ on the first-order term results on \eqref{eq: Taylor}. The matrix $\Gamma$ is described in \eqref{eq: Gamma}.
 
 \begin{equation}
 	G(p^{*}) = G(p) + \Gamma (p)(p^{*} - p)
@@ -111,7 +119,7 @@ Truncating the Taylor series for $G(p)$ on the first-order term results on \eqre
 \end{equation}
 
 \begin{equation}
-	\Gamma (p) = \frac{\partial G}{\partial p} \approx \int\displaylimits_{0}^{T_{0}} \left(\frac{dy}{dp}\right)^{T} \left(\frac{dy}{dp}\right) dt
+	\Gamma (p) = \frac{\partial G(p)}{\partial p} \approx \int\displaylimits_{0}^{T_{0}} \left(\frac{dy}{dp}\right)^{T} \left(\frac{dy}{dp}\right) dt
 	\label{eq: Gamma}
 \end{equation}
 
@@ -121,7 +129,7 @@ By rearranging the terms on \eqref{eq: Taylor}, the following equation is obtain
 	p^{n+1} = p^{n} + \Gamma^{-1}(p^{n})\cdot G(p^{n})
 \end{equation}
 
-The partial derivatives (also called trajectory sensitivities) $\frac{\partial y}{\partial p}$, used directly in \eqref{eq: Gamma} and indirectly in \eqref{eq: G(p)}, can be approximated by the difference shown in \eqref{eq: diff}. The outputs $y^{1}$ and $y^{0}$ are obtained using parameter vectors $p^{1}$ and $p^{0}$, respectively, and $\Delta p = p^{1} - p^{0}$. Using \eqref{eq: diff} allows Trajectory Sensitivity method to be applied on both differentiable and non-differentiable systems \cite{Benchluch1993}, \cite{Cari2006}.
+The partial derivatives (also called trajectory sensitivities) $\frac{\partial y}{\partial p}$, used in \eqref{eq: Gamma} and \eqref{eq: G(p)}, can be approximated by the difference shown in \eqref{eq: diff}. The outputs $y^{1}$ and $y^{0}$ are obtained using parameter vectors $p^{1}$ and $p^{0}$, respectively, and $\Delta p = p^{1} - p^{0}$. Using \eqref{eq: diff} allows Trajectory Sensitivity method to be applied on both differentiable and non-differentiable systems \cite{Benchluch1993}, \cite{Cari2006}.
  
 \begin{equation}
 	\frac{\partial y}{\partial p} \approx \frac{y^{1} - y^{0}}{\Delta p}
