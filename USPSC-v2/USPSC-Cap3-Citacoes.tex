@@ -129,10 +129,39 @@ By rearranging the terms on \eqref{eq: Taylor}, the following equation is obtain
 	p^{n+1} = p^{n} + \Gamma^{-1}(p^{n})\cdot G(p^{n})
 \end{equation}
 
-The partial derivatives (also called trajectory sensitivities) $\frac{\partial y}{\partial p}$, used in \eqref{eq: Gamma} and \eqref{eq: G(p)}, can be approximated by the difference shown in \eqref{eq: diff}. The outputs $y^{1}$ and $y^{0}$ are obtained using parameter vectors $p^{1}$ and $p^{0}$, respectively, and $\Delta p = p^{1} - p^{0}$. Using \eqref{eq: diff} allows Trajectory Sensitivity method to be applied on both differentiable and non-differentiable systems \cite{Benchluch1993}, \cite{Cari2006}.
+Obtaining the matrix of partial derivatives (also called trajectory sensitivities matrix) $\frac{\partial y}{\partial p}$, used in \eqref{eq: G(p)} and \eqref{eq: Gamma}, analytically is an hard, when not impossible, task . In order to avoid problems when differentiating the system's equations, the definition of derivative, given by \eqref{eq: deriv}, can be used to approximate the values of the sensitivities.
+
+\begin{equation}
+	\frac{df(x)}{dx} = \lim\limits_{h \to 0} \frac{f(x + h) - f(x)}{h}
+	\label{eq: deriv}
+\end{equation}
+
+Consider two parameter vectors $p^{0}$ and $p^{1}$, given by \eqref{eq: pvecs}.
+
+\begin{equation}
+	p^{0} = 
+	\begin{bmatrix}
+		p_{1} \\
+		\vdots \\
+		p_{i} \\
+		\vdots \\
+		p_{n}
+	\end{bmatrix}; \ \ \ \ 
+	 p^{1} =
+	\begin{bmatrix}
+		p_{1} \\
+		\vdots \\
+		p_{i} + \epsilon \\
+		\vdots \\
+		p_{n}
+	\end{bmatrix}
+	\label{eq: pvecs}
+\end{equation}
+
+With $\epsilon$ sufficiently small, the partial derivative with respect to the parameter $p_{i}$ can be approximated by the difference shown in equation \eqref{eq: diff}. Using the approximation of the partial derivatives allows Trajectory Sensitivity method to be applied on both differentiable and non-differentiable systems \cite{Benchluch1993}, \cite{Cari2006}.
  
 \begin{equation}
-	\frac{\partial y}{\partial p} \approx \frac{y^{1} - y^{0}}{\Delta p}
+	\frac{\partial y(p)}{\partial p_{i}} \approx \frac{y(p^{1}) - y(p^{0})}{\epsilon}
 	\label{eq: diff}
 \end{equation}
 
