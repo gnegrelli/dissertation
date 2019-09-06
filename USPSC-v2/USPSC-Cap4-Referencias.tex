@@ -34,27 +34,19 @@ The spring-mass system is a simple physical model often used as example of dynam
 	\label{eq: SpringMass}
 \end{equation}
 
-The behaviour of the real system was obtained through simulation. The parameters were set at $m = 3\ kg$ and $k = 6\ N/m$. The parameters were then obtained in three different estimation process: TSM isolated, MVMO isolated and the hybrid approach proposed. The tolerance for all three estimations was set at $0.5 \times 10^{-3}$ and the final error obtained for all simulations was adequate.
+The behaviour of the real system was obtained through simulation with parameters set at $m = 3\ kg$ and $k = 6\ N/m$. Three different estimation process were executed: TSM isolated, MVMO isolated and the hybrid approach proposed. The tolerance for all three estimations was set at $0.1$.
 
+It took only 7 iterations to Trajectory Sensitivity Method estimate the parameters when the initial values were $m_{0} = 7\ kg$ and $k_{0} = 7\ N/m$. This shows how fast this method is when the initial values are in the neighbourhood of the real parameters. Figure \ref{fig: TS_conv} shows the error evolution during estimation suing TSM.
 
-
-When compared to the methods alone, the hybrid approach provides a result faster than MVMO but slower than TSM, as shown in Table \ref{tab: SM}. The tolerance for all three approaches was set at $0.5 \times 10^{-3}$ and the final error obtained for all simulations was adequate.
-
-\begin{table}[]
-	\caption{Comparison of approaches}
+\begin{figure}[h]
+	\caption{Error evolution of TSM with $m_{0} = 7\ kg$ and $k_{0} = 7\ N/m$}
 	\begin{center}
-	\begin{tabular}{c|c|c}
-		Approach & Time & Error \\
-		\hline
-		TSM  & $7 \ s$  & $4.2\times 10^{-7}$ \\
-		MVMO  & $136 \ min$  & $5.0\times 10^{-4}$\\
-		Hybrid  & $24 \ min$  & $1.9\times 10^{-7}$
-	\end{tabular}
+		\includegraphics[scale=0.75]{Images/TS_conv.eps}
 	\end{center}
-	\label{tab: SM}
-\end{table}
+	\label{fig: TS_conv}
+\end{figure}
 
-However, the convergence region of TSM is extremely limited, diverging from initial points far enough from the real values. The convergence region when the real values are $k = 6.0 \ N/m$ and $m = 3.0 \ kg$ was obtained in \cite{Ecyo} and is shown in Figure \ref{fig: conv_reg}. For comparison, the MVMO and the hybrid approach converge for the entire search region displayed on the graph.
+However, the convergence region of TSM is extremely limited, diverging from initial points far enough from the real values. The convergence region for the real values was obtained in \cite{Ecyo} and is shown in Figure \ref{fig: conv_reg}. For comparison, the MVMO and the hybrid approach converge for the entire search region displayed on the graph.
 
 \begin{figure}[h]
 	\caption{Convergence region of Trajectory Sensitivity Method}
@@ -65,6 +57,37 @@ However, the convergence region of TSM is extremely limited, diverging from init
 	\legend{Source: Adapted from \cite{Ecyo}}
 \end{figure}
 
+To illustrate the importance of good initial values, the parameters were reestimated using TSM, but now the initial values were set to be $m_{0} = 8\ kg$ and $k_{0} = 10\ N/m$. Notice that these values are not too far from the ones used in the previous estimation. The results, on the other hand, were extremely different. The method was not able to lower the error below $16.4$ and the parameters found were $m_{f} = 2.7\ kg$ and $k_{f} = 118.6\ N/m$. The error evolution for this estimation is depict in Figure \ref{fig: TS_nconv}.
+
+\begin{figure}[h]
+	\caption{Error evolution of TSM with $m_{0} = 8\ kg$ and $k_{0} = 10\ N/m$}
+	\begin{center}
+		\includegraphics[scale=0.75]{Images/TS_nconv.eps}
+	\end{center}
+\end{figure}
+%-----------
+
+
+When compared to the methods alone, the hybrid approach provides a result faster than MVMO but slower than TSM, as shown in Table \ref{tab: SM}. The tolerance for all three approaches was set at $0.5 \times 10^{-3}$ and the final error obtained for all simulations was adequate.
+
+\begin{table}[]
+	\caption{Comparison of approaches}
+	\begin{center}
+	\begin{tabular}{c|c|c}
+		Approach & Time & Error \\
+		\hline
+		TSM  & $7 \ s$  & $2.76\times 10^{-3}$ \\
+		MVMO  & $10 \ min$  & $89.33\times 10^{-3}$\\
+		Hybrid  & $24 \ min$  & $1.54\times 10^{-3}$
+	\end{tabular}
+	\end{center}
+	\label{tab: SM}
+\end{table}
+
+
+
+
+%-----------
 \begin{figure}[h]
 	\caption{Results of hybrid approach for spring-mass system}
 	\begin{center}
@@ -75,7 +98,7 @@ However, the convergence region of TSM is extremely limited, diverging from init
 
 \section{Results on Z-IM Load Model}
 
-This application was also employed on parameter estimation of Z-IM load model and is subject of a paper presented by the author on the 2019 IEEE Canadian Conference on Electrical and Computer Engineering. This model is able to predict the behaviour of electrical loads during faults in the grid. It is described by the following equations:
+The hybrid approach was also employed on parameter estimation of Z-IM load model and is subject of a paper presented by the author on the 2019 IEEE Canadian Conference on Electrical and Computer Engineering. This model is able to predict the behaviour of electrical loads during faults in the grid. It is described by the following equations:
 
 \begin{equation}
     \begin{cases}
