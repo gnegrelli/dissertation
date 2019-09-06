@@ -64,13 +64,24 @@ To illustrate the importance of good initial values, the parameters were reestim
 	\begin{center}
 		\includegraphics[scale=0.75]{Images/TS_nconv.eps}
 	\end{center}
+	\label{fig: TS_nconv}
+\end{figure}
+
+The MVMO search region was defined as $0 \leq m \leq 9$ and $0 \leq k \leq 15$. The heuristic method after almost 10000 generations, as depicted in Figure \ref{fig: MVMO_conv}. This figure also shows how MVMO rapidly reduces error of estimation, but as the values approach the neighbourhood of the real values, it slows down.
+
+\begin{figure}[h]
+	\caption{Error evolution of MVMO}
+	\begin{center}
+		\includegraphics[scale=0.75]{Images/MVMO_conv.eps}
+	\end{center}
+	\label{fig: MVMO_conv}
 \end{figure}
 %-----------
 
 
 When compared to the methods alone, the hybrid approach provides a result faster than MVMO but slower than TSM, as shown in Table \ref{tab: SM}. The tolerance for all three approaches was set at $0.5 \times 10^{-3}$ and the final error obtained for all simulations was adequate.
 
-\begin{table}[]
+\begin{table}[h]
 	\caption{Comparison of approaches}
 	\begin{center}
 	\begin{tabular}{c|c|c}
@@ -91,9 +102,9 @@ When compared to the methods alone, the hybrid approach provides a result faster
 \begin{figure}[h]
 	\caption{Results of hybrid approach for spring-mass system}
 	\begin{center}
-		\includegraphics[scale=0.8]{Images/SpringMass.eps}
+		\includegraphics[scale=0.75]{Images/Hybrid_conv.eps}
 	\end{center}
-	\label{fig: spring-mass}
+	\label{fig: Hybrid_conv}
 \end{figure}
 
 \section{Results on Z-IM Load Model}
