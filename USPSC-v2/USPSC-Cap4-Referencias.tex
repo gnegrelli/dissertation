@@ -6,15 +6,37 @@ The expected result of this work is a software capable of correctly estimating t
 
 The measurements will be obtained from a small power system simulated on specific software, such as DIgSILENT or MATLAB. At first, the model proposed in \cite{Erlich2012} will be employed, but it can be further changed if needed. Also, other estimation methods, such as Particle Swarm Optimization, Differential Evolution or Kalman Filters, may be implemented for comparison purposes.
 
-The hybrid approach for parameters estimation presented in this work is already implemented and have shown great results for different models. The approach was used to estimate parameters of simpler systems, such as the spring-mass system, as depicted on Figure \ref{fig: spring-mass}. 
+The hybrid approach for parameters estimation presented in this work is already implemented and have shown great results for different models. The approach was used to estimate parameters of simpler systems, such as the spring-mass system, for testing purposes, but also in complex applications, such as load models. The results obtained from those systems are presented in the following subsections.
 
-\begin{figure}[h]
-	\caption{Results of method for spring-mass system}
-	\begin{center}
-		\includegraphics[scale=0.8]{Images/SpringMass.eps}
-	\end{center}
-	\label{fig: spring-mass}
-\end{figure}
+\section{Results on Spring-Mass System}
+
+The spring-mass system is a simple physical model often used as example of dynamic systems. It is composed of an object of mass $m$ connected to a fixed point in space by a spring of stiffness constant $k$. When disturbed by an external force $u$, the object oscillates and its movement is described on \eqref{eq: SpringMass}, $x$ is the position of the object while $\dot{x}$ and $\ddot{x}$ correspond to its speed and acceleration, respectively.
+
+\begin{equation}
+	\begin{bmatrix}
+		\dot{x} \\
+		\ddot{x}
+	\end{bmatrix} = 
+	\begin{bmatrix}
+		0 & 1 \\
+		\frac{k}{m} & 0
+	\end{bmatrix}\cdot
+	\begin{bmatrix}
+		x \\
+		\dot{x}
+	\end{bmatrix} -
+	\begin{bmatrix}
+		0 \\
+		\frac{1}{m}
+	\end{bmatrix}
+	\cdot
+	u
+	\label{eq: SpringMass}
+\end{equation}
+
+The behaviour of the real system was obtained through simulation. The parameters were set at $m = 3\ kg$ and $k = 6\ N/m$. The parameters were then obtained in three different estimation process: TSM isolated, MVMO isolated and the hybrid approach proposed. The tolerance for all three estimations was set at $0.5 \times 10^{-3}$ and the final error obtained for all simulations was adequate.
+
+
 
 When compared to the methods alone, the hybrid approach provides a result faster than MVMO but slower than TSM, as shown in Table \ref{tab: SM}. The tolerance for all three approaches was set at $0.5 \times 10^{-3}$ and the final error obtained for all simulations was adequate.
 
@@ -43,7 +65,38 @@ However, the convergence region of TSM is extremely limited, diverging from init
 	\legend{Source: Adapted from \cite{Ecyo}}
 \end{figure}
 
-This application was also employed on parameter estimation of Z-IM load model and is subject of a paper presented by the author on the 2019 Canadian Conference on Electrical and Computer Engineering. The result of the parameter estimation for the Z-IM Load Model presented on the conference is displayed on Figure \ref{fig: ZIM}.
+\begin{figure}[h]
+	\caption{Results of hybrid approach for spring-mass system}
+	\begin{center}
+		\includegraphics[scale=0.8]{Images/SpringMass.eps}
+	\end{center}
+	\label{fig: spring-mass}
+\end{figure}
+
+\section{Results on Z-IM Load Model}
+
+This application was also employed on parameter estimation of Z-IM load model and is subject of a paper presented by the author on the 2019 IEEE Canadian Conference on Electrical and Computer Engineering. This model is able to predict the behaviour of electrical loads during faults in the grid. It is described by the following equations:
+
+\begin{equation}
+    \begin{cases}
+        \dot{E'} = \frac{1}{T_o}\left(\frac{X}{X'}E' + \frac{X - X'}{X'}V\cos\delta\right) \\
+        \dot{\delta} = \omega - \omega_s - \frac{X - X'}{X'}.\frac{V\sin\delta}{T_o E'} \\
+        \dot{\omega} = \frac{1}{M}\left(-\frac{VE'\sin\delta}{X'} - T_m\right)
+    \end{cases}
+    \label{eq: xZIM}
+\end{equation}
+
+Its outputs are the active and reactive power consumed by the load and are given by:
+
+\begin{equation}
+    \begin{cases}
+        P = G_sV^2 - \left(\frac{VE'}{X'}\right)\sin\delta \\
+        Q = B_sV^2 + \frac{V(V - E'\cos\delta)}{X'}
+    \end{cases}
+    \label{eq: yZIM}
+\end{equation}
+
+The Z-IM load model is much more complex than the spring-mass system, with 9 parameters to be estimated. The hybrid approach proposed was able to estimate the parameters of this system and the comparison between real and modeled behaviour with the parameters obtained can be seen in the Figure \ref{fig: ZIM}.
 
 \begin{figure}[h]
 	\caption{Result of parameter estimation for Z-IM Load Model}
