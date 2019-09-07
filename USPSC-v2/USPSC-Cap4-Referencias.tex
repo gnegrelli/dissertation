@@ -36,12 +36,14 @@ The spring-mass system is a simple physical model often used as example of dynam
 
 The behaviour of the real system was obtained through simulation with parameters set at $m = 3\ kg$ and $k = 6\ N/m$. Three different estimation process were executed: TSM isolated, MVMO isolated and the hybrid approach proposed. The tolerance for all three estimations was set at $0.1$.
 
+\subsection{Trajectory Sensitivity Results}
+
 It took only 7 iterations to Trajectory Sensitivity Method estimate the parameters when the initial values were $m_{0} = 7\ kg$ and $k_{0} = 7\ N/m$. This shows how fast this method is when the initial values are in the neighbourhood of the real parameters. Figure \ref{fig: TS_conv} shows the error evolution during estimation suing TSM.
 
 \begin{figure}[h]
 	\caption{Error evolution of TSM with $m_{0} = 7\ kg$ and $k_{0} = 7\ N/m$}
 	\begin{center}
-		\includegraphics[scale=0.75]{Images/TS_conv.eps}
+		\includegraphics[scale=0.7]{Images/TS_conv.eps}
 	\end{center}
 	\label{fig: TS_conv}
 \end{figure}
@@ -51,7 +53,7 @@ However, the convergence region of TSM is extremely limited, diverging from init
 \begin{figure}[h]
 	\caption{Convergence region of Trajectory Sensitivity Method}
 	\begin{center}
-		\includegraphics[scale=0.8]{Images/Conv_reg.eps}
+		\includegraphics[scale=0.7]{Images/Conv_reg.eps}
 	\end{center}
 	\label{fig: conv_reg}
 	\legend{Source: Adapted from \cite{Ecyo}}
@@ -62,30 +64,42 @@ To illustrate the importance of good initial values, the parameters were reestim
 \begin{figure}[h]
 	\caption{Error evolution of TSM with $m_{0} = 8\ kg$ and $k_{0} = 10\ N/m$}
 	\begin{center}
-		\includegraphics[scale=0.75]{Images/TS_nconv.eps}
+		\includegraphics[scale=0.7]{Images/TS_nconv.eps}
 	\end{center}
 	\label{fig: TS_nconv}
 \end{figure}
 
-The MVMO search region was defined as $0 \leq m \leq 9$ and $0 \leq k \leq 15$. The heuristic method after almost 10000 generations, as depicted in Figure \ref{fig: MVMO_conv}. This figure also shows how MVMO rapidly reduces error of estimation, but as the values approach the neighbourhood of the real values, it slows down.
+\subsection{MVMO Results}
+
+The MVMO search region was defined as $0 \leq m \leq 9$ and $0 \leq k \leq 15$. The heuristic method converged after almost 10000 generations, as depicted in Figure \ref{fig: MVMO_conv}. This figure also shows how MVMO rapidly reduces error of estimation, but as the values approach the neighbourhood of the real values, it slows down.
 
 \begin{figure}[h]
 	\caption{Error evolution of MVMO}
 	\begin{center}
-		\includegraphics[scale=0.75]{Images/MVMO_conv.eps}
+		\includegraphics[scale=0.7]{Images/MVMO_conv.eps}
 	\end{center}
 	\label{fig: MVMO_conv}
 \end{figure}
-%-----------
 
+\subsection{Hybrid Approach Results}
 
-When compared to the methods alone, the hybrid approach provides a result faster than MVMO but slower than TSM, as shown in Table \ref{tab: SM}. The tolerance for all three approaches was set at $0.5 \times 10^{-3}$ and the final error obtained for all simulations was adequate.
+By combining both methods, the hybrid approach benefits from the quick error reduction provided by MVMO and the fast convergence from TSM when inside convergence region. The error evolution obtained from this approach is depicted in Figure \ref{fig: Hybrid_conv}
+
+\begin{figure}[h]
+	\caption{Results of hybrid approach for spring-mass system}
+	\begin{center}
+		\includegraphics[scale=0.7]{Images/Hybrid_conv.eps}
+	\end{center}
+	\label{fig: Hybrid_conv}
+\end{figure}
+
+When compared to the methods alone, the hybrid approach converges faster than MVMO but slower than TSM, as shown in Table \ref{tab: SM}. Although all methods converged parameters with error level below the tolerance, TSM and the Hybrid approach provided a better behaviour than MVMO with final error close to $2.0\times 10^{-3}$.
 
 \begin{table}[h]
 	\caption{Comparison of approaches}
 	\begin{center}
 	\begin{tabular}{c|c|c}
-		Approach & Time & Error \\
+		Approach & Time & Final Error \\
 		\hline
 		TSM  & $7 \ s$  & $2.76\times 10^{-3}$ \\
 		MVMO  & $10 \ min$  & $89.33\times 10^{-3}$\\
@@ -94,18 +108,6 @@ When compared to the methods alone, the hybrid approach provides a result faster
 	\end{center}
 	\label{tab: SM}
 \end{table}
-
-
-
-
-%-----------
-\begin{figure}[h]
-	\caption{Results of hybrid approach for spring-mass system}
-	\begin{center}
-		\includegraphics[scale=0.75]{Images/Hybrid_conv.eps}
-	\end{center}
-	\label{fig: Hybrid_conv}
-\end{figure}
 
 \section{Results on Z-IM Load Model}
 
