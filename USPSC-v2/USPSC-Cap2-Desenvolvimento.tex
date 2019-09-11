@@ -176,34 +176,21 @@ The outputs of this model are real and reactive power produced by the WTG and th
 
 The summary of the model's equation is shown below:
 
-\begin{equation*}
+\begin{equation}
 	\begin{cases}
 		\dot{v}_{d} = \frac{1}{T_{V}}(v_{d} - V_{PAS}) \\
-		\dot{v}_{q} = \frac{1}{T_{V}}(v_{q} - V_{QAS})
-	\end{cases}
-\end{equation*}
-
-\begin{equation*}
-	\begin{cases}
-		P_{e} = \frac{r(v_{Td}v_{d} + v_{Tq}v_{q} - v_{T}^{2}) + x(v_{Tq}v_{d} - v_{Td}v_{q})}{r^{2} + x^{2}} \\
-		Q_{e} = \frac{x(v_{Td}v_{d} + v_{Tq}v_{q} - v_{T}^{2}) - r(v_{Tq}v_{d} - v_{Td}v_{q})}{r^{2} + x^{2}}
-	\end{cases}
-\end{equation*}
-
-\begin{equation*}
-	\begin{cases}
-		V_{PAS} = -V_{PA}cos(\theta_{v}) - V_{QA}sin(\theta_{v}) \\
-		V_{QAS} = V_{PA}sin(\theta_{v}) - V_{QA}cos(\theta_{v})
-	\end{cases}
-\end{equation*}
-
-\begin{equation*}
-	\begin{cases}
-		V_{PA} = k_{I}[(i_{Pref} - \frac{p}{v_{T}}) +\frac{1}{T_{I}}\int\displaylimits_{0}^{t}	(i_{Pref} - \frac{p}{v_{T}})dt]\\
+		\dot{v}_{q} = \frac{1}{T_{V}}(v_{q} - V_{QAS}) \\
 		\\
+		P_{e} = \frac{r(v_{Td}v_{d} + v_{Tq}v_{q} - v_{T}^{2}) + x(v_{Tq}v_{d} - v_{Td}v_{q})}{r^{2} + x^{2}} \\
+		Q_{e} = \frac{x(v_{Td}v_{d} + v_{Tq}v_{q} - v_{T}^{2}) - r(v_{Tq}v_{d} - v_{Td}v_{q})}{r^{2} + x^{2}} \\
+		\\
+		V_{PAS} = -V_{PA}cos(\theta_{v}) - V_{QA}sin(\theta_{v}) \\
+		V_{QAS} = V_{PA}sin(\theta_{v}) - V_{QA}cos(\theta_{v}) \\
+		\\
+		V_{PA} = k_{I}[(i_{Pref} - \frac{p}{v_{T}}) +\frac{1}{T_{I}}\int\displaylimits_{0}^{t}	(i_{Pref} - \frac{p}{v_{T}})dt]\\
 		V_{QA} = k_{I}[(\frac{q}{v_{T}} - i_{Qref}) +\frac{1}{T_{I}}\int\displaylimits_{0}^{t}	(\frac{q}{v_{T}} - i_{Qref})dt]
 	\end{cases}
-\end{equation*}
+\end{equation}
 
 \begin{center}
 	\begin{lstlisting}[mathescape, columns=fullflexible]
@@ -237,8 +224,8 @@ Thus, this model can be interpreted as follows:
 
 \begin{equation}
 	\begin{cases}
-		\dot{x} = f(x, u, y, p) \\
-		y = g(x, u, y, p)
+		\dot{x} = f(x, y, p, u) \\
+		y = g(x, p, u)
 	\end{cases}
 	\label{eq: xdot}
 \end{equation}
