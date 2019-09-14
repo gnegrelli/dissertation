@@ -98,7 +98,7 @@ To illustrate the importance of good initial values, the parameters were reestim
 
 \subsection{MVMO Results}
 
-The MVMO search region was defined as $0 \leq m \leq 9$ and $0 \leq k \leq 15$. The heuristic method converged after almost 10000 generations, as depicted in Figure \ref{fig: MVMO_conv}. This figure also shows how MVMO rapidly reduces error of estimation, but as the values approach the neighbourhood of the real values, it slows down.
+To use MVMO, a search region in parameter space must be defined. Therefore, the parameters' boundaries was defined as $0 \leq m \leq 9$ and $0 \leq k \leq 15$. The population size was ate 5 individuals and after every generation 1 new individual was created. The heuristic method converged after almost 10000 generations, as depicted in Figure \ref{fig: MVMO_conv}. This figure also shows how MVMO rapidly reduces error of estimation, but as the values approach the neighbourhood of the real values, it slows down.
 
 \begin{figure}[h]
 	\caption{Error evolution of MVMO}
@@ -110,7 +110,7 @@ The MVMO search region was defined as $0 \leq m \leq 9$ and $0 \leq k \leq 15$. 
 
 \subsection{Hybrid Approach Results}
 
-By combining both methods, the hybrid approach benefits from the quick error reduction provided by MVMO and the fast convergence from TSM when inside convergence region. The error evolution obtained from this approach is depicted in Figure \ref{fig: Hybrid_conv}
+By combining both methods, the hybrid approach benefits from the quick error reduction provided by MVMO and the fast convergence from TSM when inside convergence region. The error evolution obtained from this approach is depicted in Figure \ref{fig: Hybrid_conv}. The tolerance for this approach were set at $tol_{1} = 1.5$ and $tol_{2} = 0.1$.
 
 \begin{figure}[h]
 	\caption{Results of hybrid approach for spring-mass system}
@@ -120,7 +120,7 @@ By combining both methods, the hybrid approach benefits from the quick error red
 	\label{fig: Hybrid_conv}
 \end{figure}
 
-When compared to the methods alone, the hybrid approach converges faster than MVMO but slower than TSM, as shown in Table \ref{tab: SM}. Although all methods converged parameters with error level below the tolerance, TSM and the Hybrid approach provided a better behaviour than MVMO with final error close to $2.0\times 10^{-3}$.
+When compared to each method, the hybrid approach converges faster than MVMO but slower than TSM, as shown in Table \ref{tab: SM}. Although all methods converged to parameter values that resulted in an error level below the tolerance, TSM and the Hybrid approach provided better results than MVMO with final error close to $2.0\times 10^{-3}$.
 
 \begin{table}[h]
 	\caption{Comparison of approaches}
@@ -129,35 +129,44 @@ When compared to the methods alone, the hybrid approach converges faster than MV
 		Approach & Time & Final Error \\
 		\hline
 		TSM  & $7 \ s$  & $2.76\times 10^{-3}$ \\
-		MVMO  & $10 \ min$  & $89.33\times 10^{-3}$\\
-		Hybrid  & $24 \ min$  & $1.54\times 10^{-3}$
+		MVMO  & $24 \ min$  & $89.33\times 10^{-3}$\\
+		Hybrid  & $10 \ min$  & $1.54\times 10^{-3}$
 	\end{tabular}
 	\end{center}
 	\label{tab: SM}
 \end{table}
 
-\section{Application of Hybrid Method on Z-IM Load Model}
+\section{Application of Hybrid Method on Linearized Z-IM Load Model}
 
-The hybrid approach was also employed on parameter estimation of Z-IM load model and is subject of a paper presented by the author on the 2019 IEEE Canadian Conference on Electrical and Computer Engineering. This model is able to predict the behaviour of electrical loads during faults in the grid. It is described by the following equations:
+The hybrid approach was also employed on parameter estimation of Z-IM load model. This model is able to predict the behaviour of electrical loads during faults in the grid. It is described by the following equations:
 
-\begin{equation}
-    \begin{cases}
-        \dot{E'} = \frac{1}{T_o}\left(\frac{X}{X'}E' + \frac{X - X'}{X'}V\cos\delta\right) \\
-        \dot{\delta} = \omega - \omega_s - \frac{X - X'}{X'}.\frac{V\sin\delta}{T_o E'} \\
-        \dot{\omega} = \frac{1}{M}\left(-\frac{VE'\sin\delta}{X'} - T_m\right)
-    \end{cases}
-    \label{eq: xZIM}
-\end{equation}
-
-Its outputs are the active and reactive power consumed by the load and are given by:
+%\begin{equation}
+ %   \begin{cases}
+  %      \dot{\Delta E'} = \frac{-1}{T_{o}X'}[X\Delta E' + (X - X')V_{0}\sin{\delta_{0}}\Delta \delta] + \frac{(X - X')\cos{\delta_{0}}}{T_{0}X'}\Delta V \\
+   %     \dot{\Delta \delta} = \frac{(X-X')V_{0}}{T_{0}X'E'_{0}}\cdot\left(\frac{\sin{\delta_{0}}\Delta E'}{E'_{0}} - \cos{\delta_{0}}\Delta\delta\right) + \Delta\omega - \frac{(X - X')\sin{\delta_0}}{T_{o} X'E'_{0}}\Delta V \\
+    %    \dot{\Delta \omega} = \frac{-V_{0}}{MX'}(\sin{\delta_{0}}\Delta E' + E'_{0}\cos{\delta_{0}}\Delta\delta) - \frac{E'_{0}\sin{\delta_{0}}{MX'}\Delta V
+    %\end{cases}
+    %\label{eq: xZIM}
+%\end{equation}
 
 \begin{equation}
     \begin{cases}
-        P = G_sV^2 - \left(\frac{VE'}{X'}\right)\sin\delta \\
-        Q = B_sV^2 + \frac{V(V - E'\cos\delta)}{X'}
+        \Delta P = \frac{-V_{0}}{X'}(\sin{\delta_{0}}\Delta E' + E'_{0}\cos{\delta_{0}}\Delta \delta) + \left(2G_{s} V_{0} - \frac{E'_{0} \sin{\delta_{0}}}{X'}\right)\Delta V \\
+        \Delta Q = \frac{-V_{0}}{X'}(\cos{\delta_{0}}\Delta E' + E'_{0}\sin{\delta_{0}}\Delta\delta) + \left(2B_{s} V_{0} + \frac{2V_{0} - E'_{0} \cos{\delta_{0}}}{X'}\right)\Delta V
     \end{cases}
     \label{eq: yZIM}
 \end{equation}
+
+\begin{equation}
+    \begin{cases}
+    X = X_{s} + X_{m} \\
+    X' = X_{s} + \frac{X_{m} X_{r}}{X_{m} + X_{s}} \\
+    T_{o} = \frac{X_{r} + X_{m}}{\omega_{s} R_{r}}
+    \end{cases}
+    \label{eq: terms}
+\end{equation}
+
+\noindent where the terms $\Delta E'$ and $\Delta \delta$ represent the variation on voltage magnitude and angle at the motor terminals, $\Delta \omega$ is the variation on stator speed, in rad/s. $X_m$, $X_s$ and $X_r$ are the magnetizing, stator and rotor reactances, respectively, $R_r$ stands for the rotor resistance, $\omega_{s}$ is the synchronous speed, $T_o$ represents the open-circuit transient time constant, $M$ is the motor inertia and $V_{0}$ is the voltage on the load terminals before the disturbance.
 
 The Z-IM load model is much more complex than the spring-mass system, with 9 parameters to be estimated. The hybrid approach proposed was able to estimate the parameters of this system and the comparison between real and modeled behaviour with the parameters obtained can be seen in the Figure \ref{fig: ZIM}.
 
@@ -169,6 +178,8 @@ The Z-IM load model is much more complex than the spring-mass system, with 9 par
 	\label{fig: ZIM}
 	\legend{Source: \cite{Gomes2019}}
 \end{figure}
+
+The application of the hybrid approach on Linearized Z-IM Load Model is subject of a paper presented by the author on the 2019 IEEE Canadian Conference on Electrical and Computer Engineering entitled ``\textit{Load Model Identification Through a Hybrid Approach}".
 
 \section{Ongoing Progress}
 
