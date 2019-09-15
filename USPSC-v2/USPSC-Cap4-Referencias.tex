@@ -177,7 +177,27 @@ The hybrid approach was also employed on parameter estimation of Z-IM Load Model
     \label{eq: terms}
 \end{equation}
 
-\noindent where the terms $\Delta E'$ and $\Delta \delta$ represent the variation on voltage magnitude and angle at the motor terminals, $\Delta \omega$ is the variation on stator speed, in rad/s. $X_m$, $X_s$ and $X_r$ are the magnetizing, stator and rotor reactances, respectively, $R_r$ stands for the rotor resistance, $\omega_{s}$ is the synchronous speed, $T_o$ represents the open-circuit transient time constant, $M$ is the motor inertia and $V_{0}$ is the voltage on the load terminals before the disturbance.
+\noindent where the terms $\Delta E'$ and $\Delta \delta$ represent the variation on voltage magnitude and angle at the motor terminals, $\Delta \omega$ is the variation on stator speed, in rad/s. $X_m$, $X_s$ and $X_r$ are the magnetizing, stator and rotor reactances, respectively, $R_r$ stands for the rotor resistance, $\omega_{s}$ is the synchronous speed, $T_o$ represents the open-circuit transient time constant, $M$ is the motor inertia and $V_{0}$ is the voltage on the load terminals before the disturbance. The state, output, input and parameter vectors are presented in \eqref{eq: ZIMstate}, \eqref{eq: ZIMoutput}, \eqref{eq: ZIMinput} and \eqref{eq: ZIMparam}, respectively.
+
+\begin{equation}
+	x = [\Delta E', \Delta \delta, \Delta \omega]^{T}
+	\label{eq: ZIMstate}
+\end{equation}
+
+\begin{equation}
+	y = [\Delta P, \Delta Q]^{T}
+	\label{eq: ZIMoutput}
+\end{equation}
+
+\begin{equation}
+	u = [\Delta V]
+	\label{eq: ZIMinput}
+\end{equation}
+
+\begin{equation}
+	p = [X, X', T_{0}, M, G_{s}, B_{s}, E'_{0}, \delta_{0}]^{T}
+	\label{eq: ZIMparam}
+\end{equation}
 
 The Z-IM load model is much more complex than the spring-mass system, with 9 parameters to be estimated. The hybrid approach proposed was able to estimate the parameters of this system and the comparison between real and modeled behaviour with the parameters obtained can be seen in the Figure \ref{fig: ZIM}.
 
