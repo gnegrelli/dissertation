@@ -138,20 +138,31 @@ When compared to each method, the hybrid approach converges faster than MVMO but
 
 \section{Application of Hybrid Method on Linearized Z-IM Load Model}
 
-The hybrid approach was also employed on parameter estimation of Z-IM load model. This model is able to predict the behaviour of electrical loads during faults in the grid. It is described by the following equations:
+The hybrid approach was also employed on parameter estimation of Z-IM Load Model. This model is able to predict the behaviour of electrical loads during faults in the grid. The Z-IM Load Model is composed of a impedance in parallel with a third-order induction motor (IM), as shown in Figure \ref{img: Z-IM}. According to \cite{Choi}, this model results in low error levels for both active and reactive power, alongside having a smaller parameter vector when compared with other models. It is described by the following equations:
 
-%\begin{equation}
- %   \begin{cases}
-  %      \dot{\Delta E'} = \frac{-1}{T_{o}X'}[X\Delta E' + (X - X')V_{0}\sin{\delta_{0}}\Delta \delta] + \frac{(X - X')\cos{\delta_{0}}}{T_{0}X'}\Delta V \\
-   %     \dot{\Delta \delta} = \frac{(X-X')V_{0}}{T_{0}X'E'_{0}}\cdot\left(\frac{\sin{\delta_{0}}\Delta E'}{E'_{0}} - \cos{\delta_{0}}\Delta\delta\right) + \Delta\omega - \frac{(X - X')\sin{\delta_0}}{T_{o} X'E'_{0}}\Delta V \\
-    %    \dot{\Delta \omega} = \frac{-V_{0}}{MX'}(\sin{\delta_{0}}\Delta E' + E'_{0}\cos{\delta_{0}}\Delta\delta) - \frac{E'_{0}\sin{\delta_{0}}{MX'}\Delta V
-    %\end{cases}
-    %\label{eq: xZIM}
-%\end{equation}
+\begin{figure}[h]
+    \caption{Schematic of Z-IM Load Model.}
+    \begin{center}
+    	\includegraphics[scale=1]{Images/drawZIM.eps}
+    \end{center}
+    \label{img: Z-IM}
+\end{figure}
+
+\begin{equation}
+    \begin{cases}
+        \dot{\Delta E'} = \frac{-1}{T_{o}X'}[X\Delta E' + (X - X')V_{0}\sin\delta_{0}\Delta \delta] + \frac{(X - X')\cos\delta_{0}}{T_{0}X'}\Delta V \\
+        \\
+        \dot{\Delta \delta} = \frac{(X-X')V_{0}}{T_{0}X'E'_{0}}\cdot\left(\frac{\sin\delta_{0}\Delta E'}{E'_0} - \cos\delta_{0}\Delta\delta\right) + \Delta\omega - \frac{(X - X')\sin\delta_0}{T_o X'E'_0}\Delta V \\
+        \\
+        \dot{\Delta \omega} = \frac{-V_{0}}{MX'}(\sin\delta_{0}\Delta E' + E'_{0}\cos\delta_{0}\Delta\delta) - \frac{E'_0\sin\delta_0}{MX'}\Delta V
+    \end{cases}
+    \label{eq: xZIM}
+\end{equation}
 
 \begin{equation}
     \begin{cases}
         \Delta P = \frac{-V_{0}}{X'}(\sin{\delta_{0}}\Delta E' + E'_{0}\cos{\delta_{0}}\Delta \delta) + \left(2G_{s} V_{0} - \frac{E'_{0} \sin{\delta_{0}}}{X'}\right)\Delta V \\
+        \\
         \Delta Q = \frac{-V_{0}}{X'}(\cos{\delta_{0}}\Delta E' + E'_{0}\sin{\delta_{0}}\Delta\delta) + \left(2B_{s} V_{0} + \frac{2V_{0} - E'_{0} \cos{\delta_{0}}}{X'}\right)\Delta V
     \end{cases}
     \label{eq: yZIM}
