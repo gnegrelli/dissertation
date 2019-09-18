@@ -55,9 +55,9 @@ In order to maintain the electrical power system reliable, studies simulating va
 
 \section{Difficulties in Representing Wind Power Plants}
 
-With a growing share of energy covered by wind, system operators must consider how wind turbines affect the system stability during faults and maneuvers. To do so, mathematical models capable of describing the behaviour of these machines are crucial. 
+With a growing share of energy covered by wind, system operators must consider how wind turbines affect the system stability during faults and maneuvers. To reach this goal, mathematical models capable of describing the behaviour of these machines are crucial. 
 
-Obtaining these models, on the other hand, is not an easy task, considering the great amount of wind turbines available, with different manufacturers, technologies, sizes and characteristics. Thus, a model that describes well a particular generator won't necessarily work for others. Also, due to industrial secrecy, manufacturers provide little or no information about how their wind turbine generators behave. 
+Obtaining these models, on the other hand, is not an easy task, considering the great amount of wind turbines available, with different manufacturers, technologies, sizes and characteristics. Thus, a model that describes well a particular power plant will not necessarily work for others. Also, due to confidentiality, manufacturers provide little or no information about their wind turbine generators. 
 
 Particularly for wind power plants, an equivalent model is needed, since these facilities are usually widely spread and contain generators from different sizes and manufacturers. Besides, the distance to the substation is not the same for every generator in a wind power plants, as depicted in Figure \ref{fig: WPP}. Hence, having one model for every wind turbine within a power plant would result in a mathematical problem with high complexity and computational cost \cite{Erlich2012}.
 
@@ -72,8 +72,8 @@ Particularly for wind power plants, an equivalent model is needed, since these f
 
 \section{Research Goals}
 
-The main goal of this research is to estimate parameters of an equivalent model of wind power plants. This will aid the studies concerning the system transient stability. To do so, an algorithm for parameter estimation will be developed combining two methods: Mean-Variance Mapping Optimization, an population-based heuristic approach, and Trajectory Sensitivity Method, a nonlinear approach. Also, as a secondary goal, a software, with graphical interface, for parameter estimation of nonlinear models will be developed. This work is a continuation of the work done in \cite{Cari2015}, that focused on the parameter estimation using only Trajectory Sensitivity Method.
+The main goal of this research is to estimate parameters of an equivalent model of a wind power plant used in transient stability studies. To achieve this goal, a hybrid algorithm for parameter estimation will be developed combining two methods: Mean-Variance Mapping Optimization, an population-based heuristic approach, and Trajectory Sensitivity Method, a nonlinear approach. Also, as a secondary goal, a software, with graphical interface, for parameter estimation of nonlinear models will be developed. This research is a ongoing work of \cite{Cari2015}, that focused on the parameter estimation using only Trajectory Sensitivity Method.
 
 \section{Work Organization}
 
-This section summarizes how the remainder of the text is organized. The next chapter will focus on the generic models for wind turbine generators and power plants and the selected mathematical model for parameter estimation purposes will be presented. The hybrid estimation process proposed and its methods will be subject to chapter \ref{ch: Estim}, followed by the concept of the software under development on chapter \ref{ch: software}. On chapter \ref{ch: Res}, the partial results obtained and the ongoing progress will be discussed.
+This section summarizes how the remainder of the text is organized. Chapter \ref{ch: Mod} will focus on the generic models for wind turbine generators and power plants and the selected mathematical model for parameter estimation purposes will be presented. The hybrid estimation process proposed and its methods will be subject to chapter \ref{ch: Estim}, followed by the concept of the software under development on chapter \ref{ch: software}. On chapter \ref{ch: Res}, the partial results obtained and the ongoing progress will be discussed.

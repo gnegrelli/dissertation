@@ -38,7 +38,7 @@ After that, a randomly-distributed population is generated, evaluated and sorted
 \begin{figure}[h]
 	\caption{Exemplification of MVMO process}
 	\begin{center}
-		\includegraphics[scale=.2]{Images/MVMO_process.eps}
+		\includegraphics[scale=.2]{Images/MVMO_process2.eps}
 	\end{center}
 	\label{fig: MVMOprocess}
 \end{figure}
@@ -136,10 +136,10 @@ Obtaining the matrix of partial derivatives (also called trajectory sensitivitie
 	\label{eq: deriv}
 \end{equation}
 
-Consider two parameter vectors $p^{0}$ and $p^{1}$, given by \eqref{eq: pvecs}.
+Consider two parameter vectors $p$ and $p^{\epsilon}$, where $p^{\epsilon}$ is obtained by adding a small perturbation $\epsilon p_{i}$ to the $i-th$ element of $p$, as shown in \eqref{eq: pvecs}.
 
 \begin{equation}
-	p^{0} = 
+	p = 
 	\begin{bmatrix}
 		p_{1} \\
 		\vdots \\
@@ -147,21 +147,26 @@ Consider two parameter vectors $p^{0}$ and $p^{1}$, given by \eqref{eq: pvecs}.
 		\vdots \\
 		p_{n}
 	\end{bmatrix}; \ \ \ \ 
-	 p^{1} =
+	 p^{\epsilon} =
 	\begin{bmatrix}
 		p_{1} \\
 		\vdots \\
-		p_{i} + \epsilon \\
+		p_{i} + \epsilon p_{i} \\
 		\vdots \\
 		p_{n}
 	\end{bmatrix}
 	\label{eq: pvecs}
 \end{equation}
 
-With $\epsilon$ sufficiently small, the partial derivative with respect to the parameter $p_{i}$ can be approximated by the difference shown in equation \eqref{eq: diff}. Using the approximation of the partial derivatives allows Trajectory Sensitivity method to be applied on both differentiable and non-differentiable systems \cite{Benchluch1993}, \cite{Cari2006}.
+With $\epsilon$ sufficiently small, the partial derivative with respect to the parameter $p_{i}$ can be approximated by the difference shown in equation \eqref{eq: diff}. The value of $\epsilon = 0.1 \times 10^{-3}$ have shown great results for most cases. Using the approximation of the partial derivatives allows Trajectory Sensitivity method to be applied on both differentiable and non-differentiable systems \cite{Benchluch1993}, \cite{Cari2006}.
  
+%\begin{equation}
+%	\frac{\partial y(p)}{\partial p_{i}} =  \lim\limits_{\epsilon p_{i} \to 0} \frac{y(p^{\epsilon}) - y(p)}{\epsilon p_{i}} \approx \frac{y(p^{\epsilon}) - y(p)}{\epsilon p_{i}}
+%	\label{eq: diff}
+%\end{equation}
+
 \begin{equation}
-	\frac{\partial y(p)}{\partial p_{i}} \approx \frac{y(p^{1}) - y(p^{0})}{\epsilon}
+	\frac{\partial y(x, p, u)}{\partial p_{i}} \approx \frac{y(x, p^{\epsilon}, u) - y(x, p, u)}{\epsilon p_{i}}
 	\label{eq: diff}
 \end{equation}
 

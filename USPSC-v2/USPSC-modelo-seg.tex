@@ -103,7 +103,17 @@ english				% o último idioma é o principal do documento
 \usepackage{makeidx}            % para gerar índice remissimo
 
 \usepackage[super]{nth}			% escrever numeros ordinarios sobrescritos
-\usepackage{listings}
+\usepackage{listings}			% escrever algoritmos
+
+\usepackage{xr}					% referencia de equacoes de outros capitulos
+\externaldocument{USPSC-Cap2-Desenvolvimento.tex}
+
+\usepackage{color, colortbl}
+\definecolor{LightCyan}{rgb}{0.88,1,1}
+\definecolor{Purple}{rgb}{0.5,0.5,1}
+\usepackage[first=0,last=9]{lcg}
+
+\usepackage{multirow}
 % ---
 
 % ---

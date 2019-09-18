@@ -8,7 +8,7 @@ Due to huge variety of wind turbine generators (WTG) and their different charact
 
 The studies mentioned above have concluded that commercial wind turbine generators could be sorted into four basic types, according to their technology \cite{Ellis2011}. These types are described in the following subsections.
 
-\subsection{Type-1: Squirrel Cage Induction Generator}
+\subsection{Type-1: Squirrel Cage Induction Generator (SCIG)}
 
 The first type of wind turbine generator is composed of a Squirrel Cage Induction Generator (SCIG) connected to a wind turbine through a controlled gearbox, as displayed in Figure \ref{fig: WTG1}.
 
@@ -22,7 +22,7 @@ The first type of wind turbine generator is composed of a Squirrel Cage Inductio
 
 Due to its torque-speed characteristics, generators of this type operate at constant rotor speed, requiring robust controllers on gearbox and blade. Besides, as usual to any induction generator, the SCIG absorbs reactive power during operation. Thus, capacitors are often employed for power faction correction purposes. Moreover, type-1 generators limit aerodynamic power by varying the pitch angle of their blades, imposing great mechanical stress on blades, shafts and gears, demanding a robust mechanical design and preventing these generators to operate above certain wind speed \cite{Ellis2011}. 
 
-\subsection{Type-2: Wound Rotor Induction Generator}
+\subsection{Type-2: Wound Rotor Induction Generator (WRIG)}
 
 Similarly to Type-1 WTG, Type-2 Wind Turbine Generators are composed of an asynchronous machine connected to a wind turbine via gearbox, but, instead of SCIG, Wound Rotor Induction Generator (WRIG) are used to convert kinetic energy into electricity. The WRIG has access to its rotor windings, allowing to vary the rotor resistance. As a direct consequence, this machine can operate in different wind speeds by adjusting its torque-speed curve as needed \cite{Ellis2011}. Therefore, Type-2 WTG have a WRIG with a variable resistance connected to its rotor terminals, as shown in Figure \ref{fig: WTG2}.
 
@@ -46,7 +46,7 @@ Thus, this type of generator has three speed control systems, with rotor resista
 
 For a fixed power, increasing rotor resistance increases the speed needed on the shaft, allowing the wind turbine to operate above rated wind speed. However, the speed range is only $\pm 10\%$ of rated slip. Also, this machine still needs a reactive compensation circuit on its terminals \cite{Muljadi2010}.
 
-\subsection{Type-3: Doubly Fed Induction Generator}
+\subsection{Type-3: Doubly Fed Induction Generator (DFIG)}
 
 A Type-3 Wind Turbine Generator, often called Doubly Fed Induction Generator (DFIG), is also composed of a wound rotor machine connected to a wind turbine. But, instead of varying rotor resistance, a DFIG has its rotor supplied with AC voltage by a back-to-back frequency converter, as displayed in Figure \ref{fig: WTG3}. 
 
@@ -176,34 +176,22 @@ The outputs of this model are real and reactive power produced by the WTG and th
 
 The summary of the model's equation is shown below:
 
-\begin{equation*}
+\begin{equation}
 	\begin{cases}
 		\dot{v}_{d} = \frac{1}{T_{V}}(v_{d} - V_{PAS}) \\
-		\dot{v}_{q} = \frac{1}{T_{V}}(v_{q} - V_{QAS})
-	\end{cases}
-\end{equation*}
-
-\begin{equation*}
-	\begin{cases}
-		P_{e} = \frac{r(v_{Td}v_{d} + v_{Tq}v_{q} - v_{T}^{2}) + x(v_{Tq}v_{d} - v_{Td}v_{q})}{r^{2} + x^{2}} \\
-		Q_{e} = \frac{x(v_{Td}v_{d} + v_{Tq}v_{q} - v_{T}^{2}) - r(v_{Tq}v_{d} - v_{Td}v_{q})}{r^{2} + x^{2}}
-	\end{cases}
-\end{equation*}
-
-\begin{equation*}
-	\begin{cases}
-		V_{PAS} = -V_{PA}cos(\theta_{v}) - V_{QA}sin(\theta_{v}) \\
-		V_{QAS} = V_{PA}sin(\theta_{v}) - V_{QA}cos(\theta_{v})
-	\end{cases}
-\end{equation*}
-
-\begin{equation*}
-	\begin{cases}
-		V_{PA} = k_{I}[(i_{Pref} - \frac{p}{v_{T}}) +\frac{1}{T_{I}}\int\displaylimits_{0}^{t}	(i_{Pref} - \frac{p}{v_{T}})dt]\\
+		\dot{v}_{q} = \frac{1}{T_{V}}(v_{q} - V_{QAS}) \\
 		\\
+		P_{e} = \frac{r(v_{Td}v_{d} + v_{Tq}v_{q} - v_{T}^{2}) + x(v_{Tq}v_{d} - v_{Td}v_{q})}{r^{2} + x^{2}} \\
+		Q_{e} = \frac{x(v_{Td}v_{d} + v_{Tq}v_{q} - v_{T}^{2}) - r(v_{Tq}v_{d} - v_{Td}v_{q})}{r^{2} + x^{2}} \\
+		\\
+		V_{PAS} = -V_{PA}cos(\theta_{v}) - V_{QA}sin(\theta_{v}) \\
+		V_{QAS} = V_{PA}sin(\theta_{v}) - V_{QA}cos(\theta_{v}) \\
+		\\
+		V_{PA} = k_{I}[(i_{Pref} - \frac{p}{v_{T}}) +\frac{1}{T_{I}}\int\displaylimits_{0}^{t}	(i_{Pref} - \frac{p}{v_{T}})dt]\\
 		V_{QA} = k_{I}[(\frac{q}{v_{T}} - i_{Qref}) +\frac{1}{T_{I}}\int\displaylimits_{0}^{t}	(\frac{q}{v_{T}} - i_{Qref})dt]
 	\end{cases}
-\end{equation*}
+	\label{eq: Summary}
+\end{equation}
 
 \begin{center}
 	\begin{lstlisting}[mathescape, columns=fullflexible]
@@ -237,8 +225,8 @@ Thus, this model can be interpreted as follows:
 
 \begin{equation}
 	\begin{cases}
-		\dot{x} = f(x, u, y, p) \\
-		y = g(x, u, y, p)
+		\dot{x} = f(x, y, p, u) \\
+		y = g(x, p, u)
 	\end{cases}
 	\label{eq: xdot}
 \end{equation}
