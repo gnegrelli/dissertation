@@ -104,7 +104,7 @@ Terminal voltage $v_{T}$ is the variable of interest in this model, appearing as
 
 \begin{equation}
 	\begin{cases}
-		I_{Ac} = \frac{v_{T}}{p_{Tref}} \\
+		I_{Ac} = \frac{p_{Tref}}{v_{T}} \\
 		I_{Re} = k_{VC}(v_{Tref} - v_{T})
 	\end{cases}
 	\label{eq: Currents}
@@ -148,8 +148,8 @@ Until here the controller operates on terminal voltage oriented coordinates, so 
 
 \begin{equation}
 	\begin{cases}
-		V_{PAS} = -V_{PA}cos(\theta_{v}) - V_{QA}sin(\theta_{v}) \\
-		V_{QAS} = V_{PA}sin(\theta_{v}) - V_{QA}cos(\theta_{v})
+		V_{PAS} = -V_{PA}cos(\phi_{v}) - V_{QA}sin(\phi_{v}) \\
+		V_{QAS} = V_{PA}sin(\phi_{v}) - V_{QA}cos(\phi_{v})
 	\end{cases}
 	\label{eq: CoordShift}
 \end{equation}
@@ -184,8 +184,8 @@ The summary of the model's equation is shown below:
 		P_{e} = \frac{r(v_{Td}v_{d} + v_{Tq}v_{q} - v_{T}^{2}) + x(v_{Tq}v_{d} - v_{Td}v_{q})}{r^{2} + x^{2}} \\
 		Q_{e} = \frac{x(v_{Td}v_{d} + v_{Tq}v_{q} - v_{T}^{2}) - r(v_{Tq}v_{d} - v_{Td}v_{q})}{r^{2} + x^{2}} \\
 		\\
-		V_{PAS} = -V_{PA}cos(\theta_{v}) - V_{QA}sin(\theta_{v}) \\
-		V_{QAS} = V_{PA}sin(\theta_{v}) - V_{QA}cos(\theta_{v}) \\
+		V_{PAS} = -V_{PA}cos(\phi_{v}) - V_{QA}sin(\phi_{v}) \\
+		V_{QAS} = V_{PA}sin(\phi_{v}) - V_{QA}cos(\phi_{v}) \\
 		\\
 		V_{PA} = k_{I}[(i_{Pref} - \frac{p}{v_{T}}) +\frac{1}{T_{I}}\int\displaylimits_{0}^{t}	(i_{Pref} - \frac{p}{v_{T}})dt]\\
 		V_{QA} = k_{I}[(\frac{q}{v_{T}} - i_{Qref}) +\frac{1}{T_{I}}\int\displaylimits_{0}^{t}	(\frac{q}{v_{T}} - i_{Qref})dt]
@@ -239,7 +239,7 @@ Thus, this model can be interpreted as follows:
 \end{equation}
 
 \begin{equation}
-	u = [v_{T}, \theta_{v}, P, Q]^T
+	u = [v_{T}, \phi_{v}, P, Q]^T
 	\label{eq: u}
 \end{equation}
 
