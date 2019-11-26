@@ -168,8 +168,8 @@ The outputs of this model are real and reactive power produced by the WTG and th
 
 \begin{equation}
 	\begin{cases}
-		P_{e} = \frac{r(v_{Td}v_{d} + v_{Tq}v_{q} - v_{T}^{2}) + x(v_{Tq}v_{d} - v_{Td}v_{q})}{r^{2} + x^{2}} \\
-		Q_{e} = \frac{x(v_{Td}v_{d} + v_{Tq}v_{q} - v_{T}^{2}) - r(v_{Tq}v_{d} - v_{Td}v_{q})}{r^{2} + x^{2}}
+		p = \frac{r(v_{Td}v_{d} + v_{Tq}v_{q} - v_{T}^{2}) + x(v_{Tq}v_{d} - v_{Td}v_{q})}{r^{2} + x^{2}} \\
+		q = \frac{x(v_{Td}v_{d} + v_{Tq}v_{q} - v_{T}^{2}) - r(v_{Tq}v_{d} - v_{Td}v_{q})}{r^{2} + x^{2}}
 	\end{cases}
 	\label{eq: Outputs}
 \end{equation}
@@ -181,8 +181,8 @@ The summary of the model's equation is shown below:
 		\dot{v}_{d} = \frac{1}{T_{V}}(v_{d} - V_{PAS}) \\
 		\dot{v}_{q} = \frac{1}{T_{V}}(v_{q} - V_{QAS}) \\
 		\\
-		P_{e} = \frac{r(v_{Td}v_{d} + v_{Tq}v_{q} - v_{T}^{2}) + x(v_{Tq}v_{d} - v_{Td}v_{q})}{r^{2} + x^{2}} \\
-		Q_{e} = \frac{x(v_{Td}v_{d} + v_{Tq}v_{q} - v_{T}^{2}) - r(v_{Tq}v_{d} - v_{Td}v_{q})}{r^{2} + x^{2}} \\
+		p = \frac{r(v_{Td}v_{d} + v_{Tq}v_{q} - v_{T}^{2}) + x(v_{Tq}v_{d} - v_{Td}v_{q})}{r^{2} + x^{2}} \\
+		q = \frac{x(v_{Td}v_{d} + v_{Tq}v_{q} - v_{T}^{2}) - r(v_{Tq}v_{d} - v_{Td}v_{q})}{r^{2} + x^{2}} \\
 		\\
 		V_{PAS} = -V_{PA}cos(\phi_{v}) - V_{QA}sin(\phi_{v}) \\
 		V_{QAS} = V_{PA}sin(\phi_{v}) - V_{QA}cos(\phi_{v}) \\
@@ -216,7 +216,7 @@ The summary of the model's equation is shown below:
 
 \begin{equation*}
 	\begin{cases}
-		I_{Ac} = \frac{v_{T}}{p_{Tref}} \\
+		I_{Ac} = \frac{p_{Tref}}{v_{T}} \\
 		I_{Re} = k_{VC}(v_{Tref} - v_{T})
 	\end{cases}
 \end{equation*}
@@ -239,12 +239,12 @@ Thus, this model can be interpreted as follows:
 \end{equation}
 
 \begin{equation}
-	u = [v_{T}, \phi_{v}, P, Q]^T
+	u = [v_{T}, \phi_{v}, p, q]^T
 	\label{eq: u}
 \end{equation}
 
 \begin{equation}
-	y = [P_{e}, Q_{e}]^T
+	y = [p, q]^T
 	\label{eq: y}
 \end{equation}
 
