@@ -20,7 +20,7 @@ The first type of wind turbine generator is composed of a Squirrel Cage Inductio
 	\label{fig: WTG1}
 \end{figure}
 
-Due to its torque-speed characteristics, generators of this type operate at constant rotor speed, requiring robust controllers on gearbox and blade. Besides, as usual to any induction generator, the SCIG absorbs reactive power during operation. Thus, capacitors are often employed for power faction correction purposes. Moreover, type-1 generators limit aerodynamic power by varying the pitch angle of their blades, imposing great mechanical stress on blades, shafts and gears, demanding a robust mechanical design and preventing these generators to operate above certain wind speed \cite{Ellis2011}. 
+Due to its torque-speed characteristics, generators of this type operate at constant rotor speed, requiring robust controllers on gearbox and blade. Besides, as usual to any induction generator, the SCIG absorbs reactive power during operation. Thus, capacitors are often employed for power factor correction purposes. Moreover, type-1 generators limit aerodynamic power by varying the pitch angle of their blades, imposing great mechanical stress on blades, shafts and gears, demanding a robust mechanical design and preventing these generators to operate above certain wind speed \cite{Ellis2011}. 
 
 \subsection{Type-2: Wound Rotor Induction Generator (WRIG)}
 
@@ -34,7 +34,7 @@ Similarly to Type-1 WTG, Type-2 Wind Turbine Generators are composed of an async
 	\label{fig: WTG2}
 \end{figure}
 
-Thus, this type of generator has three speed control systems, with rotor resistance control responding to rapid changes in speed, gearbox control for medium variations and pitch control for slow changes. These control system work together to maintain power output constant and reduce mechanical stress on components. The effects on the torque-speed curve caused by different rotor resistances are shown in Figure \ref{fig: Tw}.
+Thus, this type of generator has three speed control systems, with rotor resistance control responding to rapid changes in speed, gearbox control for medium variations and pitch control for slow changes. These control system work together to maintain power output at the desired level and reduce mechanical stress on components. The effects on the torque-speed curve caused by different rotor resistances are shown in Figure \ref{fig: Tw}.
 
 \begin{figure}[h]
 	\caption{Torque-speed curve}
@@ -62,7 +62,7 @@ By varying the voltage frequency on the rotor circuit, the generator is able to 
 
 \subsection{Type-4: Full-Converter Generator}
 
-The last type of wind turbine generator, also called Full-Converter Generator, is composed of a electrical machine connected to the grid through a back-to-back frequency converter. The converter will operate converting the electrical frequency generated to standard, allowing this type of WTG to operate in a large range of wind speed (up to almost 100\% of rated slip). Due to the converter operation, connection to the wind turbine can be made directly or via gearbox. Likewise, it allows the use of synchronous and asynchronous electrical machines as generator, with Permanent Magnet Synchronous Generator (PMSG), Electrical Excited Synchronous Generator (EESG) and SCIG being most common, because of cost and maintenance purposes. Similar to DFIG, full-converter generators are able to control real and reactive power injected into the grid. However, since all power generated must flow through the power electronics, the overall cost of these generators is usually higher \cite{Yaramasu2015}. Figure \ref{fig: WTG4} depicts a typical Type-4 Wind Turbine Generator.
+The last type of wind turbine generator, also called Full-Converter Generator, is composed of an electrical machine connected to the grid through a back-to-back frequency converter. The converter will operate converting the electrical frequency generated to standard, allowing this type of WTG to operate in a large range of wind speed (up to almost 100\% of rated slip). Due to the converter operation, connection to the wind turbine can be made directly or via gearbox. Likewise, it allows the use of synchronous and asynchronous electrical machines as generator, with Permanent Magnet Synchronous Generator (PMSG), Electrical Excited Synchronous Generator (EESG) and SCIG being most common, because of cost and maintenance purposes. Similar to DFIG, full-converter generators are able to control real and reactive power injected into the grid. However, since all power generated must flow through the power electronics, the overall cost of these generators is usually higher \cite{Yaramasu2015}. Figure \ref{fig: WTG4} depicts a typical Type-4 Wind Turbine Generator.
 
 \begin{figure}[h]
 	\caption{Representation of Type-4 Wind Turbine Generator}
@@ -104,7 +104,7 @@ Terminal voltage $v_{T}$ is the variable of interest in this model, appearing as
 
 \begin{equation}
 	\begin{cases}
-		I_{Ac} = \frac{v_{T}}{p_{Tref}} \\
+		I_{Ac} = \frac{p_{Tref}}{v_{T}} \\
 		I_{Re} = k_{VC}(v_{Tref} - v_{T})
 	\end{cases}
 	\label{eq: Currents}
@@ -137,9 +137,9 @@ The following PI blocks stand for the DFIG controllers (blade, gearbox, rotor-si
 
 \begin{equation}
 	\begin{cases}
-		V_{PA} = k_{I}[(i_{Pref} - \frac{p}{v_{T}}) +\frac{1}{T_{I}}\int\displaylimits_{0}^{t}	(i_{Pref} - \frac{p}{v_{T}})dt]\\
+		V_{PA} = k_{I}[(i_{Pref} - \frac{P_{e}}{v_{T}}) +\frac{1}{T_{I}}\int\displaylimits_{0}^{t}	(i_{Pref} - \frac{P_{e}}{v_{T}})dt]\\
 		\\
-		V_{QA} = k_{I}[(\frac{q}{v_{T}} - i_{Qref}) +\frac{1}{T_{I}}\int\displaylimits_{0}^{t}	(\frac{q}{v_{T}} - i_{Qref})dt]
+		V_{QA} = k_{I}[(\frac{Q_{e}}{v_{T}} - i_{Qref}) +\frac{1}{T_{I}}\int\displaylimits_{0}^{t}	(\frac{Q_{e}}{v_{T}} - i_{Qref})dt]
 	\end{cases}
 	\label{eq: PI}
 \end{equation}
@@ -148,8 +148,8 @@ Until here the controller operates on terminal voltage oriented coordinates, so 
 
 \begin{equation}
 	\begin{cases}
-		V_{PAS} = -V_{PA}cos(\theta_{v}) - V_{QA}sin(\theta_{v}) \\
-		V_{QAS} = V_{PA}sin(\theta_{v}) - V_{QA}cos(\theta_{v})
+		V_{PAS} = -V_{PA}cos(\phi_{v}) - V_{QA}sin(\phi_{v}) \\
+		V_{QAS} = V_{PA}sin(\phi_{v}) - V_{QA}cos(\phi_{v})
 	\end{cases}
 	\label{eq: CoordShift}
 \end{equation}
@@ -184,11 +184,11 @@ The summary of the model's equation is shown below:
 		P_{e} = \frac{r(v_{Td}v_{d} + v_{Tq}v_{q} - v_{T}^{2}) + x(v_{Tq}v_{d} - v_{Td}v_{q})}{r^{2} + x^{2}} \\
 		Q_{e} = \frac{x(v_{Td}v_{d} + v_{Tq}v_{q} - v_{T}^{2}) - r(v_{Tq}v_{d} - v_{Td}v_{q})}{r^{2} + x^{2}} \\
 		\\
-		V_{PAS} = -V_{PA}cos(\theta_{v}) - V_{QA}sin(\theta_{v}) \\
-		V_{QAS} = V_{PA}sin(\theta_{v}) - V_{QA}cos(\theta_{v}) \\
+		V_{PAS} = -V_{PA}cos(\phi_{v}) - V_{QA}sin(\phi_{v}) \\
+		V_{QAS} = V_{PA}sin(\phi_{v}) - V_{QA}cos(\phi_{v}) \\
 		\\
-		V_{PA} = k_{I}[(i_{Pref} - \frac{p}{v_{T}}) +\frac{1}{T_{I}}\int\displaylimits_{0}^{t}	(i_{Pref} - \frac{p}{v_{T}})dt]\\
-		V_{QA} = k_{I}[(\frac{q}{v_{T}} - i_{Qref}) +\frac{1}{T_{I}}\int\displaylimits_{0}^{t}	(\frac{q}{v_{T}} - i_{Qref})dt]
+		V_{PA} = k_{I}[(i_{Pref} - \frac{P_{e}}{v_{T}}) +\frac{1}{T_{I}}\int\displaylimits_{0}^{t}	(i_{Pref} - \frac{P_{e}}{v_{T}})dt]\\
+		V_{QA} = k_{I}[(\frac{Q_{e}}{v_{T}} - i_{Qref}) +\frac{1}{T_{I}}\int\displaylimits_{0}^{t}	(\frac{Q_{e}}{v_{T}} - i_{Qref})dt]
 	\end{cases}
 	\label{eq: Summary}
 \end{equation}
@@ -216,7 +216,7 @@ The summary of the model's equation is shown below:
 
 \begin{equation*}
 	\begin{cases}
-		I_{Ac} = \frac{v_{T}}{p_{Tref}} \\
+		I_{Ac} = \frac{p_{Tref}}{v_{T}} \\
 		I_{Re} = k_{VC}(v_{Tref} - v_{T})
 	\end{cases}
 \end{equation*}
@@ -239,7 +239,7 @@ Thus, this model can be interpreted as follows:
 \end{equation}
 
 \begin{equation}
-	u = [v_{T}, \theta_{v}, P, Q]^T
+	u = [v_{T}, \phi_{v}, P_{e}, Q_{e}]^T
 	\label{eq: u}
 \end{equation}
 

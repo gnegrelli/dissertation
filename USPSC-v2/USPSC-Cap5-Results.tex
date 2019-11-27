@@ -6,7 +6,7 @@ The expected result of this work is a estimation software for parameters of Type
 
 The measurements will be obtained from a small power system simulated on specific software, such as DIgSILENT or MATLAB. At first, the model proposed in \cite{Erlich2012} will be employed, but it can be further changed if needed. Also, other estimation methods, such as Particle Swarm Optimization, Differential Evolution or Kalman Filters, may be implemented for comparison purposes.
 
-The hybrid approach for parameters estimation presented in this work is already implemented and have shown great results for different models. For learning and testing purposes, the proposed approach was used to estimate parameters of simpler systems, such as the spring-mass system, for testing purposes, but also in complex applications, such as load models. The results obtained from those systems are presented in the following subsections.
+The hybrid approach for parameters estimation presented in this work was already implemented by the author and has shown great results for different models. For learning and testing purposes, the proposed approach was used to estimate parameters of simple systems, such as the spring-mass system, for testing purposes, but also in complex applications, such as load models. The results obtained from those systems are presented in the following subsections.
 
 \section{Application of Hybrid Method on Spring-Mass System}
 
@@ -49,7 +49,7 @@ The spring-mass system is a simple physical model often used as example of dynam
 \end{equation}
 
 \begin{equation}
-	u = 1
+	u(t = 0) = 1
 	\label{eq: SMinput}
 \end{equation}
 
@@ -61,7 +61,7 @@ The spring-mass system is a simple physical model often used as example of dynam
 	\label{eq: SMinitcond}
 \end{equation}
 
-The behaviour of the real system was obtained through simulation with parameters set at $m = 3\ kg$ and $k = 6\ N/m$. Three different estimation process were executed: TSM, MVMO and the hybrid approach of MVMO and TSM combined. The tolerance for all three estimations was set at $tol = 0.1$.
+The behaviour of the real system was obtained by means of simulation with parameters set at $m = 3\ kg$ and $k = 6\ N/m$. Three different estimation process were executed: TSM, MVMO and the hybrid approach of MVMO and TSM combined. The tolerance for all three estimations was set at $tol = 0.1$.
 
 \subsection{Trajectory Sensitivity Results}
 
@@ -75,7 +75,7 @@ It took only 7 iterations (7 seconds on a PC) for Trajectory Sensitivity Method 
 	\label{fig: TS_conv}
 \end{figure}
 
-However, the convergence region \footnote{Convergence region is a region in parameter space where, if the initial guess for parameter values is inside it, the convergence to true values is guaranteed.} of TSM is extremely limited, diverging from initial points far enough from the real values. The convergence region for the real values was obtained in \cite{Ecyo} and is shown in Figure \ref{fig: conv_reg}. For comparison, the MVMO and the hybrid approach converge for the entire search region displayed on the graph.
+However, the convergence region \footnote{Convergence region is a region in parameter space where, if the initial guess for parameter values is inside it, the convergence to true values is guaranteed.} of TSM is extremely limited, diverging for initial points far enough from the real values. The convergence region for the real values was obtained in \cite{Ecyo} and is shown in Figure \ref{fig: conv_reg}. For comparison, the MVMO and the hybrid approach converge for the entire search region displayed on the graph.
 
 \begin{figure}[h]
 	\caption{Convergence region of Trajectory Sensitivity Method}
@@ -98,7 +98,7 @@ To illustrate the importance of good initial values, the parameters were reestim
 
 \subsection{MVMO Results}
 
-To use MVMO, a search region in parameter space must be defined. Therefore, the parameters' boundaries was defined as $0 \leq m \leq 9$ and $0 \leq k \leq 15$. The population size was ate 5 individuals and after every generation 1 new individual was created. The heuristic method converged after almost 10000 generations, as depicted in Figure \ref{fig: MVMO_conv}. This figure also shows how MVMO rapidly reduces error of estimation, but as the values approach the neighbourhood of the real values, it slows down.
+To use MVMO, a search region in parameter space must be defined. Therefore, the parameters boundaries was defined as $0 \leq m \leq 9$ and $0 \leq k \leq 15$. The population size was set at 5 individuals and after every generation 1 new individual was created. The heuristic method converged after almost 10000 generations, as depicted in Figure \ref{fig: MVMO_conv}. This figure also shows how MVMO rapidly reduces error of estimation, but as the values approach the neighbourhood of the real values, it slows down.
 
 \begin{figure}[h]
 	\caption{Error evolution of MVMO}
@@ -120,7 +120,7 @@ By combining both methods, the hybrid approach benefits from the quick error red
 	\label{fig: Hybrid_conv}
 \end{figure}
 
-When compared to each method, the hybrid approach converges faster than MVMO but slower than TSM, as shown in Table \ref{tab: SM}. Although all methods converged to parameter values that resulted in an error level below the tolerance, TSM and the Hybrid approach provided better results than MVMO with final error close to $2.0\times 10^{-3}$.
+When compared to each method, the hybrid approach converges faster than MVMO but slower than TSM, as shown in Table \ref{tab: SM}. Although all methods converged to parameter values that resulted in an error level below the tolerance, TSM and the Hybrid approach provided final results with error level below the values obtained by MVMO.
 
 \begin{table}[h]
 	\caption{Comparison of approaches}
@@ -138,7 +138,7 @@ When compared to each method, the hybrid approach converges faster than MVMO but
 
 \section{Application of Hybrid Method on Linearized Z-IM Load Model}
 
-The hybrid approach was also employed on parameter estimation of Z-IM Load Model. This model is able to predict the behaviour of electrical loads during faults in the grid. The Z-IM Load Model is composed of a impedance in parallel with a third-order induction motor (IM), as shown in Figure \ref{img: Z-IM}. According to \cite{Choi}, this model results in low error levels for both active and reactive power, alongside having a smaller parameter vector when compared with other models. It is described by the following equations:
+The hybrid approach was also employed on parameter estimation of Z-IM Load Model. This model is able to predict the behaviour of electrical loads during faults in the grid. The Z-IM Load Model is composed of an impedance in parallel with a third-order induction motor (IM), as shown in Figure \ref{img: Z-IM}. According to \cite{Choi}, this model results in low error levels for both active and reactive power, alongside having a smaller parameter vector when compared with other models. It is described by the following equations:
 
 \begin{figure}[h]
     \caption{Schematic of Z-IM Load Model.}
@@ -218,7 +218,7 @@ With the methods already implemented and tested, the focus is now on the DFIG mo
 
 The simulation of wind turbine generators and power plants on specific software will be carried out on the next months. The GUI is under development and already has some features implemented using Python's library \textit{Tkinter}. A proposal to also develop features using \textit{Qt}, a different GUI tool package, is currently under consideration.
 
-The summary of this work's next steps is presented in Table \ref{tab: nextsteps}. 
+The next steps for this work are presented in Table \ref{tab: nextsteps}. 
 
 \begin{table}[ht]
 \caption{Summary of next steps}
