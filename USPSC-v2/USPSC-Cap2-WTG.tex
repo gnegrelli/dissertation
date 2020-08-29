@@ -24,7 +24,7 @@ Due to its torque-speed characteristics, generators of this type operate at cons
 
 \subsection{Type-2: Wound Rotor Induction Generator (WRIG)}
 
-Similarly to Type-1 WTG, Type-2 Wind Turbine Generators are composed of an asynchronous machine connected to a wind turbine via gearbox. However, instead of SCIG, Wound Rotor Induction Generator (WRIG) are used to convert kinetic energy into electricity. The WRIG has access to its rotor windings, allowing to vary the rotor resistance. As a direct consequence, this machine can operate in different wind speeds by adjusting its torque-speed curve as needed \cite{Ellis2011}. Therefore, Type-2 WTG have a WRIG with a variable resistance connected to its rotor terminals, as shown in Figure \ref{fig: WTG2}.
+Similarly to Type-1 WTG, Type-2 Wind Turbine Generators are composed of an asynchronous machine connected to a wind turbine via gearbox. However, instead of SCIG, Wound Rotor Induction Generator (WRIG) are used to convert kinetic energy into electricity. Generators of this type grant access to the rotor windings, allowing variances on the rotor resistance. As a direct consequence, this machine can operate in different wind speeds by adjusting its torque-speed curve as needed \cite{Ellis2011}. Therefore, Type-2 WTG have a WRIG with a variable resistance connected to its rotor terminals, as shown in Figure \ref{fig: WTG2}.
 
 \begin{figure}[h]
 	\caption{Representation of Type-2 Wind Turbine Generator}
@@ -34,7 +34,7 @@ Similarly to Type-1 WTG, Type-2 Wind Turbine Generators are composed of an async
 	\label{fig: WTG2}
 \end{figure}
 
-Thus, this type of generator has three speed control systems, with rotor resistance control responding to rapid changes in speed, gearbox control for medium variations and pitch control for slow changes. These control system work together to maintain power output at the desired level and reduce mechanical stress on components. The effects on the torque-speed curve caused by different rotor resistances are shown in Figure \ref{fig: Tw}.
+Thus, this type of generator has three speed control systems, with rotor resistance control responding to rapid changes in speed, gearbox control for medium variations and pitch control for slow changes. These control systems work together to maintain power output at the desired level and reduce mechanical stress on components. The effects on the torque-speed curve caused by different rotor resistances are shown in Figure \ref{fig: Tw}.
 
 \begin{figure}[h]
 	\caption{Torque-speed curve}
@@ -44,11 +44,11 @@ Thus, this type of generator has three speed control systems, with rotor resista
 	\label{fig: Tw}
 \end{figure}
 
-For a fixed power, increasing rotor resistance increases the speed needed on the shaft, allowing the wind turbine to operate above rated wind speed. However, the speed range is only $\pm 10\%$ of rated slip. Also, this machine still needs a reactive compensation circuit on its terminals \cite{Muljadi2010}.
+For a fixed power, increasing rotor resistance increases the speed needed on the shaft, allowing the wind turbine to operate above rated wind speed. However, the speed range is only $\pm 10\%$ of rated slip. Also, this machine still needs a reactive compensation circuit on its terminals, since it naturally drains reactive power from the grid \cite{Muljadi2010}.
 
 \subsection{Type-3: Doubly Fed Induction Generator (DFIG)}
 
-A Type-3 Wind Turbine Generator, often called Doubly Fed Induction Generator (DFIG), is also composed of a wound rotor machine connected to a wind turbine. But, instead of varying rotor resistance, a DFIG has its rotor supplied with AC voltage by a back-to-back frequency converter, as displayed in Figure \ref{fig: WTG3}. 
+A Type-3 Wind Turbine Generator, often called Doubly Fed Induction Generator (DFIG), is also composed of a wound rotor machine connected to a wind turbine. But, instead of having a variable resistance connected to its rotor terminals, as 	the previous WTG type, DFIGs have their rotor windings supplied with AC voltage by a back-to-back frequency converter, as displayed in Figure \ref{fig: WTG3}. 
 
 \begin{figure}[h]
 	\caption{Representation of Type-3 Wind Turbine Generator}
@@ -58,11 +58,11 @@ A Type-3 Wind Turbine Generator, often called Doubly Fed Induction Generator (DF
 	\label{fig: WTG3}
 \end{figure}
 
-By varying the voltage frequency on the rotor circuit, the generator is able to supply power to the grid in a wider range of wind speed, reaching up to $\pm 30\%$ of rated slip. In addition, the converter can control both real and reactive power independently, ending the necessity of capacitors \cite{Muljadi2010}. Since approximately 30\% of rated power flows through the rotor windings, power electronics components have lower specifications and do not have great impact on overall costs. On the other hand, these generators need regular maintenance due to slip rings, brushes and gearbox, preventing its use in offshore applications \cite{Yaramasu2015}.
+By varying voltage frequency on the rotor circuit, this type of generator is able to supply power to the grid in a wider range of wind speed, reaching $\pm 30\%$ of rated slip. In addition, the converters provide independent control of both real and reactive power, thus ending the necessity of reactive compensators \cite{Muljadi2010}. Since approximately $30\%$ of rated power flows through the rotor windings, power electronics components have lower specifications and do not have great impact on overall costs. On the other hand, these generators need regular maintenance due to slip rings, brushes and gearbox, preventing its broad use in offshore applications \cite{Yaramasu2015}.
 
 \subsection{Type-4: Full-Converter Generator}
 
-The last type of wind turbine generator, also called Full-Converter Generator, is composed of an electrical machine connected to the grid through a back-to-back frequency converter. The converter will operate converting the electrical frequency generated to standard, allowing this type of WTG to operate in a large range of wind speed (up to almost 100\% of rated slip). Due to the converter operation, connection to the wind turbine can be made directly or via gearbox. Likewise, it allows the use of synchronous and asynchronous electrical machines as generator, with Permanent Magnet Synchronous Generator (PMSG), Electrical Excited Synchronous Generator (EESG) and SCIG being most common, because of cost and maintenance purposes. Similar to DFIG, full-converter generators are able to control real and reactive power injected into the grid. However, since all power generated must flow through the power electronics, the overall cost of these generators is usually higher \cite{Yaramasu2015}. Figure \ref{fig: WTG4} depicts a typical Type-4 Wind Turbine Generator.
+The last type of wind turbine generator, also called Full-Converter Generator, is composed of an electrical machine connected to the grid through a back-to-back frequency converter. The converters operate by controlling the frequency of the generated voltage so it matches the grid standard frequency. In this configuration, WTGs are able to produce energy in a large range of wind speed (up to almost 100\% of rated slip). Also, the connection between rotor and wind turbine shaft can be made directly or via gearbox. Likewise, it allows the use of both synchronous and asynchronous electrical machines as generator, with Permanent Magnet Synchronous Generator (PMSG), Electrical Excited Synchronous Generator (EESG) and SCIG being the most common, due to cost and maintenance purposes. Similar to DFIG, full-converter generators are able to independently control real and reactive power injected into or drained from the grid. However, since the entire generated power must flow through the power electronic devices, the overall cost of these generators is usually higher than other WTG types \cite{Yaramasu2015}. Figure \ref{fig: WTG4} depicts a typical Type-4 Wind Turbine Generator.
 
 \begin{figure}[h]
 	\caption{Representation of Type-4 Wind Turbine Generator}
