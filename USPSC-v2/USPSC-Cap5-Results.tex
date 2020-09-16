@@ -1,6 +1,7 @@
-\chapter{Partial Results}
+\chapter{Results}
 
 \label{ch: Res}
+
 
 The expected result of this work is a estimation software for parameters of Type-3 WTG's mathematical model \eqref{eq: Summary} in equation. To achieve this goal, the software will use the proposed hybrid estimation method of MVMO and TSM.
 
@@ -211,33 +212,3 @@ The Z-IM load model is much more complex than the spring-mass system, with 9 par
 \end{figure}
 
 The application of the hybrid approach on Linearized Z-IM Load Model is subject of a paper presented by the author on the 2019 IEEE Canadian Conference on Electrical and Computer Engineering entitled ``\textit{Load Model Identification Through a Hybrid Approach}".
-
-\section{Ongoing Progress}
-
-With the methods already implemented and tested, the focus is now on the DFIG model. The model has presented some results, but it is not as accurate as expected, requiring some studies about this topic. The implementation of other WTG models for comparison is also under study.
-
-The simulation of wind turbine generators and power plants on specific software will be carried out on the next months. The GUI is under development and already has some features implemented using Python's library \textit{Tkinter}. A proposal to also develop features using \textit{Qt}, a different GUI tool package, is currently under consideration.
-
-The next steps for this work are presented in Table \ref{tab: nextsteps}. 
-
-\begin{table}[ht]
-\caption{Summary of next steps}
-\centering
-\begin{tabular}{c|c|c|c}
-\hline
-\rowcolor{Purple}
-Data  & WTG & Estimation &  \\
-\rowcolor{Purple}
-Acquisition & Modelling & Method & \multirow{-2}{*}{GUI} \\
-\hline
-\rowcolor{LightCyan}
-Synthetic data  & Model implemented  & Method implemented  & Concept defined. \\
-\rowcolor{LightCyan}
-will be obtained  & with bad results. & and tested. & Some windows \\
-\rowcolor{LightCyan}
-via simulation. & Improvements currently & Improvements under & have already \\
-\rowcolor{LightCyan}
- & under study. & study. & been implemented.
-\end{tabular}
-\label{tab: nextsteps}
-\end{table}
