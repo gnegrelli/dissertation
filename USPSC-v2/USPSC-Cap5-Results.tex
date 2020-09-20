@@ -7,10 +7,105 @@ Besides, in order to evaluate the package support on models of different systems
 
 \section{Estimation of Original WPP Model}
 
+The estimation was conducted using the disturbance data collected in \cite{Cari2015} as the real system output. In said study, a fault was simulated on a test system using \textit{PowerFactory 14} and the data was used to estimate the parameters of the WPP model using only TSM. The system was simulated during $1\ s$ with measurements taken every $0.001\ s$. The fault was applied at $t=0.1\ s$ and was cleared out by the protection devices at $t=0.3\ s$. Figure \ref{fig: test_system} displays the test system used to collect data and Figure \ref{fig: WPP_voltage} depicts the WPP bus voltage measured during simulation.
 
+\begin{figure}[h]
+	\caption{Test system simulated}
+	\begin{center}
+%		\includegraphics[scale=•]{•}
+	\end{center}
+	\label{fig: test_system}
+\end{figure}
+
+\begin{figure}[h]
+	\caption{WPP bus voltage}
+	\begin{center}
+%		\includegraphics[scale=•]{•}
+	\end{center}
+	\label{fig: WPP_voltage}
+\end{figure}
+
+MVMO search region was defined as depicted in Table \ref{tab: MVMO_boundaries}. These values were decided based on the values previously found by \cite{Cari2015}.
+
+\begin{table}[h]
+	\begin{center}
+		\caption{MVMO search region}
+		\begin{tabular}{c|cc}
+			Parameter & \shortstack{Lower \\ boundary} & \shortstack{Upper \\ boundary} \\\hline
+			R & 0.027 & 0.040 \\
+			X & 0.16 & 0.24 \\
+			$k_{I}$ & 5.58 & 8.37 \\
+			$T_{I}$ & 0.028 & 0.043 \\
+			$T_{V}$ & 0.22 & 0.32 \\
+			$k_{VC}$ & 1.60 & 2.40 \\
+			$i_{max}$ & 0.88 & 1.32
+		\end{tabular}
+	\end{center}
+	\label{tab: MVMO_boundaries}
+\end{table}
+
+At first, 15 individuals (set of parameters) were randomly generated inside this given region, evaluated and ranked according to their error $J$. At every generation, three parameters of the fittest individual would suffer mutation in order to generate a new individual. This process continued until the fittest individual reached an error level below a tolerance of $tol_{1} = 0.5$. If this criterion were not met, MVMO would halt when the \nth{5000} generation was reached.
+
+The fittest individual found by MVMO was then used as the starting point to TSM. Since this method converges quickly when close to the optimal solution, it was configured to run for only 7 iterations. Its goal was to find a set of parameters with $J(p)$ below $tol_{2} = 5\times10^{-4}$.
+
+The parameters were estimated in 8.11 seconds in total, with MVMO and TSM taking 4.19 and 3.92 seconds, respectively, resulting in an error $J(p)$ of $1.5\times 10^{-4}$. The value estimated for each parameter is displayed in the Table \ref{tab: results}.
+
+\begin{table}[h]
+	\begin{center}
+		\caption{Estimated values of parameters}
+		\begin{tabular}{c|c}
+			Parameter & \shortstack{Estimated \\ value} \\\hline
+			R & 0.034 \\
+			X & 0.198 \\
+			$k_{I}$ & 6.333 \\
+			$T_{I}$ & 0.0348 \\
+			$T_{V}$ & 0.246 \\
+			$k_{VC}$ & 1.999 \\
+			$i_{max}$ & 1.100
+		\end{tabular}
+	\end{center}
+	\label{tab: results}
+\end{table}
+
+Figures \ref{fig: output_P} and \ref{fig: output_Q} depict, respectively, real and active power measured from the simulated system and calculated using the WPP model with estimated parameters. For both components, the model output matches almost exactly with the curve expected. Therefore, the WPP model adjusted with the parameter vector found is able to reproduce the behaviour of the same wind power plant in similar conditions.
+
+\begin{figure}[h]
+	\begin{center}
+		\caption{Active power measured and modelled.}
+%		\includegraphics[width=8.4cm]{Images/P.eps}
+	\end{center}
+	\label{fig: output_P}
+\end{figure}
+
+\begin{figure}[h]
+	\begin{center}
+		\caption{Reactive power measured and modelled.}		
+%		\includegraphics[width=8.4cm]{Images/Q.eps}
+	\end{center}
+	\label{fig: output_Q}
+\end{figure}
 
 \subsection{Influence of MVMO Population Size}
 
+In order to evaluate how the population size affects MVMO, a series of estimations using only this method were executed varying only the number of individuals. Five population sizes were chosen for this experiment (5, 10, 20, 50 and 100 individuals) and, for each one of them, 35 estimations were executed.
 
+Apart from population size, all method configurations were fixed, so the results could be directly compared. The error tolerance was set at $tol_{1} = 0.5$ and the search region was the same as presented in Table \ref{tab: MVMO_boundaries}. The mean duration of estimation for each population size is shown below.
+
+\begin{table}[h]
+	\begin{center}
+		\caption{Influence of population size in MVMO}
+		\begin{tabular}{c|c}
+			\shortstack{\# of \\ individuals} & \shortstack{Mean \\ duration (s)} \\\hline
+			5 & 15.62 \\
+			10 & 11.08 \\
+			20 & 13.02 \\
+			50 & 17.84 \\
+			100 & 29.00 
+		\end{tabular}
+	\end{center}
+	\label{tab: pop_size}
+\end{table}
+
+For considerably small populations (less than 5 individuals), the algorithm has to further explore the search region, due to reduced number of candidates. On the other extreme, large populations (more than 50 individuals) usually present good candidates in their initial population, only requiring a refinement of the solution. However, generating and evaluating all initial candidates has a huge cost, impacting on the estimation time. For these reasons, populations of 10 to 20 individuals present better convergence times than others, as depicted in Table \ref{tab: pop_size}.
 
 \section{Estimation of Proposed Model}
