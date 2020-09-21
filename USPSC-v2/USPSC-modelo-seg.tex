@@ -472,24 +472,35 @@ english				% o último idioma é o principal do documento
 % inserir lista de símbolos
 % ---
 \begin{simbolos}
+	\item[$e$] Error vector
+	\item[$f_{s}$] MVMO scaling factor
+	\item[$G$] Error sensibility
+	\item[$h$] MVMO transformation function
 	\item[$i_{max}$] Maximum generator current
+	\item[$J$] $l^{2}$-norm of error vector
 	\item[$k_{I}$]	Gain of PI controller
 	\item[$k_{VC}$] Gain of proportional block
 	\item[$p$] Parameter vector
+	\item[$p_{i}$] i-th element of the parameter vector
+	\item[$\bar{p_{i}}$] Mean value of i-th element of the parameter vector
 	\item[$P$] Active power generated
 	\item[$Q$] Reactive power generated
 	\item[$R$] Thevenin equivalent resistance
+	\item[$s_{i}$] MVMO shape factor of i-th parameter
 	\item[$T_{I}$] Time constant of PI controller
 	\item[$T_{V}$] Time constant of delay block
 	\item[$u$] Input vector
 	\item[$v^{*}$] Bus voltage threshold
 	\item[$v_{d}$] Direct-axis voltage component
+	\item[$v_{i}$] Variance of i-th parameter
 	\item[$v_{q}$] Quadrature-axis voltage component
 	\item[$v_{T}$] Bus voltage magnitude
 	\item[$x$] State vector
 	\item[$X$] Thevenin equivalent reactance
 	\item[$y$] Output vector
+	\item[$y_{r}$] Output measured on real system
 	\item[$\phi_{v}$] Bus voltage angle
+	\item[$\Gamma$] Jacobian matrix of error sensibility
 \end{simbolos}
 % ---
 % ---
@@ -552,7 +563,7 @@ english				% o último idioma é o principal do documento
 % ----------------------------------------------------------
 % Apêndices
 % ----------------------------------------------------------
-%\include{USPSC-Apendices}
+\include{USPSC-Apendices}
 
 % ----------------------------------------------------------
 % Anexos

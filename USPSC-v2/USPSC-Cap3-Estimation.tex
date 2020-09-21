@@ -1,29 +1,27 @@
 \chapter{Parameter Estimation Process}
+\label{ch: Estimation}
 
-\label{ch: Estim}
-
-Parameter estimation problems can be interpreted as optimization problems, where one must find the optimal values of parameters in order to reduce the error between real system and model outputs. During years, many methods were developed to address this problem, but two approaches have been largely employed to obtain its solution. 
-
-The first approach applies metaheuristics to obtain a sufficiently good solution. These methods are used in a variety of cases, ranging from biological to engineering problems, due to the fact that they are not developed for a specific type of problem. Metaheuristics employ a stochastic search to find (near-)optimal solutions inside a given region. However, those methods often take a great amount of time to converge to a solution \cite{Blum2003}. Examples of metaheuristics are Ant Colony Optimization, Differential Evolution, Particle Swarm Optimization and Genetic Algorithm. Applications of this approach in electrical power system cases can be found in \cite{Todorovski2006} and \cite{Yoshida2000}.
-
-The second approach applies analytical methods to find the local optimum solution from equations derived from the problem. Thus, they are problem specific and must be adapted from one case to another. Analytical methods often converge in few iterations, reducing processing time, but they are sensitive to initial conditions. Some examples of analytical methods are Newton's Method, Kalman Filter, Unscented Kalman Filter, etc.
-
-By combining both approaches, is expected to reduce the effects of their disadvantages and improving overall convergence. Mean-Variance Mapping Optimization (MVMO) was the metaheuristic chosen for this problem, alongside Trajectory Sensitivity Method (TSM) as analytical method. Both methods will be discussed in the following sections.
-
-The flowchart depicted in Figure \ref{fig: flowchart} illustrates how the proposed method works. At first, a disturbance occurs, resulting in a dynamic response of the real system. The real system's outputs are compared to the model behaviour when the same disturbance is applied to it. The error $J(p)$ is evaluated through the Least-Squares Method, given by equation \eqref{eq: J(p)}, where $y_{r}$ and $y$ stand for the real system and model outputs, respectively. While $J(p)$ is greater than a given tolerance $tol_{1}$, MVMO algorithm will look for possible optimal solutions across the search region. Afterwards, the error will eventually drop to a value lower than $tol_{1}$, and TSM will be used to refine the search to an optimal solution, with error level below tolerance $tol_{2}$.
+Parameter estimation problems can be interpreted as optimization problems, where one must find the optimal values of parameters in order to reduce error between real system and model when the same disturbance is applied to it. the error vector $e$ at any instant $t$ is calculated as the difference between the output vectors $y_{r}$, measured on the real system, and $y$, obtained from the model equations, as presented below.
 
 \begin{equation}
-	J(p) = \frac{1}{2}\int\displaylimits_{0}^{T_{0}}(y_{r}(t) - y(t))^{T}(y_{r}(t) - y(t))dt
+	e(t) = y_{r}(t) - y(t)
+	\label{eq: error_vector}
+\end{equation}
+
+The $l^{2}$-norm of error vector, denoted by $J$, is applied to evaluate how well the model describes the real system behaviour. The norm is obtained through equation \eqref{eq: J(p)}. It is important to notice that, since $y$ varies with $p$, so does $J$. The constant $\frac{1}{2}$ is only used for further simplification.
+
+\begin{equation}
+	J(p) = \frac{1}{2} \int\displaylimits_{0}^{T_{0}}\lVert e(t)\rVert_{2}dt = \frac{1}{2}\int\displaylimits_{0}^{T_{0}}e(t)^{T}\cdot e(t)dt
 	\label{eq: J(p)}
 \end{equation}
 
-\begin{figure}
-	\caption{Flowchart of estimation method}
-	\begin{center}
-		\includegraphics[scale=0.7]{Images/Flowchart.eps}
-	\end{center}
-	\label{fig: flowchart}
-\end{figure}
+Many methods were developed for solving optimization problems, but two approaches have been largely employed during the last years. The first approach applies metaheuristics to obtain a sufficiently good solution. These methods are used in a variety of fields, ranging from biology to engineering, due to the fact that they are not developed for a specific type of problem.
+
+Metaheuristics employ a stochastic search to find near-optimal solutions inside a given region. However, those methods often take a great amount of time to converge to a solution \cite{Blum2003}. Examples of metaheuristics are Ant Colony Optimization, Differential Evolution, Particle Swarm Optimization and Genetic Algorithm. Applications of this approach in electrical power system cases can be found in \cite{Todorovski2006} and \cite{Yoshida2000}.
+
+The second approach applies analytical methods to find the local optimum solution from equations derived from the problem. Thus, they are problem specific and must be adapted from one case to another. Analytical methods often converge in few iterations, reducing processing time, but they are sensitive to initial conditions. Some examples of analytical methods are Newton's Method, Kalman Filter, Unscented Kalman Filter, etc.
+
+By combining both approaches, the resulting method is expected to reduce the effects of their disadvantages and improving overall convergence. Mean-Variance Mapping Optimization (MVMO) was the metaheuristic chosen for this problem, alongside Trajectory Sensitivity Method (TSM) as analytical method. Both methods will be discussed in the following sections.
 
 \section{Mean-Variance Mapping Optimization Method}
 
@@ -45,22 +43,22 @@ After that, a randomly-distributed population is generated, evaluated and sorted
 
 \textbf{Gene selection} can be done in many ways and even vary throughout the estimation process, with strategies' efficiency depending on the problem. However, three strategies are commonly used in this step. The first one is comprised of randomly selecting which genes will suffer mutation and which will be directly inherited from the parent. Gene selection can also be done by a moving window approach or even a combination of both strategies, with part of the genes selected at random and other through the window.
 
-\textbf{Mutation} step takes place after gene selection. At first, each selected gene receives a random value $x'_{i}$ between [0,1] that will be used as an input to a mapping function based on the mean and variance of each particular gene on the population. Variance $v_{i}$ will directly influence on the shape factor $s_{i}$,  given by \eqref{eq: shapefac}, where $f_{s}$ is the scaling factor responsible for focusing on exploration or exploitation. In the event of zero variance, the last non-null value of $v_{i}$ is used.
+\textbf{Mutation} step takes place after gene selection. At first, each selected gene receives a random value $\tilde{p}$ between [0,1] that will be used as an input to a mapping function based on the mean and variance of each particular gene on the population. Variance $v_{i}$ will directly influence on the shape factor $s_{i}$,  given by \eqref{eq: shapefac}, where $f_{s}$ is the scaling factor responsible for focusing on exploration or exploitation. In the event of zero variance, the last non-null value of $v_{i}$ is used.
 
 \begin{equation}
 	s_{i} = -f_{s}ln(v_{i})
 	\label{eq: shapefac}
 \end{equation}
 
-Shape factor and mean value of genes of the population are used as inputs to a transformation function $h$, detailed in \eqref{eq: hfunc}. The final value of the gene is obtained through the mapping function described by equation \eqref{eq: mappingf}, where $h_{x} = h(u_{i} = x'_{i})$, $h_{1} = h(u_{i} = 1)$ and $h_{0} = h(u_{i} = 0)$. It is important to notice that the mapping function will always provide a result in the interval [0,1], not violating the normalization made at beginning.
+Shape factor and mean value of genes of the population are used as inputs to a transformation function $h$, detailed in \eqref{eq: hfunc}. The final value of the gene is obtained through the mapping function described by equation \eqref{eq: mappingf}, where $h_{p} = h(u_{i} = \tilde{p})$, $h_{1} = h(u_{i} = 1)$ and $h_{0} = h(u_{i} = 0)$. It is important to notice that the mapping function will always provide a result in the interval [0,1], not violating the normalization made at beginning.
 
 \begin{equation}
-	h(\bar{x_{i}}, s_{i1}, s_{i2}, u_{i}) = \bar{x_{i}}(1 - e^{-u_{i}s_{i1}}) + (1 + \bar{x_{i}})e^{-(1 - u_{i})s_{i2}}
+	h(\bar{p_{i}}, s_{i1}, s_{i2}, u_{i}) = \bar{p_{i}}(1 - e^{-u_{i}s_{i1}}) + (1 + \bar{p_{i}})e^{-(1 - u_{i})s_{i2}}
 	\label{eq: hfunc}
 \end{equation}
 
 \begin{equation}
-	x_{i} = h_{x} + (1 - h_{1} + h_{0})x'_{i} - h_{0}
+	p_{i} = h_{p} + (1 - h_{1} + h_{0})\tilde{p} - h_{0}
 	\label{eq: mappingf}
 \end{equation}
 
@@ -129,10 +127,10 @@ By rearranging the terms on \eqref{eq: Taylor}, the following equation is obtain
 	p^{n+1} = p^{n} + \Gamma^{-1}(p^{n})\cdot G(p^{n})
 \end{equation}
 
-Obtaining the matrix of partial derivatives (also called trajectory sensitivities matrix) $\frac{\partial y}{\partial p}$, used in \eqref{eq: G(p)} and \eqref{eq: Gamma}, analytically is a hard task. In order to avoid problems while obtaining the trajectory sensitivities of the system, the definition of derivative, given by \eqref{eq: deriv}, can be used to approximate the values of the derivatives.
+Obtaining the Jacobian matrix (also called trajectory sensitivity matrix) $\frac{\partial y}{\partial p}$, used in \eqref{eq: G(p)} and \eqref{eq: Gamma}, analytically is a hard task. However, by applying the definition of derivative, given by \eqref{eq: deriv}, the sensibilities can be approximated without any analytical derivation of the equations.
 
 \begin{equation}
-	\frac{df(x)}{dx} = \lim\limits_{h \to 0} \frac{f(x + h) - f(x)}{h}
+	\frac{df(x)}{dx} = \lim\limits_{\delta \to 0} \frac{f(x + \delta) - f(x)}{\delta}
 	\label{eq: deriv}
 \end{equation}
 
@@ -159,11 +157,6 @@ Consider two parameter vectors $p$ and $p^{\epsilon}$, where $p^{\epsilon}$ is o
 \end{equation}
 
 With $\epsilon$ sufficiently small, the partial derivative with respect to the parameter $p_{i}$ can be approximated by the difference shown in equation \eqref{eq: diff}. The value of $\epsilon = 0.1 \times 10^{-3}$ have shown great results for most cases. Using the approximation of the partial derivatives allows Trajectory Sensitivity method to be applied on both differentiable and non-differentiable systems \cite{Benchluch1993}, \cite{Cari2006}.
- 
-%\begin{equation}
-%	\frac{\partial y(p)}{\partial p_{i}} =  \lim\limits_{\epsilon p_{i} \to 0} \frac{y(p^{\epsilon}) - y(p)}{\epsilon p_{i}} \approx \frac{y(p^{\epsilon}) - y(p)}{\epsilon p_{i}}
-%	\label{eq: diff}
-%\end{equation}
 
 \begin{equation}
 	\frac{\partial y(x, p, u)}{\partial p_{i}} \approx \frac{y(x, p^{\epsilon}, u) - y(x, p, u)}{\epsilon p_{i}}
@@ -172,4 +165,17 @@ With $\epsilon$ sufficiently small, the partial derivative with respect to the p
 
 The Trajectory Sensitivity Method has fast convergence characteristics and can applied directly to nonlinear problems, not requiring linearization. Also, by analyzing the sensitivities, the method provides information about identifiability of parameters. However, TSM is very sensitive to initial value of parameter chosen as starting point. Thus, if the initial values are too far from the real values, the method can either diverge or converge to wrong values. Besides, the information provided to the method must contain the effects of the parameters, otherwise they won't be observable \cite{Benchluch1993}.
 
-By associating MVMO and TSM, the hybrid estimation approach proposed in this work combines most benefits of both methods whilst mitigating their disadvantages. The resulting method has smaller convergence time when compared to MVMO alone and is less sensitive to initial values of parameters than TSM.
+\section{Hybrid Estimation Method}
+\label{sec: Hybrid_Method}
+
+By associating MVMO and TSM, the hybrid estimation approach applied in this work combines most benefits of both methods whilst mitigating their disadvantages. The resulting method has smaller convergence time when compared to MVMO alone and is less sensitive to initial values of parameters than TSM.
+
+The flowchart depicted in Figure \ref{fig: flowchart} illustrates how this method works. At first, a disturbance occurs, resulting in a dynamic response of the real system. While $J(p)$ is greater than a given tolerance $tol_{1}$, MVMO algorithm will look for possible optimal solutions across the search region. Afterwards, the error will eventually drop to a value lower than $tol_{1}$, and TSM will be used to refine the search to an optimal solution, with error level below tolerance $tol_{2}$.
+
+\begin{figure}[!h]
+	\caption{Flowchart of estimation method}
+	\begin{center}
+		\includegraphics[scale=0.7]{Images/Flowchart.eps}
+	\end{center}
+	\label{fig: flowchart}
+\end{figure}

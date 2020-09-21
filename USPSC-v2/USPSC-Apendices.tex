@@ -6,308 +6,210 @@
 \begin{apendicesenv}
 % Imprime uma página indicando o início dos apêndices
 \partapendices
-\chapter{Apendice(s)}
-Elemento opcional, que consiste em texto ou documento elaborado pelo autor, a fim de complementar sua argumentação, conforme a ABNT NBR 14724 \cite{nbr14724}.
 
-Os apêndices devem ser identificados por letras maiúsculas consecutivas, seguidas de hífen e pelos respectivos títulos. Excepcionalmente, utilizam-se letras maiúsculas dobradas na identificação dos apêndices, quando esgotadas as 26 letras do alfabeto. A paginação deve ser contínua, dando seguimento ao texto principal. \cite{sibi2009}.
+\chapter{Parameter Estimation of Spring-Mass Model}
 
-\chapter{Siglas dos Programas de Pós-Graduação da EESC}
-\index{quadros}O \autoref{quadro-eesc} relaciona as siglas estabelecidas para os programas de pós-graduação da EESC.
+The spring-mass system is a simple physical model often used as example of dynamic systems. It is composed of an object of mass $m$ connected to a fixed point in space by a spring of stiffness constant $k$. When disturbed by an external force $u$, the object oscillates and its movement is described by \eqref{eq: SpringMass}, $x$ is the position of the object while $x_{1}$ and $x_{2}$ correspond to its speed and acceleration, respectively. The system output, parameter vector, input and initial conditions are presented on \eqref{eq: SMoutput}, \eqref{eq: SMp}, \eqref{eq: SMinput} and \eqref{eq: SMinitcond}, respectively.
 
-\begin{quadro}[htb]
-\ABNTEXfontereduzida
-%\caption[Siglas dos Programas de Pós-Graduação da EESC]{Siglas dos Programas de Pós-Graduação da EESC]{Siglas dos Programas de Pós-Graduação da EESC}
-\caption[Siglas dos Programas de Pós-Graduação da EESC]{Siglas dos Programas de Pós-Graduação da EESC} 
-\label{quadro-eesc}
-\begin{tabular}{|p{6.0cm}|p{4.5cm}|p{2.0cm}|p{1.75cm}|}
-%\multicolumn{4}{c}%
-%{{\tablename\ \thetable{} -- Siglas dos Programas de Pós-Graduação da EESC}} \\
-\multicolumn{4}{r}{{(continua)}} \\ 
-  \hline
-   \textbf{PROGRAMA} & \textbf{ÁREA DE CONCENTRAÇÃO} & \textbf{TÍTULO} & \textbf{SIGLA}  \\
-    \hline
-Programa de Pós-Graduação em Ciências da Engenharia Ambiental & Ciências da Engenharia Ambiental & Doutor & DCEA \\
-Programa de Pós-Graduação em Ciências da Engenharia Ambiental & Ciências da Engenharia Ambiental & Mestre & MCEA \\
-Programa de Pós-Graduação em Ciência e Engenharia de Materiais & Desenvolvimento, Caracterização e Aplicação de Materiais  & Doutor & DCEM \\
-Programa de Pós-Graduação em Ciência e Engenharia de Materiais & Desenvolvimento, Caracterização e Aplicação de Materiais & Mestre & MCEM \\
-Programa de Pós-Graduação em Engenharia Civil (Engenharia de Estruturas) & Estruturas & Doutor & DEE \\
-Programa de Pós-Graduação em Engenharia Civil (Engenharia de Estruturas) & Estruturas & Mestre & MEE \\
-Programa de Pós-Graduação em Engenharia de Produção & Economia, Organizações e Gestão do Conhecimento & Doutor & DEPE \\
-Programa de Pós-Graduação em Engenharia de Produção & Economia, Organizações e Gestão do Conhecimento & Mestre & MEPE \\
-Programa de Pós-Graduação em Engenharia de Produção & Processos e Gestão de Operações & Doutor & DEPP \\
-Programa de Pós-Graduação em Engenharia de Produção & Processos e Gestão de Operações & Mestre & MEPP \\
-Programa de Pós-Graduação em Engenharia de Transportes & Infraestrutura de Transportes & Doutor & DETI \\
-Programa de Pós-Graduação em Engenharia de Transportes & Infraestrutura de Transportes & Mestre & METI \\
-Programa de Pós-Graduação em Engenharia de Transportes & Planejamento e Operação de Sistemas de Transporte & Doutor & DETP \\
-Programa de Pós-Graduação em Engenharia de Transportes & Planejamento e Operação de Sistemas de Transporte & Mestre & METP \\
-Programa de Pós-Graduação em Engenharia de Transportes & Transportes & Doutor & DETT \\
-Programa de Pós-Graduação em Engenharia de Transportes & Transportes & Mestre & METT \\
-Programa de Pós-Graduação em Engenharia Elétrica & Processamento de Sinais e Intrumentação & Doutor & DEEP \\
+\begin{equation}
+	\begin{bmatrix}
+		\dot{x_{1}} \\
+		\dot{x_{2}}
+	\end{bmatrix} = 
+	\begin{bmatrix}
+		0 & 1 \\
+		\frac{k}{m} & 0
+	\end{bmatrix}\cdot
+	\begin{bmatrix}
+		x_{1} \\
+		x_{2}
+	\end{bmatrix} -
+	\begin{bmatrix}
+		0 \\
+		\frac{1}{m}
+	\end{bmatrix}
+	\cdot
+	u
+	\label{eq: SpringMass}
+\end{equation}
 
-\end{tabular}
-\end{quadro} 
+\begin{equation}
+	y = \begin{bmatrix}
+		x_{1}, x_{2}
+	\end{bmatrix}^ {T}
+	\label{eq: SMoutput}
+\end{equation}
 
-% o comando \clearpage é necessário para deixar o final da tabela o topo da página, sem ele o final da tabela é centralizado verticalmente na página 
-\clearpage
-\begin{quadro}[htb]
-	\ABNTEXfontereduzida
-\begin{tabular}{|p{6.0cm}|p{4.5cm}|p{2.0cm}|p{1.75cm}|}	
- \multicolumn{4}{c}%
-	{{\quadroname\ \thequadro{} -- Siglas dos Programas de Pós-Graduação da EESC}} \\
-	\multicolumn{4}{r}{{(continuação)}} \\
-	 \hline
-   \textbf{PROGRAMA} & \textbf{ÁREA DE CONCENTRAÇÃO} & \textbf{TÍTULO} & \textbf{SIGLA}  \\
-		 \hline
-Programa de Pós-Graduação em Engenharia Elétrica & Processamento de Sinais e Intrumentação & Mestre & MEEP \\
-Programa de Pós-Graduação em Engenharia Elétrica & Sistemas Dinâmicos & Doutor & DEED \\
-Programa de Pós-Graduação em Engenharia Elétrica & Sistemas Dinâmicos & Mestre & MEED \\
-Programa de Pós-Graduação em Engenharia Elétrica & Sistemas Elétricos de Potência & Doutor & DEEE \\
-Programa de Pós-Graduação em Engenharia Elétrica & Sistemas Elétricos de Potência & Mestre & MEEE \\
-Programa de Pós-Graduação em Engenharia Elétrica & Telecomunicações & Doutor & DEET \\
-Programa de Pós-Graduação em Engenharia Elétrica & Telecomunicações & Mestre & MEET \\
-Programa de Pós-Graduação em Engenharia Hidráulica e Saneamento & Hidráulica e Saneamento & Doutor & DEHS \\
-Programa de Pós-Graduação em Engenharia Hidráulica e Saneamento & Hidráulica e Saneamento & Mestre & MEHS \\
-Programa de Pós-Graduação em Engenharia Mecânica & Aeronaves & Doutor & DEMA \\
-Programa de Pós-Graduação em Engenharia Mecânica & Aeronaves & Mestre & MEMA \\
-Programa de Pós-Graduação em Engenharia Mecânica & Dinâmica das Máquinas e Sistemas & Doutor & DEMD \\
-Programa de Pós-Graduação em Engenharia Mecânica & Dinâmica das Máquinas e Sistemas & Mestre & MEMD \\
-Programa de Pós-Graduação em Engenharia Mecânica & Manufatura & Doutor & DEMF \\
-Programa de Pós-Graduação em Engenharia Mecânica & Manufatura & Mestre & MEMF \\
-Programa de Pós-Graduação em Engenharia Mecânica & Materiais & Doutor & DEMT \\
-Programa de Pós-Graduação em Engenharia Mecânica & Materiais & Mestre & MEMT \\
-Programa de Pós-Graduação em Engenharia Mecânica & Projeto Mecânico & Doutor & DEMP \\
-Programa de Pós-Graduação em Engenharia Mecânica & Projeto Mecânico & Mestre & MEMP \\
-Programa de Pós-Graduação em Engenharia Mecânica & Térmica e Fluídos & Doutor & DEML \\
-Programa de Pós-Graduação em Engenharia Mecânica & Térmica e Fluídos & Mestre & MEML \\
-Programa de Pós-Graduação em Geotecnia & Geotecnia & Doutor & DGEO \\
-Programa de Pós-Graduação em Geotecnia & Geotecnia & Mestre & MGEO \\
-    
-\end{tabular}
-\end{quadro}
+\begin{equation}
+	p = \begin{bmatrix}
+		m, k
+	\end{bmatrix}^ {T}
+	\label{eq: SMp}
+\end{equation}
 
-% o comando \clearpage é necessário para deixar o final da tabela o topo da página, sem ele o final da tabela é centralizado verticalmente na página 
-\clearpage
-\begin{quadro}[htb]
-	\ABNTEXfontereduzida
-\begin{tabular}{|p{6.0cm}|p{4.5cm}|p{2.0cm}|p{1.75cm}|}
-\multicolumn{4}{c}%
-	{{\quadroname\ \thequadro{} -- Siglas dos Programas de Pós-Graduação da EESC}} \\
-	\multicolumn{4}{r}{{(conclusão)}} \\
-\hline
-\textbf{PROGRAMA} & \textbf{ÁREA DE CONCENTRAÇÃO} & \textbf{TÍTULO} & \textbf{SIGLA}  \\
-\hline    
-Programa de Pós-Graduação Interunidades em Bioengenharia & Bioengenharia & Doutor & DIUB \\
-Programa de Pós-Graduação Interunidades em Bioengenharia & Bioengenharia & Mestre & MIUB \\
-Programa de Pós-Graduação em Rede Nacional para Ensino das Ciências Ambientais & Ensino de Ciências Ambientais & Mestre & MRNECA \\    
-    
-    \hline
-\end{tabular}
-\begin{flushleft}
-		Fonte: Elaborado pelos autores.\
-\end{flushleft}
-\end{quadro}
+\begin{equation}
+	u(t = 0) = 1
+	\label{eq: SMinput}
+\end{equation}
 
-% ----------------------------------------------------------
-\chapter{Siglas dos Programas de Pós-Graduação do IAU}
-\index{quadros}O \autoref{quadro-iau} relaciona as siglas estabelecidas para os programas de pós-graduação do IAU.
-\begin{quadro}[htb]
-\ABNTEXfontereduzida
-\caption[Siglas dos Programas de Pós-Graduação do IAU]{Siglas dos Programas de Pós-Graduação do IAU}
-\label{quadro-iau}
-\begin{tabular}{|p{3.5cm}|p{3.5cm}|p{3.5cm}|p{1.5cm}|p{2.25cm}|}
-  \hline
-   \textbf{PROGRAMA} & \textbf{ÁREA DE CONCENTRAÇÃO} & \textbf{OPÇÃO} & \textbf{TÍTULO} & \textbf{SIGLA}  \\
-    \hline
-Programa de Pós-Graduação em Arquitetura e Urbanismo & Arquitetura, Urbanismo e Tecnologia &  & Doutor & DAUT\\
-Programa de Pós-Graduação em Arquitetura e Urbanismo & Arquitetura, Urbanismo e Tecnologia &  & Mestre & MAUT\\
-Programa de Pós-Graduação em Arquitetura e Urbanismo & Teoria e História da Arquitetura e do Urbanismo &  & Doutor & DAUH\\
-Programa de Pós-Graduação em Arquitetura e Urbanismo & Teoria e História da Arquitetura e do Urbanismo &  & Mestre & MAUH\\
-    \hline
+\begin{equation}
+	\begin{cases}
+		x_{1}(0) = 0 \\
+		x_{2}(0) = 0
+	\end{cases}
+	\label{eq: SMinitcond}
+\end{equation}
 
-\end{tabular}
-\begin{flushleft}
-		Fonte: Elaborado pelos autores.\
-\end{flushleft}
-\end{quadro}
+The behaviour of the real system was obtained by means of simulation with parameters set at $m = 3\ kg$ and $k = 6\ N/m$. Three different estimation process were executed: TSM, MVMO and the hybrid approach of MVMO and TSM combined. The tolerance for all three estimations was set at $tol = 0.1$.
 
-% ----------------------------------------------------------
-\chapter{Siglas dos Programas de Pós-Graduação do ICMC}
-\index{quadros}O \autoref{quadro-icmc} relaciona as siglas estabelecidas para os programas de pós-graduação do ICMC.
-\begin{quadro}[htb]
-\ABNTEXfontereduzida
-\caption[Siglas dos Programas de Pós-Graduação do ICMC]{Siglas dos Programas de Pós-Graduação do ICMC}
-\label{quadro-icmc}
-\begin{tabular}{|p{3.5cm}|p{3.5cm}|p{3.5cm}|p{1.5cm}|p{2.25cm}|}
-  \multicolumn{5}{r}{{(continua)}} \\ 
-  \hline
-   \textbf{PROGRAMA} & \textbf{ÁREA DE CONCENTRAÇÃO} & \textbf{OPÇÃO} & \textbf{TÍTULO} & \textbf{SIGLA}  \\
-    \hline
-		Ciências de Computação e Matemática Computacional	& Ciências de Computação e Matemática Computacional	&   &	Doutor	 & DCCp\\
-    Ciências de Computação e Matemática Computacional	& Ciências de Computação e Matemática Computacional	&   &	Mestre	& MCCp\\
-		Computer Science and Computational Mathematics & Computer Science and Computational Mathematics	&   &	Doctorate & DCCe\\
-		Doctorate Program in Mathematics & Mathematics &   &	Doctorate & DMAe\\
-		Interinstitucional de Pós-Graduação em Estatística & Estatística &  & Doutor	 & DESp\\
-		Interinstitucional de Pós-Graduação em Estatística & Estatística &  & Mestre & MESp\\
-		Join Graduate Program in Statistics & Computer Science and Computational Mathematics &  & Master & MCCe\\
-		Join Graduate Program in Statistics & Statistics &  & Doctorate & 	DESe\\
-    Join Graduate Program in Statistics & Statistics &  & Master & MESe\\
-		Master Program in Mathematics &	Mathematics &  & Master &	MMAe\\
-		Mathematics Professional Master\'{}s Program &	Mathematics &	 & Master &	MPMe\\
-		Programa de Mestrado Profissional em Matemática & Matemática &  & Mestre & MPMp\\
-		\end{tabular}
-\end{quadro}
+\section{Trajectory Sensitivity Results}
 
-% o comando \clearpage é necessário para deixar o final da tabela o topo da página, sem ele o final da tabela é centralizado verticalmente na página 
-\clearpage
-\begin{quadro}[htb]
-\ABNTEXfontereduzida
-\begin{tabular}{|p{3.5cm}|p{3.5cm}|p{3.5cm}|p{1.5cm}|p{2.25cm}|}
-	\multicolumn{5}{c}%
-	{{\quadroname\ \thequadro{} -- Siglas dos Programas de Pós-Graduação do ICMC}} \\
-	\multicolumn{5}{r}{{(conclusão)}} \\
-	\hline
-   \textbf{PROGRAMA} & \textbf{ÁREA DE CONCENTRAÇÃO} & \textbf{OPÇÃO} & \textbf{TÍTULO} & \textbf{SIGLA}  \\	
-	 \hline
-  	Programa de Pós-Graduação em Matemática & Matemática &  & Doutor & DMAp\\
-		Programa de Pós-Graduação em Matemática & Matemática &  & Mestre & MMAp\\
-    \hline
+It took only 7 iterations (7 seconds on a PC) for Trajectory Sensitivity Method to estimate the parameters when the initial values were $m_{0} = 7\ kg$ and $k_{0} = 7\ N/m$. This shows how fast this method is, as long as the initial values are in the neighbourhood of the real parameters. Figure \ref{fig: TS_conv} shows the error evolution during estimation suing TSM.
 
-\end{tabular}
-\begin{flushleft}
-		Fonte: Elaborado pelos autores.\
-\end{flushleft}
-\end{quadro}
+\begin{figure}[h]
+	\caption{Error evolution of TSM with $m_{0} = 7\ kg$ and $k_{0} = 7\ N/m$}
+	\begin{center}
+		\includegraphics[scale=0.7]{Images/TS_conv.eps}
+	\end{center}
+	\label{fig: TS_conv}
+\end{figure}
 
-% ----------------------------------------------------------
-\chapter{Siglas dos Programas de Pós-Graduação do IFSC}
-\index{quadros}O \autoref{quadro-ifsc} relaciona as siglas estabelecidas para os programas de pós-graduação do IFSC.
-\begin{quadro}[htb]
-\ABNTEXfontereduzida
-\caption[Siglas dos Programas de Pós-Graduação do IFSC]{Siglas dos Programas de Pós-Graduação do IFSC}
-\label{quadro-ifsc}
-\begin{tabular}{|p{3.5cm}|p{3.5cm}|p{3.5cm}|p{1.5cm}|p{2.25cm}|}
-  \hline
-   \textbf{PROGRAMA} & \textbf{ÁREA DE CONCENTRAÇÃO} & \textbf{OPÇÃO} & \textbf{TÍTULO} & \textbf{SIGLA}  \\
-    \hline
-Graduate Program in Physics & Applied Physics & Biomolecular Physics & Doutor & DFAFBe\\
-Programa de Pós-Graduação do Instituto de Física de São Carlos & Física Aplicada &  & Doutor & DFA\\
-Programa de Pós-Graduação do Instituto de Física de São Carlos & Física Aplicada & Física Computacional & Doutor & DFAFC\\
-Programa de Pós-Graduação do Instituto de Física de São Carlos & Física Aplicada & Física Biomolecular & Doutor & DFAFBp\\
-Programa de Pós-Graduação do Instituto de Física de São Carlos & Física Aplicada &  & Mestre & MFA\\
-Programa de Pós-Graduação do Instituto de Física de São Carlos & Física Aplicada & Física Computacional & Mestre & MFAFC\\
-Programa de Pós-Graduação do Instituto de Física de São Carlos & Física Aplicada & Física Biomolecular & Mestre & MFAFB\\
-Programa de Pós-Graduação do Instituto de Física de São Carlos & Física Básica &  & Doutor & DFB\\
-Programa de Pós-Graduação do Instituto de Física de São Carlos & Física Básica &  & Mestre & MFB\\
+However, the convergence region \footnote{Convergence region is a region in parameter space where, if the initial guess for parameter values is inside it, the convergence to true values is guaranteed.} of TSM is extremely limited, diverging for initial points far enough from the real values. The convergence region for the real values was obtained in \cite{Ecyo} and is shown in Figure \ref{fig: conv_reg}. For comparison, the MVMO and the hybrid approach converge for the entire search region displayed on the graph.
+
+\begin{figure}[h]
+	\caption{Convergence region of Trajectory Sensitivity Method}
+	\begin{center}
+		\includegraphics[scale=0.7]{Images/Conv_reg.eps}
+	\end{center}
+	\label{fig: conv_reg}
+	\legend{Source: Adapted from \cite{Ecyo}}
+\end{figure}
+
+To illustrate the importance of good initial values, the parameters were reestimated using TSM, but now the initial values were set to be $m_{0} = 8\ kg$ and $k_{0} = 10\ N/m$. Notice that these values are not too far from the ones used in the previous estimation. The results, on the other hand, were extremely different. The method was not able to lower the error below $16.4$ and the parameters found were $m_{f} = 2.7\ kg$ and $k_{f} = 118.6\ N/m$. The error evolution for this estimation is depict in Figure \ref{fig: TS_nconv}.
+
+\begin{figure}[h]
+	\caption{Error evolution of TSM with $m_{0} = 8\ kg$ and $k_{0} = 10\ N/m$}
+	\begin{center}
+		\includegraphics[scale=0.7]{Images/TS_nconv.eps}
+	\end{center}
+	\label{fig: TS_nconv}
+\end{figure}
+
+\section{MVMO Results}
+
+To use MVMO, a search region in parameter space must be defined. Therefore, the parameters boundaries was defined as $0 \leq m \leq 9$ and $0 \leq k \leq 15$. The population size was set at 5 individuals and after every generation 1 new individual was created. The heuristic method converged after almost 10000 generations, as depicted in Figure \ref{fig: MVMO_conv}. This figure also shows how MVMO rapidly reduces error of estimation, but as the values approach the neighbourhood of the real values, it slows down.
+
+\begin{figure}[h]
+	\caption{Error evolution of MVMO}
+	\begin{center}
+		\includegraphics[scale=0.7]{Images/MVMO_conv.eps}
+	\end{center}
+	\label{fig: MVMO_conv}
+\end{figure}
+
+\section{Hybrid Approach Results}
+
+By combining both methods, the hybrid approach benefits from the quick error reduction provided by MVMO and the fast convergence from TSM when inside convergence region. The error evolution obtained from this approach is depicted in Figure \ref{fig: Hybrid_conv}. The tolerance for this approach were set at $tol_{1} = 1.5$ and $tol_{2} = 0.1$.
+
+\begin{figure}[h]
+	\caption{Results of hybrid approach for spring-mass system}
+	\begin{center}
+		\includegraphics[scale=0.7]{Images/Hybrid_conv.eps}
+	\end{center}
+	\label{fig: Hybrid_conv}
+\end{figure}
+
+When compared to each method, the hybrid approach converges faster than MVMO but slower than TSM, as shown in Table \ref{tab: SM}. Although all methods converged to parameter values that resulted in an error level below the tolerance, TSM and the Hybrid approach provided final results with error level below the values obtained by MVMO.
+
+\begin{table}[h]
+	\caption{Comparison of approaches}
+	\begin{center}
+	\begin{tabular}{c|c|c}
+		Approach & Time & Final Error \\
 		\hline
-
-\end{tabular}
-\begin{flushleft}
-		Fonte: Elaborado pelos autores.\
-\end{flushleft}
-\end{quadro}
-
-% ----------------------------------------------------------
-\chapter{Siglas dos Programas de Pós-Graduação do IQSC}
-\index{quadros}O \autoref{quadro-iqsc} relaciona as siglas estabelecidas para os programas de pós-graduação do IQSC.
-\begin{quadro}[htb]
-\ABNTEXfontereduzida
-\caption[Siglas dos Programas de Pós-Graduação do IQSC]{Siglas dos Programas de Pós-Graduação do IQSC}
-\label{quadro-iqsc}
-\begin{tabular}{|p{3.5cm}|p{3.5cm}|p{3.5cm}|p{1.5cm}|p{2.25cm}|}
-  \hline
-   \textbf{PROGRAMA} & \textbf{ÁREA DE CONCENTRAÇÃO} & \textbf{OPÇÃO} & \textbf{TÍTULO} & \textbf{SIGLA}  \\
-    \hline
-Programa de Pós-Graduação do Instituto de Química de São Carlos & Físico-química &  & Doutor & DFQ\\
-Programa de Pós-Graduação do Instituto de Química de São Carlos & Físico-química &  & Mestre & MFQ\\
-Programa de Pós-Graduação do Instituto de Química de São Carlos & Química Analítica e Inirgânica &  & Doutor & DQAI\\
-Programa de Pós-Graduação do Instituto de Química de São Carlos & Química Analítica e Inirgânica &  & Mestre & MQAI\\
-Programa de Pós-Graduação do Instituto de Química de São Carlos & Química Orgânica e Biológica &  & Doutor & DQOB\\
-Programa de Pós-Graduação do Instituto de Química de São Carlos & Química Orgânica e Biológica &  & Mestre & MQOB\\
-\hline
-
-\end{tabular}
-\begin{flushleft}
-		Fonte: Elaborado pelos autores.\
-\end{flushleft}
-\end{quadro}
-
-
-% ----------------------------------------------------------
-\chapter{Siglas dos Cursos de Graduação da EESC}
-\index{quadros}O \autoref{quadro-geesc} relaciona as siglas estabelecidas para os cursos de graduação da EESC.
-\begin{quadro}[htb]
-	\ABNTEXfontereduzida
-	\caption[Siglas dos Cursos de Graduação da EESC]{Siglas dos Cursos de Graduação da EESC}
-	\label{quadro-geesc}
-	\begin{tabular}{|p{6.5cm}|p{6.5cm}|p{1.75cm}|}
-		\hline
-		\textbf{CURSO} & \textbf{TÍTULO} &  \textbf{SIGLA}  \\
-		\hline
-		Engenharia Ambiental & Engenheiro Ambiental & EAMB\\
-		Engenharia Aeronáutica & Engenheiro Aeronáutico & EAER\\
-		Engenharia Civil & Engenheiro Civil & ECIV\\
-		Engenharia de Computação & Engenheiro de Computação & ECOM\\
-	    Engenharia Elétrica com Ênfase em Eletrônica & Engenheiro Eletricista & EELT\\
-	    Engenharia Elétrica com Ênfase em Sistemas de Energia e Automação & Engenheiro Eletricista & EELS\\
-		Engenharia de Materiais e Manufatura & Engenheiro de Materiais e de Manufatura & EMAT\\
-		Engenharia Mecânica & Engenheiro Mecatrônico & EMET\\
-		Engenharia de Produção & Engenheiro de Produção & EPRO\\
-		\hline
-		
+		TSM  & $7 \ s$  & $2.76\times 10^{-3}$ \\
+		MVMO  & $24 \ min$  & $89.33\times 10^{-3}$\\
+		Hybrid  & $10 \ min$  & $1.54\times 10^{-3}$
 	\end{tabular}
-	\begin{flushleft}
-		Fonte: Elaborado pelos autores.\
-	\end{flushleft}
-\end{quadro}
-
-% ----------------------------------------------------------
-\chapter{Exemplo de tabela centralizada verticalmente e horizontalmente}
-\index{tabelas}A \autoref{tab-centralizada} exemplifica como proceder para obter uma tabela centralizada verticalmente e horizontalmente.
-% utilize \usepackage{array} no PREAMBULO (ver em USPSC-modelo.tex) obter uma tabela centralizada verticalmente e horizontalmente
-\begin{table}[htb]
-\ABNTEXfontereduzida
-\caption[Exemplo de tabela centralizada verticalmente e horizontalmente]{Exemplo de tabela centralizada verticalmente e horizontalmente}
-\label{tab-centralizada}
-
-\begin{tabular}{ >{\centering\arraybackslash}m{6cm}  >{\centering\arraybackslash}m{6cm} }
-\hline
- \centering \textbf{Coluna A} & \textbf{Coluna B}\\
-\hline
-  Coluna A, Linha 1 & Este é um texto bem maior para exemplificar como é centralizado verticalmente e horizontalmente na tabela. Segundo parágrafo para verificar como fica na tabela\\
-  Quando o texto da coluna A, linha 2 é bem maior do que o das demais colunas  & Coluna B, linha 2\\
-\hline
-\end{tabular}
-\begin{flushleft}
-		Fonte: Elaborada pelos autores.\
-\end{flushleft}
+	\end{center}
+	\label{tab: SM}
 \end{table}
 
-% ----------------------------------------------------------
-\chapter{Exemplo de tabela com grade}
-\index{tabelas}A \autoref{tab-grade} exemplifica a inclusão de traços estruturadores de conteúdo para melhor compreensão do conteúdo da tabela, em conformidade com as normas de apresentação tabular do IBGE.
-% utilize \usepackage{array} no PREAMBULO (ver em USPSC-modelo.tex) obter uma tabela centralizada verticalmente e horizontalmente
-\begin{table}[htb]
-\ABNTEXfontereduzida
-\caption[Exemplo de tabelas com grade]{Exemplo de tabelas com grade}
-\label{tab-grade}
-\begin{tabular}{ >{\centering\arraybackslash}m{8cm} | >{\centering\arraybackslash}m{6cm} }
-\hline
- \centering \textbf{Coluna A} & \textbf{Coluna B}\\
-\hline
-  A1 & B1\\
-\hline
-  A2 & B2\\
-\hline
-  A3 & B3\\
-\hline
-  A4 & B4\\
-\hline
-\end{tabular}
-\begin{flushleft}
-		Fonte: Elaborada pelos autores.\
-\end{flushleft}
-\end{table}
+%------------------------------------------------------------
+\chapter{Parameter Estimation of Linearized Z-IM Load Model}
 
+The hybrid approach was also employed on parameter estimation of Z-IM Load Model. This model is able to predict the behaviour of electrical loads during faults in the grid. The Z-IM Load Model is composed of an impedance in parallel with a third-order induction motor (IM), as shown in Figure \ref{img: Z-IM}. According to \cite{Choi}, this model results in low error levels for both active and reactive power, alongside having a smaller parameter vector when compared with other models. It is described by the following equations:
 
-\end{apendicesenv}
+\begin{figure}[h]
+    \caption{Schematic of Z-IM Load Model.}
+    \begin{center}
+    	\includegraphics[scale=1]{Images/drawZIM.eps}
+    \end{center}
+    \label{img: Z-IM}
+\end{figure}
+
+\begin{equation}
+    \begin{cases}
+        \dot{\Delta E'} = \frac{-1}{T_{o}X'}[X\Delta E' + (X - X')V_{0}\sin\delta_{0}\Delta \delta] + \frac{(X - X')\cos\delta_{0}}{T_{0}X'}\Delta V \\
+        \\
+        \dot{\Delta \delta} = \frac{(X-X')V_{0}}{T_{0}X'E'_{0}}\cdot\left(\frac{\sin\delta_{0}\Delta E'}{E'_0} - \cos\delta_{0}\Delta\delta\right) + \Delta\omega - \frac{(X - X')\sin\delta_0}{T_o X'E'_0}\Delta V \\
+        \\
+        \dot{\Delta \omega} = \frac{-V_{0}}{MX'}(\sin\delta_{0}\Delta E' + E'_{0}\cos\delta_{0}\Delta\delta) - \frac{E'_0\sin\delta_0}{MX'}\Delta V
+    \end{cases}
+    \label{eq: xZIM}
+\end{equation}
+
+\begin{equation}
+    \begin{cases}
+        \Delta P = \frac{-V_{0}}{X'}(\sin{\delta_{0}}\Delta E' + E'_{0}\cos{\delta_{0}}\Delta \delta) + \left(2G_{s} V_{0} - \frac{E'_{0} \sin{\delta_{0}}}{X'}\right)\Delta V \\
+        \\
+        \Delta Q = \frac{-V_{0}}{X'}(\cos{\delta_{0}}\Delta E' + E'_{0}\sin{\delta_{0}}\Delta\delta) + \left(2B_{s} V_{0} + \frac{2V_{0} - E'_{0} \cos{\delta_{0}}}{X'}\right)\Delta V
+    \end{cases}
+    \label{eq: yZIM}
+\end{equation}
+
+\begin{equation}
+    \begin{cases}
+    X = X_{s} + X_{m} \\
+    X' = X_{s} + \frac{X_{m} X_{r}}{X_{m} + X_{s}} \\
+    T_{o} = \frac{X_{r} + X_{m}}{\omega_{s} R_{r}}
+    \end{cases}
+    \label{eq: terms}
+\end{equation}
+
+\noindent where the terms $\Delta E'$ and $\Delta \delta$ represent the variation on voltage magnitude and angle at the motor terminals, $\Delta \omega$ is the variation on stator speed, in rad/s. $X_m$, $X_s$ and $X_r$ are the magnetizing, stator and rotor reactances, respectively, $R_r$ stands for the rotor resistance, $\omega_{s}$ is the synchronous speed, $T_o$ represents the open-circuit transient time constant, $M$ is the motor inertia and $V_{0}$ is the voltage on the load terminals before the disturbance. The state, output, input and parameter vectors are presented in \eqref{eq: ZIMstate}, \eqref{eq: ZIMoutput}, \eqref{eq: ZIMinput} and \eqref{eq: ZIMparam}, respectively.
+
+\begin{equation}
+	x = [\Delta E', \Delta \delta, \Delta \omega]^{T}
+	\label{eq: ZIMstate}
+\end{equation}
+
+\begin{equation}
+	y = [\Delta P, \Delta Q]^{T}
+	\label{eq: ZIMoutput}
+\end{equation}
+
+\begin{equation}
+	u = [\Delta V]
+	\label{eq: ZIMinput}
+\end{equation}
+
+\begin{equation}
+	p = [X, X', T_{0}, M, G_{s}, B_{s}, E'_{0}, \delta_{0}]^{T}
+	\label{eq: ZIMparam}
+\end{equation}
+
+The Z-IM load model is much more complex than the spring-mass system, with 9 parameters to be estimated. The hybrid approach proposed was able to estimate the parameters of this system and the comparison between real and modeled behaviour with the parameters obtained can be seen in the Figure \ref{fig: ZIM}.
+
+\begin{figure}[h]
+	\caption{Result of parameter estimation for Z-IM Load Model}
+	\begin{center}
+		\includegraphics[scale=1]{Images/ZIM.eps}
+	\end{center}
+	\label{fig: ZIM}
+	\legend{Source: \cite{Gomes2019}}
+\end{figure}
+
+The application of the hybrid approach on Linearized Z-IM Load Model is subject of a paper presented by the author on the 2019 IEEE Canadian Conference on Electrical and Computer Engineering entitled ``\textit{Load Model Identification Through a Hybrid Approach}".
 % ---
+\end{apendicesenv}
