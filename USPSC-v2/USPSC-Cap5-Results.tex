@@ -28,19 +28,18 @@ The estimation was conducted using the disturbance data collected in \cite{Cari2
 MVMO search region was defined as depicted in Table \ref{tab: MVMO_boundaries}. These boundaries were decided based on the values previously found in \cite{Cari2015}.
 
 \begin{table}[h]
-	\begin{center}
-		\caption{MVMO search region}
-		\begin{tabular}{c|cc}
-			Parameter & \shortstack{Lower \\ boundary} & \shortstack{Upper \\ boundary} \\\hline
-			R & 0.027 & 0.040 \\
-			X & 0.16 & 0.24 \\
-			$k_{I}$ & 5.58 & 8.37 \\
-			$T_{I}$ & 0.028 & 0.043 \\
-			$T_{V}$ & 0.22 & 0.32 \\
-			$k_{VC}$ & 1.60 & 2.40 \\
-			$i_{max}$ & 0.88 & 1.32
-		\end{tabular}
-	\end{center}
+	\centering
+	\begin{tabular}{c|cc}
+		Parameter & \shortstack{Lower \\ boundary} & \shortstack{Upper \\ boundary} \\\hline
+		R & 0.027 & 0.040 \\
+		X & 0.16 & 0.24 \\
+		$k_{I}$ & 5.58 & 8.37 \\
+		$T_{I}$ & 0.028 & 0.043 \\
+		$T_{V}$ & 0.22 & 0.32 \\
+		$k_{VC}$ & 1.60 & 2.40 \\
+		$i_{max}$ & 0.88 & 1.32
+	\end{tabular}
+	\caption{MVMO search region}
 	\label{tab: MVMO_boundaries}
 \end{table}
 
@@ -51,37 +50,34 @@ The fittest individual found by MVMO was then used as the starting point to TSM.
 The parameters were estimated in 8.11 seconds in total, with MVMO and TSM taking 4.19 and 3.92 seconds, respectively, resulting in an error $J(p)$ of $1.5\times 10^{-4}$. The value estimated for each parameter is displayed in the Table \ref{tab: results}.
 
 \begin{table}[h]
-	\begin{center}
-		\caption{Estimated values of parameters}
-		\begin{tabular}{c|c}
-			Parameter & \shortstack{Estimated \\ value} \\\hline
-			R & 0.034 \\
-			X & 0.198 \\
-			$k_{I}$ & 6.333 \\
-			$T_{I}$ & 0.0348 \\
-			$T_{V}$ & 0.246 \\
-			$k_{VC}$ & 1.999 \\
-			$i_{max}$ & 1.100
-		\end{tabular}
-	\end{center}
+	\centering
+	\begin{tabular}{c|c}
+		Parameter & \shortstack{Estimated \\ value} \\\hline
+		R & 0.034 \\
+		X & 0.198 \\
+		$k_{I}$ & 6.333 \\
+		$T_{I}$ & 0.0348 \\
+		$T_{V}$ & 0.246 \\
+		$k_{VC}$ & 1.999 \\
+		$i_{max}$ & 1.100
+	\end{tabular}
+	\caption{Estimated values of parameters}
 	\label{tab: results}
 \end{table}
 
 Figures \ref{fig: output_P} and \ref{fig: output_Q} depict, respectively, real and active power measured from the simulated system and calculated using the WPP model with estimated parameters. For both components, the model output matches almost exactly with the curve expected. Therefore, the WPP model adjusted with the parameter vector found is able to reproduce the behaviour of the same wind power plant in similar conditions.
 
 \begin{figure}[h]
-	\begin{center}
-		\caption{Active power measured and modelled.}
-%		\includegraphics[width=8.4cm]{Images/P.eps}
-	\end{center}
+	\centering
+%	\includegraphics[width=8.4cm]{Images/P.eps}
+	\caption{Active power measured and modelled.}
 	\label{fig: output_P}
 \end{figure}
 
 \begin{figure}[h]
-	\begin{center}
-		\caption{Reactive power measured and modelled.}		
-%		\includegraphics[width=8.4cm]{Images/Q.eps}
-	\end{center}
+	\centering
+%	\includegraphics[width=8.4cm]{Images/Q.eps}
+	\caption{Reactive power measured and modelled.}		
 	\label{fig: output_Q}
 \end{figure}
 
@@ -92,17 +88,16 @@ In order to evaluate how the population size affects MVMO, a series of estimatio
 Apart from population size, all method configurations were fixed, so the results could be directly compared. The error tolerance was set at $tol_{1} = 0.5$ and the search region was the same as presented in Table \ref{tab: MVMO_boundaries}. The mean duration of estimation for each population size is shown below.
 
 \begin{table}[h]
-	\begin{center}
-		\caption{Influence of population size in MVMO}
-		\begin{tabular}{c|c}
-			\shortstack{\# of \\ individuals} & \shortstack{Mean \\ duration (s)} \\\hline
-			5 & 15.62 \\
-			10 & 11.08 \\
-			20 & 13.02 \\
-			50 & 17.84 \\
-			100 & 29.00 
-		\end{tabular}
-	\end{center}
+	\centering
+	\begin{tabular}{c|c}
+		\shortstack{\# of \\ individuals} & \shortstack{Mean \\ duration (s)} \\\hline
+		5 & 15.62 \\
+		10 & 11.08 \\
+		20 & 13.02 \\
+		50 & 17.84 \\
+		100 & 29.00 
+	\end{tabular}
+	\caption{Influence of population size in MVMO}
 	\label{tab: pop_size}
 \end{table}
 
@@ -113,18 +108,16 @@ For considerably small populations (less than 5 individuals), the algorithm has 
 Given the similarities between original and proposed models, the simulations of the latter were conducted using the same parameter values found for the former. It was observed that, in order to adjust the pre-fault behaviour of the proposed model, the upper limit of the delay blocks should be increased to at least $1.1$. With these changes made, the outputs of the proposed model were compared to the original WPP model, as displayed in Figures \ref{fig: proposed_P} and \ref{fig: proposed_Q}.
 
 \begin{figure}[h]
-	\begin{center}
-		\caption{Active power from original and proposed models.}
-%		\includegraphics[width=8.4cm]{Images/P.eps}
-	\end{center}
+	\centering
+%	\includegraphics[width=8.4cm]{Images/P.eps}
+	\caption{Active power from original and proposed models.}
 	\label{fig: proposed_P}
 \end{figure}
 
 \begin{figure}[h]
-	\begin{center}
-		\caption{Reactive power from original and proposed models.}		
-%		\includegraphics[width=8.4cm]{Images/Q.eps}
-	\end{center}
+	\centering
+%	\includegraphics[width=8.4cm]{Images/Q.eps}
+	\caption{Reactive power from original and proposed models.}		
 	\label{fig: proposed_Q}
 \end{figure}
 
