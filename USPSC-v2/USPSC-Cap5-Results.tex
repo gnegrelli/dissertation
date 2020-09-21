@@ -1,7 +1,7 @@
 \chapter{Results}
 \label{ch: Results}
 
-The estimation package was applied on the mathematical models presented in Chapter \ref{ch: Models} used to represent wind power plants. On both cases, the hybrid estimation method presented in Section \ref{sec: Hybrid_Method} was applied, with MVMO providing a smart initial solution that will be refined by TSM. The results of these estimation processes are shown in the following sections of this chapter. A study on the effects of population size on MVMO convergence time was also made and its results are depicted below.
+The estimation package was applied on the mathematical model presented in Section \ref{sec: WPP_model}, developed to represent wind power plants. The hybrid estimation method presented in Section \ref{sec: Hybrid_Method} was applied, with MVMO providing a smart initial solution that will be refined by TSM. The results of the estimation process are shown in the following section of this chapter. A study on the effects of population size on MVMO convergence time was also made and its results are depicted below. Simulations using the proposed model are also presented in this chapter.
 
 Besides, in order to evaluate the package support on models of different systems, it was used to estimate the parameters of a Spring-Mass system and a Linearized Z-IM Load Model. The estimation of these models is presented in the appendices.
 
@@ -25,7 +25,7 @@ The estimation was conducted using the disturbance data collected in \cite{Cari2
 	\label{fig: WPP_voltage}
 \end{figure}
 
-MVMO search region was defined as depicted in Table \ref{tab: MVMO_boundaries}. These values were decided based on the values previously found by \cite{Cari2015}.
+MVMO search region was defined as depicted in Table \ref{tab: MVMO_boundaries}. These boundaries were decided based on the values previously found in \cite{Cari2015}.
 
 \begin{table}[h]
 	\begin{center}
@@ -108,4 +108,24 @@ Apart from population size, all method configurations were fixed, so the results
 
 For considerably small populations (less than 5 individuals), the algorithm has to further explore the search region, due to reduced number of candidates. On the other extreme, large populations (more than 50 individuals) usually present good candidates in their initial population, only requiring a refinement of the solution. However, generating and evaluating all initial candidates has a huge cost, impacting on the estimation time. For these reasons, populations of 10 to 20 individuals present better convergence times than others, as depicted in Table \ref{tab: pop_size}.
 
-\section{Estimation of Proposed Model}
+\section{Simulation of Proposed Model}
+
+Given the similarities between original and proposed models, the simulations of the latter were conducted using the same parameter values found for the former. It was observed that, in order to adjust the pre-fault behaviour of the proposed model, the upper limit of the delay blocks should be increased to at least $1.1$. With these changes made, the outputs of the proposed model were compared to the original WPP model, as displayed in Figures \ref{fig: proposed_P} and \ref{fig: proposed_Q}.
+
+\begin{figure}[h]
+	\begin{center}
+		\caption{Active power from original and proposed models.}
+%		\includegraphics[width=8.4cm]{Images/P.eps}
+	\end{center}
+	\label{fig: proposed_P}
+\end{figure}
+
+\begin{figure}[h]
+	\begin{center}
+		\caption{Reactive power from original and proposed models.}		
+%		\includegraphics[width=8.4cm]{Images/Q.eps}
+	\end{center}
+	\label{fig: proposed_Q}
+\end{figure}
+
+It can be noticed that reactive power calculated by the proposed model is not distant from the results obtained by the original WPP model. Active power, on the other hand, diverged from the expected, specially during post-fault. The parameter estimation for this model was conducted but could not find a solution, indicating that the proposed model is not entirely able to represent wind power plants yet, requiring further studies for improvement.
