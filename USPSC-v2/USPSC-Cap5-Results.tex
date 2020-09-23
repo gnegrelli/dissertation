@@ -19,8 +19,8 @@ The estimation was conducted using the disturbance data collected in \cite{Cari2
 
 \begin{figure}[!h]
 	\centering
-	\includegraphics[scale=.7]{Images/bus_voltage.eps}
 	\caption{WPP bus voltage}
+	\includegraphics[scale=.7]{Images/bus_voltage.eps}
 	\label{fig: WPP_voltage}
 \end{figure}
 
@@ -28,6 +28,7 @@ MVMO search region was defined as depicted in Table \ref{tab: MVMO_boundaries}. 
 
 \begin{table}[!h]
 	\centering
+	\caption{MVMO search region}
 	\begin{tabular}{c|cc}
 		Parameter & \shortstack{Lower \\ boundary} & \shortstack{Upper \\ boundary} \\\hline
 		R & 0.027 & 0.040 \\
@@ -38,7 +39,6 @@ MVMO search region was defined as depicted in Table \ref{tab: MVMO_boundaries}. 
 		$k_{VC}$ & 1.60 & 2.40 \\
 		$i_{max}$ & 0.88 & 1.32
 	\end{tabular}
-	\caption{MVMO search region}
 	\label{tab: MVMO_boundaries}
 \end{table}
 
@@ -50,6 +50,7 @@ The parameters were estimated in 8.11 seconds in total, with MVMO and TSM taking
 
 \begin{table}[h]
 	\centering
+	\caption{Estimated values of parameters}
 	\begin{tabular}{c|c}
 		Parameter & \shortstack{Estimated \\ value} \\\hline
 		R & 0.034 \\
@@ -60,7 +61,6 @@ The parameters were estimated in 8.11 seconds in total, with MVMO and TSM taking
 		$k_{VC}$ & 1.999 \\
 		$i_{max}$ & 1.100
 	\end{tabular}
-	\caption{Estimated values of parameters}
 	\label{tab: results}
 \end{table}
 
@@ -68,15 +68,15 @@ Figures \ref{fig: output_P} and \ref{fig: output_Q} depict, respectively, real a
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[scale=0.7]{Images/P_compared.eps}
 	\caption{Active power measured and modelled.}
+	\includegraphics[scale=0.7]{Images/P_compared.eps}
 	\label{fig: output_P}
 \end{figure}
 
 \begin{figure}[h]
 	\centering
+	\caption{Reactive power measured and modelled.}
 	\includegraphics[scale=0.7]{Images/Q_compared.eps}
-	\caption{Reactive power measured and modelled.}		
 	\label{fig: output_Q}
 \end{figure}
 
@@ -88,6 +88,7 @@ Apart from population size, all method configurations were fixed, so the results
 
 \begin{table}[h]
 	\centering
+	\caption{Influence of population size in MVMO}
 	\begin{tabular}{c|c}
 		\shortstack{\# of \\ individuals} & \shortstack{Mean \\ duration (s)} \\\hline
 		5 & 15.62 \\
@@ -96,7 +97,6 @@ Apart from population size, all method configurations were fixed, so the results
 		50 & 17.84 \\
 		100 & 29.00 
 	\end{tabular}
-	\caption{Influence of population size in MVMO}
 	\label{tab: pop_size}
 \end{table}
 
@@ -108,15 +108,15 @@ Given the similarities between original and proposed models, the simulations of 
 
 \begin{figure}[!h]
 	\centering
-	\includegraphics[scale=.7]{Images/P_proposed.eps}
 	\caption{Active power from original and proposed models.}
+	\includegraphics[scale=.7]{Images/P_proposed.eps}
 	\label{fig: proposed_P}
 \end{figure}
 
 \begin{figure}[!h]
 	\centering
+	\caption{Reactive power from original and proposed models.}
 	\includegraphics[scale=.7]{Images/Q_proposed.eps}
-	\caption{Reactive power from original and proposed models.}		
 	\label{fig: proposed_Q}
 \end{figure}
 
