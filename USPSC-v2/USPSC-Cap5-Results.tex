@@ -9,25 +9,24 @@ Besides, in order to evaluate the package support on models of different systems
 
 The estimation was conducted using the disturbance data collected in \cite{Cari2015} as the real system output. In said study, a fault was simulated on a test system using \textit{PowerFactory 14} and the data was used to estimate the parameters of the WPP model using only TSM. The system was simulated during $1\ s$ with measurements taken every $0.001\ s$. The fault was applied at $t=0.1\ s$ and was cleared out by the protection devices at $t=0.3\ s$. Figure \ref{fig: test_system} displays the test system used to collect data and Figure \ref{fig: WPP_voltage} depicts the WPP bus voltage measured during simulation.
 
-\begin{figure}[h]
+\begin{figure}[!h]
 	\caption{Test system simulated}
 	\begin{center}
-%		\includegraphics[scale=•]{•}
+		\includegraphics[scale=1]{Images/Cari_test_system.eps}
 	\end{center}
 	\label{fig: test_system}
 \end{figure}
 
-\begin{figure}[h]
+\begin{figure}[!h]
+	\centering
+	\includegraphics[scale=.7]{Images/bus_voltage.eps}
 	\caption{WPP bus voltage}
-	\begin{center}
-%		\includegraphics[scale=•]{•}
-	\end{center}
 	\label{fig: WPP_voltage}
 \end{figure}
 
 MVMO search region was defined as depicted in Table \ref{tab: MVMO_boundaries}. These boundaries were decided based on the values previously found in \cite{Cari2015}.
 
-\begin{table}[h]
+\begin{table}[!h]
 	\centering
 	\begin{tabular}{c|cc}
 		Parameter & \shortstack{Lower \\ boundary} & \shortstack{Upper \\ boundary} \\\hline
@@ -69,14 +68,14 @@ Figures \ref{fig: output_P} and \ref{fig: output_Q} depict, respectively, real a
 
 \begin{figure}[h]
 	\centering
-%	\includegraphics[width=8.4cm]{Images/P.eps}
+	\includegraphics[scale=0.7]{Images/P_compared.eps}
 	\caption{Active power measured and modelled.}
 	\label{fig: output_P}
 \end{figure}
 
 \begin{figure}[h]
 	\centering
-%	\includegraphics[width=8.4cm]{Images/Q.eps}
+	\includegraphics[scale=0.7]{Images/Q_compared.eps}
 	\caption{Reactive power measured and modelled.}		
 	\label{fig: output_Q}
 \end{figure}
@@ -107,16 +106,16 @@ For considerably small populations (less than 5 individuals), the algorithm has 
 
 Given the similarities between original and proposed models, the simulations of the latter were conducted using the same parameter values found for the former. It was observed that, in order to adjust the pre-fault behaviour of the proposed model, the upper limit of the delay blocks should be increased to at least $1.1$. With these changes made, the outputs of the proposed model were compared to the original WPP model, as displayed in Figures \ref{fig: proposed_P} and \ref{fig: proposed_Q}.
 
-\begin{figure}[h]
+\begin{figure}[!h]
 	\centering
-%	\includegraphics[width=8.4cm]{Images/P.eps}
+	\includegraphics[scale=.7]{Images/P_proposed.eps}
 	\caption{Active power from original and proposed models.}
 	\label{fig: proposed_P}
 \end{figure}
 
-\begin{figure}[h]
+\begin{figure}[!h]
 	\centering
-%	\includegraphics[width=8.4cm]{Images/Q.eps}
+	\includegraphics[scale=.7]{Images/Q_proposed.eps}
 	\caption{Reactive power from original and proposed models.}		
 	\label{fig: proposed_Q}
 \end{figure}
