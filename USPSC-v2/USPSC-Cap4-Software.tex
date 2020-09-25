@@ -27,46 +27,46 @@ Finally, the estimator object and all abstract classes developed are organized i
 
 The \textit{identPy} GUI was created with \textit{Qt}, a software for design of user interfaces and applications. The views and scripts created specifically for the GUI application are hosted on a different \href{https://github.com/gnegrelli/identPy_GUI}{repository}. When the application is launched, a starting window with information about the software is displayed, as shown in Figure \ref{fig: initial_page}.
 
-\begin{figure}[h]
-	\caption{Representation of software starting view}
+\begin{figure}[!h]
+	\caption{\textit{identPy} initial page}
 	\begin{center}
-		\includegraphics[scale=.5]{Images/Software_init_pg.eps}
+		\includegraphics[scale=.5]{Images/Software_initial_page.eps}
 	\end{center}
 	\label{fig: initial_page}
 \end{figure}
 
 Next, the user will choose, from a list, which mathematical model will be estimated, as depicted in Figure \ref{fig: model_selection}. In this view, the user will also select the file containing the measured data and provide the initial conditions of the model. After that, the user will be able to select two estimation methods from the list of available methods, as displayed in Figure \ref{fig: method_selection}.
 
-\begin{figure}[h]
-	\caption{Representation of model selection view}
+\begin{figure}[!h]
+	\caption{Model selection page}
 	\begin{center}
-		\includegraphics[scale=.5]{Images/Software_pg1.eps}
+		\includegraphics[scale=.5]{Images/Software_model_page.eps}
 	\end{center}
 	\label{fig: model_selection}
 \end{figure}
 
-\begin{figure}[h]
-	\caption{Representation of method selection view}
+\begin{figure}[!h]
+	\caption{Method selection page}
 	\begin{center}
-		\includegraphics[scale=.5]{Images/Software_pg2.eps}
+		\includegraphics[scale=.5]{Images/Software_method_page.eps}
 	\end{center}
 	\label{fig: method_selection}
 \end{figure}
 
 The configuration of the chosen methods is done on the following windows. Each method has its own configuration page and the view created for setting up MVMO and TS are shown in Figures \ref{fig: MVMO_page} and \ref{fig: TS_page}, respectively.
 
-\begin{figure}[h]
-	\caption{Representation of method setting view}
+\begin{figure}[!h]
+	\caption{MVMO configuration page}
 	\begin{center}
-		\includegraphics[scale=.5]{Images/Software_pg3.eps}
+		\includegraphics[scale=.5]{Images/Software_MVMO_page.eps}
 	\end{center}
 	\label{fig: MVMO_page}
 \end{figure}
 
-\begin{figure}[h]
-	\caption{Representation of file selection view}
+\begin{figure}[!h]
+	\caption{TSM configuration page}
 	\begin{center}
-		\includegraphics[scale=.5]{Images/Software_pg4.eps}
+		\includegraphics[scale=.5]{Images/Software_TS_page.eps}
 	\end{center}
 	\label{fig: TS_page}
 \end{figure}
@@ -74,9 +74,9 @@ The configuration of the chosen methods is done on the following windows. Each m
 With all set, the estimation process can now start. A results page with three tabs is displayed to the user while the estimation runs on background. On the first tab, graphs depicting the outputs from the real system and the current solution are shown. The second tab presents the current value of the parameters while the last tab saves a log of the estimation process. Figure \ref{fig: final_pg} presents a view of this page.
 
 \begin{figure}[h]
-	\caption{Representation of report view}
+	\caption{Results page}
 	\begin{center}
-		\includegraphics[scale=.5]{Images/Software_final_pg.eps}
+		\includegraphics[scale=.5]{Images/Software_results_page.eps}
 	\end{center}
 	\label{fig: final_pg}
 \end{figure}
