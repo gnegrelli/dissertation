@@ -125,7 +125,7 @@ However, under certain conditions, those current components must be prioritized.
         \caption{during normal conditions}
         \label{fig: priority_normal}
 	\end{subfigure}
-    \begin{subfigure}[b]{0.4\textwidth}
+    \begin{subfigure}[b]{0.45\textwidth}
 		\centering
     	\includegraphics[width=\textwidth]{Images/priority_block2.eps}
 		\caption{during voltage sag}
@@ -228,7 +228,7 @@ The summary of the original model is shown below.
 		V_{PA} = k_{I}[(i_{Pref} - \frac{P}{v_{T}}) + \frac{1}{T_{I}}\int\displaylimits_{0}^{t} (i_{Pref} - \frac{P}{v_{T}})dt]\\
 		V_{QA} = k_{I}[(\frac{Q}{v_{T}} - i_{Qref}) + \frac{1}{T_{I}}\int\displaylimits_{0}^{t} (\frac{Q}{v_{T}} - i_{Qref})dt]
 	\end{cases}
-	\label{eq: Summary}
+	\label{eq: summary_original}
 \end{equation}
 
 \begin{center}
@@ -291,39 +291,90 @@ Thus, this model can be interpreted as presented in \eqref{eq: xdot}, where the 
 
 The parameters presented in \eqref{eq: p} are the subject of the estimation process presented on the next chapter. Those values define the behaviour of wind power plants during disturbances.
 
-\subsection{Proposed Model for Further Studies}
+\subsection{Proposed Wind Power Plant Model for Further Studies}
 
-One of the disadvantages of the model presented above is the need of information about voltage angle $\phi_{v}$. In order to acquire angle measurements, the grid must have special equipments, such as PMUs, installed on some of its buses. However, by dislocating the coordinate transformer block to a point before the WPP bus, $\phi_{v}$ may be excluded from the model. Figure \ref{fig: Proposed_Model} depicts the block diagram of the proposed model.
+One of the disadvantages of the model presented above is the need of information about voltage angle $\phi_{v}$. In order to acquire the voltage angle measurements, the grid must have special equipment, such as PMUs, installed in two of its buses, as shown in Figure \ref{fig: PMU_grid}. One of the PMUs must be located at the WPP terminal bus while the other must be installed at the slack bus\footnote{The slack bus is the bus used as angle reference in load flow studies} of the electrical power system. By processing the angle information provided by both equipment, the angle $\phi_{v}$ used on the estimation process is obtained.
 
 \begin{figure}[h]
-	\caption{WPP model proposed by author}
+	\caption{Measurement $\phi_{v}(t)$ with two PMUs installed on the grid}
+	\begin{center}
+%		\includegraphics[scale=1]{}
+	\end{center}
+	\label{fig: PMU_grid}
+\end{figure}
+
+However, the requirement of PMUs may limit the application of the original model \eqref{eq: summary_original} when these equipment are not available. One alternative to avoid that problem, proposed in this research, is to exclude the angle $\phi_{v}$ from the model equations. This can be obtained by dislocating the coordinate transformation block to the WPP terminal bus, as depicted in Figure \ref{fig: Proposed_Model}.
+
+\begin{figure}[h]
+	\caption{WPP model proposed in this research}
 	\begin{center}
 		\includegraphics[scale=1]{Images/proposed_model.eps}
 	\end{center}
 	\label{fig: Proposed_Model}
 \end{figure}
 
-The equations of this model are slightly altered by this change, with \eqref{eq: DelayBlocks} and \eqref{eq: Outputs} becoming \eqref{eq: DelayBlocks_new} and \eqref{eq: Outputs_new}, respectively. Also, the limits applied to the delay blocks also change and must be further investigated.
+The model equations are slightly altered by this modification, as shown below by the summary of the proposed model. Moreover, the limits $V_{max}$ applied to the delay blocks also change becoming parameters of the estimation process which demand further investigation.
 
 \begin{equation}
 	\begin{cases}
 		\dot{v}_{d} = \frac{1}{T_{V}}(v_{d} - V_{PA}) \\
-		\dot{v}_{q} = \frac{1}{T_{V}}(v_{q} - V_{QA})
+		\dot{v}_{q} = \frac{1}{T_{V}}(v_{q} - V_{QA}) \\
+		\\
+		P = \frac{R(v_{T}v_{d} - v_{T}^{2}) + Xv_{T}v_{q}}{R^{2} + X^{2}} \\
+		Q = \frac{X(v_{T}v_{d} - v_{T}^{2}) - Rv_{T}v_{q}}{R^{2} + X^{2}} \\
+		\\
+		V_{PA} = k_{I}[(i_{Pref} - \frac{P}{v_{T}}) + \frac{1}{T_{I}}\int\displaylimits_{0}^{t} (i_{Pref} - \frac{P}{v_{T}})dt]\\
+		V_{QA} = k_{I}[(\frac{Q}{v_{T}} - i_{Qref}) + \frac{1}{T_{I}}\int\displaylimits_{0}^{t} (\frac{Q}{v_{T}} - i_{Qref})dt]
 	\end{cases}
-	\label{eq: DelayBlocks_new}
+	\label{eq: summary_proposed}
 \end{equation}
+
+\begin{center}
+	\begin{lstlisting}[mathescape, columns=fullflexible]
+	if $\sqrt{I_{Ac}^{2} + I_{Re}^{2}} \leq i_{max}$ then:
+		$\begin{cases}
+				i_{Pref} = I_{Ac} \\
+				i_{Qref} = I_{Re}
+		\end{cases}$
+	else:
+		if $v_{T} \geq v^{*}$ then:	
+			$\begin{cases}
+				i_{Pref} = min(i_{max}, I_{Ac}) \\
+				i_{Qref} = \sqrt{i_{max}^{2} - i_{Pref}^{2}}
+			\end{cases}$
+		else:
+			$\begin{cases}
+				i_{Qref} = min(i_{max}, I_{Re}) \\
+				i_{Pref} = \sqrt{i_{max}^{2} - i_{Qref}^{2}}
+			\end{cases}$
+	\end{lstlisting}
+\end{center}
+
+\begin{equation*}
+	\begin{cases}
+		I_{Ac} = \frac{P_{ref}}{v_{T}} \\
+		I_{Re} = k_{VC}(v_{Tref} - v_{T}) + \frac{Q_{ref}}{v_{T}}
+	\end{cases}
+\end{equation*}
+
+The new state, input, output and parameter vectors are given by:
 
 \begin{equation}
-	\begin{cases}
-		P = \frac{R(v_{T}v_{d} - v_{T}^{2}) - Xv_{T}v_{q}}{R^{2} + X^{2}} \\
-		Q = \frac{X(v_{T}v_{d} - v_{T}^{2}) - Rv_{T}v_{q}}{R^{2} + X^{2}}
-	\end{cases}
-	\label{eq: Outputs_new}
+	x = [v_{d}, v_{q}]^T
+	\label{eq: x_proposed}
 \end{equation}
-
-The vectors $x$, $y$ and $p$ remain the same on this new model and the new input vector $u$ is given by:
 
 \begin{equation}
 	u = [v_{T}, P, Q]^T
-	\label{eq: u_new}
+	\label{eq: u_proposed}
+\end{equation}
+
+\begin{equation}
+	y = [P, Q]^T
+	\label{eq: y_proposed}
+\end{equation}
+
+\begin{equation}
+	p = [R, X, k_{I}, T_{I}, T_{V}, k_{VC}, i_{max}, V_{max}]^T
+	\label{eq: p_proposed}
 \end{equation}
