@@ -326,7 +326,7 @@ The effects of population size were evaluated by running estimations for 4 diffe
 	\label{tab: spring_mass_MVMO_size}
 \end{table}
 
-From these results, one can infer that the optimal population size for estimating the parameter of the spring-mass model is \_. Figure \ref{fig: MVMO_conv} depicts the error evolution for one of the 35 estimation conducted for this population size. The heuristic method converged after \_ generations, with estimated values of $k=_$ and $m=_$. This figure also shows how MVMO quickly reduces the overall error, but struggles to find an optimal solution as the values approach the neighbourhood of the real values.
+From these results, one can infer that the optimal population size for estimating the parameter of the spring-mass model is \_. Figure \ref{fig: MVMO_conv} depicts the error evolution for one of the 35 estimation conducted for this population size. The heuristic method converged after \_ generations, with estimated values of $k=\_$ and $m=\_$. This figure also shows how MVMO quickly reduces the overall error, but struggles to find an optimal solution as the values approach the neighbourhood of the real values.
 
 \begin{figure}[h]
 	\caption{Error evolution of MVMO}
@@ -338,7 +338,7 @@ From these results, one can infer that the optimal population size for estimatin
 
 \subsection{Hybrid Estimation}
 
-By combining both methods, the hybrid approach benefits from the quick error reduction provided by MVMO and the fast convergence from TSM when inside convergence region. The error evolution obtained from this approach is depicted in Figure \ref{fig: Hybrid_conv}. The tolerance for this approach were set at $tol_{1} = 1.5$ and $tol_{2} = 0.1$.
+By combining both methods, the hybrid approach benefits from the quick error reduction provided by MVMO and the fast convergence from TSM when inside convergence region. The error evolution obtained from this approach is depicted in Figure \ref{fig: Hybrid_conv}. The tolerance for this approach were set at $tol_{1} = 1.5$ and $tol_{2} = 0.1$. The population size was set at \_ individuals according to the results obtained in the previous section. Parameters of the spring-mass system were estimated using this method for 35 times and the average estimation time was \_ .
 
 \begin{figure}[h]
 	\caption{Results of hybrid approach for spring-mass system}
