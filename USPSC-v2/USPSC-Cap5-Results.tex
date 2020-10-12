@@ -1,13 +1,13 @@
 \chapter{Results}
 \label{ch: Results}
 
-The estimation package was applied on the mathematical model presented in Section \ref{sec: WPP_model}, developed to represent wind power plants. The hybrid estimation method presented in Section \ref{sec: Hybrid_Method} was applied, with MVMO providing a smart initial solution that will be refined by TSM. The results of the estimation process are shown in the following section of this chapter. A study on the effects of population size on MVMO convergence time was also made and its results are depicted below. Simulations using the proposed model are also presented in this chapter.
+Initially, the estimation software was applied to the original mathematical model (equation \ref{eq: summary_original}) presented in Section \ref{sec: WPP_model}, developed to represent wind power plants. The hybrid estimation method presented in Section \ref{sec: Hybrid_Method} was applied, with MVMO providing a smart initial solution that will be refined by TSM. The results of the estimation process are shown in the following section of this chapter. In addition, studies on the effects of population size on MVMO convergence time were also conducted and its results are presented. In the end, the application of the estimation software to the proposed mathematical model (equation \ref{eq: summary_proposed}) is also presented in this chapter.
 
 Besides, in order to evaluate the package support on models of different systems, it was used to estimate the parameters of a Spring-Mass system and a Linearized Z-IM Load Model. The estimation of these models is presented in the appendices.
 
-\section{Estimation of Original WPP Model}
+\section{Parameter Estimation of Original WPP Model}
 
-The estimation was conducted using the disturbance data collected in \cite{Cari2015} as the real system output. In said study, a fault was simulated on a test system using \textit{PowerFactory 14} and the data was used to estimate the parameters of the WPP model using only TSM. The system was simulated during $1\ s$ with measurements taken every $0.001\ s$. The fault was applied at $t=0.1\ s$ and was cleared out by the protection devices at $t=0.3\ s$. Figure \ref{fig: test_system} displays the test system used to collect data and Figure \ref{fig: WPP_voltage} depicts the WPP bus voltage measured during simulation.
+The original model equation \eqref{eq: summary_original} developed in Section \ref{sec: WPP_model} was used in this case. The estimation was conducted using the disturbance data collected in \cite{Cari2015} as the real system output. In said study, a fault was simulated on a test system using \textit{PowerFactory 14} and the data was used to estimate the parameters of the WPP model using only TSM. The system was simulated during $1\ s$ with measurements taken every $0.001\ s$. The fault was applied at $t=0.1\ s$ and was cleared out by the protection devices at $t=0.3\ s$. Figure \ref{fig: test_system} displays the test system used to collect data and Figure \ref{fig: WPP_voltage} depicts the WPP bus voltage measured during simulation.
 
 \begin{figure}[!h]
 	\caption{Test system simulated}
@@ -42,7 +42,7 @@ MVMO search region was defined as depicted in Table \ref{tab: MVMO_boundaries}. 
 	\label{tab: MVMO_boundaries}
 \end{table}
 
-At first, 15 individuals (set of parameters) were randomly generated inside this given region, evaluated and ranked according to their error $J$. At every generation, three parameters of the fittest individual would suffer mutation in order to generate a new individual. This process continued until the fittest individual reached an error level below a tolerance of $tol_{1} = 0.5$. If this criterion were not met, MVMO would halt when the \nth{5000} generation was reached.
+At first, 15 individuals (set of parameters) were randomly generated inside this given region, evaluated and ranked according to their error $J(p)$. At every generation, three parameters of the fittest individual would suffer mutation in order to generate a new individual. This process continued until the fittest individual reached an error level below a tolerance of $tol_{1} = 0.5$. If this criterion were not met, MVMO would halt when the \nth{5000} generation was reached.
 
 The fittest individual found by MVMO was then used as the starting point to TSM. Since this method converges quickly when close to the optimal solution, it was configured to run for only 7 iterations. Its goal was to find a set of parameters with $J(p)$ below $tol_{2} = 5\times10^{-4}$.
 
@@ -68,14 +68,14 @@ Figures \ref{fig: output_P} and \ref{fig: output_Q} depict, respectively, real a
 
 \begin{figure}[h]
 	\centering
-	\caption{Active power measured and modelled.}
+	\caption{Active power of real system (measured) and mathematical model (simulated) after parameter estimation}
 	\includegraphics[scale=0.7]{Images/P_compared.eps}
 	\label{fig: output_P}
 \end{figure}
 
 \begin{figure}[h]
 	\centering
-	\caption{Reactive power measured and modelled.}
+	\caption{Reactive power of real system (measured) and mathematical model (simulated) after parameter estimation}
 	\includegraphics[scale=0.7]{Images/Q_compared.eps}
 	\label{fig: output_Q}
 \end{figure}
@@ -90,7 +90,7 @@ Apart from population size, all method configurations were fixed, so the results
 	\centering
 	\caption{Influence of population size in MVMO}
 	\begin{tabular}{c|c}
-		\shortstack{\# of \\ individuals} & \shortstack{Mean \\ duration (s)} \\\hline
+		\shortstack{\# of \\ individuals} & \shortstack{Average \\ duration (s)} \\\hline
 		5 & 15.62 \\
 		10 & 11.08 \\
 		20 & 13.02 \\
@@ -102,20 +102,20 @@ Apart from population size, all method configurations were fixed, so the results
 
 For considerably small populations (less than 5 individuals), the algorithm has to further explore the search region, due to reduced number of candidates. On the other extreme, large populations (more than 50 individuals) usually present good candidates in their initial population, only requiring a refinement of the solution. However, generating and evaluating all initial candidates has a huge cost, impacting on the estimation time. For these reasons, populations of 10 to 20 individuals present better convergence times than others, as depicted in Table \ref{tab: pop_size}.
 
-\section{Simulation of Proposed Model}
+\section{Parameter Estimation of Proposed Model}
 
-Given the similarities between original and proposed models, the simulations of the latter were conducted using the same parameter values found for the former. It was observed that, in order to adjust the pre-fault behaviour of the proposed model, the upper limit of the delay blocks should be increased to at least $1.1$. With these changes made, the outputs of the proposed model were compared to the original WPP model, as displayed in Figures \ref{fig: proposed_P} and \ref{fig: proposed_Q}.
+The original model equation \eqref{eq: summary_proposed} developed in Section \ref{sec: WPP_model} was used in this case. Given the similarities between original and proposed models, the simulations of the latter were conducted using the same parameter values found for the former. It was observed that, in order to adjust the pre-fault behaviour of the proposed model, the upper limit of the delay blocks should be increased to at least $1.1$. With these changes made, the outputs of the proposed model were compared to the original WPP model, as displayed in Figures \ref{fig: proposed_P} and \ref{fig: proposed_Q}.
 
 \begin{figure}[!h]
 	\centering
-	\caption{Active power from original and proposed models.}
+	\caption{Active power from original and proposed models}
 	\includegraphics[scale=.7]{Images/P_proposed.eps}
 	\label{fig: proposed_P}
 \end{figure}
 
 \begin{figure}[!h]
 	\centering
-	\caption{Reactive power from original and proposed models.}
+	\caption{Reactive power from original and proposed models}
 	\includegraphics[scale=.7]{Images/Q_proposed.eps}
 	\label{fig: proposed_Q}
 \end{figure}
