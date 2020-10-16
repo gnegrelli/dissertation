@@ -310,23 +310,25 @@ In order to estimate the parameter using MVMO, a search region in parameter spac
 	\label{tab: spring_mass_MVMO_bounds}
 \end{table}
 
-The effects of population size were evaluated by running estimations for 4 different values: 5, 10, 20 and 50 individuals. For each population size, 35 estimation process were conducted with tolerance of $tol = 0.1$, maximum number of generation equals to $n_{gen}=5000$ and one new individual generated at each generation. The average error, duration and estimated parameter values ($\bar{k}$ and $\bar{m}$) for each population size evaluated is shown in Table \ref{tab: spring_mass_MVMO_size}.
+The effects of population size were evaluated by running estimations for 4 different values: 5, 10, 20 and 50 individuals. For each population size, 35 estimation process were conducted with tolerance of $tol = 0.1$, maximum number of generation equals to $n_{gen}=1000$ and one new individual generated at each generation. The average number of generations, duration and estimated parameter values ($\bar{m}$ and $\bar{k}$) for each population size evaluated is shown in Table \ref{tab: spring_mass_MVMO_size}.
 
 \begin{table}[!h]
 	\centering
 	\caption{MVMO parameter boundaries}
 	\begin{tabular}{c|cccc}
-		\shortstack{Population \\ size} & \shortstack{Average \\ error} & \shortstack{Average \\ duration (s)} & $\bar{k}$ & $\bar{m}$ \\
+		\shortstack{Population \\ size} & \shortstack{Average \\ \# of generations} & \shortstack{Average \\ duration (s)} & $\bar{m}$ & $\bar{k}$ \\
 		\hline
-		5 &  &  &  & \\
-		10 &  &  &  & \\
-		20 &  &  &  & \\
-		50 &  &  &  & \\
+		5 & 71 & 32.23 & 3.23 & 6.20 \\
+		10 & 27 & 15.43 & 3.38 & 6.05 \\
+		20 & 5 & 10.22 & 3.45 & 5.96 \\
+		50 & 1 & 20.72 & 3.66 & 5.76 \\
 	\end{tabular}
 	\label{tab: spring_mass_MVMO_size}
 \end{table}
 
-From these results, one can infer that the optimal population size for estimating the parameter of the spring-mass model is \_. Figure \ref{fig: MVMO_conv} depicts the error evolution for one of the 35 estimation conducted for this population size. The heuristic method converged after \_ generations, with estimated values of $k=\_$ and $m=\_$. This figure also shows how MVMO quickly reduces the overall error, but struggles to find an optimal solution as the values approach the neighbourhood of the real values.
+From these results, one can infer that the optimal population size for estimating the parameter of the spring-mass model is around 20 individuals. It can also be noticed that, despite converging on the first generation, populations of size 50 usually take more time to than others due to the large amount of individuals that must be generated and evaluated at the start of the estimation.
+
+Figure \ref{fig: MVMO_conv} depicts the error evolution for one of the 35 estimations conducted for a population of 20 individuals. The heuristic method converged after 21 generations, with estimated values of $m=2.6\ kg$ and $k=5.2\ N/m$.
 
 \begin{figure}[h]
 	\caption{Error evolution of MVMO}
@@ -338,7 +340,9 @@ From these results, one can infer that the optimal population size for estimatin
 
 \subsection{Hybrid Estimation}
 
-By combining both methods, the hybrid approach benefits from the quick error reduction provided by MVMO and the fast convergence from TSM when inside convergence region. The error evolution obtained from this approach is depicted in Figure \ref{fig: Hybrid_conv}. The tolerance for this approach were set at $tol_{1} = 1.5$ and $tol_{2} = 0.1$. The population size was set at \_ individuals according to the results obtained in the previous section. Parameters of the spring-mass system were estimated using this method for 35 times and the average estimation time was \_ .
+By combining both methods, the hybrid approach benefits from the quick error reduction provided by MVMO and the fast convergence from TSM when inside convergence region. The tolerance for this approach were set at $tol_{1} = 0.5$ (MVMO) and $tol_{2} = 0.1$ (TSM). The population size was set at 20 individuals according to the results obtained in the previous section. Parameters of the spring-mass system were estimated using this method for 35 times and the average estimation time was \_.
+
+Figure \ref{fig: Hybrid_conv} depicts the error evolution for one of the 35 estimations conducted for a population of 20 individuals. The heuristic method converged after \_ generations, with estimated values of $m=\_\ kg$ and $k=\_\ N/m$.
 
 \begin{figure}[h]
 	\caption{Results of hybrid approach for spring-mass system}
@@ -357,8 +361,8 @@ When compared to each method, the hybrid approach converges faster than MVMO but
 		Approach & Time & Final Error \\
 		\hline
 		TSM  & $7 \ s$  & $2.76\times 10^{-3}$ \\
-		MVMO  & $24 \ min$  & $89.33\times 10^{-3}$\\
-		Hybrid  & $10 \ min$  & $1.54\times 10^{-3}$
+		MVMO  & $10\ s$  & $52.32\times 10^{-3}$\\
+		Hybrid  & $10\ min$  & $1.54\times 10^{-3}$
 	\end{tabular}
 	\end{center}
 	\label{tab: SM}
