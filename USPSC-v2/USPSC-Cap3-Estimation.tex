@@ -340,14 +340,14 @@ Figure \ref{fig: MVMO_conv} depicts the error evolution for one of the 35 estima
 
 \subsection{Hybrid Estimation}
 
-By combining both methods, the hybrid approach benefits from the quick error reduction provided by MVMO and the fast convergence from TSM when inside convergence region. The tolerance for this approach were set at $tol_{1} = 0.5$ (MVMO) and $tol_{2} = 0.1$ (TSM). The population size was set at 20 individuals according to the results obtained in the previous section. Parameters of the spring-mass system were estimated using this method for 35 times and the average estimation time was \_.
+By combining both methods, the hybrid approach benefits from the quick error reduction provided by MVMO and the fast convergence from TSM when inside convergence region. The tolerance for this approach were set at $tol_{1} = 0.5$ (MVMO) and $tol_{2} = 0.1$ (TSM). The population size was set at 20 individuals according to the results obtained in the previous section. Parameters of the spring-mass system were estimated using this method for 35 times and the average estimation time was $11.65\ s$.
 
-Figure \ref{fig: Hybrid_conv} depicts the error evolution for one of the 35 estimations conducted for a population of 20 individuals. The heuristic method converged after \_ generations, with estimated values of $m=\_\ kg$ and $k=\_\ N/m$.
+Figure \ref{fig: Hybrid_conv} depicts the error evolution for one of the 35 estimations conducted. The hybrid estimation method converged after 4 iterarions, with estimated values of $m=3.063\ kg$ and $k=6.134\ N/m$.
 
 \begin{figure}[h]
 	\caption{Results of hybrid approach for spring-mass system}
 	\begin{center}
-		\includegraphics[scale=0.7]{Images/Hybrid_conv.eps}
+		\includegraphics[scale=0.7]{Images/Hybrid_conv_.eps}
 	\end{center}
 	\label{fig: Hybrid_conv}
 \end{figure}
@@ -362,7 +362,7 @@ When compared to each method, the hybrid approach converges faster than MVMO but
 		\hline
 		TSM  & $7 \ s$  & $2.76\times 10^{-3}$ \\
 		MVMO  & $10\ s$  & $52.32\times 10^{-3}$\\
-		Hybrid  & $10\ min$  & $1.54\times 10^{-3}$
+		Hybrid  & $12\ s$  & $24.46\times 10^{-3}$
 	\end{tabular}
 	\end{center}
 	\label{tab: SM}
