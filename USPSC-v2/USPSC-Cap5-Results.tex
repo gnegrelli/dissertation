@@ -120,4 +120,39 @@ The original model equation \eqref{eq: summary_proposed} developed in Section \r
 	\label{fig: proposed_Q}
 \end{figure}
 
-It can be noticed that reactive power calculated by the proposed model is not distant from the results obtained by the original WPP model. Active power, on the other hand, diverged from the expected, specially during post-fault. The parameter estimation for this model was conducted but could not find a solution, indicating that the proposed model is not entirely able to represent wind power plants yet, requiring further studies for improvement.
+It can be noticed that reactive power calculated by the proposed model is not distant from the results obtained by the original WPP model. Active power, on the other hand, diverged from the expected, specially during post-fault. 
+
+Despite the differences in behaviour observed, the estimation was conducted 
+
+The results of the parameter estimation for this model are displayed below. was conducted but could not find a solution, indicating that the proposed model is not entirely able to represent wind power plants yet, requiring further studies for improvement.
+
+\begin{figure}[!h]
+	\centering
+	\caption{Active power of proposed model after estimation}
+	\includegraphics[scale=.7]{Images/P_proposed_estimated.eps}
+	\label{fig: estimation_proposed_P}
+\end{figure}
+
+\begin{figure}[!h]
+	\centering
+	\caption{Reactive power of proposed model after estimation}
+	\includegraphics[scale=.7]{Images/Q_proposed_estimated.eps}
+	\label{fig: estimation_proposed_Q}
+\end{figure}
+
+
+\begin{table}[h]
+	\centering
+	\caption{Estimated parameters for proposed model}
+	\begin{tabular}{c|c}
+		Parameter & \shortstack{Estimated \\ value} \\\hline
+		R & 0.058 \\
+		X & 0.499 \\
+		$k_{I}$ & $4.3\times 10^{8}$ \\
+		$T_{I}$ & 101.6 \\
+		$T_{V}$ & $1.5\times 10^{7}$ \\
+		$k_{VC}$ & 2.017 \\
+		$i_{max}$ & 1.083
+	\end{tabular}
+	\label{tab: results_proposed}
+\end{table}
