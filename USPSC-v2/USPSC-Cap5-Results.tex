@@ -102,9 +102,9 @@ Apart from population size, all method configurations were fixed, so the results
 
 For considerably small populations (less than 5 individuals), the algorithm has to further explore the search region, due to reduced number of candidates. On the other extreme, large populations (more than 50 individuals) usually present good candidates in their initial population, only requiring a refinement of the solution. However, generating and evaluating all initial candidates has a huge cost, impacting on the estimation time. For these reasons, populations of 10 to 20 individuals present better convergence times than others, as depicted in Table \ref{tab: pop_size}.
 
-\section{Parameter Estimation of Proposed Model}
+\section{Parameter Estimation of Proposed WPP Model}
 
-The original model equation \eqref{eq: summary_proposed} developed in Section \ref{sec: WPP_model} was used in this case. Given the similarities between original and proposed models, the simulations of the latter were conducted using the same parameter values found for the former. It was observed that, in order to adjust the pre-fault behaviour of the proposed model, the upper limit of the delay blocks should be increased to at least $1.1$. With these changes made, the outputs of the proposed model were compared to the original WPP model, as displayed in Figures \ref{fig: proposed_P} and \ref{fig: proposed_Q}.
+The original model equation \eqref{eq: summary_proposed} developed in Section \ref{sec: WPP_model} was used in this case. Given the similarities between original and proposed models, the simulations of the latter were conducted using the same parameter values found for the former. It was observed that, in order to adjust the pre-fault behaviour of the proposed model, the upper limit of the delay blocks should be increased to at least $V_{max} = 1.1$. With these changes made, the outputs of the proposed model were compared to the original WPP model, as displayed in Figures \ref{fig: proposed_P} and \ref{fig: proposed_Q}.
 
 \begin{figure}[!h]
 	\centering
@@ -120,11 +120,9 @@ The original model equation \eqref{eq: summary_proposed} developed in Section \r
 	\label{fig: proposed_Q}
 \end{figure}
 
-It can be noticed that reactive power calculated by the proposed model is not distant from the results obtained by the original WPP model. Active power, on the other hand, diverged from the expected, specially during post-fault. 
+It can be noticed that reactive power obtained with the proposed model is not distant from the behaviour obtained with the original WPP model. Active power, on the other hand, diverged from the expected, specially during post-fault. 
 
-Despite the differences in behaviour observed, the estimation was conducted 
-
-The results of the parameter estimation for this model are displayed below. was conducted but could not find a solution, indicating that the proposed model is not entirely able to represent wind power plants yet, requiring further studies for improvement.
+The parameter estimation of the proposed model was conducted with the same settings applied previously. The estimation method encountered a solution that results in the curves for $P$ and $Q$ presented below.
 
 \begin{figure}[!h]
 	\centering
@@ -140,6 +138,8 @@ The results of the parameter estimation for this model are displayed below. was 
 	\label{fig: estimation_proposed_Q}
 \end{figure}
 
+Despite the similarities between the behaviours of the proposed WPP model and the real system, the resulting parameter vector is not feasible, with extremely large values for some of the parameters, as shown in Table \ref{tab: results_proposed}. These results indicate that the proposed WPP model is not entirely able to represent wind power plants yet, requiring further studies for improvement.
+
 
 \begin{table}[h]
 	\centering
@@ -152,7 +152,8 @@ The results of the parameter estimation for this model are displayed below. was 
 		$T_{I}$ & 101.6 \\
 		$T_{V}$ & $1.5\times 10^{7}$ \\
 		$k_{VC}$ & 2.017 \\
-		$i_{max}$ & 1.083
+		$i_{max}$ & 1.083 \\
+		$V_{max}$ & 1.1
 	\end{tabular}
 	\label{tab: results_proposed}
 \end{table}
