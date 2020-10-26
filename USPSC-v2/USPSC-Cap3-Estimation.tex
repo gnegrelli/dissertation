@@ -171,14 +171,14 @@ The Trajectory Sensitivity Method has fast convergence characteristics and can a
 By associating MVMO and TSM, the hybrid estimation approach applied in this work combines most benefits of both methods whilst mitigating their disadvantages. The resulting method has smaller convergence time when compared to MVMO alone and is less sensitive to initial values of parameters than TSM. The flowchart depicted in Figure \ref{fig: flowchart} illustrates how this method works.
 
 \begin{figure}[h]
-	\caption{Flowchart of estimation method}
+	\caption{Flowchart of hybrid estimation method}
 	\begin{center}
 		\includegraphics[scale=0.7]{Images/Flowchart.eps}
 	\end{center}
 	\label{fig: flowchart}
 \end{figure}
 
-At first, a disturbance occurs, resulting in a dynamic response of the real system. While $J(p)$ is greater than a given tolerance $tol_{1}$, MVMO algorithm will look for possible optimal solutions across the search region. Afterwards, the error will eventually drop to a value lower than $tol_{1}$, and TSM will be used to refine the search to an optimal solution, with error level below tolerance $tol_{2}$.
+At first, a set of measurement data are recorded in the "Real System" block. These measurement must contain information of the dynamic response of the system. After that, some measurement are used as input to the block "Model", which is composed of equations of the mathematical model. The output of the "Real System" and "Model" are compared to evaluate the error function $J(p)$. While $J(p)$ is greater than a given tolerance $tol_{1}$, MVMO algorithm will look for possible optimal solutions across the search region. Afterwards, the error will eventually drop to a value lower than $tol_{1}$, and TSM will be used to refine the search to an optimal solution, with error level below tolerance $tol_{2}$.
 
 In order to assess the parameter estimation methods (TSM, MVMO and hybrid method), the parameter estimation of spring-mass model was conducted and its results are shown in the following section. The spring-mass is a nonlinear dynamic system and was chosen for this assessment due to its simplicity and reduced order.
 
@@ -277,7 +277,7 @@ However, the convergence region \footnote{Convergence region is a region in para
 	\legend{Source: Adapted from \cite{Ecyo}}
 \end{figure}
 
-To illustrate the importance of good initial values, the parameters were reestimated using TSM, but now the initial values were set to be $m_{0} = 8\ kg$ and $k_{0} = 10\ N/m$. Notice that these values are not too far from the ones used in the previous estimation. The results, on the other hand, were extremely different. The method was not able to lower the error below $16.4$ and the parameters found were $m_{f} = 2.7\ kg$ and $k_{f} = 118.6\ N/m$. The error evolution for this estimation is depict in Figure \ref{fig: TS_nconv}.
+To illustrate the importance of good initial values, the parameters were reestimated using TSM, but now it was selected initial values $m_{0} = 8\ kg$ and $k_{0} = 10\ N/m$ outside the convergence region. Notice that these values are not too far from the ones used in the previous estimation. The results, on the other hand, were extremely different. The method was not able to lower $J(p)$ below $16.4$ and the parameters converged to different values $m_{f} = 2.7\ kg$ and $k_{f} = 118.6\ N/m$. The error evolution for this estimation is depict in Figure \ref{fig: TS_nconv}.
 
 \begin{figure}[h]
 	\caption{Error evolution of TSM with $m_{0} = 8\ kg$ and $k_{0} = 10\ N/m$}
@@ -289,10 +289,10 @@ To illustrate the importance of good initial values, the parameters were reestim
 
 \subsection{MVMO Estimation}
 
-In order to estimate the parameter using MVMO, a search region in parameter space must be defined first. By the fact that MVMO will be compared to TSM, the parameter boundaries were decided regarding TSM convergence region displayed in Figure \ref{fig: conv_reg}. The limits chosen define a region where TSM convergence is almost always guaranteed for any starting point inside of it. Figure \ref{fig: spring_mass_MVMO_region} displays the search region chosen for MVMO estimation and Table \ref{tab: spring_mass_MVMO_bounds} presents the parameter boundaries selected.
+In order to estimate the parameter using MVMO, a search region in parameter space must be defined first. By the fact that MVMO will be compared to TSM, the parameter boundaries obtained from TSM convergence region displayed in Figure \ref{fig: conv_reg}. The limits chosen define a region where TSM convergence is almost always guaranteed for any starting point inside of it. Figure \ref{fig: spring_mass_MVMO_region} displays the search region chosen for MVMO estimation and Table \ref{tab: spring_mass_MVMO_bounds} presents the parameter boundaries selected.
 
 \begin{figure}[h]
-	\caption{Search region chosen}
+	\caption{Search region chosen for MVMO}
 	\begin{center}
 		\includegraphics[scale=0.6]{Images/search_region_MVMO.eps}
 	\end{center}
@@ -342,10 +342,10 @@ Figure \ref{fig: MVMO_conv} depicts the error evolution for one of the 35 estima
 
 By combining both methods, the hybrid approach benefits from the quick error reduction provided by MVMO and the fast convergence from TSM when inside convergence region. The tolerance for this approach were set at $tol_{1} = 0.5$ (MVMO) and $tol_{2} = 0.1$ (TSM). The population size was set at 20 individuals according to the results obtained in the previous section. Parameters of the spring-mass system were estimated using this method for 35 times and the average estimation time was $11.65\ s$.
 
-Figure \ref{fig: Hybrid_conv} depicts the error evolution for one of the 35 estimations conducted. The hybrid estimation method converged after 4 iterarions, with estimated values of $m=3.063\ kg$ and $k=6.134\ N/m$.
+Figure \ref{fig: Hybrid_conv} depicts the error evolution for one of the 35 estimations conducted. The hybrid estimation method converged after 3 iterarions, with estimated values of $m=3.063\ kg$ and $k=6.134\ N/m$.
 
 \begin{figure}[h]
-	\caption{Results of hybrid approach for spring-mass system}
+	\caption{Error evolution with of hybrid approach for spring-mass system}
 	\begin{center}
 		\includegraphics[scale=0.7]{Images/Hybrid_conv_.eps}
 	\end{center}
@@ -357,13 +357,17 @@ When compared to each method, the hybrid approach converges faster than MVMO but
 \begin{table}[h]
 	\caption{Comparison of approaches}
 	\begin{center}
-	\begin{tabular}{c|c|c}
-		Approach & Time & Final Error \\
+	\begin{tabular}{c|c|c|c|c|c}
+		Approach & Tolerance & $\bar{m}$ &$\bar{k}$ & \shortstack{Processing \\ Time (s)} & \shortstack{Final Error \\ $J(p)$} \\
 		\hline
-		TSM  & $7 \ s$  & $2.76\times 10^{-3}$ \\
-		MVMO  & $10\ s$  & $52.32\times 10^{-3}$\\
-		Hybrid  & $12\ s$  & $24.46\times 10^{-3}$
+		TSM  & 0.1 & 3.08 & 6.15 & $7 \ s$  & $2.76\times 10^{-3}$ \\
+		\hline
+		MVMO  & 0.1 & 3.45 & 5.96 & $10\ s$  & $52.32\times 10^{-3}$\\
+		\hline
+		Hybrid  & \shortstack{$tol_{1}=0.5$ \\ $tol_{1}=0.1$} & 3.08 & 6.15 & $12\ s$  & $24.46\times 10^{-3}$
 	\end{tabular}
 	\end{center}
 	\label{tab: SM}
 \end{table}
+
+The great advantage of the hybrid method is the increment of success in the convergence of parameters to the true value. This way, the MVMO approach is only used as an "inteligent initial guess".
