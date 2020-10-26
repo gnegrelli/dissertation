@@ -178,7 +178,7 @@ By associating MVMO and TSM, the hybrid estimation approach applied in this work
 	\label{fig: flowchart}
 \end{figure}
 
-At first, a set of measurement data are recorded in the "Real System" block. These measurement must contain information of the dynamic response of the system. After that, some measurement are used as input to the block "Model", which is composed of equations of the mathematical model. The output of the "Real System" and "Model" are compared to evaluate the error function $J(p)$. While $J(p)$ is greater than a given tolerance $tol_{1}$, MVMO algorithm will look for possible optimal solutions across the search region. Afterwards, the error will eventually drop to a value lower than $tol_{1}$, and TSM will be used to refine the search to an optimal solution, with error level below tolerance $tol_{2}$.
+At first, a set of measurement data are recorded in the "Real System" block. These measurements must contain information of the dynamic response of the system. After that, part of the data is used as input to the block "Model", which is composed of equations of the mathematical model. The outputs of the "Real System" and "Model" are compared to evaluate the error function $J(p)$. While $J(p)$ is greater than a given tolerance $tol_{1}$, MVMO algorithm will look for possible optimal solutions across the search region. Afterwards, the error will eventually drop to a value lower than $tol_{1}$, and TSM will be used to refine the search to an optimal solution, with error level below tolerance $tol_{2}$.
 
 In order to assess the parameter estimation methods (TSM, MVMO and hybrid method), the parameter estimation of spring-mass model was conducted and its results are shown in the following section. The spring-mass is a nonlinear dynamic system and was chosen for this assessment due to its simplicity and reduced order.
 
@@ -248,7 +248,7 @@ It took 7 iterations (10 seconds on a PC) for Trajectory Sensitivity Method to e
 \begin{figure}[h]
 	\caption{Error evolution of TSM with $m_{0} = 7\ kg$ and $k_{0} = 7\ N/m$}
 	\begin{center}
-		\includegraphics[scale=0.6]{Images/spring_mass_ts_conv.eps}
+		\includegraphics[scale=0.6]{Images/TS_conv.eps}
 	\end{center}
 	\label{fig: TS_conv}
 \end{figure}
@@ -357,14 +357,12 @@ When compared to each method, the hybrid approach converges faster than MVMO but
 \begin{table}[h]
 	\caption{Comparison of approaches}
 	\begin{center}
-	\begin{tabular}{c|c|c|c|c|c}
-		Approach & Tolerance & $\bar{m}$ &$\bar{k}$ & \shortstack{Processing \\ Time (s)} & \shortstack{Final Error \\ $J(p)$} \\
+	\begin{tabular}{c|ccccc}
+		Approach & Tolerance & \shortstack{Processing \\ Time (s)} & \shortstack{Final Error \\ $J(p)$} & $\bar{m}$ & $\bar{k}$ \\
 		\hline
-		TSM  & 0.1 & 3.08 & 6.15 & $7 \ s$  & $2.76\times 10^{-3}$ \\
-		\hline
-		MVMO  & 0.1 & 3.45 & 5.96 & $10\ s$  & $52.32\times 10^{-3}$\\
-		\hline
-		Hybrid  & \shortstack{$tol_{1}=0.5$ \\ $tol_{1}=0.1$} & 3.08 & 6.15 & $12\ s$  & $24.46\times 10^{-3}$
+		TSM  & 0.1 & 7  & $2.76\times 10^{-3}$ & 3.08 & 6.15 \\
+		MVMO  & 0.1 & 10 & $52.32\times 10^{-3}$ & 3.45 & 5.96 \\
+		Hybrid  & \shortstack{$tol_{1}=0.5$ \\ $tol_{2}=0.1$} & 12 & $24.46\times 10^{-3}$ & 3.08 & 6.15
 	\end{tabular}
 	\end{center}
 	\label{tab: SM}
