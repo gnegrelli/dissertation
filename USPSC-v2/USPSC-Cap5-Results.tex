@@ -122,20 +122,38 @@ The proposed model equation \eqref{eq: summary_proposed} developed in Section \r
 
 It can be noticed that reactive power obtained with the proposed model is not distant from the behaviour obtained with the original WPP model. Active power, on the other hand, diverged from the expected, specially during post-fault period. 
 
-Afterwards, the hybrid estimation approach was applied in order to estimate the parameters of the proposed model. The configurations of the estimation conducted were the same as presented previously, with $tol_{1} = 0.5$ and $tol_{2}=5\times 10^{-4}$ and MVMO search region given by the boundaries presented in Table \ref{tab: MVMO_boundaries}. The parameters estimated are depicted in Table \ref{tab: results_proposed} and the behaviours of active and reactive power for this model are shown in Figures \ref{fig: estimation_proposed_P} and \ref{fig: estimation_proposed_Q}, respectively.
+Afterwards, the estimation of the parameters of the proposed model was conducted applyin only MVMO. The tolerance was set at $tol = 1\times 10^{-3}$ and the search region defined as presented in Table \ref{tab: MVMO_boundaries_proposed}. The parameter $V_{max}$ was not included in the estimation and its value was set to $1.1$.
+
+\begin{table}[!h]
+	\centering
+	\caption{MVMO search region used on estimation of proposed model}
+	\begin{tabular}{c|cc}
+		Parameter & \shortstack{Lower \\ boundary} & \shortstack{Upper \\ boundary} \\\hline
+		R & 0.01 & 0.1 \\
+		X & 0.05 & 0.8 \\
+		$k_{I}$ & 3 & 15 \\
+		$T_{I}$ & 0.01 & 0.2 \\
+		$T_{V}$ & 0.1 & 1 \\
+		$k_{VC}$ & 1 & 5 \\
+		$i_{max}$ & 0.7 & 1.6
+	\end{tabular}
+	\label{tab: MVMO_boundaries_proposed}
+\end{table}
+
+The resulting parameter vector is depicted in Table \ref{tab: results_proposed}. Behaviours of active and reactive power for the proposed model are shown in Figures \ref{fig: estimation_proposed_P} and \ref{fig: estimation_proposed_Q}, respectively. The estimation process took 5000 generations (1133 seconds on i3 desktop) and the final error was $J(p) = 15.84\times 10^{-3}$.
 
 \begin{table}[h]
 	\centering
 	\caption{Estimated parameters for proposed model}
 	\begin{tabular}{c|c}
 		Parameter & \shortstack{Estimated \\ value} \\\hline
-		R & 0.058 \\
-		X & 0.499 \\
-		$k_{I}$ & $4.3\times 10^{8}$ \\
-		$T_{I}$ & 101.6 \\
-		$T_{V}$ & $1.5\times 10^{7}$ \\
-		$k_{VC}$ & 2.017 \\
-		$i_{max}$ & 1.083 \\
+		R & 0.030 \\
+		X & 0.646 \\
+		$k_{I}$ & 3.246 \\
+		$T_{I}$ & 0.200 \\
+		$T_{V}$ & 0.971 \\
+		$k_{VC}$ & 2.483 \\
+		$i_{max}$ & 0.952 \\
 		$V_{max}$ & 1.1
 	\end{tabular}
 	\label{}
@@ -155,4 +173,4 @@ Afterwards, the hybrid estimation approach was applied in order to estimate the 
 	\label{fig: estimation_proposed_Q}
 \end{figure}
 
-Despite the similarities between the behaviours of the proposed WPP model and the real system, the resulting parameter vector is not feasible, with extremely large values for some of the parameters, as shown in Table \ref{tab: results_proposed}. These results indicate that the proposed WPP model is not entirely able to represent wind power plants yet, requiring further studies for improvement.
+Despite the similarities, there are still differences between the behaviours of the proposed WPP model and the real system. These results indicate that the proposed WPP model is not entirely able to represent wind power plants yet, requiring further studies for improvement.
