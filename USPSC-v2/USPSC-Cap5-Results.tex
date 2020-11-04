@@ -1,13 +1,13 @@
-\chapter{Results}
+\chapter{Estimation Results and Discussions}
 \label{ch: Results}
 
 Initially, the estimation software was applied to the original mathematical model (equation \ref{eq: summary_original}) presented in Section \ref{sec: WPP_model}, developed to represent wind power plants. The hybrid estimation method presented in Section \ref{sec: Hybrid_Method} was applied, with MVMO providing a smart initial solution that will be refined by TSM. The results of the estimation process are shown in the following section of this chapter. In addition, studies on the effects of population size on MVMO convergence time were also conducted and its results are presented. In the end, the application of the estimation software to the proposed mathematical model (equation \ref{eq: summary_proposed}) is also presented in this chapter.
 
-Besides, in order to evaluate the package support on different electrical equipment models, it was used to estimate the parameters of a Linearized Z-IM Load Model. The estimation of this model is presented in the appendix.
+Besides, in order to evaluate the package support on different electrical equipment models, it was used to estimate the parameters of a Linearized Z-IM Load Model. The estimation of this model is presented in the appendix \ref{ch: appendix}.
 
 \section{Parameter Estimation of Original WPP Model}
 
-The original model equation \eqref{eq: summary_original} developed in Section \ref{sec: WPP_model} was used in this case. The estimation was conducted using the disturbance data collected in \cite{Cari2015} as the real system output. In said study, a fault was simulated on a test system using \textit{PowerFactory 14} and the data was used to estimate the parameters of the WPP model using only TSM. The system was simulated during $1\ s$ with measurements taken every $0.001\ s$. The fault was applied at $t=0.1\ s$ and was cleared out by the protection devices at $t=0.3\ s$. Figure \ref{fig: test_system} displays the test system used to collect data and Figure \ref{fig: WPP_voltage} depicts the WPP bus voltage measured during simulation.
+The original model equation \eqref{eq: summary_original} developed in Section \ref{sec: WPP_model} was used in this case. The estimation was conducted using the disturbance data collected in \cite{Cari2015} as the real system output. In such study, a fault was simulated on a test system using \textit{PowerFactory 14} and the data was used to estimate the parameters of the WPP model using only TSM. The system was simulated during $1\ s$ with measurements taken every $0.001\ s$. The fault was applied at $t=0.1\ s$ and was cleared out by the protection devices at $t=0.3\ s$. Figure \ref{fig: test_system} displays the test system used to collect data and Figure \ref{fig: WPP_voltage} depicts the WPP bus voltage measured during simulation.
 
 \begin{figure}[!h]
 	\caption{Test system simulated}
@@ -104,7 +104,7 @@ For considerably small populations (less than 5 individuals), the algorithm has 
 
 \section{Parameter Estimation of Proposed WPP Model}
 
-The original model equation \eqref{eq: summary_proposed} developed in Section \ref{sec: WPP_model} was used in this case. Given the similarities between original and proposed models, the simulations of the latter were conducted using the same parameter values found for the former. It was observed that, in order to adjust the pre-fault behaviour of the proposed model, the upper limit of the delay blocks should be increased to at least $V_{max} = 1.1$. With these changes made, the outputs of the proposed model were compared to the original WPP model, as displayed in Figures \ref{fig: proposed_P} and \ref{fig: proposed_Q}.
+The proposed model equation \eqref{eq: summary_proposed} developed in Section \ref{sec: WPP_model} was used in this case. Given the similarities between original and proposed models, the simulations of the latter were conducted using the same parameter values found for the former. It was observed that, in order to adjust the pre-fault behaviour of the proposed model, the upper limit of the delay blocks should be increased to at least $V_{max} = 1.1$. With these changes made, the outputs of the proposed model (with the parameters presented in Table \ref{tab: results}) were compared to the original WPP model, as displayed in Figures \ref{fig: proposed_P} and \ref{fig: proposed_Q}.
 
 \begin{figure}[!h]
 	\centering
@@ -120,9 +120,44 @@ The original model equation \eqref{eq: summary_proposed} developed in Section \r
 	\label{fig: proposed_Q}
 \end{figure}
 
-It can be noticed that reactive power obtained with the proposed model is not distant from the behaviour obtained with the original WPP model. Active power, on the other hand, diverged from the expected, specially during post-fault. 
+It can be noticed that reactive power obtained with the proposed model is not distant from the behaviour obtained with the original WPP model. Active power, on the other hand, diverged from the expected, specially during post-fault period. 
 
-The parameter estimation of the proposed model was conducted with the same settings applied previously. The estimation method encountered a solution that results in the curves for $P$ and $Q$ presented below.
+Afterwards, the estimation of the parameters of the proposed model was conducted applying only MVMO. The tolerance was set at $tol = 1\times 10^{-3}$ and the search region defined as presented in Table \ref{tab: MVMO_boundaries_proposed}. The parameter $V_{max}$ was not included in the estimation and its value was set to $1.1$.
+
+\begin{table}[!h]
+	\centering
+	\caption{MVMO search region used on estimation of proposed model}
+	\begin{tabular}{c|cc}
+		Parameter & \shortstack{Lower \\ boundary} & \shortstack{Upper \\ boundary} \\\hline
+		R & 0.01 & 0.1 \\
+		X & 0.05 & 0.8 \\
+		$k_{I}$ & 3 & 15 \\
+		$T_{I}$ & 0.01 & 0.2 \\
+		$T_{V}$ & 0.1 & 1 \\
+		$k_{VC}$ & 1 & 5 \\
+		$i_{max}$ & 0.7 & 1.6
+	\end{tabular}
+	\label{tab: MVMO_boundaries_proposed}
+\end{table}
+
+The resulting parameter vector is depicted in Table \ref{tab: results_proposed}. Behaviours of active and reactive power for the proposed model are shown in Figures \ref{fig: estimation_proposed_P} and \ref{fig: estimation_proposed_Q}, respectively. The estimation process took 5000 generations (1133 seconds on i3 desktop) and the final error was $J(p) = 15.84\times 10^{-3}$.
+
+\begin{table}[h]
+	\centering
+	\caption{Estimated parameters for proposed model}
+	\begin{tabular}{c|c}
+		Parameter & \shortstack{Estimated \\ value} \\\hline
+		R & 0.030 \\
+		X & 0.646 \\
+		$k_{I}$ & 3.246 \\
+		$T_{I}$ & 0.200 \\
+		$T_{V}$ & 0.971 \\
+		$k_{VC}$ & 2.483 \\
+		$i_{max}$ & 0.952 \\
+		$V_{max}$ & 1.1
+	\end{tabular}
+	\label{tab: results_proposed}
+\end{table}
 
 \begin{figure}[!h]
 	\centering
@@ -138,22 +173,4 @@ The parameter estimation of the proposed model was conducted with the same setti
 	\label{fig: estimation_proposed_Q}
 \end{figure}
 
-Despite the similarities between the behaviours of the proposed WPP model and the real system, the resulting parameter vector is not feasible, with extremely large values for some of the parameters, as shown in Table \ref{tab: results_proposed}. These results indicate that the proposed WPP model is not entirely able to represent wind power plants yet, requiring further studies for improvement.
-
-
-\begin{table}[h]
-	\centering
-	\caption{Estimated parameters for proposed model}
-	\begin{tabular}{c|c}
-		Parameter & \shortstack{Estimated \\ value} \\\hline
-		R & 0.058 \\
-		X & 0.499 \\
-		$k_{I}$ & $4.3\times 10^{8}$ \\
-		$T_{I}$ & 101.6 \\
-		$T_{V}$ & $1.5\times 10^{7}$ \\
-		$k_{VC}$ & 2.017 \\
-		$i_{max}$ & 1.083 \\
-		$V_{max}$ & 1.1
-	\end{tabular}
-	\label{tab: results_proposed}
-\end{table}
+Despite the similarities, there are still differences between the behaviours of the proposed WPP model and the real system. These results indicate that the proposed WPP model is not entirely able to represent wind power plants yet, requiring further studies for improvement.
