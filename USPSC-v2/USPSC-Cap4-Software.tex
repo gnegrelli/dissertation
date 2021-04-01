@@ -13,13 +13,13 @@ The following sections describe how the library is organized and illustrate the 
 
 \textit{identPy} was developed as a python library so users can simply install the package and apply its features as needed. The library, as well as related scripts and files, is hosted on a \href{https://github.com/gnegrelli/identPy}{GitHub repository} and maintained by the author.
 
-The library contains four packages named \textbf{error}, \textbf{method}, \textbf{model} and \textbf{objects}. Each one of those packages initialize core python classes developed for this framework. The entire library was built using packages in order to allow future contributors to work on top of a basic architecture.
+The package contains four submodules named \textbf{error}, \textbf{method}, \textbf{model} and \textbf{objects}. Each one of those submodules initialize core python classes developed for this framework. The entire library architecture was conceived in order to allow future contributors to easily work with it and help expand its applications.
 
-The \textbf{error} package comprises the methods used to evaluate the functional error $J(p)$. Currently, only weighted $l^{2}$-norm is implemented.
+The \textbf{error} module comprises the methods used to evaluate the functional error $J(p)$. Currently, only weighted $l^{2}$-norm is implemented.
 
-Inside \textbf{method} package, users will find the estimation methods implemented by the author and used on this study, as well as auxiliary scripts for parameter classification. A script containing a Particle Swarm Optimization algorithm implementation can be found in this package
+Inside \textbf{method} module, users will find the estimation methods implemented by the author and used on this study, as well as auxiliary scripts for parameter classification. Also, script containing a Particle Swarm Optimization algorithm implementation can be found in this module.
 
-All classes with mathematical models are organized inside the \textbf{model} package. Besides the WPP equivalent model presented before, this package contains simple models used for testing, such as Spring-Mass and Pendulum systems, and other complex models used in previous studies, such as Linearized Z-IM Load Model. It also contains a subpackage with implicit methods, such as the Runge-Kutta method, applied to obtain the behaviour of these models.
+All classes with mathematical models are organized inside the \textbf{model} module. Besides the WPP equivalent model presented before, this module contains simple models used for testing, such as Spring-Mass and Pendulum systems, and other complex models used in previous studies, such as Linearized Z-IM Load Model. It also has a submodule within that implements implicit methods, such as the Runge-Kutta method, applied to obtain the behaviour of these models.
 
 Finally, the estimator object and all abstract classes developed are organized inside \textbf{objects}. The Estimator object is responsible for building the estimation framework, by gathering the measured data, model and estimation methods, and executing it. The abstract classes located here constitute base objects from where the other classes can inherit.
 

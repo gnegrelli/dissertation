@@ -27,7 +27,7 @@ By combining both approaches, the resulting method is expected to reduce the eff
 
 Presented in \cite{Erlich2010}, this metaheuristic based in evolution of populations shares characteristics with other evolutionary algorithms, but differ from them on how to induce mutations on the offspring in order to diversify the population. By considering statistical data of population during mutation process, MVMO introduces a memory factor to it, enhancing search mechanism. Due this factor, MVMO performs better than similar metaheuristics when population size is relatively small \cite{Nakawiro2011}. The terms `gene', `individuals' and `population' refer to `parameter', `parameter vector' and `set of parameter vectors' in MVMO, for the sake of analogy.
 
-Two other relevant concepts largely used on metaheuristics are exploration and exploitation. The first one refers to a broad search carried through the region of interest. On the other hand, exploitation means the search on a small neighbourhood close to the best solutions.
+Two other relevant concepts largely used in metaheuristics are exploration and exploitation. The first one refers to a broad search carried through the region of interest. On the other hand, exploitation means the search on a small neighbourhood close to the best solutions.
 
 Before starting the parameter search process, a few settings must be done, such as population size, number of offspring, number of genes selected for mutation and selection method. Also, the search region is defined by setting the range within genes can vary. This constrains the parameters values within a feasible region, preventing divergence. The search region is later normalized for all genes, aiding the estimation process. Termination criteria is also set in this step. In this work, both number of generations and error will be used as stop criteria.
 
@@ -109,7 +109,7 @@ This derivative can be written as:
 	\label{eq: G(p)}
 \end{equation}
 
-Truncating the Taylor series for $G(p)$ on the first-order term results on \eqref{eq: Taylor}. The matrix $\Gamma$ is described in \eqref{eq: Gamma}.
+Truncating the Taylor series for $G(p)$ on the first-order term results in \eqref{eq: Taylor}. The matrix $\Gamma$ is described in \eqref{eq: Gamma}.
 
 \begin{equation}
 	G(p^{*}) = G(p) + \Gamma (p)(p^{*} - p)
@@ -342,7 +342,7 @@ Figure \ref{fig: MVMO_conv} depicts the error evolution for one of the 35 estima
 
 By combining both methods, the hybrid approach benefits from the quick error reduction provided by MVMO and the fast convergence from TSM when inside convergence region. The tolerance for this approach were set at $tol_{1} = 0.5$ (MVMO) and $tol_{2} = 0.1$ (TSM). The population size was set at 20 individuals according to the results obtained in the previous section. Parameters of the spring-mass system were estimated using this method for 35 times and the average estimation time was $11.65\ s$.
 
-Figure \ref{fig: Hybrid_conv} depicts the error evolution for one of the 35 estimations conducted. The hybrid estimation method converged after 3 iterarions, with estimated values of $m=3.063\ kg$ and $k=6.134\ N/m$.
+Figure \ref{fig: Hybrid_conv} depicts the error evolution for one of the 35 estimations conducted. The hybrid estimation method converged after 3 iterations, with estimated values of $m=3.063\ kg$ and $k=6.134\ N/m$.
 
 \begin{figure}[h]
 	\caption{Error evolution with of hybrid approach for spring-mass system}
@@ -368,4 +368,4 @@ When compared to each method, the hybrid approach converges faster than MVMO but
 	\label{tab: SM}
 \end{table}
 
-The great advantage of the hybrid method is the increment of success in the convergence of parameters to the true value. This way, the MVMO approach is only used as an "inteligent initial guess".
+The great advantage of the hybrid method is the increment of success in the convergence of parameters to the true value. This way, the MVMO approach is only used as an "intelligent initial guess".
