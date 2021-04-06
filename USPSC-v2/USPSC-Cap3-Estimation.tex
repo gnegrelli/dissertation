@@ -1,14 +1,16 @@
 \chapter{Parameter Estimation Process}
 \label{ch: Estimation}
 
-Parameter estimation problems can be interpreted as optimization problems, where one must find the optimal values of parameters in order to reduce error between real system and model when the same disturbance is applied to it. the error vector $e$ at any instant $t$ is calculated as the difference between the output vectors $y_{r}$, measured on the real system, and $y$, obtained from the model equations, as presented below.
+Given a dynamic system described by \eqref{eq: xdot}, it is possible to adjust the output $y$ by altering the parameters $p$. Parameter estimation problems rely on finding a set of parameters such as $y$ is close enough to the behaviour observed in a given system.
+
+Thus, parameter estimation problems can be interpreted as optimization problems, where one must find the optimal values of parameters in order to reduce error between real system and model when the same disturbance is applied to it. The error vector $e$ at any instant $t$ is calculated as the difference between the output measured on the real system $y_{r}$ and the one obtained from the model equations $y$, as presented below.
 
 \begin{equation}
 	e(t) = y_{r}(t) - y(t)
 	\label{eq: error_vector}
 \end{equation}
 
-The $l^{2}$-norm of error vector, denoted by $J$, is applied to evaluate how well the model describes the real system behaviour. The norm is obtained through equation \eqref{eq: J(p)}. It is important to notice that, since $y$ varies with $p$, so does $J$. The constant $\frac{1}{2}$ is only used for further simplification.
+The $l^{2}$-norm of error vector, denoted by $J$, is applied to evaluate how well the model describes the real system behaviour. The norm is obtained through equation \eqref{eq: J(p)}. It is important to notice that, since the model output $y$ varies with the parameter vector $p$, so does $J$. The constant $\frac{1}{2}$ is only used for further simplification.
 
 \begin{equation}
 	J(p) = \frac{1}{2} \int\displaylimits_{0}^{T_{0}}\lVert e(t)\rVert_{2}dt = \frac{1}{2}\int\displaylimits_{0}^{T_{0}}e(t)^{T}\cdot e(t)dt
