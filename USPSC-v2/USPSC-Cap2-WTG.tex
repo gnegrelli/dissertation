@@ -94,7 +94,7 @@ Initially proposed by \cite{Erlich2012}, this mathematical model is able to repr
 In this model, WPPs are represented by their Thevenin equivalent, composed of a voltage source connected to the grid by an impedance. The direct and quadrature components of the equivalent voltage source are controlled by a series of blocks that simulate the controllers of WTGs. The block diagram of this model is shown in Figure \ref{fig: ErlMod},
 
 \begin{figure}[h]
-	\caption{WPP model proposed by Erlich}
+	\caption{WPP model}
 	\begin{center}
 		\includegraphics[scale=1]{Images/ErlichModel.eps}
 	\end{center}
@@ -155,7 +155,7 @@ The current priority block outputs the reference values of active and reactive c
 	\ENDIF
 \end{algorithmic}
 
-At the next stage, proportional-integral blocks are used to represent the controllers of WTGs, specially the RSC controller. Their outputs follow the equations presented below. The values $V_{PA}$ and $V_{QA}$ are, respectively, the active and reactive voltage components (on grid coordinates) that the Thevenin voltage source must supply so the reference values of voltage and power are satisfied.
+At the next stage, proportional-integral blocks are used to represent the controllers of WTGs, specially the RSC controller. Their outputs follow the equations presented below. The values $V_{PA}$ and $V_{QA}$ are, respectively, the active and reactive voltage components (on grid coordinates) that the Thevenin voltage source must supply so the reference values of bus voltage and power are satisfied.
 
 \begin{equation}
 	\begin{cases}
@@ -165,6 +165,9 @@ At the next stage, proportional-integral blocks are used to represent the contro
 	\end{cases}
 	\label{eq: PI}
 \end{equation}
+
+
+By analysing \eqref{eq: PI}, one can notice that active and reactive components are completely decoupled. Normally, a small (but not insignificant) cross-coupling signals should contribute on both equations. However, as presented in \cite{Erlich2006}, the effects of the cross-coupling can be neglected without major issues by binding the PI controllers using the same gain and time constant.
 
 At this point, the controllers operate on grid coordinates, so a coordinate transformation block is needed to adequate to $d-q$ coordinates. This block operates according to equation \eqref{eq: CoordShift}. It is important to notice that these equations rely on the knowledge of $\phi_{v}$ and, in order to obtain that measurement, the WPP must have a phasor measurement unit (PMU) installed on its substation.
 
@@ -281,7 +284,7 @@ Thus, this model can be interpreted as presented in \eqref{eq: xdot}, where the 
 	\label{eq: p}
 \end{equation}
 
-The parameters presented in \eqref{eq: p} are the subject of the estimation process presented on the next chapter. Those values define the behaviour of wind power plants during disturbances.
+The parameters presented in \eqref{eq: p} are the subject of the estimation process presented on the next chapter. Those values define the behaviour of specific wind power plants during disturbances.
 
 \subsection{Proposed Wind Power Plant Model for Further Studies}
 \label{ssec: proposed_model}
@@ -306,7 +309,7 @@ However, the requirement of PMUs may limit the application of the original model
 	\label{fig: Proposed_Model}
 \end{figure}
 
-The model equations are slightly altered by this modification, as shown below by the summary of the proposed model. Moreover, the limits $V_{max}$ applied to the delay blocks also change, becoming parameters of the estimation process which demand further investigation.
+The model equations are slightly altered by this modification, as shown below by the summary of the proposed model. Moreover, as observed during simulations, the limits $V_{max}$ applied to the delay blocks must also change. Thus, these new limits will become parameters of the estimation process as well.
 
 \begin{equation}
 	\begin{cases}
