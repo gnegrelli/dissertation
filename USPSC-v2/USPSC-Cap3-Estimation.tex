@@ -27,11 +27,11 @@ By combining both approaches, the resulting method is expected to reduce the eff
 
 \section{Mean-Variance Mapping Optimization Method}
 
-Presented in \cite{Erlich2010}, this metaheuristic based in evolution of populations shares characteristics with other evolutionary algorithms, but differ from them on how to induce mutations on the offspring in order to diversify the population. By considering statistical data of population during mutation process, MVMO introduces a memory factor to it, enhancing search mechanism. Due this factor, MVMO performs better than similar metaheuristics when population size is relatively small \cite{Nakawiro2011}. The terms `gene', `individuals' and `population' refer to `parameter', `parameter vector' and `set of parameter vectors' in MVMO, for the sake of analogy.
+Presented in \cite{Erlich2010}, this metaheuristic based in evolution of populations shares characteristics with other evolutionary algorithms, but differ from them on how to induce mutations on the offspring in order to diversify the population. By considering statistical data of population during mutation process, MVMO introduces a memory factor to it, enhancing its search mechanism. Due this factor, MVMO performs better than similar metaheuristics when population size is relatively small \cite{Nakawiro2011}. The terms `gene', `individuals' and `population' refer to `parameter', `parameter vector' and `set of parameter vectors' in MVMO, for the sake of analogy.
 
 Two other relevant concepts largely used in metaheuristics are exploration and exploitation. The first one refers to a broad search carried through the region of interest. On the other hand, exploitation means the search on a small neighbourhood close to the best solutions.
 
-Before starting the parameter search process, a few settings must be done, such as population size, number of offspring, number of genes selected for mutation and selection method. Also, the search region is defined by setting the range within genes can vary. This constrains the parameters values within a feasible region, preventing divergence. The search region is later normalized for all genes, aiding the estimation process. Termination criteria is also set in this step. In this work, both number of generations and error will be used as stop criteria.
+Before starting the parameter search process, a few settings must be done, such as population size, number of offspring, number of genes selected for mutation and selection method. Also, the search region is defined by setting the range within genes can vary. This constrains the parameters values within a feasible region, preventing divergence. The search region is later normalized for all genes  by rescalling the values into the interval $[0, 1]$, where the lower and upper boundaries correspond to 0 and 1, respectively. Termination criteria is also set in this step. In this work, both number of generations and error will be used as stop criteria.
 
 After that, a randomly-distributed population is generated, evaluated and sorted. Moreover, the mean and variance of every gene in each population are calculated. These values will later be used on the mutation process. The individual with lower error is selected as parent for a new generated individual. The offspring is then created following three steps common in evolutionary algorithms: gene selection, mutation and crossover. After creation, the offspring is introduced to the population and the worst individual is discarded, as depicted in Figure \ref{fig: MVMOprocess}.
 
@@ -43,7 +43,7 @@ After that, a randomly-distributed population is generated, evaluated and sorted
 	\label{fig: MVMOprocess}
 \end{figure}
 
-\textbf{Gene selection} can be done in many ways and even vary throughout the estimation process, with strategies' efficiency depending on the problem. However, three strategies are commonly used in this step. The first one is comprised of randomly selecting which genes will suffer mutation and which will be directly inherited from the parent. Gene selection can also be done by a moving window approach or even a combination of both strategies, with part of the genes selected at random and other through the window.
+\textbf{Gene selection} can be done in many ways and even vary throughout the estimation process, with strategies' efficiency depending on the problem. However, three strategies are commonly used in this step. The first one is comprised of randomly selecting which genes will suffer mutation and which will be directly inherited from the parent. Genes can also be selected by a moving window approach, where a fixed-length window informs which consecutive genes will suffer mutation. At each iteration, this window moves a predefined number of steps, resampling the genes. Furthermore, a combination of both strategies, with part of the genes selected at random and other through a moving window can be applied for selecting the genes.
 
 \textbf{Mutation} step takes place after gene selection. At first, each selected gene receives a random value $\tilde{p}$ between [0,1] that will be used as an input to a mapping function based on the mean and variance of each particular gene on the population. Variance $v_{i}$ will directly influence on the shape factor $s_{i}$,  given by \eqref{eq: shapefac}, where $f_{s}$ is the scaling factor responsible for focusing on exploration or exploitation. In the event of zero variance, the last non-null value of $v_{i}$ is used.
 
@@ -52,10 +52,10 @@ After that, a randomly-distributed population is generated, evaluated and sorted
 	\label{eq: shapefac}
 \end{equation}
 
-Shape factor and mean value of genes of the population are used as inputs to a transformation function $h$, detailed in \eqref{eq: hfunc}. The final value of the gene is obtained through the mapping function described by equation \eqref{eq: mappingf}, where $h_{p} = h(u_{i} = \tilde{p})$, $h_{1} = h(u_{i} = 1)$ and $h_{0} = h(u_{i} = 0)$. It is important to notice that the mapping function will always provide a result in the interval [0,1], not violating the normalization made at beginning.
+Shape factor $s_{i}$ and mean value $\bar{p_{i}}$ of genes are used as inputs to the transformation function $h$, detailed in \eqref{eq: hfunc}. The final value of the gene is obtained through the mapping function described by equation \eqref{eq: mappingf}, where $h_{p} = h(z_{i} = \tilde{p})$, $h_{1} = h(z_{i} = 1)$ and $h_{0} = h(z_{i} = 0)$. It is important to notice that the mapping function will always provide a result in the interval [0,1], not violating the normalization made at beginning.
 
 \begin{equation}
-	h(\bar{p_{i}}, s_{i1}, s_{i2}, u_{i}) = \bar{p_{i}}(1 - e^{-u_{i}s_{i1}}) + (1 + \bar{p_{i}})e^{-(1 - u_{i})s_{i2}}
+	h(\bar{p_{i}}, s_{i1}, s_{i2}, z_{i}) = \bar{p_{i}}(1 - e^{-z_{i}s_{i1}}) + (1 + \bar{p_{i}})e^{-(1 - z_{i})s_{i2}}
 	\label{eq: hfunc}
 \end{equation}
 
@@ -82,7 +82,7 @@ The resulting mapping function is depicted in Figure \ref{fig: mappingf}. The ef
 	\label{fig: mapeffects}
 \end{figure}
 
-As shown in \eqref{eq: hfunc}, two shape factors are used to evaluate the function. Different values of shape factors emphasizes the search below or above mean value. Thus, by controlling the values $s_{i1}$ and $s_{i2}$, the method can prioritize exploration (global search) or exploitation (local search) on a given region. Figure \ref{fig: diffs} depicts how asymmetrical shape factors affect the mapping function.
+As shown in \eqref{eq: hfunc}, two shape factors ($s_{i1}$ and $s_{i2}$) are used to evaluate the function. Different values of shape factors can be applied to focus the search on the regions below or above the mean value. Thus, by controlling the values $s_{i1}$ and $s_{i2}$, the method can prioritize exploration (global search) or exploitation (refining local solution) on a given region. Figure \ref{fig: diffs} depicts how asymmetrical shape factors affect the mapping function.
 
 \begin{figure}[h]
 	\caption{Comparison between symmetrical and asymmetrical shape factors}
