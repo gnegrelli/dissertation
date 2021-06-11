@@ -1,19 +1,19 @@
 \chapter{Parameter Estimation Process}
 \label{ch: Estimation}
 
-Given a dynamic system described by \eqref{eq: xdot}, it is possible to adjust the output $y$ by altering the parameters $p$. Parameter estimation problems rely on finding a set of parameters such as $y$ is close enough to the behaviour observed in a given system.
+Given a dynamic system described by \eqref{eq: xdot}, it is possible to adjust the output $\mathbf{y}$ by altering the parameters $\mathbf{p}$. Parameter estimation problems rely on finding a set of parameters such as $\mathbf{y}$ is close enough to the behaviour observed in a given system.
 
-Thus, parameter estimation problems can be interpreted as optimization problems, where one must find the optimal values of parameters in order to reduce error between real system and model when the same disturbance is applied to it. The error vector $e$ at any instant $t$ is calculated as the difference between the output measured on the real system $y_{r}$ and the one obtained from the model equations $y$, as presented below.
+Thus, parameter estimation problems can be interpreted as optimization problems, where one must find the optimal values of parameters in order to reduce error between real system and model when the same disturbance is applied to it. The error vector $\mathbf{e}$ at any instant $t$ is calculated as the difference between the output measured on the real system $\mathbf{y_{r}}$ and the one obtained from the model equations $\mathbf{y}$, as presented below.
 
 \begin{equation}
-	e(t) = y_{r}(t) - y(t)
+	\mathbf{e}(t) = \mathbf{y_{r}}(t) - \mathbf{y}(t)
 	\label{eq: error_vector}
 \end{equation}
 
-The $l^{2}$-norm of error vector, denoted by $J$, is applied to evaluate how well the model describes the real system behaviour. The norm is obtained through equation \eqref{eq: J(p)}. It is important to notice that, since the model output $y$ varies with the parameter vector $p$, so does $J$. The constant $\frac{1}{2}$ is only used for further simplification.
+The $l^{2}$-norm of error vector, denoted by $J$, is applied to evaluate how well the model describes the real system behaviour. The norm is obtained through equation \eqref{eq: J(p)}. It is important to notice that, since the model output $\mathbf{y}$ varies with the parameter vector $\mathbf{p}$, so does $J$. The constant $\frac{1}{2}$ is only used for further simplification.
 
 \begin{equation}
-	J(p) = \frac{1}{2} \int\displaylimits_{0}^{T_{0}}\lVert e(t)\rVert_{2}dt = \frac{1}{2}\int\displaylimits_{0}^{T_{0}}e(t)^{T}\cdot e(t)dt
+	J(\mathbf{p}) = \frac{1}{2} \int\displaylimits_{0}^{T_{0}}\lVert \mathbf{e}(t)\rVert_{2}dt = \frac{1}{2}\int\displaylimits_{0}^{T_{0}}\mathbf{e}(t)^{T}\cdot \mathbf{e}(t)dt
 	\label{eq: J(p)}
 \end{equation}
 
@@ -98,35 +98,35 @@ The main advantages of this method are low computational cost, good performance 
 
 \section{Trajectory Sensitivity Method}
 
-Considering a nonlinear system described by \eqref{eq: xdot}, in order to minimize the error between model and real system, given by \eqref{eq: J(p)}, one must discover a parameter vector $p^{*}$ such as:
+Considering a nonlinear system described by \eqref{eq: xdot}, in order to minimize the error between model and real system, given by \eqref{eq: J(p)}, one must discover a parameter vector $\mathbf{p^{*}}$ such as:
 
 \begin{equation}
-	G(p^{*}) = \frac{\partial J(p^{*})}{\partial p} = 0
+	G(\mathbf{p}^{*}) = \frac{\partial J(\mathbf{p}^{*})}{\partial \mathbf{p}} = 0
 \end{equation}
 
 This derivative can be written as:
 
 \begin{equation}	
-	G(p) = -\int\displaylimits_{0}^{T_{0}} \left(\frac{dy}{dp}\right)^{T} (y_{r} - y) dt
+	G(p) = -\int\displaylimits_{0}^{T_{0}} \left(\frac{d\mathbf{y}}{d\mathbf{p}}\right)^{T} (\mathbf{y_{r}} - \mathbf{y}) dt
 	\label{eq: G(p)}
 \end{equation}
 
-Truncating the Taylor series for $G(p)$ on the first-order term results in \eqref{eq: Taylor}. The matrix $\Gamma$ is described in \eqref{eq: Gamma}.
+Truncating the Taylor series for $G(\mathbf{p})$ on the first-order term results in \eqref{eq: Taylor}. The matrix $\Gamma$ is described in \eqref{eq: Gamma}.
 
 \begin{equation}
-	G(p^{*}) = G(p) + \Gamma (p)(p^{*} - p)
+	G(\mathbf{p}^{*}) = G(\mathbf{p}) + \Gamma (\mathbf{p})(\mathbf{p}^{*} - \mathbf{p})
 	\label{eq: Taylor}
 \end{equation}
 
 \begin{equation}
-	\Gamma (p) = \frac{\partial G(p)}{\partial p} \approx \int\displaylimits_{0}^{T_{0}} \left(\frac{dy}{dp}\right)^{T} \left(\frac{dy}{dp}\right) dt
+	\Gamma (\mathbf{p}) = \frac{\partial G(\mathbf{p})}{\partial \mathbf{p}} \approx \int\displaylimits_{0}^{T_{0}} \left(\frac{d\mathbf{y}}{d\mathbf{p}}\right)^{T} \left(\frac{d\mathbf{y}}{d\mathbf{p}}\right) dt
 	\label{eq: Gamma}
 \end{equation}
 
 By rearranging the terms on \eqref{eq: Taylor}, the following equation is obtained. It describes how the parameters are updated after the $n^{th}$ iteration.
 
 \begin{equation}
-	p^{n+1} = p^{n} + \Gamma^{-1}(p^{n})\cdot G(p^{n})
+	\mathbf{p}^{n+1} = \mathbf{p}^{n} + \Gamma^{-1}(\mathbf{p}^{n})\cdot G(\mathbf{p}^{n})
 \end{equation}
 
 Obtaining the Jacobian matrix (also called trajectory sensitivity matrix) $\frac{\partial y}{\partial p}$, used in \eqref{eq: G(p)} and \eqref{eq: Gamma}, analytically is a hard task. However, by applying the definition of derivative, given by \eqref{eq: deriv}, the sensibilities can be approximated without any analytical derivation of the equations.
@@ -136,10 +136,10 @@ Obtaining the Jacobian matrix (also called trajectory sensitivity matrix) $\frac
 	\label{eq: deriv}
 \end{equation}
 
-Consider two parameter vectors $p$ and $p^{\epsilon}$, where $p^{\epsilon}$ is obtained by adding a small perturbation $\epsilon p_{i}$ to the $i-th$ element of $p$, as shown in \eqref{eq: pvecs}.
+Consider two parameter vectors $\mathbf{p}$ and $\mathbf{p}^{\epsilon}$, where $\mathbf{p}^{\epsilon}$ is obtained by adding a small perturbation $\epsilon p_{i}$ to the $i-th$ element of $\mathbf{p}$, as shown in \eqref{eq: pvecs}.
 
 \begin{equation}
-	p = 
+	\mathbf{p} = 
 	\begin{bmatrix}
 		p_{1} \\
 		\vdots \\
@@ -147,7 +147,7 @@ Consider two parameter vectors $p$ and $p^{\epsilon}$, where $p^{\epsilon}$ is o
 		\vdots \\
 		p_{n}
 	\end{bmatrix}; \ \ \ \ 
-	 p^{\epsilon} =
+	\mathbf{p}^{\epsilon} =
 	\begin{bmatrix}
 		p_{1} \\
 		\vdots \\
@@ -196,12 +196,12 @@ The spring-mass system is a simple mathematical model often used as example of d
 	\label{fig: spring_mass}
 \end{figure}
 
-By applying Newton's laws of motion on the system shown above, one can easily deduct that the movement of the mass is described by \eqref{eq: SpringMass}. The mass position is represented by $x$, while $v$ and $a$ correspond to its speed and acceleration, respectively.
+By applying Newton's laws of motion on the system shown above, one can easily deduct that the movement of the mass is described by \eqref{eq: SpringMass}. The mass position and speed are represented by $x$ and $v$, respectively.
 
 \begin{equation}
 	\begin{cases}
-		\dot{v} = x \\
-		\dot{a} = \frac{k}{m}v - \frac{F}{m}
+		\dot{x} = v \\
+		\dot{v} = \frac{k}{m}x - \frac{F}{m}
 	\end{cases}
 	\label{eq: SpringMass}
 \end{equation}
@@ -209,46 +209,46 @@ By applying Newton's laws of motion on the system shown above, one can easily de
 This system can be interpreted as of \eqref{eq: xdot}, with the state, input, output and parameter vectors given by \eqref{eq: spring_mass_x}, \eqref{eq: spring_mass_u}, \eqref{eq: spring_mass_y} and \eqref{eq: spring_mass_p}, respectively.
 
 \begin{equation}
-	x = [v, a]^{T}
+	\mathbf{x} = [x, v]^{T}
 	\label{eq: spring_mass_x}
 \end{equation}
 
 \begin{equation}
-	u = [F]
+	\mathbf{u} = [F]
 	\label{eq: spring_mass_u}
 \end{equation}
 
 \begin{equation}
-	y = [v, a]^{T}
+	\mathbf{y} = [x,v]^{T}
 	\label{eq: spring_mass_y}
 \end{equation}
 
 \begin{equation}
-	p = [m, k]^{T}
+	\mathbf{p} = [m, k]^{T}
 	\label{eq: spring_mass_p}
 \end{equation}
 
-The initial values of $v$ and $a$ are needed in order to solve the ordinary differential equation given by \eqref{eq: SpringMass}. Those values, as well as the magnitude of $\vec{F}$\ are given by:
+The initial values of $x$ and $v$ are needed in order to solve the ordinary differential equation given by \eqref{eq: SpringMass}. Those values, as well as the magnitude of $\vec{F}$\ are given by:
 
 \begin{equation}
 	\begin{cases}
-		v(t=0) = 0\ m/s\\
-		a(t=0) = 0\ m/s^{2}
+		x(t=0) = 0\ \text{m}\\
+		v(t=0) = 0\ \text{m/s}
 	\end{cases}
 \end{equation}
 
 \begin{equation}
-	F(t\geq 0) = 4\ N
+	F(t\geq 0) = 4\ \text{N}
 \end{equation}
 
-The system was simulated with parameters set at $m = 3\ kg$ and $k = 6\ N/m$ and the output behaviour obtained was used as reference for the estimation. Three different estimation processes were executed: TSM, MVMO and the hybrid approach of MVMO and TSM combined. The tolerance for all three estimations was set at $tol = 0.1$.
+The system was simulated with parameters set at $m = 3\ \text{kg}$ and $k = 6\ \text{N/m}$ and the output behaviour obtained was used as reference for the estimation. Three different estimation processes were executed: TSM, MVMO and the hybrid approach of MVMO and TSM combined. The tolerance for all three estimations was set at $tol = 0.1$.
 
 \subsection{Trajectory Sensitivity Estimation}
 
-It took 7 iterations (10 seconds on a PC) for Trajectory Sensitivity Method to estimate the parameters when the initial values were $m_{0} = 7\ kg$ and $k_{0} = 7\ N/m$. The final error of the estimation process was $1.90\times 10^{-3}$. This shows how fast and precise this method is, as long as the initial values chosen are in the neighbourhood of the real parameters. Figure \ref{fig: TS_conv} shows the error evolution during estimation suing TSM while Table \ref{tab: spring_mass_ts} displays the values estimated for each parameter.
+It took 7 iterations (10 seconds on a PC) for Trajectory Sensitivity Method to estimate the parameters when the initial values were $m_{0} = 7\ kg$ and $k_{0} = 7\ \text{N/m}$. The final error of the estimation process was $1.90\times 10^{-3}$. This shows how fast and precise this method is, as long as the initial values chosen are in the neighbourhood of the real parameters. Figure \ref{fig: TS_conv} shows the error evolution during estimation suing TSM while Table \ref{tab: spring_mass_ts} displays the values estimated for each parameter.
 
 \begin{figure}[h]
-	\caption{Error evolution of TSM with $m_{0} = 7\ kg$ and $k_{0} = 7\ N/m$}
+	\caption{Error evolution of TSM with $m_{0} = 7\ \text{kg}$ and $k_{0} = 7\ \text{N/m}$}
 	\begin{center}
 		\includegraphics[scale=0.6]{Images/TS_conv.eps}
 	\end{center}
@@ -279,10 +279,10 @@ However, the convergence region \footnote{Convergence region is a region in para
 	\legend{Source: Adapted from \cite{Ecyo}}
 \end{figure}
 
-To illustrate the importance of good initial values, the parameters were reestimated using TSM, but now it was selected initial values $m_{0} = 8\ kg$ and $k_{0} = 10\ N/m$ outside the convergence region. Notice that these values are not too far from the ones used in the previous estimation. The results, on the other hand, were extremely different. The method was not able to lower $J(p)$ below $16.4$ and the parameters converged to different values $m_{f} = 2.7\ kg$ and $k_{f} = 118.6\ N/m$. The error evolution for this estimation is depict in Figure \ref{fig: TS_nconv}.
+To illustrate the importance of good initial values, the parameters were reestimated using TSM, but now it was selected initial values $m_{0} = 8\ \text{kg}$ and $k_{0} = 10\ \text{N/m}$ outside the convergence region. Notice that these values are not too far from the ones used in the previous estimation. The results, on the other hand, were extremely different. The method was not able to lower $J(p)$ below $16.4$ and the parameters converged to different values $m_{f} = 2.7\ \text{kg}$ and $k_{f} = 118.6\ \text{N/m}$. The error evolution for this estimation is depict in Figure \ref{fig: TS_nconv}.
 
 \begin{figure}[h]
-	\caption{Error evolution of TSM with $m_{0} = 8\ kg$ and $k_{0} = 10\ N/m$}
+	\caption{Error evolution of TSM with $m_{0} = 8\ \text{kg}$ and $k_{0} = 10\ \text{N/m}$}
 	\begin{center}
 		\includegraphics[scale=0.6]{Images/TS_nconv.eps}
 	\end{center}
@@ -330,7 +330,7 @@ The effects of population size were evaluated by running estimations for 4 diffe
 
 From these results, one can infer that the optimal population size for estimating the parameter of the spring-mass model is around 20 individuals. It can also be noticed that, despite converging on the first generation, populations of size 50 usually take more time to than others due to the large amount of individuals that must be generated and evaluated at the start of the estimation.
 
-Figure \ref{fig: MVMO_conv} depicts the error evolution for one of the 35 estimations conducted for a population of 20 individuals. The heuristic method converged after 21 generations, with estimated values of $m=2.6\ kg$ and $k=5.2\ N/m$.
+Figure \ref{fig: MVMO_conv} depicts the error evolution for one of the 35 estimations conducted for a population of 20 individuals. The heuristic method converged after 21 generations, with estimated values of $m=2.6\ \text{kg}$ and $k=5.2\ \text{N/m}$.
 
 \begin{figure}[h]
 	\caption{Error evolution of MVMO}
@@ -344,7 +344,7 @@ Figure \ref{fig: MVMO_conv} depicts the error evolution for one of the 35 estima
 
 By combining both methods, the hybrid approach benefits from the quick error reduction provided by MVMO and the fast convergence from TSM when inside convergence region. The tolerance for this approach were set at $tol_{1} = 0.5$ (MVMO) and $tol_{2} = 0.1$ (TSM). The population size was set at 20 individuals according to the results obtained in the previous section. Parameters of the spring-mass system were estimated using this method for 35 times and the average estimation time was $11.65\ s$.
 
-Figure \ref{fig: Hybrid_conv} depicts the error evolution for one of the 35 estimations conducted. The hybrid estimation method converged after 3 iterations, with estimated values of $m=3.063\ kg$ and $k=6.134\ N/m$.
+Figure \ref{fig: Hybrid_conv} depicts the error evolution for one of the 35 estimations conducted. The hybrid estimation method converged after 3 iterations, with estimated values of $m=3.063\ \text{kg}$ and $k=6.134\ \text{N/m}$.
 
 \begin{figure}[h]
 	\caption{Error evolution with of hybrid approach for spring-mass system}
@@ -360,7 +360,7 @@ When compared to each method, the hybrid approach converges faster than MVMO but
 	\caption{Comparison of approaches}
 	\begin{center}
 	\begin{tabular}{c|ccccc}
-		Approach & Tolerance & \shortstack{Processing \\ Time (s)} & \shortstack{Final Error \\ $J(p)$} & $\bar{m}$ & $\bar{k}$ \\
+		Approach & Tolerance & \shortstack{Processing \\ Time (s)} & \shortstack{Final Error \\ $J(\mathbf{p})$} & $\bar{m}$ & $\bar{k}$ \\
 		\hline
 		TSM  & 0.1 & 7  & $2.76\times 10^{-3}$ & 3.08 & 6.15 \\
 		MVMO  & 0.1 & 10 & $52.32\times 10^{-3}$ & 3.45 & 5.96 \\
