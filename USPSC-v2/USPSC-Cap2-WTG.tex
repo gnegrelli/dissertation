@@ -211,7 +211,7 @@ Thus,
 	\label{eq: Outputs}
 \end{equation}
 
-The initial conditions of the states $x_{0} = [v_{d0}, v_{q0}]^T$ can be obtained via equation \eqref{eq: ini_cond}, where $v_{T0}$ and $v_{T0}^{*}$ are the terminal bus voltage and its conjugate at the initial time. Likewise, $P_{0}$ and $Q_{0}$ stand for the active and reactive power measured at the same instant.
+The initial conditions of the states $\mathbf{x}_{0} = [v_{d0}, v_{q0}]^T$ can be obtained via equation \eqref{eq: ini_cond}, where $v_{T0}$ and $v_{T0}^{*}$ are the terminal bus voltage and its conjugate at the initial time. Likewise, $P_{0}$ and $Q_{0}$ stand for the active and reactive power measured at the same instant.
 
 \begin{equation}
 		v_{d0} + jv_{q0} = v_{T0} + (R + jX) \cdot \frac{P_{0} - jQ_{0}}{v_{T0}^{*}}
@@ -261,34 +261,34 @@ The summary of the original model is shown below.
 	\end{cases}
 \end{equation*}
 
-Thus, this model can be interpreted as presented in \eqref{eq: xdot}, where the state variable ($x$), input ($u$), output ($y$) and parameter ($p$) vectors are described by \eqref{eq: x}, \eqref{eq: u}, \eqref{eq: y} and \eqref{eq: p}, respectively.
+Thus, this model can be interpreted as presented in \eqref{eq: xdot}, where the input ($\mathbf{u}$), state ($\mathbf{x}$), parameter ($\mathbf{p}$) and output ($\mathbf{y}$) vectors are described by \eqref{eq: u}, \eqref{eq: x}, \eqref{eq: p} and \eqref{eq: y}, respectively.
 
 \begin{equation}
 	\begin{cases}
-		\dot{x} = f(x, y, p, u) \\
-		y = g(x, p, u)
+		\dot{\mathbf{x}}(t) = f(t, \mathbf{u}, \mathbf{x}, \mathbf{p}) \\
+		\mathbf{y}(t) = g(t, \mathbf{u}, \mathbf{x}, \mathbf{p})
 	\end{cases}
 	\label{eq: xdot}
 \end{equation}
 
 \begin{equation}
-	x = [v_{d}, v_{q}]^T
-	\label{eq: x}
-\end{equation}
-
-\begin{equation}
-	u = [v_{T}, \phi_{v}, P, Q]^T
+	\mathbf{u} = [v_{T}, \phi_{v}, P, Q]^T
 	\label{eq: u}
 \end{equation}
 
 \begin{equation}
-	y = [P, Q]^T
-	\label{eq: y}
+	\mathbf{x} = [v_{d}, v_{q}]^T
+	\label{eq: x}
 \end{equation}
 
 \begin{equation}
-	p = [R, X, k_{I}, T_{I}, T_{V}, k_{VC}, i_{max}]^T
+	\mathbf{p} = [R, X, k_{I}, T_{I}, T_{V}, k_{VC}, i_{max}]^T
 	\label{eq: p}
+\end{equation}
+
+\begin{equation}
+	\mathbf{y} = [P, Q]^T
+	\label{eq: y}
 \end{equation}
 
 The parameters presented in \eqref{eq: p} are the subject of the estimation process presented on the next chapter. Those values define the behaviour of specific wind power plants during disturbances.
@@ -356,24 +356,24 @@ The model equations are slightly altered by this modification, as shown below by
 	\end{cases}
 \end{equation*}
 
-The new state, input, output and parameter vectors are given by:
+The new input, state, parameter and output vectors are given by:
 
 \begin{equation}
-	x = [v_{d}, v_{q}]^T
-	\label{eq: x_proposed}
-\end{equation}
-
-\begin{equation}
-	u = [v_{T}, P, Q]^T
+	\mathbf{u} = [v_{T}, P, Q]^T
 	\label{eq: u_proposed}
 \end{equation}
 
 \begin{equation}
-	y = [P, Q]^T
-	\label{eq: y_proposed}
+	\mathbf{x} = [v_{d}, v_{q}]^T
+	\label{eq: x_proposed}
 \end{equation}
 
 \begin{equation}
-	p = [R, X, k_{I}, T_{I}, T_{V}, k_{VC}, i_{max}, V_{max}]^T
+	\mathbf{p} = [R, X, k_{I}, T_{I}, T_{V}, k_{VC}, i_{max}, V_{max}]^T
 	\label{eq: p_proposed}
+\end{equation}
+
+\begin{equation}
+	\mathbf{y} = [P, Q]^T
+	\label{eq: y_proposed}
 \end{equation}
