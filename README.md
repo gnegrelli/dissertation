@@ -2,5 +2,5 @@
 
 This repository contains my dissertation text, entitled _Development of Software for Parameter Estimation and its Application on Wind Power Plant Equivalent Model_. The codes developed during this project and used in the simulations can be found at the links below:
 
-* (identPy)[https://github.com/gnegrelli/identPy]: framework for parameter estimation
-* (identPy_GUI)[https://github.com/gnegrelli/identPy_GUI]: GUI for framework developed
+* [identPy](https://github.com/gnegrelli/identPy): framework for parameter estimation
+* [identPy_GUI](https://github.com/gnegrelli/identPy_GUI): GUI for framework developed
