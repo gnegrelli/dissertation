@@ -268,15 +268,14 @@ It took 7 iterations (10 seconds on a PC) for Trajectory Sensitivity Method to e
 	\label{tab: spring_mass_ts}
 \end{table}
 
-However, the convergence region \footnote{Convergence region is a region in parameter space where, if the initial guess for parameter values is inside it, the convergence to true values is guaranteed.} of TSM is limited, diverging for initial points far enough from the real values. The convergence region for the real values was obtained in \cite{Ecyo} and is shown in Figure \ref{fig: conv_reg}. For comparison, the MVMO and the hybrid approach converge for the entire search region displayed on the graph.
+However, the convergence region \footnote{Convergence region is a region in parameter space where, if the initial guess for parameter values is inside it, the convergence to true values is guaranteed.} of TSM is limited, diverging for initial points far enough from the real values. The convergence region for this simulation is shown as the green region in Figure \ref{fig: conv_reg}. For comparison, the MVMO and the hybrid approach converge for the entire search region displayed on the graph.
 
 \begin{figure}[h]
 	\caption{Convergence region of Trajectory Sensitivity Method}
 	\begin{center}
-		\includegraphics[scale=0.6]{Images/Conv_reg.eps}
+		\includegraphics[scale=0.6]{Images/convergence_region.eps}
 	\end{center}
 	\label{fig: conv_reg}
-	\legend{Source: Adapted from \cite{Ecyo}}
 \end{figure}
 
 To illustrate the importance of good initial values, the parameters were reestimated using TSM, but now it was selected initial values $m_{0} = 8\ \text{kg}$ and $k_{0} = 10\ \text{N/m}$ outside the convergence region. Notice that these values are not too far from the ones used in the previous estimation. The results, on the other hand, were extremely different. The method was not able to lower $J(p)$ below $16.4$ and the parameters converged to different values $m_{f} = 2.7\ \text{kg}$ and $k_{f} = 118.6\ \text{N/m}$. The error evolution for this estimation is depict in Figure \ref{fig: TS_nconv}.
@@ -296,7 +295,7 @@ In order to estimate the parameter using MVMO, a search region in parameter spac
 \begin{figure}[h]
 	\caption{Search region chosen for MVMO}
 	\begin{center}
-		\includegraphics[scale=0.6]{Images/search_region_MVMO.eps}
+		\includegraphics[scale=0.6]{Images/mvmo_region.eps}
 	\end{center}
 	\label{fig: spring_mass_MVMO_region}
 \end{figure}
