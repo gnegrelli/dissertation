@@ -1,17 +1,19 @@
 \chapter{Parameter Estimation Process}
 \label{ch: Estimation}
 
-Parameter estimation problems can be interpreted as optimization problems, where one must find the optimal values of parameters in order to reduce error between real system and model when the same disturbance is applied to it. the error vector $e$ at any instant $t$ is calculated as the difference between the output vectors $y_{r}$, measured on the real system, and $y$, obtained from the model equations, as presented below.
+Given a dynamic system described by \eqref{eq: xdot}, it is possible to adjust the output $\mathbf{y}$ by altering the parameters $\mathbf{p}$. Parameter estimation problems rely on finding a set of parameters such as $\mathbf{y}$ is close enough to the behaviour observed in a given system.
+
+Thus, parameter estimation problems can be interpreted as optimization problems, where one must find the optimal values of parameters in order to reduce error between real system and model when the same disturbance is applied to it. The error vector $\mathbf{e}$ at any instant $t$ is calculated as the difference between the output measured on the real system $\mathbf{y_{r}}$ and the one obtained from the model equations $\mathbf{y}$, as presented below.
 
 \begin{equation}
-	e(t) = y_{r}(t) - y(t)
+	\mathbf{e}(t) = \mathbf{y_{r}}(t) - \mathbf{y}(t)
 	\label{eq: error_vector}
 \end{equation}
 
-The $l^{2}$-norm of error vector, denoted by $J$, is applied to evaluate how well the model describes the real system behaviour. The norm is obtained through equation \eqref{eq: J(p)}. It is important to notice that, since $y$ varies with $p$, so does $J$. The constant $\frac{1}{2}$ is only used for further simplification.
+The $l^{2}$-norm of error vector, denoted by $J$, is applied to evaluate how well the model describes the real system behaviour. The norm is obtained through equation \eqref{eq: J(p)}. It is important to notice that, since the model output $\mathbf{y}$ varies with the parameter vector $\mathbf{p}$, so does $J$. The constant $\frac{1}{2}$ is only used for further simplification.
 
 \begin{equation}
-	J(p) = \frac{1}{2} \int\displaylimits_{0}^{T_{0}}\lVert e(t)\rVert_{2}dt = \frac{1}{2}\int\displaylimits_{0}^{T_{0}}e(t)^{T}\cdot e(t)dt
+	J(\mathbf{p}) = \frac{1}{2} \int\displaylimits_{0}^{T_{0}}\lVert \mathbf{e}(t)\rVert_{2}dt = \frac{1}{2}\int\displaylimits_{0}^{T_{0}}\mathbf{e}(t)^{T}\cdot \mathbf{e}(t)dt
 	\label{eq: J(p)}
 \end{equation}
 
@@ -25,11 +27,11 @@ By combining both approaches, the resulting method is expected to reduce the eff
 
 \section{Mean-Variance Mapping Optimization Method}
 
-Presented in \cite{Erlich2010}, this metaheuristic based in evolution of populations shares characteristics with other evolutionary algorithms, but differ from them on how to induce mutations on the offspring in order to diversify the population. By considering statistical data of population during mutation process, MVMO introduces a memory factor to it, enhancing search mechanism. Due this factor, MVMO performs better than similar metaheuristics when population size is relatively small \cite{Nakawiro2011}. The terms `gene', `individuals' and `population' refer to `parameter', `parameter vector' and `set of parameter vectors' in MVMO, for the sake of analogy.
+Presented in \cite{Erlich2010}, this metaheuristic based in evolution of populations shares characteristics with other evolutionary algorithms, but differ from them on how to induce mutations on the offspring in order to diversify the population. By considering statistical data of population during mutation process, MVMO introduces a memory factor to it, enhancing its search mechanism. Due this factor, MVMO performs better than similar metaheuristics when population size is relatively small \cite{Nakawiro2011}. The terms `gene', `individuals' and `population' refer to `parameter', `parameter vector' and `set of parameter vectors' in MVMO, for the sake of analogy.
 
-Two other relevant concepts largely used on metaheuristics are exploration and exploitation. The first one refers to a broad search carried through the region of interest. On the other hand, exploitation means the search on a small neighbourhood close to the best solutions.
+Two other relevant concepts largely used in metaheuristics are exploration and exploitation. The first one refers to a broad search carried through the region of interest. On the other hand, exploitation means the search on a small neighbourhood close to the best solutions.
 
-Before starting the parameter search process, a few settings must be done, such as population size, number of offspring, number of genes selected for mutation and selection method. Also, the search region is defined by setting the range within genes can vary. This constrains the parameters values within a feasible region, preventing divergence. The search region is later normalized for all genes, aiding the estimation process. Termination criteria is also set in this step. In this work, both number of generations and error will be used as stop criteria.
+Before starting the parameter search process, a few settings must be done, such as population size, number of offspring, number of genes selected for mutation and selection method. Also, the search region is defined by setting the range within genes can vary. This constrains the parameters values within a feasible region, preventing divergence. The search region is later normalized for all genes  by rescalling the values into the interval $[0, 1]$, where the lower and upper boundaries correspond to 0 and 1, respectively. Termination criteria is also set in this step. In this work, both number of generations and error will be used as stop criteria.
 
 After that, a randomly-distributed population is generated, evaluated and sorted. Moreover, the mean and variance of every gene in each population are calculated. These values will later be used on the mutation process. The individual with lower error is selected as parent for a new generated individual. The offspring is then created following three steps common in evolutionary algorithms: gene selection, mutation and crossover. After creation, the offspring is introduced to the population and the worst individual is discarded, as depicted in Figure \ref{fig: MVMOprocess}.
 
@@ -41,7 +43,7 @@ After that, a randomly-distributed population is generated, evaluated and sorted
 	\label{fig: MVMOprocess}
 \end{figure}
 
-\textbf{Gene selection} can be done in many ways and even vary throughout the estimation process, with strategies' efficiency depending on the problem. However, three strategies are commonly used in this step. The first one is comprised of randomly selecting which genes will suffer mutation and which will be directly inherited from the parent. Gene selection can also be done by a moving window approach or even a combination of both strategies, with part of the genes selected at random and other through the window.
+\textbf{Gene selection} can be done in many ways and even vary throughout the estimation process, with strategies' efficiency depending on the problem. However, three strategies are commonly used in this step. The first one is comprised of randomly selecting which genes will suffer mutation and which will be directly inherited from the parent. Genes can also be selected by a moving window approach, where a fixed-length window informs which consecutive genes will suffer mutation. At each iteration, this window moves a predefined number of steps, resampling the genes. Furthermore, a combination of both strategies, with part of the genes selected at random and other through a moving window can be applied for selecting the genes.
 
 \textbf{Mutation} step takes place after gene selection. At first, each selected gene receives a random value $\tilde{p}$ between [0,1] that will be used as an input to a mapping function based on the mean and variance of each particular gene on the population. Variance $v_{i}$ will directly influence on the shape factor $s_{i}$,  given by \eqref{eq: shapefac}, where $f_{s}$ is the scaling factor responsible for focusing on exploration or exploitation. In the event of zero variance, the last non-null value of $v_{i}$ is used.
 
@@ -50,10 +52,10 @@ After that, a randomly-distributed population is generated, evaluated and sorted
 	\label{eq: shapefac}
 \end{equation}
 
-Shape factor and mean value of genes of the population are used as inputs to a transformation function $h$, detailed in \eqref{eq: hfunc}. The final value of the gene is obtained through the mapping function described by equation \eqref{eq: mappingf}, where $h_{p} = h(u_{i} = \tilde{p})$, $h_{1} = h(u_{i} = 1)$ and $h_{0} = h(u_{i} = 0)$. It is important to notice that the mapping function will always provide a result in the interval [0,1], not violating the normalization made at beginning.
+Shape factor $s_{i}$ and mean value $\bar{p_{i}}$ of genes are used as inputs to the transformation function $h$, detailed in \eqref{eq: hfunc}. The final value of the gene is obtained through the mapping function described by equation \eqref{eq: mappingf}, where $h_{p} = h(z_{i} = \tilde{p})$, $h_{1} = h(z_{i} = 1)$ and $h_{0} = h(z_{i} = 0)$. It is important to notice that the mapping function will always provide a result in the interval [0,1], not violating the normalization made at beginning.
 
 \begin{equation}
-	h(\bar{p_{i}}, s_{i1}, s_{i2}, u_{i}) = \bar{p_{i}}(1 - e^{-u_{i}s_{i1}}) + (1 + \bar{p_{i}})e^{-(1 - u_{i})s_{i2}}
+	h(\bar{p_{i}}, s_{i1}, s_{i2}, z_{i}) = \bar{p_{i}}(1 - e^{-z_{i}s_{i1}}) + (1 + \bar{p_{i}})e^{-(1 - z_{i})s_{i2}}
 	\label{eq: hfunc}
 \end{equation}
 
@@ -67,7 +69,7 @@ The resulting mapping function is depicted in Figure \ref{fig: mappingf}. The ef
 \begin{figure}[!h]
 	\caption{Example of MVMO mapping function}
 	\begin{center}
-		\includegraphics[scale=.5]{Images/MVMOTransformation.eps}
+		\includegraphics[scale=.7]{Images/MVMOTransformation.eps}
 	\end{center}
 	\label{fig: mappingf}
 \end{figure}
@@ -75,17 +77,17 @@ The resulting mapping function is depicted in Figure \ref{fig: mappingf}. The ef
 \begin{figure}[h]
 	\caption{Effect of different mean and shape factor values on mapping function}
 	\begin{center}
-		\includegraphics[scale=.5]{Images/mean_var_effects.eps}
+		\includegraphics[scale=.55]{Images/mean_var_effects.eps}
 	\end{center}
 	\label{fig: mapeffects}
 \end{figure}
 
-As shown in \eqref{eq: hfunc}, two shape factors are used to evaluate the function. Different values of shape factors emphasizes the search below or above mean value. Thus, by controlling the values $s_{i1}$ and $s_{i2}$, the method can prioritize exploration (global search) or exploitation (local search) on a given region. Figure \ref{fig: diffs} depicts how asymmetrical shape factors affect the mapping function.
+As shown in \eqref{eq: hfunc}, two shape factors ($s_{i1}$ and $s_{i2}$) are used to evaluate the function. Different values of shape factors can be applied to focus the search on the regions below or above the mean value. Thus, by controlling the values $s_{i1}$ and $s_{i2}$, the method can prioritize exploration (global search) or exploitation (refining local solution) on a given region. Figure \ref{fig: diffs} depicts how asymmetrical shape factors affect the mapping function.
 
 \begin{figure}[h]
 	\caption{Comparison between symmetrical and asymmetrical shape factors}
 	\begin{center}
-		\includegraphics[scale=.5]{Images/symmetrical_transf.eps}
+		\includegraphics[scale=.7]{Images/symmetrical_transf.eps}
 	\end{center}
 	\label{fig: diffs}
 \end{figure}
@@ -96,35 +98,35 @@ The main advantages of this method are low computational cost, good performance 
 
 \section{Trajectory Sensitivity Method}
 
-Considering a nonlinear system described by \eqref{eq: xdot}, in order to minimize the error between model and real system, given by \eqref{eq: J(p)}, one must discover a parameter vector $p^{*}$ such as:
+Considering a nonlinear system described by \eqref{eq: xdot}, in order to minimize the error between model and real system, given by \eqref{eq: J(p)}, one must discover a parameter vector $\mathbf{p^{*}}$ such as:
 
 \begin{equation}
-	G(p^{*}) = \frac{\partial J(p^{*})}{\partial p} = 0
+	G(\mathbf{p}^{*}) = \frac{\partial J(\mathbf{p}^{*})}{\partial \mathbf{p}} = 0
 \end{equation}
 
 This derivative can be written as:
 
 \begin{equation}	
-	G(p) = -\int\displaylimits_{0}^{T_{0}} \left(\frac{dy}{dp}\right)^{T} (y_{r} - y) dt
+	G(p) = -\int\displaylimits_{0}^{T_{0}} \left(\frac{d\mathbf{y}}{d\mathbf{p}}\right)^{T} (\mathbf{y_{r}} - \mathbf{y}) dt
 	\label{eq: G(p)}
 \end{equation}
 
-Truncating the Taylor series for $G(p)$ on the first-order term results on \eqref{eq: Taylor}. The matrix $\Gamma$ is described in \eqref{eq: Gamma}.
+Truncating the Taylor series for $G(\mathbf{p})$ on the first-order term results in \eqref{eq: Taylor}. The matrix $\Gamma$ is described in \eqref{eq: Gamma}.
 
 \begin{equation}
-	G(p^{*}) = G(p) + \Gamma (p)(p^{*} - p)
+	G(\mathbf{p}^{*}) = G(\mathbf{p}) + \Gamma (\mathbf{p})(\mathbf{p}^{*} - \mathbf{p})
 	\label{eq: Taylor}
 \end{equation}
 
 \begin{equation}
-	\Gamma (p) = \frac{\partial G(p)}{\partial p} \approx \int\displaylimits_{0}^{T_{0}} \left(\frac{dy}{dp}\right)^{T} \left(\frac{dy}{dp}\right) dt
+	\Gamma (\mathbf{p}) = \frac{\partial G(\mathbf{p})}{\partial \mathbf{p}} \approx \int\displaylimits_{0}^{T_{0}} \left(\frac{d\mathbf{y}}{d\mathbf{p}}\right)^{T} \left(\frac{d\mathbf{y}}{d\mathbf{p}}\right) dt
 	\label{eq: Gamma}
 \end{equation}
 
 By rearranging the terms on \eqref{eq: Taylor}, the following equation is obtained. It describes how the parameters are updated after the $n^{th}$ iteration.
 
 \begin{equation}
-	p^{n+1} = p^{n} + \Gamma^{-1}(p^{n})\cdot G(p^{n})
+	\mathbf{p}^{n+1} = \mathbf{p}^{n} + \Gamma^{-1}(\mathbf{p}^{n})\cdot G(\mathbf{p}^{n})
 \end{equation}
 
 Obtaining the Jacobian matrix (also called trajectory sensitivity matrix) $\frac{\partial y}{\partial p}$, used in \eqref{eq: G(p)} and \eqref{eq: Gamma}, analytically is a hard task. However, by applying the definition of derivative, given by \eqref{eq: deriv}, the sensibilities can be approximated without any analytical derivation of the equations.
@@ -134,10 +136,10 @@ Obtaining the Jacobian matrix (also called trajectory sensitivity matrix) $\frac
 	\label{eq: deriv}
 \end{equation}
 
-Consider two parameter vectors $p$ and $p^{\epsilon}$, where $p^{\epsilon}$ is obtained by adding a small perturbation $\epsilon p_{i}$ to the $i-th$ element of $p$, as shown in \eqref{eq: pvecs}.
+Consider two parameter vectors $\mathbf{p}$ and $\mathbf{p}^{\epsilon}$, where $\mathbf{p}^{\epsilon}$ is obtained by adding a small perturbation $\epsilon p_{i}$ to the $i-th$ element of $\mathbf{p}$, as shown in \eqref{eq: pvecs}.
 
 \begin{equation}
-	p = 
+	\mathbf{p} = 
 	\begin{bmatrix}
 		p_{1} \\
 		\vdots \\
@@ -145,7 +147,7 @@ Consider two parameter vectors $p$ and $p^{\epsilon}$, where $p^{\epsilon}$ is o
 		\vdots \\
 		p_{n}
 	\end{bmatrix}; \ \ \ \ 
-	 p^{\epsilon} =
+	\mathbf{p}^{\epsilon} =
 	\begin{bmatrix}
 		p_{1} \\
 		\vdots \\
@@ -194,12 +196,12 @@ The spring-mass system is a simple mathematical model often used as example of d
 	\label{fig: spring_mass}
 \end{figure}
 
-By applying Newton's laws of motion on the system shown above, one can easily deduct that the movement of the mass is described by \eqref{eq: SpringMass}. The mass position is represented by $x$, while $v$ and $a$ correspond to its speed and acceleration, respectively.
+By applying Newton's laws of motion on the system shown above, one can easily deduct that the movement of the mass is described by \eqref{eq: SpringMass}. The mass position and speed are represented by $x$ and $v$, respectively.
 
 \begin{equation}
 	\begin{cases}
-		\dot{v} = x \\
-		\dot{a} = \frac{k}{m}v - \frac{F}{m}
+		\dot{x} = v \\
+		\dot{v} = \frac{k}{m}x - \frac{F}{m}
 	\end{cases}
 	\label{eq: SpringMass}
 \end{equation}
@@ -207,46 +209,46 @@ By applying Newton's laws of motion on the system shown above, one can easily de
 This system can be interpreted as of \eqref{eq: xdot}, with the state, input, output and parameter vectors given by \eqref{eq: spring_mass_x}, \eqref{eq: spring_mass_u}, \eqref{eq: spring_mass_y} and \eqref{eq: spring_mass_p}, respectively.
 
 \begin{equation}
-	x = [v, a]^{T}
+	\mathbf{x} = [x, v]^{T}
 	\label{eq: spring_mass_x}
 \end{equation}
 
 \begin{equation}
-	u = [F]
+	\mathbf{u} = [F]
 	\label{eq: spring_mass_u}
 \end{equation}
 
 \begin{equation}
-	y = [v, a]^{T}
+	\mathbf{y} = [x,v]^{T}
 	\label{eq: spring_mass_y}
 \end{equation}
 
 \begin{equation}
-	p = [m, k]^{T}
+	\mathbf{p} = [m, k]^{T}
 	\label{eq: spring_mass_p}
 \end{equation}
 
-The initial values of $v$ and $a$ are needed in order to solve the ordinary differential equation given by \eqref{eq: SpringMass}. Those values, as well as the magnitude of $\vec{F}$\ are given by:
+The initial values of $x$ and $v$ are needed in order to solve the ordinary differential equation given by \eqref{eq: SpringMass}. Those values, as well as the magnitude of $\vec{F}$\ are given by:
 
 \begin{equation}
 	\begin{cases}
-		v(t=0) = 0\ m/s\\
-		a(t=0) = 0\ m/s^{2}
+		x(t=0) = 0\ \text{m}\\
+		v(t=0) = 0\ \text{m/s}
 	\end{cases}
 \end{equation}
 
 \begin{equation}
-	F(t\geq 0) = 4\ N
+	F(t\geq 0) = 4\ \text{N}
 \end{equation}
 
-The system was simulated with parameters set at $m = 3\ kg$ and $k = 6\ N/m$ and the output behaviour obtained was used as reference for the estimation. Three different estimation processes were executed: TSM, MVMO and the hybrid approach of MVMO and TSM combined. The tolerance for all three estimations was set at $tol = 0.1$.
+The system was simulated with parameters set at $m = 3\ \text{kg}$ and $k = 6\ \text{N/m}$ and the output behaviour obtained was used as reference for the estimation. Three different estimation processes were executed: TSM, MVMO and the hybrid approach of MVMO and TSM combined. The tolerance for all three estimations was set at $tol = 0.1$.
 
 \subsection{Trajectory Sensitivity Estimation}
 
-It took 7 iterations (10 seconds on a PC) for Trajectory Sensitivity Method to estimate the parameters when the initial values were $m_{0} = 7\ kg$ and $k_{0} = 7\ N/m$. The final error of the estimation process was $1.90\times 10^{-3}$. This shows how fast and precise this method is, as long as the initial values chosen are in the neighbourhood of the real parameters. Figure \ref{fig: TS_conv} shows the error evolution during estimation suing TSM while Table \ref{tab: spring_mass_ts} displays the values estimated for each parameter.
+It took 7 iterations (10 seconds on a PC) for Trajectory Sensitivity Method to estimate the parameters when the initial values were $m_{0} = 7\ kg$ and $k_{0} = 7\ \text{N/m}$. The final error of the estimation process was $1.90\times 10^{-3}$. This shows how fast and precise this method is, as long as the initial values chosen are in the neighbourhood of the real parameters. Figure \ref{fig: TS_conv} shows the error evolution during estimation suing TSM while Table \ref{tab: spring_mass_ts} displays the values estimated for each parameter.
 
 \begin{figure}[h]
-	\caption{Error evolution of TSM with $m_{0} = 7\ kg$ and $k_{0} = 7\ N/m$}
+	\caption{Error evolution of TSM with $m_{0} = 7\ \text{kg}$ and $k_{0} = 7\ \text{N/m}$}
 	\begin{center}
 		\includegraphics[scale=0.6]{Images/TS_conv.eps}
 	\end{center}
@@ -266,21 +268,20 @@ It took 7 iterations (10 seconds on a PC) for Trajectory Sensitivity Method to e
 	\label{tab: spring_mass_ts}
 \end{table}
 
-However, the convergence region \footnote{Convergence region is a region in parameter space where, if the initial guess for parameter values is inside it, the convergence to true values is guaranteed.} of TSM is limited, diverging for initial points far enough from the real values. The convergence region for the real values was obtained in \cite{Ecyo} and is shown in Figure \ref{fig: conv_reg}. For comparison, the MVMO and the hybrid approach converge for the entire search region displayed on the graph.
+However, the convergence region \footnote{Convergence region is a region in parameter space where, if the initial guess for parameter values is inside it, the convergence to true values is guaranteed.} of TSM is limited, diverging for initial points far enough from the real values. The convergence region for this simulation is shown as the green region in Figure \ref{fig: conv_reg}. For comparison, the MVMO and the hybrid approach converge for the entire search region displayed on the graph.
 
 \begin{figure}[h]
 	\caption{Convergence region of Trajectory Sensitivity Method}
 	\begin{center}
-		\includegraphics[scale=0.6]{Images/Conv_reg.eps}
+		\includegraphics[scale=0.6]{Images/convergence_region.eps}
 	\end{center}
 	\label{fig: conv_reg}
-	\legend{Source: Adapted from \cite{Ecyo}}
 \end{figure}
 
-To illustrate the importance of good initial values, the parameters were reestimated using TSM, but now it was selected initial values $m_{0} = 8\ kg$ and $k_{0} = 10\ N/m$ outside the convergence region. Notice that these values are not too far from the ones used in the previous estimation. The results, on the other hand, were extremely different. The method was not able to lower $J(p)$ below $16.4$ and the parameters converged to different values $m_{f} = 2.7\ kg$ and $k_{f} = 118.6\ N/m$. The error evolution for this estimation is depict in Figure \ref{fig: TS_nconv}.
+To illustrate the importance of good initial values, the parameters were reestimated using TSM, but now it was selected initial values $m_{0} = 8\ \text{kg}$ and $k_{0} = 10\ \text{N/m}$ outside the convergence region. Notice that these values are not too far from the ones used in the previous estimation. The results, on the other hand, were extremely different. The method was not able to lower $J(p)$ below $16.4$ and the parameters converged to different values $m_{f} = 2.7\ \text{kg}$ and $k_{f} = 118.6\ \text{N/m}$. The error evolution for this estimation is depict in Figure \ref{fig: TS_nconv}.
 
 \begin{figure}[h]
-	\caption{Error evolution of TSM with $m_{0} = 8\ kg$ and $k_{0} = 10\ N/m$}
+	\caption{Error evolution of TSM with $m_{0} = 8\ \text{kg}$ and $k_{0} = 10\ \text{N/m}$}
 	\begin{center}
 		\includegraphics[scale=0.6]{Images/TS_nconv.eps}
 	\end{center}
@@ -294,7 +295,7 @@ In order to estimate the parameter using MVMO, a search region in parameter spac
 \begin{figure}[h]
 	\caption{Search region chosen for MVMO}
 	\begin{center}
-		\includegraphics[scale=0.6]{Images/search_region_MVMO.eps}
+		\includegraphics[scale=0.6]{Images/mvmo_region.eps}
 	\end{center}
 	\label{fig: spring_mass_MVMO_region}
 \end{figure}
@@ -328,7 +329,7 @@ The effects of population size were evaluated by running estimations for 4 diffe
 
 From these results, one can infer that the optimal population size for estimating the parameter of the spring-mass model is around 20 individuals. It can also be noticed that, despite converging on the first generation, populations of size 50 usually take more time to than others due to the large amount of individuals that must be generated and evaluated at the start of the estimation.
 
-Figure \ref{fig: MVMO_conv} depicts the error evolution for one of the 35 estimations conducted for a population of 20 individuals. The heuristic method converged after 21 generations, with estimated values of $m=2.6\ kg$ and $k=5.2\ N/m$.
+Figure \ref{fig: MVMO_conv} depicts the error evolution for one of the 35 estimations conducted for a population of 20 individuals. The heuristic method converged after 21 generations, with estimated values of $m=2.6\ \text{kg}$ and $k=5.2\ \text{N/m}$.
 
 \begin{figure}[h]
 	\caption{Error evolution of MVMO}
@@ -342,7 +343,7 @@ Figure \ref{fig: MVMO_conv} depicts the error evolution for one of the 35 estima
 
 By combining both methods, the hybrid approach benefits from the quick error reduction provided by MVMO and the fast convergence from TSM when inside convergence region. The tolerance for this approach were set at $tol_{1} = 0.5$ (MVMO) and $tol_{2} = 0.1$ (TSM). The population size was set at 20 individuals according to the results obtained in the previous section. Parameters of the spring-mass system were estimated using this method for 35 times and the average estimation time was $11.65\ s$.
 
-Figure \ref{fig: Hybrid_conv} depicts the error evolution for one of the 35 estimations conducted. The hybrid estimation method converged after 3 iterarions, with estimated values of $m=3.063\ kg$ and $k=6.134\ N/m$.
+Figure \ref{fig: Hybrid_conv} depicts the error evolution for one of the 35 estimations conducted. The hybrid estimation method converged after 3 iterations, with estimated values of $m=3.063\ \text{kg}$ and $k=6.134\ \text{N/m}$.
 
 \begin{figure}[h]
 	\caption{Error evolution with of hybrid approach for spring-mass system}
@@ -358,7 +359,7 @@ When compared to each method, the hybrid approach converges faster than MVMO but
 	\caption{Comparison of approaches}
 	\begin{center}
 	\begin{tabular}{c|ccccc}
-		Approach & Tolerance & \shortstack{Processing \\ Time (s)} & \shortstack{Final Error \\ $J(p)$} & $\bar{m}$ & $\bar{k}$ \\
+		Approach & Tolerance & \shortstack{Processing \\ Time (s)} & \shortstack{Final Error \\ $J(\mathbf{p})$} & $\bar{m}$ & $\bar{k}$ \\
 		\hline
 		TSM  & 0.1 & 7  & $2.76\times 10^{-3}$ & 3.08 & 6.15 \\
 		MVMO  & 0.1 & 10 & $52.32\times 10^{-3}$ & 3.45 & 5.96 \\
@@ -368,4 +369,4 @@ When compared to each method, the hybrid approach converges faster than MVMO but
 	\label{tab: SM}
 \end{table}
 
-The great advantage of the hybrid method is the increment of success in the convergence of parameters to the true value. This way, the MVMO approach is only used as an "inteligent initial guess".
+The great advantage of the hybrid method is the increment of success in the convergence of parameters to the true value. This way, the MVMO approach is only used as an "intelligent initial guess".
