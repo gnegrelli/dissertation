@@ -11,7 +11,7 @@
 \chapter{Parameter Estimation of Linearized Z-IM Load Model}
 \label{ch: appendix}
 
-The hybrid approach was also employed on parameter estimation of Z-IM Load Model. This model is able to predict the behaviour of electrical loads during faults in the grid. The Z-IM Load Model is composed of an impedance in parallel with a third-order induction motor (IM), as shown in Figure \ref{img: Z-IM}. According to \cite{Choi}, this model results in low error levels for both active and reactive power, alongside having a smaller parameter vector when compared with other models. It is described by the following equations:
+The hybrid approach was also employed on parameter estimation of the linearized Z-IM load model. This model is able to predict the behaviour of electrical loads during faults in the grid. It is composed of an impedance in parallel with a third-order induction motor (IM), as shown in Figure \ref{img: Z-IM}.
 
 \begin{figure}[h]
     \caption{Schematic of Z-IM Load Model.}
@@ -20,6 +20,8 @@ The hybrid approach was also employed on parameter estimation of Z-IM Load Model
     \end{center}
     \label{img: Z-IM}
 \end{figure}
+
+According to \cite{Choi}, this model results in low error levels for both active and reactive power, alongside having a smaller parameter vector when compared with other models. It is described by equations \eqref{eq: xZIM}, \eqref{eq: yZIM} and \eqref{eq: terms}.
 
 \begin{equation}
     \begin{cases}
@@ -72,7 +74,7 @@ The hybrid approach was also employed on parameter estimation of Z-IM Load Model
 	\label{eq: ZIMoutput}
 \end{equation}
 
-The Z-IM load model is much more complex than the spring-mass system, with 9 parameters to be estimated. The hybrid approach proposed was able to estimate the parameters of this system and the comparison between real and modeled behaviour with the parameters obtained can be seen in the Figure \ref{fig: ZIM}.
+The hybrid approach proposed was able to estimate the parameters of this system and the comparison between real and modeled behaviour with the parameters obtained can be seen in the Figure \ref{fig: ZIM}.
 
 \begin{figure}[h]
 	\caption{Result of parameter estimation for Z-IM Load Model}

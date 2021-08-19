@@ -23,17 +23,17 @@ Metaheuristics employ a stochastic search to find near-optimal solutions inside 
 
 The second approach applies analytical methods to find the local optimum solution from equations derived from the problem. Thus, they are problem specific and must be adapted from one case to another. Analytical methods often converge in few iterations, reducing processing time, but they are sensitive to initial conditions. Some examples of analytical methods are Newton's Method, Kalman Filter, Unscented Kalman Filter, etc.
 
-By combining both approaches, the resulting method is expected to reduce the effects of their disadvantages and improving overall convergence. Mean-Variance Mapping Optimization (MVMO) was the metaheuristic chosen for this problem, alongside Trajectory Sensitivity Method (TSM) as analytical method. Both methods will be discussed in the following sections.
+By combining both approaches, the resulting method is expected to reduce the effects of their disadvantages and improve overall convergence. Mean-Variance Mapping Optimization (MVMO) was the metaheuristic chosen for this problem, alongside Trajectory Sensitivity Method (TSM) as analytical method. Both methods will be discussed in the following sections.
 
 \section{Mean-Variance Mapping Optimization Method}
 
-Presented in \cite{Erlich2010}, this metaheuristic based in evolution of populations shares characteristics with other evolutionary algorithms, but differ from them on how to induce mutations on the offspring in order to diversify the population. By considering statistical data of population during mutation process, MVMO introduces a memory factor to it, enhancing its search mechanism. Due this factor, MVMO performs better than similar metaheuristics when population size is relatively small \cite{Nakawiro2011}. The terms `gene', `individuals' and `population' refer to `parameter', `parameter vector' and `set of parameter vectors' in MVMO, for the sake of analogy.
+Presented in \cite{Erlich2010}, this metaheuristic based in evolution of populations shares characteristics with other evolutionary algorithms, but differ from them on how to induce mutations on the offspring in order to diversify the population. By considering statistical data of population during mutation process, MVMO introduces a memory factor to it, enhancing its search mechanism. Due to this factor, MVMO performs better than similar metaheuristics when population size is relatively small \cite{Nakawiro2011}. For the sake of analogy, in this section the terms `gene', `individuals' and `population' will be used to refer to `parameter', `parameter vector' and `set of parameter vectors', respectively.
 
 Two other relevant concepts largely used in metaheuristics are exploration and exploitation. The first one refers to a broad search carried through the region of interest. On the other hand, exploitation means the search on a small neighbourhood close to the best solutions.
 
-Before starting the parameter search process, a few settings must be done, such as population size, number of offspring, number of genes selected for mutation and selection method. Also, the search region is defined by setting the range within genes can vary. This constrains the parameters values within a feasible region, preventing divergence. The search region is later normalized for all genes  by rescalling the values into the interval $[0, 1]$, where the lower and upper boundaries correspond to 0 and 1, respectively. Termination criteria is also set in this step. In this work, both number of generations and error will be used as stop criteria.
+Before starting the parameter search process, a few settings must be defined, such as population size, number of offspring, number of genes selected for mutation and selection method. Also, the search region is defined by setting the range within genes can vary. This constrains the parameters values within a feasible region, preventing divergence. The search region is later normalized for all genes  by rescalling the values into the interval $[0, 1]$, where the lower and upper boundaries correspond to 0 and 1, respectively. Termination criteria is also set in this step. In this work, both number of generations and error will be used as stop criteria.
 
-After that, a randomly-distributed population is generated, evaluated and sorted. Moreover, the mean and variance of every gene in each population are calculated. These values will later be used on the mutation process. The individual with lower error is selected as parent for a new generated individual. The offspring is then created following three steps common in evolutionary algorithms: gene selection, mutation and crossover. After creation, the offspring is introduced to the population and the worst individual is discarded, as depicted in Figure \ref{fig: MVMOprocess}.
+After that, a randomly-distributed population is generated, evaluated and sorted. Moreover, the mean and variance of every gene in the population are calculated. These values will later be used on the mutation process. The individual with lower error is selected as parent for a new generated individual. The offspring is then created following three steps common in evolutionary algorithms: gene selection, mutation and crossover. After creation, the offspring is introduced to the population and the worst individual is discarded, as depicted in Figure \ref{fig: MVMOprocess}.
 
 \begin{figure}[h]
 	\caption{Exemplification of MVMO process}
@@ -43,16 +43,16 @@ After that, a randomly-distributed population is generated, evaluated and sorted
 	\label{fig: MVMOprocess}
 \end{figure}
 
-\textbf{Gene selection} can be done in many ways and even vary throughout the estimation process, with strategies' efficiency depending on the problem. However, three strategies are commonly used in this step. The first one is comprised of randomly selecting which genes will suffer mutation and which will be directly inherited from the parent. Genes can also be selected by a moving window approach, where a fixed-length window informs which consecutive genes will suffer mutation. At each iteration, this window moves a predefined number of steps, resampling the genes. Furthermore, a combination of both strategies, with part of the genes selected at random and other through a moving window can be applied for selecting the genes.
+\textbf{Gene selection} can be done in many ways and even vary throughout the estimation process, with its efficiency depending on the problem. However, three strategies are commonly used in this step. The first one is comprised of randomly selecting which genes will suffer mutation and which will be directly inherited from the parent. Genes can also be selected by a moving window approach, where a fixed-length window informs which consecutive genes will suffer mutation. At each iteration, this window moves a predefined number of steps, resampling the genes. Furthermore, a combination of both strategies, with part of the genes selected at random and other through a moving window can be applied for selecting the genes.
 
-\textbf{Mutation} step takes place after gene selection. At first, each selected gene receives a random value $\tilde{p}$ between [0,1] that will be used as an input to a mapping function based on the mean and variance of each particular gene on the population. Variance $v_{i}$ will directly influence on the shape factor $s_{i}$,  given by \eqref{eq: shapefac}, where $f_{s}$ is the scaling factor responsible for focusing on exploration or exploitation. In the event of zero variance, the last non-null value of $v_{i}$ is used.
+\textbf{Mutation} step takes place after gene selection. At first, each selected gene receives a random value $\tilde{p}$ in the interval [0,1] that will be used as input to a mapping function based on the mean and variance values of each particular gene on the population. Variance $v_{i}$ will directly influence the shape factor $s_{i}$,  given by \eqref{eq: shapefac}, where $f_{s}$ is the scaling factor responsible for focusing on exploration or exploitation. In the event of zero variance, the last non-null value of $v_{i}$ is used.
 
 \begin{equation}
 	s_{i} = -f_{s}ln(v_{i})
 	\label{eq: shapefac}
 \end{equation}
 
-Shape factor $s_{i}$ and mean value $\bar{p_{i}}$ of genes are used as inputs to the transformation function $h$, detailed in \eqref{eq: hfunc}. The final value of the gene is obtained through the mapping function described by equation \eqref{eq: mappingf}, where $h_{p} = h(z_{i} = \tilde{p})$, $h_{1} = h(z_{i} = 1)$ and $h_{0} = h(z_{i} = 0)$. It is important to notice that the mapping function will always provide a result in the interval [0,1], not violating the normalization made at beginning.
+Shape factor $s_{i}$ and mean value $\bar{p_{i}}$ of genes are used as inputs to the transformation function $h$, detailed in \eqref{eq: hfunc}. The final value of the gene is obtained through the mapping function described by equation \eqref{eq: mappingf}, where $h_{p} = h(z_{i} = \tilde{p})$, $h_{1} = h(z_{i} = 1)$ and $h_{0} = h(z_{i} = 0)$. It is important to notice that the mapping function will always provide a result in the interval [0,1], not violating the normalization made at the beginning.
 
 \begin{equation}
 	h(\bar{p_{i}}, s_{i1}, s_{i2}, z_{i}) = \bar{p_{i}}(1 - e^{-z_{i}s_{i1}}) + (1 + \bar{p_{i}})e^{-(1 - z_{i})s_{i2}}
@@ -129,7 +129,7 @@ By rearranging the terms on \eqref{eq: Taylor}, the following equation is obtain
 	\mathbf{p}^{n+1} = \mathbf{p}^{n} + \Gamma^{-1}(\mathbf{p}^{n})\cdot G(\mathbf{p}^{n})
 \end{equation}
 
-Obtaining the Jacobian matrix (also called trajectory sensitivity matrix) $\frac{\partial y}{\partial p}$, used in \eqref{eq: G(p)} and \eqref{eq: Gamma}, analytically is a hard task. However, by applying the definition of derivative, given by \eqref{eq: deriv}, the sensibilities can be approximated without any analytical derivation of the equations.
+Obtaining the Jacobian matrix (also called trajectory sensitivity matrix) $\frac{d\mathbf{y}}{d\mathbf{p}}$, used in \eqref{eq: G(p)} and \eqref{eq: Gamma}, analytically is a hard task. However, by applying the definition of derivative, given by \eqref{eq: deriv}, the sensibilities can be approximated without any analytical derivation of the equations.
 
 \begin{equation}
 	\frac{df(x)}{dx} = \lim\limits_{\delta \to 0} \frac{f(x + \delta) - f(x)}{\delta}
@@ -161,11 +161,13 @@ Consider two parameter vectors $\mathbf{p}$ and $\mathbf{p}^{\epsilon}$, where $
 With $\epsilon$ sufficiently small, the partial derivative with respect to the parameter $p_{i}$ can be approximated by the difference shown in equation \eqref{eq: diff}. The value of $\epsilon = 0.1 \times 10^{-3}$ have shown great results for most cases. Using the approximation of the partial derivatives allows Trajectory Sensitivity method to be applied on both differentiable and non-differentiable systems \cite{Benchluch1993}, \cite{Cari2006}.
 
 \begin{equation}
-	\frac{\partial y(x, p, u)}{\partial p_{i}} \approx \frac{y(x, p^{\epsilon}, u) - y(x, p, u)}{\epsilon p_{i}}
+	\frac{\partial\mathbf{y}}{\partial p_{i}} = 
+	\frac{\partial g(t, \mathbf{u}, \mathbf{x}, \mathbf{p})}{\partial p_{i}} \approx 
+	\frac{g(t, \mathbf{u}, \mathbf{x}, \mathbf{p^{\epsilon}}) - g(t, \mathbf{u}, \mathbf{x}, \mathbf{p})}{\epsilon p_{i}}
 	\label{eq: diff}
 \end{equation}
 
-The Trajectory Sensitivity Method has fast convergence characteristics and can applied directly to nonlinear problems, not requiring linearization. Also, by analyzing the sensitivities, the method provides information about identifiability of parameters. However, TSM is very sensitive to initial value of parameter chosen as starting point. Thus, if the initial values are too far from the real values, the method can either diverge or converge to wrong values. Besides, the information provided to the method must contain the effects of the parameters, otherwise they won't be observable \cite{Benchluch1993}.
+The Trajectory Sensitivity Method has fast convergence characteristics and can be applied directly to nonlinear problems, not requiring linearization. Also, by analyzing the sensitivities, the method provides information about identifiability of parameters. However, TSM is very sensitive to initial value of parameter chosen as starting point. Thus, if the initial values are too far from real, the method can either diverge or converge to wrong values. Besides, the information provided to the method must contain the effects of the parameters, otherwise they won't be observable \cite{Benchluch1993}.
 
 \section{Hybrid Estimation Method}
 \label{sec: Hybrid_Method}
@@ -180,13 +182,13 @@ By associating MVMO and TSM, the hybrid estimation approach applied in this work
 	\label{fig: flowchart}
 \end{figure}
 
-At first, a set of measurement data are recorded in the "Real System" block. These measurements must contain information of the dynamic response of the system. After that, part of the data is used as input to the block "Model", which is composed of equations of the mathematical model. The outputs of the "Real System" and "Model" are compared to evaluate the error function $J(p)$. While $J(p)$ is greater than a given tolerance $tol_{1}$, MVMO algorithm will look for possible optimal solutions across the search region. Afterwards, the error will eventually drop to a value lower than $tol_{1}$, and TSM will be used to refine the search to an optimal solution, with error level below tolerance $tol_{2}$.
+At first, a set of measurement data are recorded in the "Real System" block. These measurements must contain information of the dynamic response of the system. After that, part of the data is used as input to the block "Model", which is composed of equations of the mathematical model. The outputs of the "Real System" and "Model" are compared to evaluate the error function $J(\mathbf{p})$. While $J(\mathbf{p})$ is greater than a given tolerance $tol_{1}$, MVMO algorithm will look for possible optimal solutions across the search region. Afterwards, the error will eventually drop to a value lower than $tol_{1}$, and TSM will be used to refine the search to an optimal solution, with error level below tolerance $tol_{2}$.
 
-In order to assess the parameter estimation methods (TSM, MVMO and hybrid method), the parameter estimation of spring-mass model was conducted and its results are shown in the following section. The spring-mass is a nonlinear dynamic system and was chosen for this assessment due to its simplicity and reduced order.
+In order to assess the parameter estimation methods (TSM, MVMO and hybrid method), the parameter estimation of spring-mass model was conducted and its results are shown in the following section. Spring-mass is a nonlinear dynamic system and was chosen for this assessment due to its simplicity and reduced order.
 
 \section{Parameter Estimation of Spring-Mass Model}
 
-The spring-mass system is a simple mathematical model often used as example of dynamic systems. It is composed of an object of mass $m$ connected to a fixed point in space by a spring of stiffness constant $k$. The mass is on a surface with no friction and oscillates when disturbed by an external force $\vec{F}$. The system is depicted in Figure \ref{fig: spring_mass}.
+The spring-mass is a simple mathematical model often used as example of dynamic systems. It is composed of an object of mass $m$ connected to a fixed point in space by a spring of stiffness constant $k$. The mass is on a surface with no friction and oscillates when disturbed by an external force $\vec{F}$. The system is depicted in Figure \ref{fig: spring_mass}.
 
 \begin{figure}[h]
 	\caption{Spring-mass system}
@@ -241,7 +243,7 @@ The initial values of $x$ and $v$ are needed in order to solve the ordinary diff
 	F(t\geq 0) = 4\ \text{N}
 \end{equation}
 
-The system was simulated with parameters set at $m = 3\ \text{kg}$ and $k = 6\ \text{N/m}$ and the output behaviour obtained was used as reference for the estimation. Three different estimation processes were executed: TSM, MVMO and the hybrid approach of MVMO and TSM combined. The tolerance for all three estimations was set at $tol = 0.1$.
+The system was simulated with parameters set at $m = 3\ \text{kg}$ and $k = 6\ \text{N/m}$ and the output behaviour obtained was used as reference for the estimation. Three different estimation processes were executed: TSM, MVMO and the hybrid approach with MVMO and TSM combined. The final tolerance for all three estimations was set at $tol = 0.1$.
 
 \subsection{Trajectory Sensitivity Estimation}
 
@@ -268,9 +270,9 @@ It took 7 iterations (10 seconds on a PC) for Trajectory Sensitivity Method to e
 	\label{tab: spring_mass_ts}
 \end{table}
 
-However, the convergence region \footnote{Convergence region is a region in parameter space where, if the initial guess for parameter values is inside it, the convergence to true values is guaranteed.} of TSM is limited, diverging for initial points far enough from the real values. The convergence region for this simulation is shown as the green region in Figure \ref{fig: conv_reg}. For comparison, the MVMO and the hybrid approach converge for the entire search region displayed on the graph.
+However, the convergence region\footnote{Convergence region is a region defined in the parameter space where, if the initial guess for parameter values is inside it, the convergence to true values is guaranteed.} of TSM is limited, diverging for initial points far enough from the real values. The convergence region for this simulation is shown as the green region in Figure \ref{fig: conv_reg}. For comparison, the MVMO and the hybrid approach converge for the entire search region displayed on the graph.
 
-\begin{figure}[h]
+\begin{figure}[H]
 	\caption{Convergence region of Trajectory Sensitivity Method}
 	\begin{center}
 		\includegraphics[scale=0.6]{Images/convergence_region.eps}
@@ -278,7 +280,7 @@ However, the convergence region \footnote{Convergence region is a region in para
 	\label{fig: conv_reg}
 \end{figure}
 
-To illustrate the importance of good initial values, the parameters were reestimated using TSM, but now it was selected initial values $m_{0} = 8\ \text{kg}$ and $k_{0} = 10\ \text{N/m}$ outside the convergence region. Notice that these values are not too far from the ones used in the previous estimation. The results, on the other hand, were extremely different. The method was not able to lower $J(p)$ below $16.4$ and the parameters converged to different values $m_{f} = 2.7\ \text{kg}$ and $k_{f} = 118.6\ \text{N/m}$. The error evolution for this estimation is depict in Figure \ref{fig: TS_nconv}.
+To illustrate the importance of good initial values, the parameters were reestimated using TSM, but now it was selected initial values $m_{0} = 8\ \text{kg}$ and $k_{0} = 10\ \text{N/m}$ outside the convergence region. Notice that these values are not too far from the ones used in the previous estimation. The results, on the other hand, were extremely different. The method was not able to lower $J(\mathbf{p})$ below $16.4$ and the parameters converged to different values $m_{f} = 2.7\ \text{kg}$ and $k_{f} = 118.6\ \text{N/m}$. The error evolution for this estimation is depict in Figure \ref{fig: TS_nconv}.
 
 \begin{figure}[h]
 	\caption{Error evolution of TSM with $m_{0} = 8\ \text{kg}$ and $k_{0} = 10\ \text{N/m}$}
@@ -327,7 +329,7 @@ The effects of population size were evaluated by running estimations for 4 diffe
 	\label{tab: spring_mass_MVMO_size}
 \end{table}
 
-From these results, one can infer that the optimal population size for estimating the parameter of the spring-mass model is around 20 individuals. It can also be noticed that, despite converging on the first generation, populations of size 50 usually take more time to than others due to the large amount of individuals that must be generated and evaluated at the start of the estimation.
+From these results, one can infer that the optimal population size for estimating the parameter of the spring-mass model is around 20 individuals. It can also be noticed that, despite converging on the first generation, populations of size 50 usually take more time than others due to the large amount of individuals that must be generated and evaluated at the start of the estimation.
 
 Figure \ref{fig: MVMO_conv} depicts the error evolution for one of the 35 estimations conducted for a population of 20 individuals. The heuristic method converged after 21 generations, with estimated values of $m=2.6\ \text{kg}$ and $k=5.2\ \text{N/m}$.
 
@@ -341,7 +343,7 @@ Figure \ref{fig: MVMO_conv} depicts the error evolution for one of the 35 estima
 
 \subsection{Hybrid Estimation}
 
-By combining both methods, the hybrid approach benefits from the quick error reduction provided by MVMO and the fast convergence from TSM when inside convergence region. The tolerance for this approach were set at $tol_{1} = 0.5$ (MVMO) and $tol_{2} = 0.1$ (TSM). The population size was set at 20 individuals according to the results obtained in the previous section. Parameters of the spring-mass system were estimated using this method for 35 times and the average estimation time was $11.65\ s$.
+By combining both methods, the hybrid approach benefits from the quick error reduction provided by MVMO and the fast convergence from TSM when inside convergence region. The tolerances for this approach were set at $tol_{1} = 0.5$ (MVMO) and $tol_{2} = 0.1$ (TSM). The population size was set at 20 individuals according to the results obtained in the previous section. Parameters of the spring-mass system were estimated using this method for 35 times and the average estimation time was $11.65\ s$.
 
 Figure \ref{fig: Hybrid_conv} depicts the error evolution for one of the 35 estimations conducted. The hybrid estimation method converged after 3 iterations, with estimated values of $m=3.063\ \text{kg}$ and $k=6.134\ \text{N/m}$.
 
@@ -355,7 +357,7 @@ Figure \ref{fig: Hybrid_conv} depicts the error evolution for one of the 35 esti
 
 When compared to each method, the hybrid approach converges faster than MVMO but slower than TSM, as shown in Table \ref{tab: SM}. Although all methods converged to parameter values that resulted in an error level below the tolerance, TSM and the Hybrid approach provided final results with error level below the values obtained by MVMO.
 
-\begin{table}[h]
+\begin{table}[H]
 	\caption{Comparison of approaches}
 	\begin{center}
 	\begin{tabular}{c|ccccc}
