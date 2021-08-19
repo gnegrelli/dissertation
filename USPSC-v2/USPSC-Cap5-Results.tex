@@ -1,13 +1,13 @@
 \chapter{Estimation Results and Discussions}
 \label{ch: Results}
 
-Initially, the estimation software was applied to the original mathematical model (equation \ref{eq: summary_original}) presented in Section \ref{sec: WPP_model}, developed to represent wind power plants. The hybrid estimation method presented in Section \ref{sec: Hybrid_Method} was applied, with MVMO providing a smart initial solution that will be refined by TSM. The results of the estimation process are shown in the following section of this chapter. In addition, studies on the effects of population size on MVMO convergence time were also conducted and its results are presented. In the end, the application of the estimation software to the proposed mathematical model (equation \ref{eq: summary_proposed}) is also presented in this chapter.
+The estimation software was applied to the original mathematical model (equation \ref{eq: summary_original}) presented in Section \ref{sec: WPP_model}, developed to represent wind power plants. The hybrid estimation method presented in Section \ref{sec: Hybrid_Method} was applied, with MVMO providing a smart initial solution that was later be refined by TSM. The results of the estimation process are shown in the following section of this chapter. In addition, studies on the effects of population size on MVMO convergence time were also conducted and its results are presented. In the end, the application of the estimation software to the proposed mathematical model (equation \ref{eq: summary_proposed}) is also presented in this chapter.
 
 Besides, in order to evaluate the package support on different electrical equipment models, it was used to estimate the parameters of a Linearized Z-IM Load Model. The estimation of this model is presented in the appendix \ref{ch: appendix}.
 
 \section{Parameter Estimation of Original WPP Model}
 
-The original model equation \eqref{eq: summary_original} developed in Section \ref{sec: WPP_model} was used in this case. The estimation was conducted using the disturbance data collected in \cite{Cari2015} as the real system output. In such study, a fault was simulated on a test system using \textit{PowerFactory 14} and the data was used to estimate the parameters of the WPP model using only TSM. The system was simulated during $1\ s$ with measurements taken every $0.001\ s$. The fault was applied at $t=0.1\ s$ and was cleared out by the protection devices at $t=0.3\ s$. Figure \ref{fig: test_system} displays the test system used to collect data and Figure \ref{fig: WPP_voltage} depicts the WPP bus voltage measured during simulation.
+The original model equation \eqref{eq: summary_original} developed in Section \ref{sec: WPP_model} was used in this case. The estimation was conducted using the disturbance data collected in \cite{Cari2015} as the real system output. In such study, a fault was simulated on a test system using \textit{PowerFactory 14} and the data was used to estimate the parameters of the WPP model using only TSM. The system was simulated during $1\ s$ with measurements taken every $0.001\ s$. The fault occurred at $t=0.1\ s$ and cleared out by the protection devices at $t=0.3\ s$. Figure \ref{fig: test_system} displays the test system used to collect data and Figure \ref{fig: WPP_voltage} depicts the WPP bus voltage measured during simulation.
 
 \begin{figure}[!h]
 	\caption{Test system simulated}
@@ -42,7 +42,7 @@ MVMO search region was defined as depicted in Table \ref{tab: MVMO_boundaries}. 
 	\label{tab: MVMO_boundaries}
 \end{table}
 
-At first, 15 individuals (set of parameters) were randomly generated inside this given region, evaluated and ranked according to their error $J(\mathbf{p})$. At every generation, three parameters of the fittest individual would suffer mutation in order to generate a new individual. This process continued until the fittest individual reached an error level below a tolerance of $tol_{1} = 0.5$. If this criterion were not met, MVMO would halt when the \nth{5000} generation was reached.
+At first, 15 individuals (set of parameters) were randomly generated inside the given region, evaluated and ranked according to their error $J(\mathbf{p})$. At every generation, three parameters of the fittest individual suffered mutation in order to generate a new individual. This process continued until the fittest individual reached an error level below a tolerance of $tol_{1} = 0.5$. If this criterion were not met, MVMO would halt when the \nth{5000} generation was reached.
 
 The fittest individual found by MVMO was then used as the starting point to TSM. Since this method converges quickly when close to the optimal solution, it was configured to run for only 7 iterations. Its goal was to find a set of parameters with $J(\mathbf{p})$ below $tol_{2} = 5\times10^{-4}$.
 
@@ -104,7 +104,7 @@ For considerably small populations (less than 5 individuals), the algorithm has 
 
 \section{Parameter Estimation of Proposed WPP Model}
 
-The proposed model equation \eqref{eq: summary_proposed} developed in Section \ref{sec: WPP_model} was used in this case. Given the similarities between original and proposed models, the simulations of the latter were conducted using the same parameter values found for the former. It was observed that, in order to adjust the pre-fault behaviour of the proposed model, the upper limit of the delay blocks should be increased to at least $V_{max} = 1.1\ pu$. With these changes made, the outputs of the proposed model (with the parameters presented in Table \ref{tab: results}) were compared to the original WPP model, as displayed in Figures \ref{fig: proposed_P} and \ref{fig: proposed_Q}.
+The proposed model equation \eqref{eq: summary_proposed} developed in Section \ref{sec: WPP_model} was used in this case. Given the similarities between original and proposed models, the simulations of the latter were conducted using the same parameter values found for the former. It was observed that, in order to adjust the pre-fault behaviour of the proposed model, the upper limit of the delay blocks should be increased to at least $V_{max} = 1.1\ \text{pu}$. With these changes made, the outputs of the proposed model (with the parameters presented in Table \ref{tab: results}) were compared to the original WPP model, as displayed in Figures \ref{fig: proposed_P} and \ref{fig: proposed_Q}.
 
 \begin{figure}[!h]
 	\centering
