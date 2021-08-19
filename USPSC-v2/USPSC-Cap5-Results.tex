@@ -1,243 +1,176 @@
-\chapter{Partial Results}
+\chapter{Estimation Results and Discussions}
+\label{ch: Results}
 
-\label{ch: Res}
+The estimation software was applied to the original mathematical model (equation \ref{eq: summary_original}) presented in Section \ref{sec: WPP_model}, developed to represent wind power plants. The hybrid estimation method presented in Section \ref{sec: Hybrid_Method} was applied, with MVMO providing a smart initial solution that was later be refined by TSM. The results of the estimation process are shown in the following section of this chapter. In addition, studies on the effects of population size on MVMO convergence time were also conducted and its results are presented. In the end, the application of the estimation software to the proposed mathematical model (equation \ref{eq: summary_proposed}) is also presented in this chapter.
 
-The expected result of this work is a estimation software for parameters of Type-3 WTG's mathematical model \eqref{eq: Summary} in equation. To achieve this goal, the software will use the proposed hybrid estimation method of MVMO and TSM.
+Besides, in order to evaluate the package support on different electrical equipment models, it was used to estimate the parameters of a Linearized Z-IM Load Model. The estimation of this model is presented in the appendix \ref{ch: appendix}.
 
-The measurements will be obtained from a small power system simulated on specific software, such as DIgSILENT or MATLAB. At first, the model proposed in \cite{Erlich2012} will be employed, but it can be further changed if needed. Also, other estimation methods, such as Particle Swarm Optimization, Differential Evolution or Kalman Filters, may be implemented for comparison purposes.
+\section{Parameter Estimation of Original WPP Model}
 
-The hybrid approach for parameters estimation presented in this work was already implemented by the author and has shown great results for different models. For learning and testing purposes, the proposed approach was used to estimate parameters of simple systems, such as the spring-mass system, for testing purposes, but also in complex applications, such as load models. The results obtained from those systems are presented in the following subsections.
+The original model equation \eqref{eq: summary_original} developed in Section \ref{sec: WPP_model} was used in this case. The estimation was conducted using the disturbance data collected in \cite{Cari2015} as the real system output. In such study, a fault was simulated on a test system using \textit{PowerFactory 14} and the data was used to estimate the parameters of the WPP model using only TSM. The system was simulated during $1\ s$ with measurements taken every $0.001\ s$. The fault occurred at $t=0.1\ s$ and cleared out by the protection devices at $t=0.3\ s$. Figure \ref{fig: test_system} displays the test system used to collect data and Figure \ref{fig: WPP_voltage} depicts the WPP bus voltage measured during simulation.
 
-\section{Application of Hybrid Method on Spring-Mass System}
-
-The spring-mass system is a simple physical model often used as example of dynamic systems. It is composed of an object of mass $m$ connected to a fixed point in space by a spring of stiffness constant $k$. When disturbed by an external force $u$, the object oscillates and its movement is described by \eqref{eq: SpringMass}, $x$ is the position of the object while $x_{1}$ and $x_{2}$ correspond to its speed and acceleration, respectively. The system output, parameter vector, input and initial conditions are presented on \eqref{eq: SMoutput}, \eqref{eq: SMp}, \eqref{eq: SMinput} and \eqref{eq: SMinitcond}, respectively.
-
-\begin{equation}
-	\begin{bmatrix}
-		\dot{x_{1}} \\
-		\dot{x_{2}}
-	\end{bmatrix} = 
-	\begin{bmatrix}
-		0 & 1 \\
-		\frac{k}{m} & 0
-	\end{bmatrix}\cdot
-	\begin{bmatrix}
-		x_{1} \\
-		x_{2}
-	\end{bmatrix} -
-	\begin{bmatrix}
-		0 \\
-		\frac{1}{m}
-	\end{bmatrix}
-	\cdot
-	u
-	\label{eq: SpringMass}
-\end{equation}
-
-\begin{equation}
-	y = \begin{bmatrix}
-		x_{1}, x_{2}
-	\end{bmatrix}^ {T}
-	\label{eq: SMoutput}
-\end{equation}
-
-\begin{equation}
-	p = \begin{bmatrix}
-		m, k
-	\end{bmatrix}^ {T}
-	\label{eq: SMp}
-\end{equation}
-
-\begin{equation}
-	u(t = 0) = 1
-	\label{eq: SMinput}
-\end{equation}
-
-\begin{equation}
-	\begin{cases}
-		x_{1}(0) = 0 \\
-		x_{2}(0) = 0
-	\end{cases}
-	\label{eq: SMinitcond}
-\end{equation}
-
-The behaviour of the real system was obtained by means of simulation with parameters set at $m = 3\ kg$ and $k = 6\ N/m$. Three different estimation process were executed: TSM, MVMO and the hybrid approach of MVMO and TSM combined. The tolerance for all three estimations was set at $tol = 0.1$.
-
-\subsection{Trajectory Sensitivity Results}
-
-It took only 7 iterations (7 seconds on a PC) for Trajectory Sensitivity Method to estimate the parameters when the initial values were $m_{0} = 7\ kg$ and $k_{0} = 7\ N/m$. This shows how fast this method is, as long as the initial values are in the neighbourhood of the real parameters. Figure \ref{fig: TS_conv} shows the error evolution during estimation suing TSM.
-
-\begin{figure}[h]
-	\caption{Error evolution of TSM with $m_{0} = 7\ kg$ and $k_{0} = 7\ N/m$}
+\begin{figure}[!h]
+	\caption{Test system simulated}
 	\begin{center}
-		\includegraphics[scale=0.7]{Images/TS_conv.eps}
+		\includegraphics[scale=1]{Images/Cari_test_system.eps}
 	\end{center}
-	\label{fig: TS_conv}
+	\label{fig: test_system}
 \end{figure}
 
-However, the convergence region \footnote{Convergence region is a region in parameter space where, if the initial guess for parameter values is inside it, the convergence to true values is guaranteed.} of TSM is extremely limited, diverging for initial points far enough from the real values. The convergence region for the real values was obtained in \cite{Ecyo} and is shown in Figure \ref{fig: conv_reg}. For comparison, the MVMO and the hybrid approach converge for the entire search region displayed on the graph.
-
-\begin{figure}[h]
-	\caption{Convergence region of Trajectory Sensitivity Method}
-	\begin{center}
-		\includegraphics[scale=0.7]{Images/Conv_reg.eps}
-	\end{center}
-	\label{fig: conv_reg}
-	\legend{Source: Adapted from \cite{Ecyo}}
+\begin{figure}[!h]
+	\centering
+	\caption{WPP bus voltage}
+	\includegraphics[scale=.7]{Images/bus_voltage.eps}
+	\label{fig: WPP_voltage}
 \end{figure}
 
-To illustrate the importance of good initial values, the parameters were reestimated using TSM, but now the initial values were set to be $m_{0} = 8\ kg$ and $k_{0} = 10\ N/m$. Notice that these values are not too far from the ones used in the previous estimation. The results, on the other hand, were extremely different. The method was not able to lower the error below $16.4$ and the parameters found were $m_{f} = 2.7\ kg$ and $k_{f} = 118.6\ N/m$. The error evolution for this estimation is depict in Figure \ref{fig: TS_nconv}.
+MVMO search region was defined as depicted in Table \ref{tab: MVMO_boundaries}. These boundaries were decided based on the values previously found in \cite{Cari2015}.
 
-\begin{figure}[h]
-	\caption{Error evolution of TSM with $m_{0} = 8\ kg$ and $k_{0} = 10\ N/m$}
-	\begin{center}
-		\includegraphics[scale=0.7]{Images/TS_nconv.eps}
-	\end{center}
-	\label{fig: TS_nconv}
-\end{figure}
+\begin{table}[!h]
+	\centering
+	\caption{MVMO search region}
+	\begin{tabular}{c|cc}
+		Parameter & \shortstack{Lower \\ boundary} & \shortstack{Upper \\ boundary} \\\hline
+		R & 0.027 & 0.040 \\
+		X & 0.16 & 0.24 \\
+		$k_{I}$ & 5.58 & 8.37 \\
+		$T_{I}$ & 0.028 & 0.043 \\
+		$T_{V}$ & 0.22 & 0.32 \\
+		$k_{VC}$ & 1.60 & 2.40 \\
+		$i_{max}$ & 0.88 & 1.32
+	\end{tabular}
+	\label{tab: MVMO_boundaries}
+\end{table}
 
-\subsection{MVMO Results}
+At first, 15 individuals (set of parameters) were randomly generated inside the given region, evaluated and ranked according to their error $J(\mathbf{p})$. At every generation, three parameters of the fittest individual suffered mutation in order to generate a new individual. This process continued until the fittest individual reached an error level below a tolerance of $tol_{1} = 0.5$. If this criterion were not met, MVMO would halt when the \nth{5000} generation was reached.
 
-To use MVMO, a search region in parameter space must be defined. Therefore, the parameters boundaries was defined as $0 \leq m \leq 9$ and $0 \leq k \leq 15$. The population size was set at 5 individuals and after every generation 1 new individual was created. The heuristic method converged after almost 10000 generations, as depicted in Figure \ref{fig: MVMO_conv}. This figure also shows how MVMO rapidly reduces error of estimation, but as the values approach the neighbourhood of the real values, it slows down.
+The fittest individual found by MVMO was then used as the starting point to TSM. Since this method converges quickly when close to the optimal solution, it was configured to run for only 7 iterations. Its goal was to find a set of parameters with $J(\mathbf{p})$ below $tol_{2} = 5\times10^{-4}$.
 
-\begin{figure}[h]
-	\caption{Error evolution of MVMO}
-	\begin{center}
-		\includegraphics[scale=0.7]{Images/MVMO_conv.eps}
-	\end{center}
-	\label{fig: MVMO_conv}
-\end{figure}
-
-\subsection{Hybrid Approach Results}
-
-By combining both methods, the hybrid approach benefits from the quick error reduction provided by MVMO and the fast convergence from TSM when inside convergence region. The error evolution obtained from this approach is depicted in Figure \ref{fig: Hybrid_conv}. The tolerance for this approach were set at $tol_{1} = 1.5$ and $tol_{2} = 0.1$.
-
-\begin{figure}[h]
-	\caption{Results of hybrid approach for spring-mass system}
-	\begin{center}
-		\includegraphics[scale=0.7]{Images/Hybrid_conv.eps}
-	\end{center}
-	\label{fig: Hybrid_conv}
-\end{figure}
-
-When compared to each method, the hybrid approach converges faster than MVMO but slower than TSM, as shown in Table \ref{tab: SM}. Although all methods converged to parameter values that resulted in an error level below the tolerance, TSM and the Hybrid approach provided final results with error level below the values obtained by MVMO.
+The parameters were estimated in 8.11 seconds in total, with MVMO and TSM taking 4.19 and 3.92 seconds, respectively, resulting in an error $J(\mathbf{p}) = 1.5\times 10^{-4}$. The value estimated for each parameter is displayed in the Table \ref{tab: results}.
 
 \begin{table}[h]
-	\caption{Comparison of approaches}
-	\begin{center}
-	\begin{tabular}{c|c|c}
-		Approach & Time & Final Error \\
-		\hline
-		TSM  & $7 \ s$  & $2.76\times 10^{-3}$ \\
-		MVMO  & $24 \ min$  & $89.33\times 10^{-3}$\\
-		Hybrid  & $10 \ min$  & $1.54\times 10^{-3}$
+	\centering
+	\caption{Estimated values of parameters}
+	\begin{tabular}{c|c}
+		Parameter & \shortstack{Estimated \\ value} \\\hline
+		R & 0.034 \\
+		X & 0.198 \\
+		$k_{I}$ & 6.333 \\
+		$T_{I}$ & 0.0348 \\
+		$T_{V}$ & 0.246 \\
+		$k_{VC}$ & 1.999 \\
+		$i_{max}$ & 1.100
 	\end{tabular}
-	\end{center}
-	\label{tab: SM}
+	\label{tab: results}
 \end{table}
 
-\section{Application of Hybrid Method on Linearized Z-IM Load Model}
-
-The hybrid approach was also employed on parameter estimation of Z-IM Load Model. This model is able to predict the behaviour of electrical loads during faults in the grid. The Z-IM Load Model is composed of an impedance in parallel with a third-order induction motor (IM), as shown in Figure \ref{img: Z-IM}. According to \cite{Choi}, this model results in low error levels for both active and reactive power, alongside having a smaller parameter vector when compared with other models. It is described by the following equations:
+Figures \ref{fig: output_P} and \ref{fig: output_Q} depict, respectively, real and active power measured from the simulated system and calculated using the WPP model with estimated parameters. For both components, the model output matches almost exactly with the curve expected. Therefore, the WPP model adjusted with the parameter vector found is able to reproduce the behaviour of the same wind power plant in similar conditions.
 
 \begin{figure}[h]
-    \caption{Schematic of Z-IM Load Model.}
-    \begin{center}
-    	\includegraphics[scale=1]{Images/drawZIM.eps}
-    \end{center}
-    \label{img: Z-IM}
+	\centering
+	\caption{Active power of real system (measured) and mathematical model (simulated) after parameter estimation}
+	\includegraphics[scale=0.7]{Images/P_compared.eps}
+	\label{fig: output_P}
 \end{figure}
-
-\begin{equation}
-    \begin{cases}
-        \dot{\Delta E'} = \frac{-1}{T_{o}X'}[X\Delta E' + (X - X')V_{0}\sin\delta_{0}\Delta \delta] + \frac{(X - X')\cos\delta_{0}}{T_{0}X'}\Delta V \\
-        \\
-        \dot{\Delta \delta} = \frac{(X-X')V_{0}}{T_{0}X'E'_{0}}\cdot\left(\frac{\sin\delta_{0}\Delta E'}{E'_0} - \cos\delta_{0}\Delta\delta\right) + \Delta\omega - \frac{(X - X')\sin\delta_0}{T_o X'E'_0}\Delta V \\
-        \\
-        \dot{\Delta \omega} = \frac{-V_{0}}{MX'}(\sin\delta_{0}\Delta E' + E'_{0}\cos\delta_{0}\Delta\delta) - \frac{E'_0\sin\delta_0}{MX'}\Delta V
-    \end{cases}
-    \label{eq: xZIM}
-\end{equation}
-
-\begin{equation}
-    \begin{cases}
-        \Delta P = \frac{-V_{0}}{X'}(\sin{\delta_{0}}\Delta E' + E'_{0}\cos{\delta_{0}}\Delta \delta) + \left(2G_{s} V_{0} - \frac{E'_{0} \sin{\delta_{0}}}{X'}\right)\Delta V \\
-        \\
-        \Delta Q = \frac{-V_{0}}{X'}(\cos{\delta_{0}}\Delta E' + E'_{0}\sin{\delta_{0}}\Delta\delta) + \left(2B_{s} V_{0} + \frac{2V_{0} - E'_{0} \cos{\delta_{0}}}{X'}\right)\Delta V
-    \end{cases}
-    \label{eq: yZIM}
-\end{equation}
-
-\begin{equation}
-    \begin{cases}
-    X = X_{s} + X_{m} \\
-    X' = X_{s} + \frac{X_{m} X_{r}}{X_{m} + X_{s}} \\
-    T_{o} = \frac{X_{r} + X_{m}}{\omega_{s} R_{r}}
-    \end{cases}
-    \label{eq: terms}
-\end{equation}
-
-\noindent where the terms $\Delta E'$ and $\Delta \delta$ represent the variation on voltage magnitude and angle at the motor terminals, $\Delta \omega$ is the variation on stator speed, in rad/s. $X_m$, $X_s$ and $X_r$ are the magnetizing, stator and rotor reactances, respectively, $R_r$ stands for the rotor resistance, $\omega_{s}$ is the synchronous speed, $T_o$ represents the open-circuit transient time constant, $M$ is the motor inertia and $V_{0}$ is the voltage on the load terminals before the disturbance. The state, output, input and parameter vectors are presented in \eqref{eq: ZIMstate}, \eqref{eq: ZIMoutput}, \eqref{eq: ZIMinput} and \eqref{eq: ZIMparam}, respectively.
-
-\begin{equation}
-	x = [\Delta E', \Delta \delta, \Delta \omega]^{T}
-	\label{eq: ZIMstate}
-\end{equation}
-
-\begin{equation}
-	y = [\Delta P, \Delta Q]^{T}
-	\label{eq: ZIMoutput}
-\end{equation}
-
-\begin{equation}
-	u = [\Delta V]
-	\label{eq: ZIMinput}
-\end{equation}
-
-\begin{equation}
-	p = [X, X', T_{0}, M, G_{s}, B_{s}, E'_{0}, \delta_{0}]^{T}
-	\label{eq: ZIMparam}
-\end{equation}
-
-The Z-IM load model is much more complex than the spring-mass system, with 9 parameters to be estimated. The hybrid approach proposed was able to estimate the parameters of this system and the comparison between real and modeled behaviour with the parameters obtained can be seen in the Figure \ref{fig: ZIM}.
 
 \begin{figure}[h]
-	\caption{Result of parameter estimation for Z-IM Load Model}
-	\begin{center}
-		\includegraphics[scale=1]{Images/ZIM.eps}
-	\end{center}
-	\label{fig: ZIM}
-	\legend{Source: \cite{Gomes2019}}
+	\centering
+	\caption{Reactive power of real system (measured) and mathematical model (simulated) after parameter estimation}
+	\includegraphics[scale=0.7]{Images/Q_compared.eps}
+	\label{fig: output_Q}
 \end{figure}
 
-The application of the hybrid approach on Linearized Z-IM Load Model is subject of a paper presented by the author on the 2019 IEEE Canadian Conference on Electrical and Computer Engineering entitled ``\textit{Load Model Identification Through a Hybrid Approach}".
+\subsection{Influence of MVMO Population Size}
 
-\section{Ongoing Progress}
+In order to evaluate how the population size affects MVMO, a series of estimations using only this method were executed varying only the number of individuals. Five population sizes were chosen for this experiment (5, 10, 20, 50 and 100 individuals) and, for each one of them, 35 estimations were executed.
 
-With the methods already implemented and tested, the focus is now on the DFIG model. The model has presented some results, but it is not as accurate as expected, requiring some studies about this topic. The implementation of other WTG models for comparison is also under study.
+Apart from population size, all method configurations were fixed, so the results could be directly compared. The error tolerance was set at $tol_{1} = 0.5$ and the search region was the same as presented in Table \ref{tab: MVMO_boundaries}. The mean duration of estimation for each population size is shown below.
 
-The simulation of wind turbine generators and power plants on specific software will be carried out on the next months. The GUI is under development and already has some features implemented using Python's library \textit{Tkinter}. A proposal to also develop features using \textit{Qt}, a different GUI tool package, is currently under consideration.
-
-The next steps for this work are presented in Table \ref{tab: nextsteps}. 
-
-\begin{table}[ht]
-\caption{Summary of next steps}
-\centering
-\begin{tabular}{c|c|c|c}
-\hline
-\rowcolor{Purple}
-Data  & WTG & Estimation &  \\
-\rowcolor{Purple}
-Acquisition & Modelling & Method & \multirow{-2}{*}{GUI} \\
-\hline
-\rowcolor{LightCyan}
-Synthetic data  & Model implemented  & Method implemented  & Concept defined. \\
-\rowcolor{LightCyan}
-will be obtained  & with bad results. & and tested. & Some windows \\
-\rowcolor{LightCyan}
-via simulation. & Improvements currently & Improvements under & have already \\
-\rowcolor{LightCyan}
- & under study. & study. & been implemented.
-\end{tabular}
-\label{tab: nextsteps}
+\begin{table}[h]
+	\centering
+	\caption{Influence of population size in MVMO}
+	\begin{tabular}{c|c}
+		\shortstack{\# of \\ individuals} & \shortstack{Average \\ duration (s)} \\\hline
+		5 & 15.62 \\
+		10 & 11.08 \\
+		20 & 13.02 \\
+		50 & 17.84 \\
+		100 & 29.00 
+	\end{tabular}
+	\label{tab: pop_size}
 \end{table}
+
+For considerably small populations (less than 5 individuals), the algorithm has to further explore the search region, due to reduced number of candidates. On the other extreme, large populations (more than 50 individuals) usually present good candidates in their initial population, only requiring a refinement of the solution. However, generating and evaluating all initial candidates has a huge cost, impacting on the estimation time. For these reasons, populations of 10 to 20 individuals present better convergence times than others, as depicted in Table \ref{tab: pop_size}.
+
+\section{Parameter Estimation of Proposed WPP Model}
+
+The proposed model equation \eqref{eq: summary_proposed} developed in Section \ref{sec: WPP_model} was used in this case. Given the similarities between original and proposed models, the simulations of the latter were conducted using the same parameter values found for the former. It was observed that, in order to adjust the pre-fault behaviour of the proposed model, the upper limit of the delay blocks should be increased to at least $V_{max} = 1.1\ \text{pu}$. With these changes made, the outputs of the proposed model (with the parameters presented in Table \ref{tab: results}) were compared to the original WPP model, as displayed in Figures \ref{fig: proposed_P} and \ref{fig: proposed_Q}.
+
+\begin{figure}[!h]
+	\centering
+	\caption{Active power from original and proposed models}
+	\includegraphics[scale=.7]{Images/P_proposed.eps}
+	\label{fig: proposed_P}
+\end{figure}
+
+\begin{figure}[!h]
+	\centering
+	\caption{Reactive power from original and proposed models}
+	\includegraphics[scale=.7]{Images/Q_proposed.eps}
+	\label{fig: proposed_Q}
+\end{figure}
+
+It can be noticed that reactive power obtained with the proposed model is not distant from the behaviour obtained with the original WPP model. Active power, on the other hand, diverged from the expected, specially during post-fault period. 
+
+Afterwards, the estimation of the parameters of the proposed model was conducted applying only MVMO. The tolerance was set at $tol = 1\times 10^{-3}$ and the search region defined as presented in Table \ref{tab: MVMO_boundaries_proposed}. The parameter $V_{max}$ was not included in the estimation and its value was set to $1.1$.
+
+\begin{table}[!h]
+	\centering
+	\caption{MVMO search region used on estimation of proposed model}
+	\begin{tabular}{c|cc}
+		Parameter & \shortstack{Lower \\ boundary} & \shortstack{Upper \\ boundary} \\\hline
+		R & 0.01 & 0.1 \\
+		X & 0.05 & 0.8 \\
+		$k_{I}$ & 3 & 15 \\
+		$T_{I}$ & 0.01 & 0.2 \\
+		$T_{V}$ & 0.1 & 1 \\
+		$k_{VC}$ & 1 & 5 \\
+		$i_{max}$ & 0.7 & 1.6
+	\end{tabular}
+	\label{tab: MVMO_boundaries_proposed}
+\end{table}
+
+The resulting parameter vector is depicted in Table \ref{tab: results_proposed}. Behaviours of active and reactive power for the proposed model are shown in Figures \ref{fig: estimation_proposed_P} and \ref{fig: estimation_proposed_Q}, respectively. The estimation process took 5000 generations (1133 seconds on i3 desktop) and the final error was $J(\mathbf{p}) = 15.84\times 10^{-3}$.
+
+\begin{table}[h]
+	\centering
+	\caption{Estimated parameters for proposed model}
+	\begin{tabular}{c|c}
+		Parameter & \shortstack{Estimated \\ value} \\\hline
+		R & 0.030 \\
+		X & 0.646 \\
+		$k_{I}$ & 3.246 \\
+		$T_{I}$ & 0.200 \\
+		$T_{V}$ & 0.971 \\
+		$k_{VC}$ & 2.483 \\
+		$i_{max}$ & 0.952 \\
+		$V_{max}$ & 1.1
+	\end{tabular}
+	\label{tab: results_proposed}
+\end{table}
+
+\begin{figure}[!h]
+	\centering
+	\caption{Active power of proposed model after estimation}
+	\includegraphics[scale=.7]{Images/P_proposed_estimated.eps}
+	\label{fig: estimation_proposed_P}
+\end{figure}
+
+\begin{figure}[!h]
+	\centering
+	\caption{Reactive power of proposed model after estimation}
+	\includegraphics[scale=.7]{Images/Q_proposed_estimated.eps}
+	\label{fig: estimation_proposed_Q}
+\end{figure}
+
+Despite the similarities, there are still differences between the behaviours of the proposed WPP model and the real system. These results indicate that the proposed WPP model is not entirely able to represent wind power plants yet, requiring further studies for improvement.

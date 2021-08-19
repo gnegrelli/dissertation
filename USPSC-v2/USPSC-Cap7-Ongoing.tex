@@ -1,0 +1,21 @@
+\chapter{Ongoing Research}
+\label{ch: Ongoing}
+
+\section{Regarding the WPP proposed model}
+
+The mathematical model proposed in subsection \ref{ssec: proposed_model} is promising since it does not require voltage angle measurements in order to represent the behaviour of WPPs. However, initial studies have shown that the model as proposed was not successful on simulating the wind power plant output. Possible reasons of this issue are:
+
+\begin{itemize}
+	\item $V_{max}$ is an unknown parameter and must be estimated;
+	\item The value of $V_{max}$ is not constant during fault;
+	\item Reference values $v_{Tref}$, $P_{ref}$ and $Q_{ref}$ must be estimated with other parameters; and
+	\item Missing blocks must be included to the model.
+\end{itemize}
+
+These and other possible reasons will be subject of further studies. The results of these studies will allow the application of the proposed model on cases where PMU measurements are not provided.
+
+\section{Regarding the Hybrid Method}
+
+The estimation framework and GUI developed can be further improved in the future. In order to improve the robustness of the hybrid method, the classical MVMO can be further replaced by its multiple swarm variant, called MVMO-SH.
+
+In addition, new estimation methods, such as Kalman Filters, Monte Carlo, Particle Swarm Optimization and Differential Evolution, may be implemented to enlarge user options. Moreover, additional estimation steps, such as identifiability analysis, can be applied to validate and provide more information about the process. Improvements on GUI may surface as other features are created and new users start applying the tool.

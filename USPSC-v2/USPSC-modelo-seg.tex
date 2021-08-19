@@ -97,13 +97,14 @@ english				% o último idioma é o principal do documento
 \usepackage{color}				% Controle das cores
 \usepackage{graphicx}			% Inclusão de gráficos
 \usepackage{float} 				% Fixa tabelas e figuras no local exato
-\usepackage{chemfig,chemmacros} % Para escrever reações químicas
+\usepackage{chemfig,chemmacros}	% Para escrever reações químicas
 \usepackage{microtype} 			% para melhorias de justificação
 \usepackage{pdfpages}
-\usepackage{makeidx}            % para gerar índice remissimo
+\usepackage{makeidx}           % para gerar índice remissimo
 
 \usepackage[super]{nth}			% escrever numeros ordinarios sobrescritos
-\usepackage{listings}			% escrever algoritmos
+\usepackage{algorithmic}		% escrever algoritmos
+\usepackage{subcaption}			% construir subfiguras
 
 \usepackage{xr}					% referencia de equacoes de outros capitulos
 \externaldocument{USPSC-Cap2-Desenvolvimento.tex}
@@ -162,9 +163,6 @@ english				% o último idioma é o principal do documento
 \usepackage{lipsum}				% para geração de dummy text
 % ---
 
-
-
-
 % pacotes de tabelas
 \usepackage{multicol}	% Suporte a mesclagens em colunas
 \usepackage{multirow}	% Suporte a mesclagens em linhas
@@ -175,10 +173,10 @@ english				% o último idioma é o principal do documento
 %---
 % Configurações para o pacote chemfig
 %\chemsetup[chemformula]{format=\sffamily}
-\renewcommand*\printatom[1]{\ensuremath{\mathsf{#1}}}
-\setatomsep{2em}
-\setdoublesep{.6ex}
-\setbondstyle{semithick}
+%\renewcommand*\printatom[1]{\ensuremath{\mathsf{#1}}}
+%\setatomsep{2em}
+%\setdoublesep{.6ex}
+%\setbondstyle{semithick}
 %---
 % Configurando o ambiente para utilizar os recursos de frases pre-prontas do mhchem
 \newenvironment{rslist}%
@@ -293,7 +291,7 @@ english				% o último idioma é o principal do documento
 % Se você optar por elaborar a ficha catalográfica, deverá 
 % incluir uma % antes das 3 linhas acima e tirar a % antes
 % do comando \include{USPSC-fichacatalografica}
-%\include{USPSC-fichacatalografica}
+\include{USPSC-fichacatalografica}
 % As informações que compõem a ficha catalográfica estão 
 % definidos no arquivo USPSC-pre-textual-UUUU.tex
 % ---
@@ -346,57 +344,51 @@ english				% o último idioma é o principal do documento
 % A Folha de aprovação é um elemento obrigatório da NBR 4724/2011 (seção 4.2.1.3). 
 % Após a defesa/aprovação do trabalho, gere o arquivo folhadeaprovacao.pdf da página assinada pela banca 
 % e iclua o arquivo utilizando o comando abaixo:
-%\includepdf{folhadeaprovacao.pdf}
+\includepdf{folha_de_aprovacao.pdf}
 
 % Alternativa para a Folha de Aprovação:
 % Se for a sua opção elaborar uma folha de aprovação, insira uma % antes do comando acima que inclui o arquivo folhadeaprovacao.pdf,
 % tire o % do comando abaixo e altere o arquivo folhadeaprovacao.tex conforme suas necessidades
 %\include{folhadeaprovacao}
 
-%\includepdf{PaginaEmBranco.pdf}
+\includepdf{PaginaEmBranco.pdf}
 
 % ---
 % Dedicatória
 % ---
-%\begin{dedicatoria}
-%   \vspace*{\fill}
-%   \centering
-%   \noindent
-%   \textit{ Este trabalho é dedicado aos alunos da USP, como uma contribuição\\
-%  das Bibliotecas do Campus USP de São Carlos para o desenvolvimento\\
-%	e disseminação da pesquisa científica da Universidade.} \vspace*{\fill}
-%\end{dedicatoria}
+\begin{dedicatoria}
+   \vspace*{\fill}
+   \centering
+   \noindent
+   \textit{To J\'essica, my love.} \vspace*{\fill}
+\end{dedicatoria}
 % ---
 
 % ---
 % Agradecimentos
 % ---=====
-%\begin{agradecimentos}
-%A motivação para o desenvolvimento da classe USPSC e dos modelos de dissertações e teses foi decorrente de solicitações de usuários das Bibliotecas do Campus USP de São Carlos. 
-%
-%O Grupo desenvolvedor do Pacote USPSC, atualmente composto da Classe USPSC e do  Modelo para teses e dissertações em \LaTeX\ utilizando a classe USPSC, agradece especialmente ao Luis Olmes, doutorando do Instituto de Ciências Matemáticas e de Computação (ICMC) da Universidade de São Paulo (USP), pelas primeiras orientações sobre o \LaTeX\ .
-%
-%Agradecemos ao Lauro César Araujo pelo desenvolvimento da classe  \abnTeX, modelos canônicos e tantas outras contribuições que nos permitiu o desenvolvimento da classe USPSC e seus modelos.
-%
-%Os nossos agradecimentos aos integrantes do primeiro projeto abn\TeX\, Gerald Weber, Miguel Frasson, Leslie H. Watter, Bruno Parente Lima, Flávio de Vasconcellos Corrêa, Otavio Real Salvador, Renato Machnievscz, e a todos que contribuíram para que a produção de trabalhos acadêmicos em conformidade com as normas ABNT com \LaTeX\ fosse possível.
-%
-%Agradecemos ao grupo de usuários
-%\emph{latex-br}{\url{http://groups.google.com/group/latex-br}}, aos integrantes do grupo
-%\emph{\abnTeX}{\url{http://groups.google.com/group/abntex2}  e \url{http://www.abntex.net.br/}}~que contribuem para a evolução do \abnTeX.
-%\end{agradecimentos}
+\begin{agradecimentos}
+I would like to thank everyone that helped me during this project.
+
+First, to all my family members for the support. Special thanks to my wife, J\'essica, for her help and patience.
+
+Second, to all my friends and colleagues at LACOSEP for the enriching discussions and moments of joy.
+
+Finally, to the S\~ao Carlos School of Engineering at the University of S\~ao Paulo and its staff, in special to Prof. Dr. Elmer Cari, for the guidance during this project.
+\end{agradecimentos}
 % ---
 
 % ---
 % Epígrafe
 % ---
-%\begin{epigrafe}
-%    \vspace*{\fill}
-%	\begin{flushright}
-%		\textit{``O estudo, a busca da verdade e da beleza são domínios \\
-%		em que nos é consentido sermos crianças por toda a vida.''\\
-%		Albert Einstein}
-%	\end{flushright}
-%\end{epigrafe}
+\begin{epigrafe}
+    \vspace*{\fill}
+	\begin{flushright}
+		\textit{``You miss 100\% of the shots you \\
+		don't take. -Wayne Gretzky''\\
+		Michael Scott}
+	\end{flushright}
+\end{epigrafe}
 % ---
 
 % A T E N Ç Ã O
@@ -448,15 +440,19 @@ english				% o último idioma é o principal do documento
     \item[EU] European Union
     \item[GUI] Graphical User Interface
 	\item[IEEE] Institute of Electrical and Electronics Engineers
-	\item[MVMO] Mean-Variance Mapping Optimization	
+	\item[LSC] Line-Side Converter
+	\item[MVMO] Mean-Variance Mapping Optimization
+	\item[PMU] Phasor Measurement Unit
 	\item[PMSG] Permanent Magnet Synchronous Generator
     \item[PROINFA] Program of Incentive to Alternative Electric Energy Sources
     \item[RoW] Rest of World
+    \item[RSC] Rotor-Side Converter
     \item[SCIG] Squirrel Cage Induction Generator
     \item[TSM] Trajectory Sensitivity Method
     \item[US] United States of America
     \item[UK] United Kingdom
     \item[WECC] Western Electricity Coordinating Council
+    \item[WPP] Wind Power Plant
     \item[WRIG] Wound Rotor Induction Generator
     \item[WTG] Wind Turbine Generator
 
@@ -467,12 +463,37 @@ english				% o último idioma é o principal do documento
 % ---
 % inserir lista de símbolos
 % ---
-%\begin{simbolos}
-%  \item[$ \Gamma $] Letra grega Gama
-%  \item[$ \Lambda $] Lambda
-%  \item[$ \zeta $] Letra grega minúscula zeta
-%  \item[$ \in $] Pertence
-%\end{simbolos}
+\begin{simbolos}
+	\item[$\mathbf{e}$] Error vector
+	\item[$f_{s}$] MVMO scaling factor
+	\item[$G$] Error sensibility
+	\item[$h$] MVMO transformation function
+	\item[$i_{max}$] Maximum generator current
+	\item[$J$] $l^{2}$-norm of error vector
+	\item[$k_{I}$]	Gain of PI controller
+	\item[$k_{VC}$] Gain of proportional block
+	\item[$\mathbf{p}$] Parameter vector
+	\item[$p_{i}$] i-th element of the parameter vector
+	\item[$\bar{p_{i}}$] Mean value of i-th element of the parameter vector
+	\item[$P$] Active power generated
+	\item[$Q$] Reactive power generated
+	\item[$R$] Thevenin equivalent resistance
+	\item[$s_{i}$] MVMO shape factor of i-th parameter
+	\item[$T_{I}$] Time constant of PI controller
+	\item[$T_{V}$] Time constant of delay block
+	\item[$\mathbf{u}$] Input vector
+	\item[$v^{*}$] Bus voltage threshold
+	\item[$v_{d}$] Direct-axis voltage component
+	\item[$v_{i}$] Variance of i-th parameter
+	\item[$v_{q}$] Quadrature-axis voltage component
+	\item[$v_{T}$] Bus voltage magnitude
+	\item[$\mathbf{x}$] State vector
+	\item[$X$] Thevenin equivalent reactance
+	\item[$\mathbf{y}$] Output vector
+	\item[$\mathbf{y_{r}}$] Output measured on real system
+	\item[$\phi_{v}$] Bus voltage angle
+	\item[$\Gamma$] Jacobian matrix of error sensibility
+\end{simbolos}
 % ---
 % ---
 % inserir o sumario
@@ -500,14 +521,25 @@ english				% o último idioma é o principal do documento
 % ---
 \include{USPSC-Cap3-Estimation}
 % ---
-% Capítulo 4 - Software Concept
+% Capítulo 4 - Software
 % ---
 \include{USPSC-Cap4-Software}
 % ---
-% Capítulo 5 - Partial Results
+% Capítulo 5 - Results
 % ---
 \include{USPSC-Cap5-Results}
-
+% ---
+% Capítulo 6 - Conclusion
+% ---
+\include{USPSC-Cap6-Conclusion}
+% ---
+% Capítulo 7 - Ongoing Research
+% ---
+\include{USPSC-Cap7-Ongoing}
+% ---
+% Capítulo 8 - Publications
+% ---
+\include{USPSC-Cap8-Publications}
 % ----------------------------------------------------------
 % ELEMENTOS PÓS-TEXTUAIS
 % ----------------------------------------------------------
@@ -530,7 +562,7 @@ english				% o último idioma é o principal do documento
 % ----------------------------------------------------------
 % Apêndices
 % ----------------------------------------------------------
-%\include{USPSC-Apendices}
+\include{USPSC-Apendices}
 
 % ----------------------------------------------------------
 % Anexos

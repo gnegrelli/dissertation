@@ -1,0 +1,12 @@
+\chapter{Conclusion}
+\label{ch: Conclusion}
+
+In this work, a software for parameter estimation of mathematical models was developed and applied on a wind power plant model. The software created consists of framework and GUI, both developed in Python 3, where users can configure an estimation tool and select which models and methods it will be apply. For this application, two estimation methods were developed: MVMO, a population-based metaheuristic, and TSM, a non-linear method based on Newton-Raphson. However, new methods can be easily added to the framework as they are required.
+
+Initial studies have shown that, by combining both MVMO and TSM, the estimation method obtained is able to perform better than both methods separately. This hybrid method initially applies MVMO in order to sweep the search region and provide a solution candidate close to the optimal values. The solution candidate provided by MVMO is then refined using TSM, which quickly reduces the error between model output and measurements. The combination of both approaches provides a robust and quick estimation method.
+
+The software was then applied to estimate the parameters of a WPP model using the hybrid method mentioned above. For this application, the WPP model parameters can be estimated using measurement data of voltage angle and magnitude ($\phi_{v}$ and $v_{T}$) and active and reactive power ($P$ and $Q$) taken from the power plant terminal bus. Since measurements of voltage angle are needed by this model, the grid must contain special equipment, such as PMUs, installed on.
+
+To avoid the requirement of voltage angle data and, thus, the installation of PMUs, a new model was proposed. This model, based on the one forementioned, would not need voltage angle measurements as input, allowing its application on a larger set of cases. However, initial tests on the proposed model were not successful and will be topic of ongoing research.
+
+The software developed during the course of this work is available for download at \href{https://github.com/gnegrelli/identPy\_GUI}{https://github.com/gnegrelli/identPy\_GUI}.
